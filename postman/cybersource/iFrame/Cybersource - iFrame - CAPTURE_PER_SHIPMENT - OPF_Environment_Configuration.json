@@ -1,0 +1,112 @@
+{
+  "id": "feb60dd8-d672-4d89-8e28-9ef9e7cdc96d",
+  "name": "opf-iss-d0",
+  "values": [
+    {
+      "key": "token",
+      "value": "",
+      "enabled": true
+    },
+    {
+      "key": "rootUrl",
+      "value": "https:\/\/opf-iss-d0.api.commerce.stage.context.cloud.sap",
+      "enabled": true
+    },
+    {
+      "key": "service",
+      "value": "opf",
+      "enabled": true
+    },
+    {
+      "key": "integrationId",
+      "value": "83",
+      "enabled": true
+    },
+    {
+      "key": "configurationId",
+      "value": "51",
+      "enabled": true
+    },
+    {
+      "key": "capturePattern",
+      "value": "CAPTURE_PER_SHIPMENT",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "supportOverCapture",
+      "value": "false",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "enableOverCapture",
+      "value": "false",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "authorizationTimeoutDays",
+      "value": "7",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "googlePayGateway",
+      "value": "cybersource",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "hostedPageEndpoint",
+      "value": "testsecureacceptance.cybersource.com",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "host",
+      "value": "apitest.cybersource.com",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "merchantId",
+      "value": "caastest",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "apiKeyId",
+      "value": "8004b4c4-7d4d-4b62-b95e-fa7fbff2b7b2",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "profileId",
+      "value": "1F763633-21C9-4134-8905-EF9AAF3BDD58",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "accessKey",
+      "value": "",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "apiKeyValue",
+      "value": "",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "secretKey",
+      "value": "",
+      "enabled": true
+    }
+    
+  ],
+  "_postman_variable_scope": "environment",
+  "_postman_exported_at": "",
+  "_postman_exported_using": "Postman\/7.35.0"
+}

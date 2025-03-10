@@ -1,0 +1,54 @@
+.product-card-container {
+  width: 100%;
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  min-height: 400px;
+  align-items: center;
+  position: relative;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  overflow: hidden;
+  margin: 1rem;
+
+  button {
+    width: 80%;
+    opacity: 0.7;
+    position: absolute;
+    top: auto;
+    display: none;
+    bottom: 20px;
+  }
+
+  &:hover {
+    img {
+      opacity: 0.8;
+    }
+
+    button {
+      opacity: 0.85;
+      display: flex;
+    }
+  }
+
+  .footer {
+    width: 100%;
+    justify-content: space-between;
+    font-size: 18px;
+    text-align: center;
+
+    .name {
+      font-weight: bold;
+      padding: 2px 4px;
+      text-align: center;
+    }
+
+    .price {
+      margin-top: 0.2rem;
+      text-align: center;
+      margin-bottom: 5rem;
+    }
+  }
+}

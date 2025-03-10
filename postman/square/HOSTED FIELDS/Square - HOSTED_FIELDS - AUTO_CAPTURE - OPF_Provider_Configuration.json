@@ -1,0 +1,768 @@
+{
+  "info": {
+    "_postman_id": "ac3bf789-1232-40ba-96fd-5a6dee6347c6",
+    "name": "OPF_Mapping_Config_Collection",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Variable",
+      "item": [
+        {
+          "name": "Variable_apiVersion",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "{{token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"id\":95,\"sensitive\":false,\"value\":\"{{apiVersion}}\",\"key\":\"apiVersion\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{rootUrl}}/{{service}}/merchant\/accountgroups\/{{integrationId}}\/accounts\/{{configurationId}}\/variables",
+              "host": [
+                "{{rootUrl}}"
+              ],
+              "path": [
+                "{{service}}"
+                ,
+                "merchant"
+                ,
+                "accountgroups"
+                ,
+                "{{integrationId}}"
+                ,
+                "accounts"
+                ,
+                "{{configurationId}}"
+                ,
+                "variables"
+                
+              ]
+            }
+          },
+          "response": []
+        }
+        ,
+        {
+          "name": "Variable_accessToken",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "{{token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"id\":96,\"sensitive\":true,\"value\":\"{{accessToken}}\",\"key\":\"accessToken\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{rootUrl}}/{{service}}/merchant\/accountgroups\/{{integrationId}}\/accounts\/{{configurationId}}\/variables",
+              "host": [
+                "{{rootUrl}}"
+              ],
+              "path": [
+                "{{service}}"
+                ,
+                "merchant"
+                ,
+                "accountgroups"
+                ,
+                "{{integrationId}}"
+                ,
+                "accounts"
+                ,
+                "{{configurationId}}"
+                ,
+                "variables"
+                
+              ]
+            }
+          },
+          "response": []
+        }
+        ,
+        {
+          "name": "Variable_apiDomain",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "{{token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"id\":98,\"sensitive\":false,\"value\":\"{{apiDomain}}\",\"key\":\"apiDomain\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{rootUrl}}/{{service}}/merchant\/accountgroups\/{{integrationId}}\/accounts\/{{configurationId}}\/variables",
+              "host": [
+                "{{rootUrl}}"
+              ],
+              "path": [
+                "{{service}}"
+                ,
+                "merchant"
+                ,
+                "accountgroups"
+                ,
+                "{{integrationId}}"
+                ,
+                "accounts"
+                ,
+                "{{configurationId}}"
+                ,
+                "variables"
+                
+              ]
+            }
+          },
+          "response": []
+        }
+        ,
+        {
+          "name": "Variable_signatureKey",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "{{token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"id\":206,\"sensitive\":true,\"value\":\"{{signatureKey}}\",\"key\":\"signatureKey\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{rootUrl}}/{{service}}/merchant\/accountgroups\/{{integrationId}}\/accounts\/{{configurationId}}\/variables",
+              "host": [
+                "{{rootUrl}}"
+              ],
+              "path": [
+                "{{service}}"
+                ,
+                "merchant"
+                ,
+                "accountgroups"
+                ,
+                "{{integrationId}}"
+                ,
+                "accounts"
+                ,
+                "{{configurationId}}"
+                ,
+                "variables"
+                
+              ]
+            }
+          },
+          "response": []
+        }
+        ,
+        {
+          "name": "Variable_cdn",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "{{token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"id\":204,\"sensitive\":false,\"value\":\"{{cdn}}\",\"key\":\"cdn\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{rootUrl}}/{{service}}/merchant\/accountgroups\/{{integrationId}}\/accounts\/{{configurationId}}\/variables",
+              "host": [
+                "{{rootUrl}}"
+              ],
+              "path": [
+                "{{service}}"
+                ,
+                "merchant"
+                ,
+                "accountgroups"
+                ,
+                "{{integrationId}}"
+                ,
+                "accounts"
+                ,
+                "{{configurationId}}"
+                ,
+                "variables"
+                
+              ]
+            }
+          },
+          "response": []
+        }
+        ,
+        {
+          "name": "Variable_autocomplete",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "{{token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"id\":205,\"sensitive\":false,\"value\":\"{{autocomplete}}\",\"key\":\"autocomplete\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{rootUrl}}/{{service}}/merchant\/accountgroups\/{{integrationId}}\/accounts\/{{configurationId}}\/variables",
+              "host": [
+                "{{rootUrl}}"
+              ],
+              "path": [
+                "{{service}}"
+                ,
+                "merchant"
+                ,
+                "accountgroups"
+                ,
+                "{{integrationId}}"
+                ,
+                "accounts"
+                ,
+                "{{configurationId}}"
+                ,
+                "variables"
+                
+              ]
+            }
+          },
+          "response": []
+        }
+        ,
+        {
+          "name": "Variable_locationId",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "{{token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"id\":97,\"sensitive\":false,\"value\":\"{{locationId}}\",\"key\":\"locationId\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{rootUrl}}/{{service}}/merchant\/accountgroups\/{{integrationId}}\/accounts\/{{configurationId}}\/variables",
+              "host": [
+                "{{rootUrl}}"
+              ],
+              "path": [
+                "{{service}}"
+                ,
+                "merchant"
+                ,
+                "accountgroups"
+                ,
+                "{{integrationId}}"
+                ,
+                "accounts"
+                ,
+                "{{configurationId}}"
+                ,
+                "variables"
+                
+              ]
+            }
+          },
+          "response": []
+        }
+        ,
+        {
+          "name": "Variable_applicationId",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "{{token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"id\":228,\"sensitive\":false,\"value\":\"{{applicationId}}\",\"key\":\"applicationId\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{rootUrl}}/{{service}}/merchant\/accountgroups\/{{integrationId}}\/accounts\/{{configurationId}}\/variables",
+              "host": [
+                "{{rootUrl}}"
+              ],
+              "path": [
+                "{{service}}"
+                ,
+                "merchant"
+                ,
+                "accountgroups"
+                ,
+                "{{integrationId}}"
+                ,
+                "accounts"
+                ,
+                "{{configurationId}}"
+                ,
+                "variables"
+                
+              ]
+            }
+          },
+          "response": []
+        }
+        
+      ],
+      "protocolProfileBehavior": {}
+    }
+    ,
+    {
+      "name": "Configuration",
+      "item": [
+        {
+          "name": "Configuration Patch",
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "{{token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"supportOverCapture\":\"{{supportOverCapture}}\",\"enableOverCapture\":\"{{enableOverCapture}}\",\"capturePattern\":\"{{capturePattern}}\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{rootUrl}}/{{service}}/merchant\/accountgroups\/{{integrationId}}\/accounts\/{{configurationId}}",
+              "host": [
+                "{{rootUrl}}"
+              ],
+              "path": [
+                "{{service}}"
+                ,
+                "merchant"
+                ,
+                "accountgroups"
+                ,
+                "{{integrationId}}"
+                ,
+                "accounts"
+                ,
+                "{{configurationId}}"
+                
+              ]
+            }
+          },
+          "response": []
+        }
+        
+      ],
+      "protocolProfileBehavior": {}
+    }
+    ,
+    {
+      "name": "Integration",
+      "item": [
+        {
+          "name": "Integration Patch",
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "{{token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"authorizationTimeoutDays\":{{authorizationTimeoutDays}}}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{rootUrl}}/{{service}}/merchant\/accountgroups\/{{integrationId}}",
+              "host": [
+                "{{rootUrl}}"
+              ],
+              "path": [
+                "{{service}}"
+                ,
+                "merchant"
+                ,
+                "accountgroups"
+                ,
+                "{{integrationId}}"
+                
+              ]
+            }
+          },
+          "response": []
+        }
+        
+      ],
+      "protocolProfileBehavior": {}
+    }
+    ,
+    {
+      "name": "Authentications",
+      "item": [
+        {
+          "name": "Hmac_signature_calculation",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "70a96943-02e3-40f2-a2c7-110531527988",
+                "exec": [
+                  "tests[\"Status code is 201\"] = responseCode.code === 201;    \npm.test(\"Location is present\", function () {\n    pm.response.to.have.header(\"Location\");\n    var location=pm.response.headers.get(\"Location\");\n    pm.environment.set(\"authentication_inbound_hmac_signature_calculation_71\", location.substring(location.lastIndexOf(\"\/\")+1,location.length));\n});"
+                  
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "{{token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"charset\":\"UTF-8\",\"secretBaseEncoding\":\"NONE\",\"baseEncoding\":\"BASE64\",\"method\":\"HMAC_SIGNATURE_CALCULATION\",\"hmacSignatureFlag\":true,\"secretType\":\"SCRIPT\",\"name\":\"Square Webhook HMAC_export\",\"secret\":\"${vars.signatureKey}\",\"source\":\"${input.notificationURL}${input.body}\",\"id\":71,\"algorithm\":\"HmacSHA256\",\"target\":\"${input.headers.x\\\\-square\\\\-hmacsha256\\\\-signature}\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{rootUrl}}/{{service}}/merchant\/authentications",
+              "host": [
+                "{{rootUrl}}"
+              ],
+              "path": [
+                "{{service}}"
+                ,
+                "merchant"
+                ,
+                "authentications"
+                
+              ]
+            }
+          },
+          "response": []
+        }
+        
+      ],
+      "protocolProfileBehavior": {}
+    }
+    ,
+    {
+      "name": "Notification",
+      "item": [
+        {
+          "name": "Notification",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "{{token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"id\":96,\"requestType\":\"NOTIFICATION\",\"enabled\":null,\"configurationId\":null,\"googlePayGateway\":null,\"inboundMapping\":{\"preprocessingMethodId\":null,\"authenticationIds\":[\"{{authentication_inbound_hmac_signature_calculation_71}}\"],\"contentType\":\"application\/json\",\"requestMapping\":{\"authorization\":{\"requestExample\":\"{\\n  \\\"merchant_id\\\": \\\"MLE7WNFXPKTJJ\\\",\\n  \\\"type\\\": \\\"payment.updated\\\",\\n  \\\"event_id\\\": \\\"13ee1a17-d3df-31a2-a295-94d22fb36c03\\\",\\n  \\\"created_at\\\": \\\"2023-11-28T08:37:26.508Z\\\",\\n  \\\"data\\\": {\\n    \\\"type\\\": \\\"payment\\\",\\n    \\\"id\\\": \\\"JarGPUZ7R1NMSYcvEtSm8cBgk7GZY\\\",\\n    \\\"object\\\": {\\n      \\\"payment\\\": {\\n        \\\"amount_money\\\": {\\n          \\\"amount\\\": 65809,\\n          \\\"currency\\\": \\\"USD\\\"\\n        },\\n        \\\"application_details\\\": {\\n          \\\"application_id\\\": \\\"sandbox-sq0idb-JnE6IxWMZlfO6xapCOoxCA\\\",\\n          \\\"square_product\\\": \\\"ECOMMERCE_API\\\"\\n        },\\n        \\\"approved_money\\\": {\\n          \\\"amount\\\": 65809,\\n          \\\"currency\\\": \\\"USD\\\"\\n        },\\n        \\\"card_details\\\": {\\n          \\\"avs_status\\\": \\\"AVS_ACCEPTED\\\",\\n          \\\"card\\\": {\\n            \\\"bin\\\": \\\"411111\\\",\\n            \\\"card_brand\\\": \\\"VISA\\\",\\n            \\\"card_type\\\": \\\"CREDIT\\\",\\n            \\\"exp_month\\\": 10,\\n            \\\"exp_year\\\": 2030,\\n            \\\"fingerprint\\\": \\\"sq-1-movyNKKLfVKfqox6cm-7oWaRG9PqjY6WNvtVVM_ndYRTjCg-HHd46apmSYkv9KotsQ\\\",\\n            \\\"last_4\\\": \\\"1111\\\",\\n            \\\"prepaid_type\\\": \\\"NOT_PREPAID\\\"\\n          },\\n          \\\"card_payment_timeline\\\": {\\n            \\\"authorized_at\\\": \\\"2023-11-28T08:37:20.213Z\\\",\\n            \\\"captured_at\\\": \\\"2023-11-28T08:37:20.286Z\\\"\\n          },\\n          \\\"cvv_status\\\": \\\"CVV_ACCEPTED\\\",\\n          \\\"entry_method\\\": \\\"KEYED\\\",\\n          \\\"statement_description\\\": \\\"SQ *TEST USA GOSQ.COM\\\",\\n          \\\"status\\\": \\\"CAPTURED\\\"\\n        },\\n        \\\"created_at\\\": \\\"2023-11-28T08:37:20.100Z\\\",\\n        \\\"delay_action\\\": \\\"CANCEL\\\",\\n        \\\"delay_duration\\\": \\\"PT168H\\\",\\n        \\\"delayed_until\\\": \\\"2023-12-05T08:37:20.100Z\\\",\\n        \\\"id\\\": \\\"JarGPUZ7R1NMSYcvEtSm8cBgk7GZY\\\",\\n        \\\"location_id\\\": \\\"LJ9SETAQ0XNK4\\\",\\n        \\\"note\\\": \\\"Order 00352034\\\",\\n        \\\"order_id\\\": \\\"HyTwoFjBjKg5fW01pZvfhYrTjGBZY\\\",\\n        \\\"processing_fee\\\": [\\n          {\\n            \\\"amount_money\\\": {\\n              \\\"amount\\\": 1938,\\n              \\\"currency\\\": \\\"USD\\\"\\n            },\\n            \\\"effective_at\\\": \\\"2023-11-28T10:37:21.000Z\\\",\\n            \\\"type\\\": \\\"INITIAL\\\"\\n          }\\n        ],\\n        \\\"receipt_number\\\": \\\"JarG\\\",\\n        \\\"receipt_url\\\": \\\"https:\/\/squareupsandbox.com\/receipt\/preview\/JarGPUZ7R1NMSYcvEtSm8cBgk7GZY\\\",\\n        \\\"reference_id\\\": \\\"00352034_926916707703586817\\\",\\n        \\\"source_type\\\": \\\"CARD\\\",\\n        \\\"status\\\": \\\"COMPLETED\\\",\\n        \\\"total_money\\\": {\\n          \\\"amount\\\": 65809,\\n          \\\"currency\\\": \\\"USD\\\"\\n        },\\n        \\\"updated_at\\\": \\\"2023-11-28T08:37:21.630Z\\\",\\n        \\\"version\\\": 3\\n      }\\n    }\\n  }\\n}\",\"requestMappingFields\":{\"mappings\":[{\"from\":\"data.object.payment.note\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.object.payment.delay_action\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.object.payment.application_details.#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":true,\"isScript\":false},{\"from\":\"data.object.payment.application_details.square_product\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.object.payment.application_details.application_id\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.object.payment.created_at\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.object.payment.['processing_fee.#object']\",\"to\":null,\"map\":null,\"arrayPath\":\"data.object.payment.\",\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":true,\"isScript\":false},{\"from\":\"data.object.payment.processing_fee[*].effective_at\",\"to\":null,\"map\":null,\"arrayPath\":\"data.object.payment.processing_fee\",\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.object.payment.processing_fee[*].amount_money.#object\",\"to\":null,\"map\":null,\"arrayPath\":\"data.object.payment.processing_fee\",\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":true,\"isScript\":false},{\"from\":\"data.object.payment.processing_fee[*].amount_money.amount\",\"to\":null,\"map\":null,\"arrayPath\":\"data.object.payment.processing_fee\",\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.object.payment.processing_fee[*].amount_money.currency\",\"to\":null,\"map\":null,\"arrayPath\":\"data.object.payment.processing_fee\",\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.object.payment.processing_fee[*].type\",\"to\":null,\"map\":null,\"arrayPath\":\"data.object.payment.processing_fee\",\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.object.payment.amount_money.#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":true,\"isScript\":false},{\"from\":\"data.object.payment.amount_money.amount\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.object.payment.amount_money.currency\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.object.payment.version\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.object.payment.location_id\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.object.payment.delayed_until\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.object.payment.receipt_number\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.object.payment.receipt_url\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.object.payment.updated_at\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.object.payment.total_money.#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":true,\"isScript\":false},{\"from\":\"data.object.payment.total_money.amount\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.object.payment.total_money.currency\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.object.payment.approved_money.#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":true,\"isScript\":false},{\"from\":\"data.object.payment.approved_money.amount\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.object.payment.approved_money.currency\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.object.payment.delay_duration\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.object.payment.order_id\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"created_at\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"merchant_id\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":true,\"isScript\":false},{\"from\":\"data.object.payment.card_details.card.exp_month\",\"to\":\"cardExpMonth\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":false,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.object.payment.card_details.card.exp_year\",\"to\":\"cardExpYear\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":false,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.object.payment.card_details.card.last_4\",\"to\":\"cardLast4\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":false,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.object.payment.card_details.card.card_brand\",\"to\":\"cardType\",\"map\":{\"VISA\":\"VISA\"},\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":false,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.object.payment.source_type\",\"to\":\"paymentMethod\",\"map\":{\"CARD\":\"CREDIT_CARD\"},\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":false,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.object.payment.id\",\"to\":\"pspReference\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":false,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.object.payment.reference_id\",\"to\":\"referenceId\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":false,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"type\",\"to\":\"requestType\",\"map\":{\"payment.updated\":\"AUTHORIZATION\",\"refund.updated\":\"REFUND\"},\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":false,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.object.payment.status\",\"to\":\"transactionStatus\",\"map\":{\"COMPLETED\":\"ACCEPTED\"},\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":false,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"event_id\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":true,\"isScript\":false},{\"from\":\"data.id\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.type\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.object.#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":true,\"isScript\":false},{\"from\":\"data.object.payment.#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":true,\"isScript\":false},{\"from\":\"data.object.payment.card_details.#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":true,\"isScript\":false},{\"from\":\"data.object.payment.card_details.avs_status\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.object.payment.card_details.entry_method\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.object.payment.card_details.cvv_status\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.object.payment.card_details.card_payment_timeline.#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":true,\"isScript\":false},{\"from\":\"data.object.payment.card_details.card_payment_timeline.captured_at\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.object.payment.card_details.card_payment_timeline.authorized_at\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.object.payment.card_details.card.#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":true,\"isScript\":false},{\"from\":\"data.object.payment.card_details.card.bin\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.object.payment.card_details.card.fingerprint\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.object.payment.card_details.card.prepaid_type\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.object.payment.card_details.card.card_type\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.object.payment.card_details.statement_description\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.object.payment.card_details.status\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false}]}},\"authorizationReversal\":{\"requestExample\":null,\"requestMappingFields\":null},\"settlement\":{\"requestExample\":null,\"requestMappingFields\":null},\"refund\":{\"requestExample\":null,\"requestMappingFields\":null}},\"responseMapping\":null}}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{rootUrl}}/{{service}}/merchant\/accountgroups\/{{integrationId}}\/accounts\/{{configurationId}}\/notification",
+              "host": [
+                "{{rootUrl}}"
+              ],
+              "path": [
+                "{{service}}"
+                ,
+                "merchant"
+                ,
+                "accountgroups"
+                ,
+                "{{integrationId}}"
+                ,
+                "accounts"
+                ,
+                "{{configurationId}}"
+                ,
+                "notification"
+                
+              ]
+            }
+          },
+          "response": []
+        }
+        
+      ],
+      "protocolProfileBehavior": {}
+    }
+    ,
+    {
+      "name": "Authorization",
+      "item": [
+        {
+          "name": "Authorization",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "{{token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"id\":97,\"pattern\":\"HOSTED_FIELDS\",\"requestType\":\"AUTHORIZATION\",\"outboundMappings\":[{\"url\":\"https:\/\/${vars.apiDomain}\/v2\/payments\",\"authenticationIds\":[],\"method\":\"POST\",\"requestContentType\":\"application\/json\",\"requestExample\":\"{\\n    \\\"idempotency_key\\\": \\\"7b0f3ec5-086a-4871-8f13-3c81b3875218\\\",\\n    \\\"amount_money\\\": {\\n      \\\"amount\\\": 1000,\\n      \\\"currency\\\": \\\"USD\\\"\\n    },\\n    \\\"source_id\\\": \\\"ccof:GaJGNaZa8x4OgDJn4GB\\\",\\n    \\\"location_id\\\": \\\"L88917AVBK2S5\\\",\\n    \\\"reference_id\\\": \\\"123456\\\",\\n    \\\"note\\\": \\\"Brief description\\\"\\n  }\",\"responseExample\":\"{\\n  \\\"errors\\\" : [ {\\n      \\\"category\\\" : \\\"PAYMENT_METHOD_ERROR\\\",\\n       \\\"code\\\" : \\\"CARD_EXPIRED\\\",\\n       \\\"detail\\\" : \\\"A human-readable description of the error for debugging purposes.\\\",\\n       \\\"field\\\" : \\\"source_id\\\"\\n\\n\\n  }\\n   ],\\n  \\\"payment\\\": {\\n    \\\"id\\\": \\\"R2B3Z8WMVt3EAmzYWLZvz7Y69EbZY\\\",\\n    \\\"created_at\\\": \\\"2021-10-13T21:14:29.577Z\\\",\\n    \\\"updated_at\\\": \\\"2021-10-13T21:14:30.504Z\\\",\\n    \\\"amount_money\\\": {\\n      \\\"amount\\\": 1000,\\n      \\\"currency\\\": \\\"USD\\\"\\n    },\\n    \\\"app_fee_money\\\": {\\n      \\\"amount\\\": 10,\\n      \\\"currency\\\": \\\"USD\\\"\\n    },\\n    \\\"status\\\": \\\"COMPLETED\\\",\\n    \\\"delay_duration\\\": \\\"PT168H\\\",\\n    \\\"source_type\\\": \\\"CARD\\\",\\n    \\\"card_details\\\": {\\n      \\\"status\\\": \\\"CAPTURED\\\",\\n      \\\"card\\\": {\\n        \\\"card_brand\\\": \\\"VISA\\\",\\n        \\\"last_4\\\": \\\"1111\\\",\\n        \\\"exp_month\\\": 11,\\n        \\\"exp_year\\\": 2022,\\n        \\\"fingerprint\\\": \\\"sq-1-Hxim77tbdcbGejOejnoAklBVJed2YFLTmirfl8Q5XZzObTc8qY_U8RkwzoNL8dCEcQ\\\",\\n        \\\"card_type\\\": \\\"DEBIT\\\",\\n        \\\"prepaid_type\\\": \\\"NOT_PREPAID\\\",\\n        \\\"bin\\\": \\\"411111\\\"\\n      },\\n      \\\"entry_method\\\": \\\"ON_FILE\\\",\\n      \\\"cvv_status\\\": \\\"CVV_ACCEPTED\\\",\\n      \\\"avs_status\\\": \\\"AVS_ACCEPTED\\\",\\n      \\\"auth_result_code\\\": \\\"vNEn2f\\\",\\n      \\\"statement_description\\\": \\\"SQ *EXAMPLE TEST GOSQ.C\\\",\\n      \\\"card_payment_timeline\\\": {\\n        \\\"authorized_at\\\": \\\"2021-10-13T21:14:29.732Z\\\",\\n        \\\"captured_at\\\": \\\"2021-10-13T21:14:30.504Z\\\"\\n      }\\n    },\\n    \\\"location_id\\\": \\\"L88917AVBK2S5\\\",\\n    \\\"order_id\\\": \\\"pRsjRTgFWATl7so6DxdKBJa7ssbZY\\\",\\n    \\\"reference_id\\\": \\\"123456\\\",\\n    \\\"risk_evaluation\\\": {\\n      \\\"created_at\\\": \\\"2021-10-13T21:14:30.423Z\\\",\\n      \\\"risk_level\\\": \\\"NORMAL\\\"\\n    },\\n    \\\"note\\\": \\\"Brief Description\\\",\\n    \\\"customer_id\\\": \\\"W92WH6P11H4Z77CTET0RNTGFW8\\\",\\n    \\\"total_money\\\": {\\n      \\\"amount\\\": 1000,\\n      \\\"currency\\\": \\\"USD\\\"\\n    },\\n    \\\"approved_money\\\": {\\n      \\\"amount\\\": 1000,\\n      \\\"currency\\\": \\\"USD\\\"\\n    },\\n    \\\"receipt_number\\\": \\\"R2B3\\\",\\n    \\\"receipt_url\\\": \\\"https:\/\/squareup.com\/receipt\/preview\/EXAMPLE_RECEIPT_ID\\\",\\n    \\\"delay_action\\\": \\\"CANCEL\\\",\\n    \\\"delayed_until\\\": \\\"2021-10-20T21:14:29.577Z\\\",\\n    \\\"application_details\\\": {\\n      \\\"square_product\\\": \\\"ECOMMERCE_API\\\",\\n      \\\"application_id\\\": \\\"sq0ids-TcgftTEtKxJTRF1lCFJ9TA\\\"\\n    },\\n    \\\"version_token\\\": \\\"TPtNEOBOa6Qq6E3C3IjckSVOM6b3hMbfhjvTxHBQUsB6o\\\"\\n  }\\n}\",\"requestMappingFields\":{\"mappings\":[{\"from\":\"$.location_id\",\"to\":\"${vars.locationId}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"$.note\",\"to\":\"Order ${input.orderId}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":false,\"isObject\":false,\"isScript\":true},{\"from\":\"$.reference_id\",\"to\":\"${input.referenceId}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"$.idempotency_key\",\"to\":\"${input.transactionId}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"$.amount_money.amount\",\"to\":\"${input.amountInExponent}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"$.amount_money.currency\",\"to\":\"${input.currency}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"$.source_id\",\"to\":\"${input.additionalData.sourceId}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":false,\"isObject\":false,\"isScript\":true}]},\"responseMappingFields\":{\"mappings\":[{\"from\":\"errors[0].code\",\"to\":\"errorCode\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":false,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"errors[0].detail\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"errors[0].category\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":true,\"isScript\":false},{\"from\":\"payment.total_money.currency\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"payment.card_details.card.exp_month\",\"to\":\"cardExpMonth\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":false,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"payment.card_details.card.exp_year\",\"to\":\"cardExpYear\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":false,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"payment.card_details.card.last_4\",\"to\":\"cardLast4\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":false,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"payment.card_details.card.card_brand\",\"to\":\"cardType\",\"map\":{\"VISA\":\"VISA\",\"MASTERCARD\":\"MASTERCARD\",\"AMERICAN_EXPRESS\":\"AMEX\",\"DISCOVER\":\"DISCOVER\",\"DISCOVER_DINERS\":\"DISCOVER\"},\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":false,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"payment.id\",\"to\":\"pspReference\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":false,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"payment.source_type\",\"to\":\"paymentMethod\",\"map\":{\"CARD\":\"CREDIT_CARD\"},\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":false,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"payment.reference_id\",\"to\":\"referenceId\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":false,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"payment.id\",\"to\":\"token\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":false,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"payment.status\",\"to\":\"transactionStatus\",\"map\":{\"COMPLETED\":\"ACCEPTED\",\"FAILED\":\"REJECTED\",\"PENDING\":\"PENDING\",\"CANCELED\":\"REJECTED\",\"APPROVED\":\"ACCEPTED\"},\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":false,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"payment.#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":true,\"isScript\":false},{\"from\":\"payment.card_details.#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":true,\"isScript\":false},{\"from\":\"payment.card_details.avs_status\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"payment.card_details.auth_result_code\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"payment.card_details.entry_method\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"payment.card_details.cvv_status\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"payment.card_details.card_payment_timeline.#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":true,\"isScript\":false},{\"from\":\"payment.note\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"payment.card_details.card_payment_timeline.captured_at\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"payment.card_details.card_payment_timeline.authorized_at\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"payment.card_details.card.#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":true,\"isScript\":false},{\"from\":\"payment.card_details.card.bin\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"payment.card_details.card.fingerprint\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"payment.card_details.card.prepaid_type\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"payment.card_details.card.card_type\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"payment.card_details.status\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"payment.card_details.statement_description\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"payment.app_fee_money.#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":true,\"isScript\":false},{\"from\":\"payment.app_fee_money.amount\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"payment.app_fee_money.currency\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"payment.delay_action\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"payment.created_at\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"payment.application_details.#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":true,\"isScript\":false},{\"from\":\"payment.application_details.square_product\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"payment.application_details.application_id\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"payment.amount_money.#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":true,\"isScript\":false},{\"from\":\"payment.amount_money.amount\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"payment.amount_money.currency\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"payment.location_id\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"payment.delayed_until\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"payment.receipt_number\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"payment.receipt_url\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"payment.updated_at\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"payment.version_token\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"payment.total_money.#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":true,\"isScript\":false},{\"from\":\"payment.total_money.amount\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"payment.customer_id\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"payment.delay_duration\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"payment.order_id\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"payment.approved_money.#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":true,\"isScript\":false},{\"from\":\"payment.approved_money.amount\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"payment.approved_money.currency\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"payment.risk_evaluation.#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":true,\"isScript\":false},{\"from\":\"payment.risk_evaluation.risk_level\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"payment.risk_evaluation.created_at\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"['errors.#object']\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":true,\"isScript\":false},{\"from\":\"errors[0].field\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false}]},\"responseContentType\":\"application\/json\",\"headers\":{\"Square-Version\":\"${vars.apiVersion}\",\"Authorization\":\"Bearer ${vars.accessToken}\"},\"formArrayIndicator\":null}],\"enabled\":null,\"configurationId\":null,\"googlePayGateway\":null,\"dynamicScript\":{\"html\":\"<div class=\\\"cx-payment-link\\\">\\n   <form id=\\\"payment-form\\\">\\n     <div id=\\\"card-container\\\"><\/div>\\n     <button id=\\\"card-button\\\" type=\\\"button\\\">Pay<\/button>\\n   <\/form>\\n   <div id=\\\"payment-status-container\\\"><\/div>\\n<\/div>\\n\\n<script>\\n  \\nconst appId = '${vars.applicationId}';\\nconst locationId = '${vars.locationId}';\\n    \\n  \\nasync function initializeCard(payments) {\\n   const card = await payments.card();\\n   await card.attach('#card-container'); \\n   return card; \\n }\\n  \\n \/\/ Call this function to send a payment token, buyer name, and other details\\n \/\/ to the project server code so that a payment can be created with \\n \/\/ Payments API\\n async function createPayment(token) {\\n   \\n     function submitSuccess(response) {}\\n\\n     function submitPending(response) {}\\n\\n    function submitFail(error) {}\\n   \\n   var additionalData = [\\n                { 'key': 'locationId', 'value': locationId },\\n                { 'key': 'sourceId', 'value': token }\\n            ];\\n   \\n   \\n   \\n\\n   console.log(\\\"creating payment for token \\\" + token);\\n   \\n       var submitBody = {\\n                'additionalData': additionalData,\\n                'submitSuccess': submitSuccess,\\n                'submitPending': submitPending,\\n                'submitFail': submitFail\\n            }\\n           return window.Opf.payments.checkout.submit(submitBody);\\n }\\n  \\n\\n \/\/ This function tokenizes a payment method. \\n \/\/ The \\u2018error\\u2019 thrown from this async function denotes a failed tokenization,\\n \/\/ which is due to buyer error (such as an expired card). It's up to the\\n \/\/ developer to handle the error and provide the buyer the chance to fix\\n \/\/ their mistakes.\\n async function tokenize(paymentMethod) {\\n   const tokenResult = await paymentMethod.tokenize();\\n   if (tokenResult.status === 'OK') {\\n     return tokenResult.token;\\n   } else {\\n     let errorMessage = `Tokenization failed-status: ${r\\\"${tokenResult.status}\\\"}`;\\n     if (tokenResult.errors) {\\n       errorMessage += ` and errors: \\\\${r\\\"${{JSON.stringify(\\n         tokenResult.errors\\n       )}\\\"}`;\\n     }\\n     throw new Error(errorMessage);\\n   }\\n }\\n\\n \/\/ Helper method for displaying the Payment Status on the screen.\\n \/\/ status is either SUCCESS or FAILURE;\\n function displayPaymentResults(status) {\\n   const statusContainer = document.getElementById(\\n     'payment-status-container'\\n   );\\n   if (status === 'SUCCESS') {\\n     statusContainer.classList.remove('is-failure');\\n     statusContainer.classList.add('is-success');\\n   } else {\\n     statusContainer.classList.remove('is-success');\\n     statusContainer.classList.add('is-failure');\\n   }\\n\\n   statusContainer.style.visibility = 'visible';\\n }    \\n\\n  \\n\\nasync function initSquare() {\\n  if (!window.Square) {\\n    throw new Error('Square.js failed to load properly');\\n  }\\n  const payments = window.Square.payments(appId, locationId);\\n  let card;\\n  try {\\n    card = await initializeCard(payments);\\n  } catch (e) {\\n    console.error('Initializing Card failed', e);\\n    return;\\n  }\\n\\n   async function handlePaymentMethodSubmission(event, paymentMethod) {\\n   event.preventDefault();\\n\\n   try {\\n     \/\/ disable the submit button as we await tokenization and make a\\n     \/\/ payment request.\\n     cardButton.disabled = true;\\n     const token = await tokenize(paymentMethod);\\n     const paymentResults = await createPayment(token);\\n     displayPaymentResults('SUCCESS');\\n\\n     console.debug('Payment Success', paymentResults);\\n   } catch (e) {\\n     cardButton.disabled = false;\\n     displayPaymentResults('FAILURE');\\n     console.error(e.message);\\n   }\\n }\\n\\n const cardButton = document.getElementById(\\n   'card-button'\\n );\\n cardButton.addEventListener('click', async function (event) {\\n   await handlePaymentMethodSubmission(event, card);\\n });\\n\\n\\n};\\n  \\ninitSquare();\\n  \\n<\/script>\",\"afterRedirectHtml\":\"\",\"jsUrls\":[{\"url\":\"https:\/\/${vars.cdn}\/v1\/square.js\",\"sri\":\"\",\"attributes\":null}]}}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{rootUrl}}/{{service}}/merchant\/accountgroups\/{{integrationId}}\/accounts\/{{configurationId}}\/authorization",
+              "host": [
+                "{{rootUrl}}"
+              ],
+              "path": [
+                "{{service}}"
+                ,
+                "merchant"
+                ,
+                "accountgroups"
+                ,
+                "{{integrationId}}"
+                ,
+                "accounts"
+                ,
+                "{{configurationId}}"
+                ,
+                "authorization"
+                
+              ]
+            }
+          },
+          "response": []
+        }
+        
+      ],
+      "protocolProfileBehavior": {}
+    }
+    ,
+    {
+      "name": "Refund",
+      "item": [
+        {
+          "name": "Refund",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "{{token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"id\":159,\"requestType\":\"REFUND\",\"outboundMappings\":[{\"url\":\"https:\/\/${vars.apiDomain}\/v2\/refunds\",\"authenticationIds\":[],\"method\":\"POST\",\"requestContentType\":\"application\/json\",\"requestExample\":\"{\\n    \\\"idempotency_key\\\": \\\"{UNIQUE_KEY}\\\",\\n    \\\"payment_id\\\": \\\"{PAYMENT_ID}\\\",\\n    \\\"amount_money\\\": {\\n      \\\"amount\\\": 100,\\n      \\\"currency\\\": \\\"USD\\\"\\n    }\\n  }\",\"responseExample\":\"{\\n  \\\"refund\\\":{\\n    \\\"id\\\":\\\"6aVfI...\\\",\\n    \\\"status\\\":\\\"PENDING\\\",\\n    \\\"amount_money\\\":{\\n      \\\"amount\\\":100,\\n\\t    \\\"currency\\\":\\\"USD\\\"\\n    },\\n    \\\"payment_id\\\":\\\"sXps2bKrr05VXDaOV0dgexample\\\",\\n    \\\"order_id\\\":\\\"NF446edlDGTq7fzlEzYKSvHJ6xbZY\\\",\\n    \\\"created_at\\\":\\\"2019-07-15T00:25:08.275Z\\\",\\n    \\\"updated_at\\\":\\\"2019-07-15T00:25:08.978Z\\\",\\n    \\\"location_id\\\":\\\"X9XWRESTK1CZ1\\\"\\n  }\\n}\",\"requestMappingFields\":{\"mappings\":[{\"from\":\"$.payment_id\",\"to\":\"${input.authPspReference}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"$.idempotency_key\",\"to\":\"${input.id}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"$.amount_money.amount\",\"to\":\"${input.amountInExponent}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"$.amount_money.currency\",\"to\":\"${input.currency}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":false,\"isObject\":false,\"isScript\":false}]},\"responseMappingFields\":{\"mappings\":[{\"from\":\"refund.id\",\"to\":\"pspReference\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":false,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"refund.status\",\"to\":\"transactionStatus\",\"map\":{\"COMPLETED\":\"ACCEPTED\",\"REJECTED\":\"REJECTED\",\"FAILED\":\"REJECTED\"},\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":false,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"refund.#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":true,\"isScript\":false},{\"from\":\"refund.updated_at\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"refund.payment_id\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"refund.created_at\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"refund.amount_money.#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":true,\"isScript\":false},{\"from\":\"refund.amount_money.amount\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"refund.amount_money.currency\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"refund.order_id\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"refund.location_id\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":true,\"isScript\":false}]},\"responseContentType\":\"application\/json\",\"headers\":{\"Square-Version\":\"${vars.apiVersion}\",\"Authorization\":\"Bearer ${vars.accessToken}\"},\"formArrayIndicator\":null}],\"enabled\":null,\"configurationId\":null,\"googlePayGateway\":null}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{rootUrl}}/{{service}}/merchant\/accountgroups\/{{integrationId}}\/accounts\/{{configurationId}}\/refund",
+              "host": [
+                "{{rootUrl}}"
+              ],
+              "path": [
+                "{{service}}"
+                ,
+                "merchant"
+                ,
+                "accountgroups"
+                ,
+                "{{integrationId}}"
+                ,
+                "accounts"
+                ,
+                "{{configurationId}}"
+                ,
+                "refund"
+                
+              ]
+            }
+          },
+          "response": []
+        }
+        
+      ],
+      "protocolProfileBehavior": {}
+    }
+    ,
+    {
+      "name": "Settlement",
+      "item": [
+        {
+          "name": "Settlement",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "{{token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"id\":160,\"requestType\":\"SETTLEMENT\",\"outboundMappings\":[{\"url\":\"https:\/\/${vars.apiDomain}\/v2\/payments\/${input.pspReference}\/complete\",\"authenticationIds\":[],\"method\":\"POST\",\"requestContentType\":\"application\/json\",\"requestExample\":null,\"responseExample\":\"{\\n  \\\"payment\\\": {\\n    \\\"id\\\": \\\"VULXIlJz71QmmfblzQHGhnAkCkRZY\\\",\\n    \\\"amount_money\\\": {\\n      \\\"amount\\\": 100,\\n      \\\"currency\\\": \\\"USD\\\"\\n    },\\n    \\\"status\\\": \\\"APPROVED\\\",\\n    \\\"delay_duration\\\": \\\"PT168H\\\",\\n    \\\"source_type\\\": \\\"CARD\\\",\\n    },\\n  }\\n}\",\"requestMappingFields\":{\"mappings\":[]},\"responseMappingFields\":{\"mappings\":[{\"from\":\"payment.id\",\"to\":\"pspReference\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":false,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"payment.status\",\"to\":\"transactionStatus\",\"map\":{\"APPROVED\":\"ACCEPTED\",\"FAILED\":\"REJECTED\",\"COMPLETED\":\"ACCEPTED\",\"CANCELED\":\"REJECTED\"},\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":false,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"payment.#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":true,\"isScript\":false},{\"from\":\"payment.amount_money.#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":true,\"isScript\":false},{\"from\":\"payment.amount_money.amount\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"payment.amount_money.currency\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"payment.source_type\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"payment.delay_duration\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":true,\"isScript\":false}]},\"responseContentType\":\"application\/json\",\"headers\":{\"Square-Version\":\"${vars.apiVersion}\",\"Authorization\":\"Bearer ${vars.accessToken}\"},\"formArrayIndicator\":null}],\"enabled\":null,\"configurationId\":null,\"googlePayGateway\":null}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{rootUrl}}/{{service}}/merchant\/accountgroups\/{{integrationId}}\/accounts\/{{configurationId}}\/settlement",
+              "host": [
+                "{{rootUrl}}"
+              ],
+              "path": [
+                "{{service}}"
+                ,
+                "merchant"
+                ,
+                "accountgroups"
+                ,
+                "{{integrationId}}"
+                ,
+                "accounts"
+                ,
+                "{{configurationId}}"
+                ,
+                "settlement"
+                
+              ]
+            }
+          },
+          "response": []
+        }
+        
+      ],
+      "protocolProfileBehavior": {}
+    }
+    
+  ],
+  "event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					"let url = pm.request.url.toString();",
+					"if(pm.environment.get(\"service\")==null || pm.environment.get(\"service\")===\"\"){",
+					"    let updateUrl = url.replace(\"/{{service}}\",\"\")",
+					"    pm.request.url = updateUrl;",
+					"}"
+				]
+			}
+		}
+	],
+  "protocolProfileBehavior": {}
+}

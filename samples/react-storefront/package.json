@@ -1,0 +1,36 @@
+{
+  "name": "opf-storefront-sample",
+  "version": "1.0.0-ALPHA",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next dev --experimental-https --turbopack -p 4200",
+    "lint": "next lint --fix"
+  },
+  "dependencies": {
+    "@next/env": "^15.1.5",
+    "axios": "^1.7.9",
+    "next": "15.1.3",
+    "opf-sdk": "file:libs/opf-sdk/1.0.0/opf-sdk-1.0.0.tgz",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-redux": "^9.2.0",
+    "react-router-dom": "^7.1.3",
+    "react-toastify": "^11.0.3"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@types/react-redux": "^7.1.34",
+    "@types/react-router-dom": "^5.3.3",
+    "eslint": "^9",
+    "eslint-config-next": "15.1.3",
+    "postcss": "^8",
+    "sass": "^1.83.4",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
+  }
+}

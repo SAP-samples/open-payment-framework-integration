@@ -1,0 +1,106 @@
+{
+  "id": "8560758b-d3c0-48c9-b317-700c0751bfb0",
+  "name": "opf-iss-d0",
+  "values": [
+    {
+      "key": "token",
+      "value": "",
+      "enabled": true
+    },
+    {
+      "key": "rootUrl",
+      "value": "https:\/\/opf-iss-d0.api.commerce.stage.context.cloud.sap",
+      "enabled": true
+    },
+    {
+      "key": "service",
+      "value": "opf",
+      "enabled": true
+    },
+    {
+      "key": "integrationId",
+      "value": "38",
+      "enabled": true
+    },
+    {
+      "key": "configurationId",
+      "value": "16",
+      "enabled": true
+    },
+    {
+      "key": "capturePattern",
+      "value": "AUTO_CAPTURE",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "supportOverCapture",
+      "value": "false",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "enableOverCapture",
+      "value": "false",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "authorizationTimeoutDays",
+      "value": "7",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "apiVersion",
+      "value": "2023-09-25",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "accessToken",
+      "value": "",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "apiDomain",
+      "value": "connect.squareupsandbox.com",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "signatureKey",
+      "value": "",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "cdn",
+      "value": "sandbox.web.squarecdn.com",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "autocomplete",
+      "value": "false",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "locationId",
+      "value": "LJ9SETAQ0XNK4",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "applicationId",
+      "value": "sandbox-sq0idb-JnE6IxWMZlfO6xapCOoxCA",
+      "enabled": true
+    }
+    
+  ],
+  "_postman_variable_scope": "environment",
+  "_postman_exported_at": "",
+  "_postman_exported_using": "Postman\/7.35.0"
+}

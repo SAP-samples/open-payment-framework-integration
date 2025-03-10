@@ -1,0 +1,82 @@
+{
+  "id": "1020a0c9-e4a5-48f2-898b-6b4c9010841e",
+  "name": "opf-iss-d0",
+  "values": [
+    {
+      "key": "token",
+      "value": "",
+      "enabled": true
+    },
+    {
+      "key": "rootUrl",
+      "value": "https:\/\/opf-iss-d0.api.commerce.stage.context.cloud.sap",
+      "enabled": true
+    },
+    {
+      "key": "service",
+      "value": "opf",
+      "enabled": true
+    },
+    {
+      "key": "integrationId",
+      "value": "29",
+      "enabled": true
+    },
+    {
+      "key": "configurationId",
+      "value": "23",
+      "enabled": true
+    },
+    {
+      "key": "authentication_inbound_basic_auth_username_export_50",
+      "value": "payment_mock_export_username",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "authentication_inbound_basic_auth_password_export_50",
+      "value": "payment_mock_export_password",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "capturePattern",
+      "value": "CAPTURE_PER_SHIPMENT",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "supportOverCapture",
+      "value": "false",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "enableOverCapture",
+      "value": "false",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "authorizationTimeoutDays",
+      "value": "7",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "apiKey",
+      "value": "",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "host",
+      "value": "opf-iss-d0.opf.commerce.stage.context.cloud.sap\/opf-payment-mock",
+      "enabled": true
+    }
+    
+  ],
+  "_postman_variable_scope": "environment",
+  "_postman_exported_at": "",
+  "_postman_exported_using": "Postman\/7.35.0"
+}

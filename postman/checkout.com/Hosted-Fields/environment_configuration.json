@@ -1,0 +1,148 @@
+{
+  "id": "dd6a8b9f-7de6-48a1-97fe-57b4e38ce48e",
+  "name": "checkout.com hosted field",
+  "values": [
+    {
+      "key": "token",
+      "value": "",
+      "enabled": true
+    },
+    {
+      "key": "rootUrl",
+      "value": "https:\/\/opf-iss-d0.opf.commerce.stage.context.cloud.sap",
+      "enabled": true
+    },
+    {
+      "key": "service",
+      "value": "opf",
+      "enabled": true
+    },
+    {
+      "key": "accountGroupId",
+      "value": "331",
+      "enabled": true
+    },
+    {
+      "key": "accountId",
+      "value": "130",
+      "enabled": true
+    },
+    {
+      "key": "authentication_inbound_hmac_signature_calculation_secret_export_177",
+      "value": "Checkout.com Webhook Authentication",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "authentication_outbound_api_key_value_export_172",
+      "value": "Checkout.com Private API Key",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "authentication_outbound_api_key_value_export_362",
+      "value": "Checkout.com public_api Key for google apple pay",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "capturePattern",
+      "value": "PARTIAL_CAPTURE",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "supportOverCapture",
+      "value": "true",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "enableOverCapture",
+      "value": "false",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "authorizationTimeoutDays",
+      "value": "7",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "applePayMerchantId",
+      "value": "applePayMerchantId",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "applePayMerchantName",
+      "value": "applePayMerchantName",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "applePayMerchantPassword",
+      "value": "applePayMerchantPassword",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "applePayCountryCode",
+      "value": "applePayCountryCode",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "applePayConfigId",
+      "value": "13",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "apiEndpoint",
+      "value": "api.sandbox.checkout.com",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "riskEnabled",
+      "value": "false",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "apiKey",
+      "value": "pk_sbox_ubhj3eergfxaae6eoroaamagjm7",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "processing_channel_id",
+      "value": "pc_rs2e3wtn5sgubgqbiebojsw52y",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "defaultCapture",
+      "value": "false",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "allow3DS2",
+      "value": "true",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "attempt_n3d",
+      "value": "true",
+      "enabled": true
+    }
+    
+  ],
+  "_postman_variable_scope": "environment",
+  "_postman_exported_at": "",
+  "_postman_exported_using": "Postman\/7.35.0"
+}

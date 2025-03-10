@@ -1,0 +1,94 @@
+{
+  "id": "62e5e7ba-dc9d-414b-80ee-154ef7dcbe21",
+  "name": "Stripe Checkout",
+  "values": [
+    {
+      "key": "token",
+      "value": "",
+      "enabled": true
+    },
+    {
+      "key": "rootUrl",
+      "value": "https:\/\/opf-iss-d0.api.commerce.stage.context.cloud.sap",
+      "enabled": true
+    },
+    {
+      "key": "service",
+      "value": "opf",
+      "enabled": true
+    },
+    {
+      "key": "integrationId",
+      "value": "21",
+      "enabled": true
+    },
+    {
+      "key": "configurationId",
+      "value": "17",
+      "enabled": true
+    },
+    {
+      "key": "authentication_outbound_basic_auth_username_export_30",
+      "value": "Stripe Cotton IT_username",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "authentication_outbound_basic_auth_password_export_30",
+      "value": "Stripe Cotton IT_password",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "capturePattern",
+      "value": "CAPTURE_PER_SHIPMENT",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "supportOverCapture",
+      "value": "false",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "enableOverCapture",
+      "value": "false",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "authorizationTimeoutDays",
+      "value": "7",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "lineitemname",
+      "value": "Test Order",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "publickey",
+      "value": "",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "payButtonLabel",
+      "value": "Place Order",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "webhookSecret",
+      "value": "",
+      "enabled": true
+    }
+    
+  ],
+  "_postman_variable_scope": "environment",
+  "_postman_exported_at": "",
+  "_postman_exported_using": "Postman\/7.35.0"
+}

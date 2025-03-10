@@ -1,0 +1,112 @@
+{
+  "id": "542def59-fb33-4b87-962b-470fe03e7745",
+  "name": "Monei iFrame",
+  "values": [
+    {
+      "key": "token",
+      "value": "",
+      "enabled": true
+    },
+    {
+      "key": "rootUrl",
+      "value": "https:\/\/opf-iss-d0.opf.commerce.stage.context.cloud.sap",
+      "enabled": true
+    },
+    {
+      "key": "service",
+      "value": "opf",
+      "enabled": true
+    },
+    {
+      "key": "accountGroupId",
+      "value": "660",
+      "enabled": true
+    },
+    {
+      "key": "accountId",
+      "value": "231",
+      "enabled": true
+    },
+    {
+      "key": "authentication_outbound_api_key_value_export_416",
+      "value": "Monei IFrame Auth_export",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "capturePattern",
+      "value": "CAPTURE_PER_SHIPMENT",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "supportOverCapture",
+      "value": "false",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "enableOverCapture",
+      "value": "false",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "authorizationTimeoutDays",
+      "value": "7",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "apiEnv",
+      "value": "api.monei.com",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "transactionType",
+      "value": "AUTH",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "apiVersion",
+      "value": "v1",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "jsEnv",
+      "value": "js.monei.com",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "jsVersion",
+      "value": "v2",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "webHookKey",
+      "value": "pk_test_9cd4a847ffdf12f7824606b636837209",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "payButtonText",
+      "value": "Click to Pay",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "generatePaymentToken",
+      "value": "true",
+      "enabled": true
+    }
+    
+  ],
+  "_postman_variable_scope": "environment",
+  "_postman_exported_at": "",
+  "_postman_exported_using": "Postman\/7.35.0"
+}

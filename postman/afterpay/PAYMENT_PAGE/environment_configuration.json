@@ -1,0 +1,82 @@
+{
+  "id": "2150b059-f9c5-4b04-8296-c8add832fd3d",
+  "name": "Afterpay",
+  "values": [
+    {
+      "key": "token",
+      "value": "",
+      "enabled": true
+    },
+    {
+      "key": "rootUrl",
+      "value": "https:\/\/opf-iss-d0.api.commerce.stage.context.cloud.sap",
+      "enabled": true
+    },
+    {
+      "key": "service",
+      "value": "opf",
+      "enabled": true
+    },
+    {
+      "key": "accountGroupId",
+      "value": "155",
+      "enabled": true
+    },
+    {
+      "key": "accountId",
+      "value": "98",
+      "enabled": true
+    },
+    {
+      "key": "authentication_outbound_basic_auth_username_export_93",
+      "value": "Clearpay_username",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "authentication_outbound_basic_auth_password_export_93",
+      "value": "Clearpay_password",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "capturePattern",
+      "value": "PARTIAL_CAPTURE",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "supportOverCapture",
+      "value": "false",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "enableOverCapture",
+      "value": "false",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "authorizationTimeoutDays",
+      "value": "7",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "apiDomain",
+      "value": "global-api-sandbox.afterpay.com",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "jsDomain",
+      "value": "portal.sandbox.afterpay.com",
+      "enabled": true
+    }
+    
+  ],
+  "_postman_variable_scope": "environment",
+  "_postman_exported_at": "",
+  "_postman_exported_using": "Postman\/7.35.0"
+}
