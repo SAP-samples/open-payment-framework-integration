@@ -72,3 +72,5 @@ This project is licensed under the **Apache Software License, version 2.0**, exc
 ---
 
 [![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/open-payment-framework-integration)](https://api.reuse.software/info/github.com/SAP-samples/open-payment-framework-integration)
+[![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/open-payment-framework-integration)](https://api.reuse.software/info/github.com/SAP-samples/open-payment-framework-integration)
+
