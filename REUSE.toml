@@ -6,19 +6,12 @@ SPDX-PackageComment = "The code in this project may include calls to APIs (\"API
 
 [[annotations]]
 path = "postman"
-path = "samples/react-storefront"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2025 SAP SE or an SAP affiliate company and Open Payment Framework contributors"
 SPDX-License-Identifier = "Apache-2.0"
 
 [[annotations]]
-path = "<THIRD-PARTY-FILE-OR-FOLDER-LIST>"
+path = "**"
 precedence = "aggregate"
-SPDX-FileCopyrightText = "<COPYRIGHT-OF-THIRD-PARTY-CODE>"
-SPDX-License-Identifier = "<LICENSE-OF-THIRD-PARTY-CODE>"
-
-[[annotations]]
-path = "<ANOTHER-THIRD-PARTY-FILE-OR-FOLDER-LIST>"
-precedence = "aggregate"
-SPDX-FileCopyrightText = "<COPYRIGHT-OF-ANOTHER-THIRD-PARTY-CODE>"
-SPDX-License-Identifier = "<LICENSE-OF-ANOTHER- THIRD-PARTY-CODE>"
+SPDX-FileCopyrightText = "2025 SAP SE or an SAP affiliate company and Open Payment Framework contributors"
+SPDX-License-Identifier = "Apache-2.0"
