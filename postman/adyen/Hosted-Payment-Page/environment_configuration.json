@@ -1,6 +1,6 @@
 {
-  "id": "3513f458-be8a-40fc-966b-a3a2a8840089",
-  "name": "opf-iss-d0",
+  "id": "c4e33714-25c4-44ca-8d6e-7ae664606b99",
+  "name": "Adyen Payment Page",
   "values": [
     {
       "key": "token",
@@ -29,25 +29,19 @@
     },
     {
       "key": "authentication_inbound_basic_auth_username_export_234",
-      "value": "adyen_notify_basic_export_export_export_username",
+      "value": "(Notification Basic Auth)Adyen Payment Page_username",
       "enabled": true
     }
     ,
     {
       "key": "authentication_inbound_basic_auth_password_export_234",
-      "value": "adyen_notify_basic_export_export_export_password",
+      "value": "(Notification Basic Auth)Adyen Payment Page_password",
       "enabled": true
     }
     ,
     {
       "key": "authentication_outbound_api_key_value_export_235",
-      "value": "(Webservice User)Adyen Hosted Field_export_export_export_export",
-      "enabled": true
-    }
-    ,
-    {
-      "key": "authentication_outbound_api_key_value_export_236",
-      "value": "(Webservice User)API Key_export_export_export_export_export_export",
+      "value": "(Webservice User)Adyen Payment Page",
       "enabled": true
     }
     ,
