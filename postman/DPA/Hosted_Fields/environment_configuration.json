@@ -1,0 +1,88 @@
+{
+  "id": "44d697cc-d343-4610-8756-a84ac89170b0",
+  "name": "SAP Digital Payment Add-on",
+  "values": [
+    {
+      "key": "token",
+      "value": "",
+      "enabled": true
+    },
+    {
+      "key": "rootUrl",
+      "value": "https:\/\/opf-iss-d0.opf.commerce.stage.context.cloud.sap",
+      "enabled": true
+    },
+    {
+      "key": "service",
+      "value": "opf",
+      "enabled": true
+    },
+    {
+      "key": "accountGroupId",
+      "value": "983",
+      "enabled": true
+    },
+    {
+      "key": "accountId",
+      "value": "443",
+      "enabled": true
+    },
+    {
+      "key": "capturePattern",
+      "value": "CAPTURE_PER_SHIPMENT",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "supportOverCapture",
+      "value": "false",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "enableOverCapture",
+      "value": "false",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "authorizationTimeoutDays",
+      "value": "7",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "tokenBaseURL",
+      "value": "opf-poc-qlsrbdlc.authentication.eu10.hana.ondemand.com",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "clientId",
+      "value": "sb-307eef39-93c5-4707-9a1f-50e014a151cc!b544739|digitalpayments-internal-m2m!b16",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "clientSecret",
+      "value": "28704cc9-390e-4d37-af2f-e0024708e506$Ghb_g7dQWZsvrsYfrbgOBmK2XQf2zSJLjGKFZwbqGwo=",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "APIBaseURL",
+      "value": "digitalpayments-core.internal-digitalpayments-sap.cfapps.eu10.hana.ondemand.com",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "paymentPageName",
+      "value": "OPF_DPA",
+      "enabled": true
+    }
+    
+  ],
+  "_postman_variable_scope": "environment",
+  "_postman_exported_at": "",
+  "_postman_exported_using": "Postman\/7.35.0"
+}

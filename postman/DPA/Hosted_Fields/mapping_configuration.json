@@ -1,0 +1,410 @@
+{
+  "info": {
+    "_postman_id": "99b0c7ef-04b2-4625-a8d4-ed2b055f2253",
+    "name": "Digital Payment Add-on Collection",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Variable",
+      "item": [
+        {
+          "name": "Variable_tokenBaseURL",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "{{token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"id\":1612,\"sensitive\":false,\"value\":\"{{tokenBaseURL}}\",\"key\":\"tokenBaseURL\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{rootUrl}}/{{service}}\/merchant\/accountgroups\/{{accountGroupId}}\/accounts\/{{accountId}}\/variables",
+              "host": [
+                "{{rootUrl}}"
+              ],
+              "path": [
+                "{{service}}"
+                ,
+                "merchant"
+                ,
+                "accountgroups"
+                ,
+                "{{accountGroupId}}"
+                ,
+                "accounts"
+                ,
+                "{{accountId}}"
+                ,
+                "variables"
+                
+              ]
+            }
+          },
+          "response": []
+        }
+        ,
+        {
+          "name": "Variable_clientId",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "{{token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"id\":1613,\"sensitive\":false,\"value\":\"{{clientId}}\",\"key\":\"clientId\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{rootUrl}}/{{service}}\/merchant\/accountgroups\/{{accountGroupId}}\/accounts\/{{accountId}}\/variables",
+              "host": [
+                "{{rootUrl}}"
+              ],
+              "path": [
+                "{{service}}"
+                ,
+                "merchant"
+                ,
+                "accountgroups"
+                ,
+                "{{accountGroupId}}"
+                ,
+                "accounts"
+                ,
+                "{{accountId}}"
+                ,
+                "variables"
+                
+              ]
+            }
+          },
+          "response": []
+        }
+        ,
+        {
+          "name": "Variable_clientSecret",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "{{token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"id\":1614,\"sensitive\":false,\"value\":\"{{clientSecret}}\",\"key\":\"clientSecret\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{rootUrl}}/{{service}}\/merchant\/accountgroups\/{{accountGroupId}}\/accounts\/{{accountId}}\/variables",
+              "host": [
+                "{{rootUrl}}"
+              ],
+              "path": [
+                "{{service}}"
+                ,
+                "merchant"
+                ,
+                "accountgroups"
+                ,
+                "{{accountGroupId}}"
+                ,
+                "accounts"
+                ,
+                "{{accountId}}"
+                ,
+                "variables"
+                
+              ]
+            }
+          },
+          "response": []
+        }
+        ,
+        {
+          "name": "Variable_APIBaseURL",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "{{token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"id\":1615,\"sensitive\":false,\"value\":\"{{APIBaseURL}}\",\"key\":\"APIBaseURL\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{rootUrl}}/{{service}}\/merchant\/accountgroups\/{{accountGroupId}}\/accounts\/{{accountId}}\/variables",
+              "host": [
+                "{{rootUrl}}"
+              ],
+              "path": [
+                "{{service}}"
+                ,
+                "merchant"
+                ,
+                "accountgroups"
+                ,
+                "{{accountGroupId}}"
+                ,
+                "accounts"
+                ,
+                "{{accountId}}"
+                ,
+                "variables"
+                
+              ]
+            }
+          },
+          "response": []
+        }
+        ,
+        {
+          "name": "Variable_paymentPageName",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "{{token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"id\":1616,\"sensitive\":false,\"value\":\"{{paymentPageName}}\",\"key\":\"paymentPageName\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{rootUrl}}/{{service}}\/merchant\/accountgroups\/{{accountGroupId}}\/accounts\/{{accountId}}\/variables",
+              "host": [
+                "{{rootUrl}}"
+              ],
+              "path": [
+                "{{service}}"
+                ,
+                "merchant"
+                ,
+                "accountgroups"
+                ,
+                "{{accountGroupId}}"
+                ,
+                "accounts"
+                ,
+                "{{accountId}}"
+                ,
+                "variables"
+                
+              ]
+            }
+          },
+          "response": []
+        }
+        
+      ],
+      "protocolProfileBehavior": {}
+    }
+    ,
+    {
+      "name": "Account",
+      "item": [
+        {
+          "name": "Account Patch",
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "{{token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"supportOverCapture\":\"{{supportOverCapture}}\",\"enableOverCapture\":\"{{enableOverCapture}}\",\"capturePattern\":\"{{capturePattern}}\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{rootUrl}}/{{service}}\/merchant\/accountgroups\/{{accountGroupId}}\/accounts\/{{accountId}}",
+              "host": [
+                "{{rootUrl}}"
+              ],
+              "path": [
+                "{{service}}"
+                ,
+                "merchant"
+                ,
+                "accountgroups"
+                ,
+                "{{accountGroupId}}"
+                ,
+                "accounts"
+                ,
+                "{{accountId}}"
+                
+              ]
+            }
+          },
+          "response": []
+        }
+        
+      ],
+      "protocolProfileBehavior": {}
+    }
+    ,
+    {
+      "name": "AccountGroup",
+      "item": [
+        {
+          "name": "Account Group Patch",
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "{{token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"authorizationTimeoutDays\":{{authorizationTimeoutDays}}}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{rootUrl}}/{{service}}\/merchant\/accountgroups\/{{accountGroupId}}",
+              "host": [
+                "{{rootUrl}}"
+              ],
+              "path": [
+                "{{service}}"
+                ,
+                "merchant"
+                ,
+                "accountgroups"
+                ,
+                "{{accountGroupId}}"
+                
+              ]
+            }
+          },
+          "response": []
+        }
+        
+      ],
+      "protocolProfileBehavior": {}
+    }
+    ,
+    {
+      "name": "Authorization",
+      "item": [
+        {
+          "name": "Authorization",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "{{token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"id\":1296,\"pattern\":\"HOSTED_FIELDS\",\"requestType\":\"AUTHORIZATION\",\"outboundMappings\":[{\"url\":\"https:\/\/${vars.APIBaseURL}\/core\/v2\/paymentpage\/finalize\",\"authenticationIds\":[],\"method\":\"POST\",\"requestContentType\":\"application\/json\",\"requestExample\":\"{\\n  \\\"DigitalPaymentTransaction\\\":\\\"15d73bda6fb690bb405cd8a4410acd55de92d266a31\\\",\\n  \\\"TransactionByPaytSrvcPrvdr\\\":\\\"pi_3R4Fy6JKSpaWlCpL1aSbK1Zq\\\"\\n  \\n}\",\"responseExample\":\"{\\n    \\\"DgtlPaytPaymentPageTransType\\\": \\\"AUTHORIZATION\\\",\\n    \\\"Authorization\\\": {\\n        \\\"AuthorizationByPaytSrvcPrvdr\\\": \\\"pi_3R4GmfJKSpaWlCpL00xtg2xi\\\",\\n        \\\"AuthorizationByDigitalPaytSrvc\\\": \\\"FRLBEFS5JU\\\",\\n        \\\"AuthorizedAmountInAuthznCrcy\\\": \\\"19.99\\\",\\n        \\\"AuthorizationCurrency\\\": \\\"USD\\\",\\n        \\\"AuthorizationDateTime\\\": \\\"2025-03-19T07:11:25Z\\\",\\n        \\\"DetailedAuthorizationStatus\\\": \\\"100\\\",\\n        \\\"DigitalPaymentFraudRisk\\\": \\\"NONE\\\",\\n        \\\"StatusDescription\\\": \\\"Successful\\\",\\n        \\\"MerchantAccount\\\": \\\"pk_test_DtwiHhs63jJLGiNKq45Q2yet00FpCWLASQ\\\",\\n        \\\"PaymentServiceProvider\\\": \\\"DPST\\\",\\n        \\\"DgtlPaytAuthznIsPrtlyChrgbl\\\": false\\n    },\\n    \\\"Source\\\": {\\n        \\\"Merchant\\\": {\\n            \\\"PaymentServiceProvider\\\": \\\"DPST\\\",\\n            \\\"Account\\\": \\\"pk_test_DtwiHhs63jJLGiNKq45Q2yet00FpCWLASQ\\\"\\n        }\\n    },\\n    \\\"PaymentType\\\": \\\"PC\\\",\\n    \\\"ElectronicPaymentType\\\": \\\"DPC2\\\"\\n}\",\"requestMappingFields\":{\"mappings\":[{\"from\":\"$.DigitalPaymentTransaction\",\"to\":\"${input.additionalData.sApiSessionId}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":false,\"isObject\":false,\"isScript\":true},{\"from\":\"$.TransactionByPaytSrvcPrvdr\",\"to\":\"${input.additionalData.TransactionByPaytSrvcPrvdr}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":false,\"isObject\":false,\"isScript\":true}]},\"responseHeaders\":null,\"responseMappingFields\":{\"mappings\":[{\"from\":\"Authorization.AuthorizationByPaytSrvcPrvdr\",\"to\":\"pspReference\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":false,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"PaymentType\",\"to\":\"paymentMethod\",\"map\":{\"PC\":\"CREDIT_CARD\"},\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":false,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"Authorization.StatusDescription\",\"to\":\"transactionStatus\",\"map\":{\"Successful\":\"ACCEPTED\"},\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":false,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"Authorization.#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":true,\"isScript\":false},{\"from\":\"Authorization.AuthorizedAmountInAuthznCrcy\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"Authorization.DigitalPaymentFraudRisk\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"Authorization.AuthorizationCurrency\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"Authorization.DgtlPaytAuthznIsPrtlyChrgbl\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"Authorization.AuthorizationByDigitalPaytSrvc\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"Authorization.DetailedAuthorizationStatus\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"Authorization.MerchantAccount\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"Authorization.AuthorizationDateTime\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"Authorization.PaymentServiceProvider\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"DgtlPaytPaymentPageTransType\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"Source.#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":true,\"isScript\":false},{\"from\":\"Source.Merchant.#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":true,\"isScript\":false},{\"from\":\"Source.Merchant.Account\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"Source.Merchant.PaymentServiceProvider\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"ElectronicPaymentType\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":true,\"isScript\":false}]},\"responseContentType\":\"application\/json\",\"headers\":{\"Authorization\":\"Bearer ${input.customFields.access_token}\"},\"formArrayIndicator\":null}],\"enabled\":null,\"configurationId\":null,\"googlePayGateway\":null,\"dynamicScript\":{\"html\":\"<div id=\\\"ButtonsContainerOPFDPA\\\" style=\\\"display: inline-block; vertical-align: top; margin: 10px;\\\">\\n  Loading DPA ...\\n<\/div>\\n\\n<div id=\\\"ButtonsContainerDivId\\\"  style=\\\"display: inline-block; vertical-align: top; \\\">\\n<\/div>\\n\\n<script>\\n    var sLoaderUrl = \\\"${functions.jsEncode(input.customFields.JsLoaderUrl)}\\\";\\n    \/\/ holds the Loader URL (String), retrieved from backend\\n    var sApiSessionId = \\\"${functions.jsEncode(input.customFields.JsAPISessionID)}\\\";\\n    \/\/ holds the API Session identifier (String), retrieved from backend\\n\\n    var odigitalPaymentTransaction = \\\"${functions.jsEncode(input.customFields.digitalPaymentTransaction)}\\\";\\n\\n    var paymentPageName=\\\"${functions.jsEncode(vars.paymentPageName)}\\\";\\n\\n    \/\/only load the jslib once (it can last 30min)\\n    var existingScript = document.getElementById(\\\"com.sap.digital.payments.jslib.loader\\\");\\n\\n\\n\\n    function initLibrary() {\\n      \\n    var oLoaderPromise = com.sap.fin.digital.payments.jslib.Loader.initLibrary(sApiSessionId);\\n\\n\\n    var divId = document.getElementById(\\\"ButtonsContainerDivId\\\").id;\\n\\n\\n    oLoaderPromise.then(function(oDPApi) {\\n\\n      \\n    \\n    var oPaymentTypesPromise = oDPApi.loadPaymentTypes(paymentPageName, odigitalPaymentTransaction, divId);\\n\\n    console.log('oPaymentTypesPromise --->', oPaymentTypesPromise);\\n\\n    var container = document.getElementById(\\\"ButtonsContainerOPFDPA\\\");\\n\\n    oPaymentTypesPromise.then(function (aPaymentTypes) {\\n\\n          \/\/ create select list Group\\n\\n         var selectHtml = '<select id=\\\"paymentTypeSelect\\\">';\\n        selectHtml +='<option value=\\\"sample\\\"> -select Payment Type-<\/option>';\\n\\n        aPaymentTypes.forEach(function (paymentType, index) {\\n            selectHtml += '<option value=\\\"' + paymentType.PaymentType + '\\\">' + paymentType.Name + ' (' + paymentType.PaymentType + ')<\/option>';\\n                    });\\n\\n        selectHtml += '<\/select>';\\n    container.innerHTML = '';\\n\\n    container.innerHTML = selectHtml;\\n\\n    \/\/ Add event listener to the select element\\n    document.getElementById('paymentTypeSelect').addEventListener('change', function(event) {\\n                        var sPaymentType = event.target.value;\\n    if(sPaymentType==='sample')\\n\\n    {\\n      const parentDiv = document.getElementById(divId);\\n    if (parentDiv) {\\n           \/\/ hidden the psp buttons\\n           const childDivs = parentDiv.getElementsByClassName('dpjslibPluginDivSizeCompatibility');\\n    for (let i = 0; i < childDivs.length; i++) {\\n        childDivs[i].style.display = 'none';\\n\\t\\t  }\\n      }\\n    return;\\n    }\\n\\n    var oPaymentPromise = oDPApi.selectPaymentType(sPaymentType);\\n\\n\\n    oPaymentPromise.then(function(TransactionByPaytSrvcPrvdr) {\\n        \/* TransactionByPaytSrvcPrvdr is optional. If provided, you must add it to the request of the \/core\/v2\/paymentpage\/finalize call. *\/\\n\\n        console.log('TransactionByPaytSrvcPrvdr --->', TransactionByPaytSrvcPrvdr);\\n    \/\/add call function here\\n    var additionalData = [\\n    {'key': 'sApiSessionId', 'value': odigitalPaymentTransaction },\\n    {'key': 'TransactionByPaytSrvcPrvdr', 'value': TransactionByPaytSrvcPrvdr }\\n    ];\\n\\n    var submitBody = {\\n        'additionalData': additionalData\\n                            }\\n    window.Opf.payments.checkout.submit(submitBody);\\n\\n                        }).catch(function(oError) {\\n        console.error('A technical error has occurred, which prevented the authorization\/payment to be completed, please select a payment type:', oError);\\n         \\n    });\\n                    });\\n\\n                }).catch(function (oError) {\\n        console.error('A technical error has occurred, which prevented the  payment types from loading:', oError);\\n                });\\n    \\n\\n            });\\n        };\\n\\n    if (!existingScript) {\\nvar oScript = document.createElement('script');\\n    oScript.id = \\\"com.sap.digital.payments.jslib.loader\\\";\\n\\n    oScript.onload = function() {\\n        initLibrary();\\n};\\n\\n    oScript.onerror = function() {\\n    };\\n\\n    oScript.src = sLoaderUrl;\\n    document.head.appendChild(oScript);\\n} else {\\n        initLibrary();\\n}\\n<\/script>\",\"afterRedirectHtml\":null},\"remoteApiOutboundMappings\":[{\"url\":\"https:\/\/${vars.tokenBaseURL}\/oauth\/token\",\"authenticationIds\":[],\"method\":\"POST\",\"requestContentType\":\"application\/x-www-form-urlencoded\",\"requestExample\":\"client_id=${vars.clientid}&client_secret=${vars.clientsecret}&grant_type=client_credentials\",\"responseExample\":\"{\\n    \\\"access_token\\\": \\\"eyJhbGciOiJSUzI1NiIsImprdSI6Imh0dHBzOi8vY3RvZi1vcGYtY2FuYXJ5LXNzZWN5M280LmF1dGhlbnRpY2F0aW9uLnNhcC5oYW5hLm9uZGVtYW5kLmNvbS90b2tlbl9rZXlzIiwia2lkIjoiZGVmYXVsdC1qd3Qta2V5LS0yMDk1OTg0OTg4IiwidHlwIjoiSldUIiwiamlkIjogIlJXckpXdWRtYmVQRlFUcUZMQzRvWDQvYUsxUjhsUlBSZ3RBV2wxZjBtc2M9In0.eyJqdGkiOiJkOTkwMWM4NWNjNTc0Y2YxYWVlYzQ4NDZiMDA5Y2ZlYSIsImV4dF9hdHRyIjp7ImVuaGFuY2VyIjoiWFNVQUEiLCJzdWJhY2NvdW50aWQiOiIzYzBmZDVhZC01Y2NhLTRlYWItYmY0My1kMDk3NzkzNWFmYTEiLCJ6ZG4iOiJjdG9mLW9wZi1jYW5hcnktc3NlY3kzbzQiLCJzZXJ2aWNlaW5zdGFuY2VpZCI6IjE2ODJmMjkyLTgzZDAtNGYwOC1hMWU0LTRiMTAzODgxMzIwNSJ9LCJzdWIiOiJzYi0xNjgyZjI5Mi04M2QwLTRmMDgtYTFlNC00YjEwMzg4MTMyMDUhYjc3MDM2fGRpZ2l0YWxwYXltZW50cy1kZXYtdGVzdC1tMm0hYjMwIiwiYXV0aG9yaXRpZXMiOlsidWFhLnJlc291cmNlIiwiZGlnaXRhbHBheW1lbnRzLWRldi10ZXN0LW0ybSFiMzAuUGluZyJdLCJzY29wZSI6WyJkaWdpdGFscGF5bWVudHMtZGV2LXRlc3QtbTJtIWIzMC5QaW5nIiwidWFhLnJlc291cmNlIl0sImNsaWVudF9pZCI6InNiLTE2ODJmMjkyLTgzZDAtNGYwOC1hMWU0LTRiMTAzODgxMzIwNSFiNzcwMzZ8ZGlnaXRhbHBheW1lbnRzLWRldi10ZXN0LW0ybSFiMzAiLCJjaWQiOiJzYi0xNjgyZjI5Mi04M2QwLTRmMDgtYTFlNC00YjEwMzg4MTMyMDUhYjc3MDM2fGRpZ2l0YWxwYXltZW50cy1kZXYtdGVzdC1tMm0hYjMwIiwiYXpwIjoic2ItMTY4MmYyOTItODNkMC00ZjA4LWExZTQtNGIxMDM4ODEzMjA1IWI3NzAzNnxkaWdpdGFscGF5bWVudHMtZGV2LXRlc3QtbTJtIWIzMCIsImdyYW50X3R5cGUiOiJjbGllbnRfY3JlZGVudGlhbHMiLCJyZXZfc2lnIjoiMjU2ZDU1ZjUiLCJpYXQiOjE3NDExNTk4MjUsImV4cCI6MTc0MTE2NzAyNSwiaXNzIjoiaHR0cHM6Ly9jdG9mLW9wZi1jYW5hcnktc3NlY3kzbzQuYXV0aGVudGljYXRpb24uc2FwLmhhbmEub25kZW1hbmQuY29tL29hdXRoL3Rva2VuIiwiemlkIjoiM2MwZmQ1YWQtNWNjYS00ZWFiLWJmNDMtZDA5Nzc5MzVhZmExIiwiYXVkIjpbInVhYSIsImRpZ2l0YWxwYXltZW50cy1kZXYtdGVzdC1tMm0hYjMwIiwic2ItMTY4MmYyOTItODNkMC00ZjA4LWExZTQtNGIxMDM4ODEzMjA1IWI3NzAzNnxkaWdpdGFscGF5bWVudHMtZGV2LXRlc3QtbTJtIWIzMCJdfQ.e2zfbsC7Us-Is59p6hbqFjdvpwkF_f0pUq84EujLEjYtLM9WYng2gnDnFcse6MU9S-rgfFAa5l7ABAbx-BkILrJBIhhsn4AoxqWpjFFug1s5le6e0V5hwXyeLK8vr53lubG-xnRdWLzli6u24bRh4QQV3ofcVh98DiYichFtPh9ex_YNu2bl0XrsfR1I1xMkF5rcEkAyLOOoS5rgoxRsCKCjmCd8mFm40Sq04VTGiEx0wZoX-VMGQEicRsSj_z7_gQak-FjscwsvwIhQFlDIGYoX9YQhaMqd_GIRGnFvINjGd2DE3YNjbKKXv130LQYSct4qWTQGpvknfA7WbSJVPQ\\\",\\n    \\\"token_type\\\": \\\"bearer\\\",\\n    \\\"expires_in\\\": 7199,\\n    \\\"scope\\\": \\\"digitalpayments-dev-test-m2m!b30.Ping uaa.resource\\\",\\n    \\\"jti\\\": \\\"d9901c85cc574cf1aeec4846b009cfea\\\"\\n}\",\"requestMappingFields\":{\"mappings\":[{\"from\":\"grant_type\",\"to\":\"client_credentials\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":true,\"isObject\":false,\"isScript\":false},{\"from\":\"client_secret\",\"to\":\"${vars.clientSecret}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"client_id\",\"to\":\"${vars.clientId}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":false,\"isObject\":false,\"isScript\":false}]},\"responseHeaders\":null,\"responseMappingFields\":{\"mappings\":[{\"from\":\"access_token\",\"to\":\"access_token\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":false,\"isCustom\":true,\"persistCustomField\":true,\"isObject\":false,\"isScript\":false},{\"from\":\"scope\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"token_type\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"expires_in\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"jti\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":true,\"isScript\":false}]},\"responseContentType\":\"application\/json\",\"headers\":null,\"formArrayIndicator\":\"[\"},{\"url\":\"https:\/\/${vars.APIBaseURL}\/core\/v1\/dpjslib\/loader\",\"authenticationIds\":[],\"method\":\"GET\",\"requestContentType\":\"application\/json\",\"requestExample\":null,\"responseExample\":\"{\\n    \\\"LoaderUrl\\\": \\\"https:\/\/digitalpayments-core.internal-digitalpayments-sap.cfapps.eu10.hana.ondemand.com\/dpjslib\/latest\/loader.min.js\\\",\\n    \\\"APISessionId\\\": \\\"ATcsloM6CKqkAftnqsE4Yj9MQaIVTi5tMkwppLg8QxmPUNcBNJnHp9okr1IhK2c7jsHh\\\"\\n}\",\"requestMappingFields\":{\"mappings\":[]},\"responseHeaders\":null,\"responseMappingFields\":{\"mappings\":[{\"from\":\"LoaderUrl\",\"to\":\"JsLoaderUrl\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":false,\"isCustom\":true,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"APISessionId\",\"to\":\"JsAPISessionID\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":false,\"isCustom\":true,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":true,\"isScript\":false}]},\"responseContentType\":\"application\/json\",\"headers\":{\"Authorization\":\"Bearer ${input.customFields.access_token}\"},\"formArrayIndicator\":null},{\"url\":\"https:\/\/${vars.APIBaseURL}\/core\/v2\/paymentpage\/initiate\",\"authenticationIds\":[],\"method\":\"POST\",\"requestContentType\":\"application\/json\",\"requestExample\":\"{\\n  \\\"AmountInTransactionCurrency\\\": \\\"140.75\\\",\\n  \\\"DigitalPaymentCommerceType\\\": \\\"ECOMMERCE\\\",\\n  \\\"DigitalPaymentSessionType\\\":\\\"ONLINE\\\",\\n  \\\"TransactionCurrency\\\":\\\"USD\\\",\\n  \\\"ReferenceDocument\\\":\\\"111111\\\",\\n  \\\"PaymentTransactionDescription\\\":\\\"COMPANY CODE\\\",\\n  \\\"MemoLine\\\":\\\"Thank you for your purchase\\\"\\n\\n}\",\"responseExample\":\"{\\n    \\\"DigitalPaymentTransaction\\\": \\\"195925c4269b69c83fb5c3942d4b76ab400d7523bf6\\\"\\n}\",\"requestMappingFields\":{\"mappings\":[{\"from\":\"$.PaymentTransactionDescription\",\"to\":\"SAP OPF\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":true,\"isObject\":false,\"isScript\":false},{\"from\":\"$.DigitalPaymentCommerceType\",\"to\":\"ECOMMERCE\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":true,\"isObject\":false,\"isScript\":false},{\"from\":\"$.ReferenceDocument\",\"to\":\"${input.transactionId}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"$.AmountInTransactionCurrency\",\"to\":\"${input.amount}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"$.DigitalPaymentSessionType\",\"to\":\"ONLINE\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":true,\"isObject\":false,\"isScript\":false},{\"from\":\"$.TransactionCurrency\",\"to\":\"${input.currency}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"$.MemoLine\",\"to\":\"Thank you for your purchase\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":true,\"isObject\":false,\"isScript\":false}]},\"responseHeaders\":null,\"responseMappingFields\":{\"mappings\":[{\"from\":\"DigitalPaymentTransaction\",\"to\":\"digitalPaymentTransaction\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":false,\"isCustom\":true,\"persistCustomField\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isObject\":true,\"isScript\":false}]},\"responseContentType\":\"application\/json\",\"headers\":{\"Authorization\":\"Bearer ${input.customFields.access_token}\"},\"formArrayIndicator\":null}]}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{rootUrl}}/{{service}}\/merchant\/accountgroups\/{{accountGroupId}}\/accounts\/{{accountId}}\/authorization",
+              "host": [
+                "{{rootUrl}}"
+              ],
+              "path": [
+                "{{service}}"
+                ,
+                "merchant"
+                ,
+                "accountgroups"
+                ,
+                "{{accountGroupId}}"
+                ,
+                "accounts"
+                ,
+                "{{accountId}}"
+                ,
+                "authorization"
+                
+              ]
+            }
+          },
+          "response": []
+        }
+        
+      ],
+      "protocolProfileBehavior": {}
+    }
+    
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "exec": [
+          "let url = pm.request.url.toString();\nif(pm.environment.get(\"service\")==null || pm.environment.get(\"service\")===\"\"){\n    let updateUrl = url.replace(\"\/{{service}}\",\"\")\n    pm.request.url = updateUrl;\n}"
+        ]
+      }
+    }
+  ]
+  ,
+  "protocolProfileBehavior": {}
+}
