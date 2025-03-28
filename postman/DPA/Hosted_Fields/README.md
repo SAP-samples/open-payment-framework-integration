@@ -5,6 +5,11 @@ The integration supports:
 
 * Authorize card using Hosted Fields
 
+**Note**:
+Here OPF follows the [Payment page way](https://help.sap.com/docs/DIGITALPAYMENTS/62bf12232b35472b90d531f867ffacd1/ef14447dc6d2419eaa8207f2521c487b.html) provided by Digital Payment Add-on and the PSP.
+This integration is the flow where card is externally authorised in OPF and transaction is finalised. all settlements and refunds are initiated external from OPF.
+
+
 
 ### In summary ###
 In summary, to import the [Postman Collection](mapping_configuration.json), this page will guide you through the following steps:
@@ -23,14 +28,18 @@ f) Creating a SAP Digital Payments Add-on Integration in OPF
 
 g) Get the credentials for your SAP Digital Payments Add-on integration
 
-h) Prepare the [Postman Environment](environment_configuration.json) file so the collection can be imported with all your OPF Tenant and BlueSnap Test Account unique values. 
+h) Prepare the [Postman Environment](environment_configuration.json) file so the collection can be imported with all your OPF Tenant and SAP Digital Payment Add-on unique values. 
 
 ### Account Setup ###
-Please perform the following steps based on the Administration Guide of SAP Digital Payments Add-on:https://help.sap.com/docs/DIGITALPAYMENTS/a5c364402f8d4c0b99f6a4c7de385a56/1dedbb58ac1747dea8d768d971c1e484.html
+Please perform the following steps based on the [Administration Guide of SAP Digital Payments Add-on](https://help.sap.com/docs/DIGITALPAYMENTS/a5c364402f8d4c0b99f6a4c7de385a56/1dedbb58ac1747dea8d768d971c1e484.html)
 a) Create a subaccount (SaaS tenant) in your global account (GA). 
+
 b) Configure the Identity Provider (IdP) and set up authentication.
+
 c) Subscribe the SaaS tenant to the SAP digital payments add-on.
+
 d) Create role collections and assign them to user groups or users.
+
 e) Enable machine-to-machine (M2M) communication.
 
 After those steps, you can:
@@ -48,20 +57,16 @@ Go to the following link to activate your preferred PSPs.
 ![](../images/SAP_digital_payment_addon_pspStatus.png)
 
 ### Connecting the SAP Digital Payment Add-on and the PSP (As DigitalPaymentsAdministrator) ###
-Refer to following link to connect the SAP Digital Payment Add-on and the active PSPs
-https://help.sap.com/docs/DIGITALPAYMENTS/a5c364402f8d4c0b99f6a4c7de385a56/dcc3fc991bbf425c837b9825b7ae030f.html
+Refer to this [Administration Guide link](https://help.sap.com/docs/DIGITALPAYMENTS/a5c364402f8d4c0b99f6a4c7de385a56/dcc3fc991bbf425c837b9825b7ae030f.html) to connect the SAP Digital Payment Add-on and the active PSPs
 e.g. Paypal : {BaseURL}+/paypalOnboarding/index.html
 
 ### Setting up the Payment Service Provider Determination (As Key User) ###
-Refer to following link to finish the configuration of payment service provider determination
-https://help.sap.com/docs/DIGITALPAYMENTS/d9dc52ba228e4552b13d3ff6b7f55c7f/e7cc0a840bcc455cbcdc108fef122076.html
+Refer to this [Key User Guide link](https://help.sap.com/docs/DIGITALPAYMENTS/d9dc52ba228e4552b13d3ff6b7f55c7f/e7cc0a840bcc455cbcdc108fef122076.html) to finish the configuration of payment service provider determination
 The link of your configuration page is : {BaseURL}+/pspDetermination/index.html
 
 ### Setting up the Payment Page (As Key User) ###
-Refer to following link to finish the configuration of payment page
-https://help.sap.com/docs/DIGITALPAYMENTS/d9dc52ba228e4552b13d3ff6b7f55c7f/4f1a6cd1b1d34b45b3781968b5351219.html
+Refer to [Key User Guide link](https://help.sap.com/docs/DIGITALPAYMENTS/d9dc52ba228e4552b13d3ff6b7f55c7f/4f1a6cd1b1d34b45b3781968b5351219.html) to finish the configuration of payment page
 The link of your configuration page is : {BaseURL}+/paymentPageConfiguration/index.html
-
 
 ### Creating a SAP Digital Payments Add-on Integration in OPF ###
 Create a Digital Payments Add-on integration in the OPF workbench. For reference, see [Creating Payment Integration
@@ -70,12 +75,9 @@ Create a Digital Payments Add-on integration in the OPF workbench. For reference
 **Note**:
 You can name the Merchant ID as your prefer.
 
-
 ### Get the credentials for your SAP Digital Payments Add-on integration ###
 Fetch those values :clientid/clientsecret/url from the Service key which you have created in step e of Account Setup
 ![](../images/SAP_digital_payment_addon_client_credentials.png)
-
-
 
 ### Preparing the Postman environment_configuration file ###
 
@@ -99,7 +101,6 @@ The base Url would be
 
 https://opf-iss-d0.uis.commerce.stage.context.cloud.sap.
 
-
 **3. Integration ID and Configuration ID**
 
 The ``integrationId`` and ``configurationId`` values identify the payment integration and payment configuration, which can be found in the top left of your **Configuration Details** page in the OPF workbench.
@@ -107,28 +108,23 @@ The ``integrationId`` and ``configurationId`` values identify the payment integr
 * ``integrationId`` maps to ``accountGroupId`` in Postman
 * ``configurationId`` maps to ``accountId`` in Postman
 
-**4. tokenBaseURL clientId clientSecret APIBaseURL**
+**4. ``tokenBaseURL`` ``clientId`` ``clientSecret`` ``APIBaseURL``**
 
 Please fill those 4 mandatory variables according to the step "Get the credentials for your SAP Digital Payments Add-on integration"
-
 
 **5. paymentPageName**
 
 Go to the Payment Page and get the name on the top for the selected configuration
 ![](../images/SAP_digital_payment_addon_client_PaymentPageName.png)
 
-
-
 ### Allowlist
 Add the following domains to the domain allowlist in OPF workbench. For instructions, see [Adding Tenant-specific Domain to Allowlist
 ](https://help.sap.com/docs/OPEN_PAYMENT_FRAMEWORK/3580ff1b17144b8780c055bbb7c2bed3/a6836485b4494cfaad4033b4ee7a9c64.html).
-
 
 ``<Region>.hana.ondemand.com`` 
 
 **Note**:
 region value can be eu10, us10 etc.
-
 
 ### Summary
 
@@ -142,7 +138,7 @@ In summary, you should have edited the following variables:
 - ``accountGroupId``
 - ``accountId`` 
 
-#### BlueSnap Specific
+#### SAP Digital Payment Add-on Specific
 - ``tokenBaseURL``
 - ``clientId``
 - ``clientSecret``
