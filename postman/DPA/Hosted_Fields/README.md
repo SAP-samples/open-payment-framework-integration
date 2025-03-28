@@ -6,9 +6,8 @@ The integration supports:
 * Authorize card using Hosted Fields
 
 **Note**:
-Here OPF follows the [Payment page way](https://help.sap.com/docs/DIGITALPAYMENTS/62bf12232b35472b90d531f867ffacd1/ef14447dc6d2419eaa8207f2521c487b.html) provided by Digital Payment Add-on and the PSP.
-This integration is the flow where card is externally authorised in OPF and transaction is finalised. all settlements and refunds are initiated external from OPF.
-
+OPF adheres to the [Payment Page] (https://help.sap.com/docs/DIGITALPAYMENTS/62bf12232b35472b90d531f867ffacd1/ef14447dc6d2419eaa8207f2521c487b.html) process outlined by the Digital Payment Add-on and the Payment Service Provider (PSP). 
+This integration involves externally authorizing cards within OPF and finalizing transactions. All settlements and refunds are initiated outside of OPF.
 
 
 ### In summary ###
@@ -32,6 +31,7 @@ h) Prepare the [Postman Environment](environment_configuration.json) file so the
 
 ### Account Setup ###
 Please perform the following steps based on the [Administration Guide of SAP Digital Payments Add-on](https://help.sap.com/docs/DIGITALPAYMENTS/a5c364402f8d4c0b99f6a4c7de385a56/1dedbb58ac1747dea8d768d971c1e484.html)
+
 a) Create a subaccount (SaaS tenant) in your global account (GA). 
 
 b) Configure the Identity Provider (IdP) and set up authentication.
@@ -43,6 +43,7 @@ d) Create role collections and assign them to user groups or users.
 e) Enable machine-to-machine (M2M) communication.
 
 After those steps, you can:
+
 a) visit the Welcome page of Digital Payments Add-on application
 ![](../images/SAP_digital_payment_addon_welcome.png)
 **Note**:
@@ -57,15 +58,15 @@ Go to the following link to activate your preferred PSPs.
 ![](../images/SAP_digital_payment_addon_pspStatus.png)
 
 ### Connecting the SAP Digital Payment Add-on and the PSP (As DigitalPaymentsAdministrator) ###
-Refer to this [Administration Guide link](https://help.sap.com/docs/DIGITALPAYMENTS/a5c364402f8d4c0b99f6a4c7de385a56/dcc3fc991bbf425c837b9825b7ae030f.html) to connect the SAP Digital Payment Add-on and the active PSPs
+Refer to this [Administration Guide](https://help.sap.com/docs/DIGITALPAYMENTS/a5c364402f8d4c0b99f6a4c7de385a56/dcc3fc991bbf425c837b9825b7ae030f.html) to connect the SAP Digital Payment Add-on and the active PSPs
 e.g. Paypal : {BaseURL}+/paypalOnboarding/index.html
 
 ### Setting up the Payment Service Provider Determination (As Key User) ###
-Refer to this [Key User Guide link](https://help.sap.com/docs/DIGITALPAYMENTS/d9dc52ba228e4552b13d3ff6b7f55c7f/e7cc0a840bcc455cbcdc108fef122076.html) to finish the configuration of payment service provider determination
+Refer to this [Key User Guide](https://help.sap.com/docs/DIGITALPAYMENTS/d9dc52ba228e4552b13d3ff6b7f55c7f/e7cc0a840bcc455cbcdc108fef122076.html) to finish the configuration of payment service provider determination
 The link of your configuration page is : {BaseURL}+/pspDetermination/index.html
 
 ### Setting up the Payment Page (As Key User) ###
-Refer to [Key User Guide link](https://help.sap.com/docs/DIGITALPAYMENTS/d9dc52ba228e4552b13d3ff6b7f55c7f/4f1a6cd1b1d34b45b3781968b5351219.html) to finish the configuration of payment page
+Refer to [Key User Guide](https://help.sap.com/docs/DIGITALPAYMENTS/d9dc52ba228e4552b13d3ff6b7f55c7f/4f1a6cd1b1d34b45b3781968b5351219.html) to finish the configuration of payment page
 The link of your configuration page is : {BaseURL}+/paymentPageConfiguration/index.html
 
 ### Creating a SAP Digital Payments Add-on Integration in OPF ###
@@ -76,7 +77,7 @@ Create a Digital Payments Add-on integration in the OPF workbench. For reference
 You can name the Merchant ID as your prefer.
 
 ### Get the credentials for your SAP Digital Payments Add-on integration ###
-Fetch those values :clientid/clientsecret/url from the Service key which you have created in step e of Account Setup
+Fetch those values :clientid/clientsecret/url from the Service key which you have created in step [e](#account-setup-) of Account Setup
 ![](../images/SAP_digital_payment_addon_client_credentials.png)
 
 ### Preparing the Postman environment_configuration file ###
@@ -110,7 +111,7 @@ The ``integrationId`` and ``configurationId`` values identify the payment integr
 
 **4. ``tokenBaseURL`` ``clientId`` ``clientSecret`` ``APIBaseURL``**
 
-Please fill those 4 mandatory variables according to the step "Get the credentials for your SAP Digital Payments Add-on integration"
+Please fill in those 4 mandatory variables according to the step [Get the credentials for your SAP Digital Payments Add-on integration](#get-the-credentials-for-your-sap-digital-payments-add-on-integration-)
 
 **5. paymentPageName**
 
