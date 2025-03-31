@@ -6,7 +6,7 @@ The integration supports:
 * Authorize card using Hosted Fields
 
 **Note**:
-OPF adheres to the [Payment Page] (https://help.sap.com/docs/DIGITALPAYMENTS/62bf12232b35472b90d531f867ffacd1/ef14447dc6d2419eaa8207f2521c487b.html) process outlined by the Digital Payment Add-on and the Payment Service Provider (PSP). 
+OPF adheres to the [Payment Page](https://help.sap.com/docs/DIGITALPAYMENTS/62bf12232b35472b90d531f867ffacd1/ef14447dc6d2419eaa8207f2521c487b.html) process outlined by the Digital Payment Add-on and the Payment Service Provider (PSP). 
 This integration involves externally authorizing cards within OPF and finalizing transactions. All settlements and refunds are initiated outside of OPF.
 
 
@@ -29,7 +29,7 @@ g) Get the credentials for your SAP Digital Payments Add-on integration
 
 h) Prepare the [Postman Environment](environment_configuration.json) file so the collection can be imported with all your OPF Tenant and SAP Digital Payment Add-on unique values. 
 
-### Account Setup ###
+### Account Setup###
 Please perform the following steps based on the [Administration Guide of SAP Digital Payments Add-on](https://help.sap.com/docs/DIGITALPAYMENTS/a5c364402f8d4c0b99f6a4c7de385a56/1dedbb58ac1747dea8d768d971c1e484.html)
 
 a) Create a subaccount (SaaS tenant) in your global account (GA). 
@@ -77,7 +77,7 @@ Create a Digital Payments Add-on integration in the OPF workbench. For reference
 You can name the Merchant ID as your prefer.
 
 ### Get the credentials for your SAP Digital Payments Add-on integration ###
-Fetch those values :clientid/clientsecret/url from the Service key which you have created in step [e](#account-setup-) of Account Setup
+Fetch those values :``clientid`` ``clientsecret`` ``url`` ``uri`` from the Service key which you have created in step [e](#account-setup) of Account Setup
 ![](../images/SAP_digital_payment_addon_client_credentials.png)
 
 ### Preparing the Postman environment_configuration file ###
