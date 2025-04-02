@@ -98,9 +98,9 @@ E.g. if your workbench/OPF cockpit url was this …
 
 <https://opf-iss-d0.uis.commerce.stage.context.cloud.sap/opf-workbench>.
 
-The base Url would be
+The base Url would be:
 
-``https://opf-iss-d0.uis.commerce.stage.context.cloud.sap`.
+`https://opf-iss-d0.uis.commerce.stage.context.cloud.sap`.
 
 **3. Integration ID and Configuration ID**
 
