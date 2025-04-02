@@ -96,7 +96,7 @@ The ``rootUrl`` is the **BASE URL** of your OPF tenant.
 
 E.g. if your workbench/OPF cockpit url was this …
 
-<https://opf-iss-d0.uis.commerce.stage.context.cloud.sap/opf-workbench>.
+`https://opf-iss-d0.uis.commerce.stage.context.cloud.sap/opf-workbench`.
 
 The base Url would be:
 
