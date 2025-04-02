@@ -30,7 +30,7 @@ g) Get the credentials for your SAP Digital Payments Add-on integration
 h) Prepare the [Postman Environment](environment_configuration.json) file so the collection can be imported with all your OPF Tenant and SAP Digital Payment Add-on unique values. 
 
 ### Account Setup
-# Please perform the following steps based on the [Administration Guide of SAP Digital Payments Add-on](https://help.sap.com/docs/DIGITALPAYMENTS/a5c364402f8d4c0b99f6a4c7de385a56/1dedbb58ac1747dea8d768d971c1e484.html)
+Please perform the following steps based on the [Administration Guide of SAP Digital Payments Add-on](https://help.sap.com/docs/DIGITALPAYMENTS/a5c364402f8d4c0b99f6a4c7de385a56/1dedbb58ac1747dea8d768d971c1e484.html)
 
 a) Create a subaccount (SaaS tenant) in your global account (GA). 
 
