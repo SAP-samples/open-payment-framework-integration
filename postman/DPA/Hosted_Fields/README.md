@@ -58,16 +58,16 @@ Go to the following link to activate your preferred PSPs.
 ![](../images/SAP_digital_payment_addon_pspStatus.png)
 
 ### Connecting the SAP Digital Payment Add-on and the PSP (As DigitalPaymentsAdministrator) ###
-Refer to this [Administration Guide](https://help.sap.com/docs/DIGITALPAYMENTS/a5c364402f8d4c0b99f6a4c7de385a56/dcc3fc991bbf425c837b9825b7ae030f.html) to connect the SAP Digital Payment Add-on and the active PSPs
-e.g. Paypal : {BaseURL}+/paypalOnboarding/index.html
+Refer to this [Administration Guide](https://help.sap.com/docs/DIGITALPAYMENTS/a5c364402f8d4c0b99f6a4c7de385a56/dcc3fc991bbf425c837b9825b7ae030f.html) to connect the SAP Digital Payment Add-on and the active PSPs,
+e.g. Paypal: `{BaseURL}+/paypalOnboarding/index.html`
 
 ### Setting up the Payment Service Provider Determination (As Key User) ###
 Refer to this [Key User Guide](https://help.sap.com/docs/DIGITALPAYMENTS/d9dc52ba228e4552b13d3ff6b7f55c7f/e7cc0a840bcc455cbcdc108fef122076.html) to finish the configuration of payment service provider determination
-The link of your configuration page is : {BaseURL}+/pspDetermination/index.html
+The link of your configuration page is: `{BaseURL}+/pspDetermination/index.html`
 
 ### Setting up the Payment Page (As Key User) ###
 Refer to [Key User Guide](https://help.sap.com/docs/DIGITALPAYMENTS/d9dc52ba228e4552b13d3ff6b7f55c7f/4f1a6cd1b1d34b45b3781968b5351219.html) to finish the configuration of payment page
-The link of your configuration page is : {BaseURL}+/paymentPageConfiguration/index.html
+The link of your configuration page is: `{BaseURL}+/paymentPageConfiguration/index.html`
 
 ### Creating a SAP Digital Payments Add-on Integration in OPF ###
 Create a Digital Payments Add-on integration in the OPF workbench. For reference, see [Creating Payment Integration
@@ -88,7 +88,7 @@ Get your access token by [creating an external app](https://help.sap.com/docs/OP
 
 Copy the value of the access_token field (it’s a JWT) and set as the ``token`` value in the environment file.
 
-**IMPORTANT**: Ensure the value is prefixed with **Bearer**. e.g. ``Bearer {{token}}``.
+**IMPORTANT**: Ensure the value is prefixed with **Bearer**, e.g. ``Bearer {{token}}``.
 
 **2. Root url**
 
@@ -100,7 +100,7 @@ E.g. if your workbench/OPF cockpit url was this …
 
 The base Url would be
 
-https://opf-iss-d0.uis.commerce.stage.context.cloud.sap.
+``https://opf-iss-d0.uis.commerce.stage.context.cloud.sap`.
 
 **3. Integration ID and Configuration ID**
 
