@@ -73,8 +73,8 @@ The Secret (or Private) Key can be obtained here in the Stripe dashboard. In tes
 
 ![](images/stripe-elements-get-secret-key.png)
 
-* Set private key as **value** for environment variable  ``authentication_outbound_basic_auth_username_export_29``.
-* Set password as **empty string** ``""`` for environment variable : ``authentication_outbound_basic_auth_password_export_29``.
+* Set private key as **value** for environment variable  ``authentication_outbound_basic_auth_username_export_67``.
+* Set password as **empty string** ``""`` for environment variable : ``authentication_outbound_basic_auth_password_export_67``.
 
 There are 2 occurrences of both in the environment file.
 
@@ -133,7 +133,7 @@ In summary, you should have edited the following variables:
 #### Stripe Specific
 - ``publicKey``
 - ``secretKey``
-- ``authentication_outbound_basic_auth_username_export_29``
-- ``authentication_outbound_basic_auth_password_export_29``
+- ``authentication_outbound_basic_auth_username_export_67``
+- ``authentication_outbound_basic_auth_password_export_67``
 - ``webhookSecret``
   
