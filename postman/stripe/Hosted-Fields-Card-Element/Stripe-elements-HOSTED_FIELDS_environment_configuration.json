@@ -1,5 +1,5 @@
 {
-  "id": "c2b94524-92b3-4f13-a2be-74d81ca1a1f1",
+  "id": "f46e6e7c-6cb7-43ee-82ac-104812d87c91",
   "name": "Stripe Card Elements",
   "values": [
     {
@@ -9,7 +9,7 @@
     },
     {
       "key": "rootUrl",
-      "value": "https:\/\/opf-iss-d0.api.commerce.stage.context.cloud.sap",
+      "value": "https:\/\/opf-iss-d0.opf.commerce.stage.context.cloud.sap",
       "enabled": true
     },
     {
@@ -18,36 +18,24 @@
       "enabled": true
     },
     {
-      "key": "integrationId",
+      "key": "accountGroupId",
       "value": "24",
       "enabled": true
     },
     {
-      "key": "configurationId",
+      "key": "accountId",
       "value": "20",
       "enabled": true
     },
     {
-      "key": "authentication_outbound_basic_auth_username_export_42",
-      "value": "Stripe Private Key_export_username",
+      "key": "authentication_outbound_basic_auth_username_export_67",
+      "value": "Stripe API Key (SAP OPF)_username",
       "enabled": true
     }
     ,
     {
-      "key": "authentication_outbound_basic_auth_password_export_42",
-      "value": "Stripe Private Key_export_password",
-      "enabled": true
-    }
-    ,
-    {
-      "key": "authentication_outbound_basic_auth_username_export_43",
-      "value": "Stripe Private Key_export_export_username",
-      "enabled": true
-    }
-    ,
-    {
-      "key": "authentication_outbound_basic_auth_password_export_43",
-      "value": "Stripe Private Key_export_export_password",
+      "key": "authentication_outbound_basic_auth_password_export_67",
+      "value": "Stripe API Key (SAP OPF)_password",
       "enabled": true
     }
     ,
@@ -88,12 +76,6 @@
     }
     ,
     {
-      "key": "publickey",
-      "value": "",
-      "enabled": true
-    }
-    ,
-    {
       "key": "checkoutLineItemName",
       "value": "SAP OPF Order",
       "enabled": true
@@ -101,7 +83,13 @@
     ,
     {
       "key": "webhookSecret",
-      "value": "",
+      "value": "7********************************fb9",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "publickey",
+      "value": "pk_test_DtwiHhs63jJLGiNKq45Q2yet00FpCWLASQ",
       "enabled": true
     }
     
