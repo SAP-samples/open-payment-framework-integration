@@ -1,5 +1,5 @@
 {
-  "id": "53c48eb6-6bba-4c76-a882-7f873342f648",
+  "id": "8ad50785-6187-4e86-af94-d16a23dcdd24",
   "name": "Saferpay iFrame",
   "values": [
     {
@@ -96,12 +96,6 @@
     {
       "key": "paymentRecurring",
       "value": "true",
-      "enabled": true
-    }
-    ,
-    {
-      "key": "deliveryType",
-      "value": "HOMEDELIVERY",
       "enabled": true
     }
     

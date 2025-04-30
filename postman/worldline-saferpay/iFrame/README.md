@@ -15,7 +15,7 @@ In summary, to import the [Postman Collection](mapping_configuration.json), this
 
 a) [Create your Worldine Saferpay test account](https://test.saferpay.com/BO/SignUp?lang=en).
 
-b) Create a Worldine payment integration in OPF.
+b) Create a Worldine payment integration in OPF Workbench.
 
 c) Get the credentials for your Worldine Saferpay integration.
 
