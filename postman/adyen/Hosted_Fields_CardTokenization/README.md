@@ -6,9 +6,8 @@ The integration supports:
 * Authorization of Adyen payments using the OPF "Hosted Fields" UX pattern
 * Deferred Capture support
 * Refunds
-* Reauthorization of saved payment
 
-**In summary**: to import the [Adyen Hosted Fields Postman Collection](https://github.com/opf-postman/commerce-cloud-open-payment-integration/blob/main/postman/adyen/Hosted%20Fields/Adyen%20-%20HOSTED_FIELDS%20-%20PARTIAL_CAPTURE%20-%20OPF_Environment_Configuration.json) this page will guide you through the following steps: 
+**In summary**: to import the [Adyen Hosted Fields Postman Collection](https://github.com/SAP-samples/open-payment-framework-integration) this page will guide you through the following steps: 
 
 a) Create your Adyen test account.
 
@@ -16,7 +15,7 @@ b) Create an Adyen payment integration in OPF workbench.
 
 c) Set up your Adyen test account to work with OPF.
 
-d) Prepare the [Postman Environment](https://github.com/opf-postman/commerce-cloud-open-payment-integration/blob/main/postman/adyen/Full%20Page/Adyen%20-%20FULL_PAGE%20-%20PARTIAL_CAPTURE%20-%20OPF_Environment_Configuration.json) file so the collection can be imported with all your OPF tenant and Adyen test account unique values. 
+d) Prepare the [Postman Environment](https://github.com/SAP-samples/open-payment-framework-integration) file so the collection can be imported with all your OPF tenant and Adyen test account unique values. 
 
 e) Validate the configuration in OPF workbench.
 
@@ -86,6 +85,7 @@ The client Key can be obtained in the Adyen dashboard.
 Go to **Developers -> API credentials -> ws User** to copy the ``Client Key``.
 
 **Note**
+
 The client key is used to authenticate requests from your payment environment which renders inputs fields for card details
 so there should be one or more allowed origins for client key.
 Under "Add allowed origins", enter your domains and select "Add". then click the "Save changes" button.
@@ -98,6 +98,7 @@ Under "Add allowed origins", enter your domains and select "Add". then click the
 The environment file is now ready for importing into Postman together with the Mapping Configuration Collection file. Ensure you select the correct environment before running the collection.
 
 ## Allowlist
+
 Depending on your environment, add the following domains to the domain allowlist in OPF workbench. For instructions, see [Adding Tenant-specific Domain to Allowlist
 ](https://help.sap.com/docs/OPEN_PAYMENT_FRAMEWORK/3580ff1b17144b8780c055bbb7c2bed3/a6836485b4494cfaad4033b4ee7a9c64.html).
 

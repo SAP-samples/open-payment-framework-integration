@@ -1,6 +1,6 @@
 {
-  "id": "c054c70b-e225-4e8b-a275-0e96a12587a0",
-  "name": "Adyen Tokenization",
+  "id": "5cef1b1b-87e2-48b0-a824-ce05fc4b3bf3",
+  "name": "Adyen Card Tokenization",
   "values": [
     {
       "key": "token",
@@ -19,29 +19,29 @@
     },
     {
       "key": "accountGroupId",
-      "value": "920",
+      "value": "115",
       "enabled": true
     },
     {
       "key": "accountId",
-      "value": "645",
+      "value": "79",
       "enabled": true
     },
     {
-      "key": "authentication_inbound_basic_auth_username_export_217",
-      "value": "(Notification Basic Auth)Adyen Hosted Field_username",
+      "key": "authentication_inbound_basic_auth_username_export_520",
+      "value": "(Notification Basic Auth)Adyen Hosted Field_export_username",
       "enabled": true
     }
     ,
     {
-      "key": "authentication_inbound_basic_auth_password_export_217",
-      "value": "(Notification Basic Auth)Adyen Hosted Field_password",
+      "key": "authentication_inbound_basic_auth_password_export_520",
+      "value": "(Notification Basic Auth)Adyen Hosted Field_export_password",
       "enabled": true
     }
     ,
     {
-      "key": "authentication_outbound_api_key_value_export_515",
-      "value": "(Webservice User)Adyen Tokenization Hosted Field",
+      "key": "authentication_outbound_api_key_value_export_521",
+      "value": "(Webservice User)Adyen Tokenization Hosted Field_export",
       "enabled": true
     }
     ,
@@ -113,7 +113,7 @@
     ,
     {
       "key": "notificationHmacKey",
-      "value": "f********************************c4a",
+      "value": "7********************************7b1",
       "enabled": true
     }
     ,
