@@ -10,7 +10,7 @@ The integration supports:
 
 Payment methods supported in OPF:
 
-a) List the default support Card types in OPF 
+a) The list of the default support Card types in OPF 
 American Express
 Diners
 Discover
@@ -20,14 +20,13 @@ Switch
 Visa
 
 For other card types ,you need go to OPF workbench ,click the show Details button -> click the "Edit" in Notification
-Selection -> Authorization Notification -> edit "Payment Method" filed :
+Selection -> Authorization Notification -> edit "Payment Method" field :
 ![](images/card_type_get_mapped.png)
 then map the new card type to "CREDIT_CARD"
 ![](images/maps_to_CREDIT_CARD.png)
 
 b) Alternative Payment Method
-OPF supports  lots of  APM ,such as``paypal`` ``klarna````afterpay``. However, those APMs are not activated after 
-the postman collection, you need to follow these steps in your OPF workbench:
+OPF supports  lots of  APMs ,such as `paypal` `klarna` `afterpay`. However, these APMs are not automatically activated upon importing Postman collections. Instead, you'll need to carry out the following steps in your OPF workbench:
 
 Step 1:
 Create the APM in your OPF workbench by following this [help Portal](https://help.sap.com/docs/OPEN_PAYMENT_FRAMEWORK/8ccca5bb539a49258e924b467ee4e1c2/45767bd743cc45d79f2840a549bd490c.html)
@@ -37,7 +36,7 @@ Go to your configuration , Edit the "Alternative Payment Method" under the "Gene
 ![](images/select_configured_APM.png)
 
 Step 3:
-Check the APM is mapped rightly in Configuration Components (Notification)
+Check if the APM is mapped rightly in Configuration Components (Notification)
 ![](images/apm_get_mapped_in_opf.png)
 
 
@@ -119,11 +118,18 @@ The client Key can be obtained in the Adyen dashboard.
 
 Go to **Developers -> API credentials -> ws User** to copy the ``Client Key``.
 
-**6. enableRecurring**
+**6. nativeThreeDS**
+
+Indicates if native 3D Secure authentication should be used when available.
+Possible values:
+preferred: Use native 3D Secure authentication when available.
+disabled: Only use the redirect 3D Secure authentication flow.
+
+**7. enableRecurring**
 
 Payment details will be stored for recurring cardholder-not-present transactions only when both conditions are met:
 `enableRecurring` is set to `true` and a valid `shopperReference` is provided
-By default (`enableRecurring: false`), the system disables payment reauthorization
+By default (`enableRecurring: false`), the system disables payment reauthorization.
 
 **Note**
 
