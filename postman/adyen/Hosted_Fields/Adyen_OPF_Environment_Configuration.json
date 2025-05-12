@@ -1,5 +1,5 @@
 {
-  "id": "288eca76-13ee-4f09-8f6c-1429841d103e",
+  "id": "fc0caeba-b41c-4acf-9ef0-c9da22892f1a",
   "name": "Adyen Hosted Fields",
   "values": [
     {
@@ -106,26 +106,8 @@
     }
     ,
     {
-      "key": "sdkVersion",
-      "value": "4.2.3",
-      "enabled": true
-    }
-    ,
-    {
-      "key": "checkoutShopperHost",
-      "value": "checkoutshopper-test.adyen.com",
-      "enabled": true
-    }
-    ,
-    {
       "key": "mode",
       "value": "test",
-      "enabled": true
-    }
-    ,
-    {
-      "key": "allow3DS2",
-      "value": "true",
       "enabled": true
     }
     ,
@@ -142,26 +124,8 @@
     }
     ,
     {
-      "key": "recurringProcessingModel",
-      "value": "UnscheduledCardOnFile",
-      "enabled": true
-    }
-    ,
-    {
-      "key": "shopperInteraction",
-      "value": "ContAuth",
-      "enabled": true
-    }
-    ,
-    {
       "key": "channel",
       "value": "web",
-      "enabled": true
-    }
-    ,
-    {
-      "key": "enableRecurring",
-      "value": "true",
       "enabled": true
     }
     ,
@@ -172,8 +136,32 @@
     }
     ,
     {
+      "key": "nativeThreeDS",
+      "value": "preferred",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "checkoutShopperHost",
+      "value": "checkoutshopper-test.cdn.adyen.com",
+      "enabled": true
+    }
+    ,
+    {
       "key": "merchantCode",
       "value": "SAPCOM_STAGE_GATEWAY",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "sdkVersion",
+      "value": "6.5.1",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "enableRecurring",
+      "value": "false",
       "enabled": true
     }
     
