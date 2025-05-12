@@ -192,7 +192,7 @@ Go to the Adyen Dashboard to set up event notifications using the URL for Notifi
 | applePay**                                                            | These parameters are for the OPF Quick Buy function. If you prefer to use the Apple payment method within the Adyen Web Drop-in, please leave these Quick Buy items unchanged.                                                                                                                                                                                                                                           |
 | enableRecurring                                                       | ``false``  the payment details will not be stored for recurring payments where the shopper is not present, such as subscription or automatic top-up payments                                                                                                                                                                                                                                                             |
       
-   5. Save and run the Postman collection.
+   4. Save and run the Postman collection.
 
 
 ## Validating the Configuration in OPF Workbench
