@@ -10,14 +10,15 @@ The integration supports:
 
 Payment methods supported in OPF:
 
-a) The list of the default support Card types in OPF 
-American Express
-Diners
-Discover
-Maestro
-Mastercard
-Switch
-Visa
+a) The list of the default support Card types in OPF
+
+* American Express
+* Diners
+* Discover
+* Maestro
+* Mastercard
+* Switch
+* Visa
 
 For other card types ,you need go to OPF workbench ,click the show Details button -> click the "Edit" in Notification
 Selection -> Authorization Notification -> edit "Payment Method" field :
@@ -26,6 +27,7 @@ then map the new card type to "CREDIT_CARD"
 ![](images/maps_to_CREDIT_CARD.png)
 
 b) Alternative Payment Method
+
 OPF supports  lots of  APMs ,such as `paypal` `klarna` `afterpay`. However, these APMs are not automatically activated upon importing Postman collections. Instead, you'll need to carry out the following steps in your OPF workbench:
 
 Step 1:
