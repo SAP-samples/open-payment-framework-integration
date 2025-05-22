@@ -1,5 +1,5 @@
 {
-  "id": "5cef1b1b-87e2-48b0-a824-ce05fc4b3bf3",
+  "id": "b562516f-5622-497e-82ec-ca648b1623ec",
   "name": "Adyen Card Tokenization",
   "values": [
     {
@@ -40,8 +40,8 @@
     }
     ,
     {
-      "key": "authentication_outbound_api_key_value_export_521",
-      "value": "(Webservice User)Adyen Tokenization Hosted Field_export",
+      "key": "authentication_outbound_api_key_value_export_515",
+      "value": "(Webservice User)Adyen Tokenization Hosted Field",
       "enabled": true
     }
     ,
@@ -148,14 +148,14 @@
     }
     ,
     {
-      "key": "merchantCode",
-      "value": "SAPCOM_STAGE_GATEWAY",
+      "key": "sdkVersion",
+      "value": "6.5.1",
       "enabled": true
     }
     ,
     {
-      "key": "sdkVersion",
-      "value": "6.5.1",
+      "key": "merchantCode",
+      "value": "SAPCOM_STAGE_GATEWAY",
       "enabled": true
     }
     

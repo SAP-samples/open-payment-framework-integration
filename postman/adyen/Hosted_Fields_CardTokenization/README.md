@@ -3,7 +3,7 @@ The Postman Collection enables the integration of Adyen for payment processing t
 
 The integration supports:
 
-* Authorization of Adyen payments using the OPF "Hosted Fields" UX pattern
+* Authorization that supports saving payment for the Cards component.
 * Deferred Capture support
 * Refunds
 
