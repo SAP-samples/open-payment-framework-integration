@@ -1,5 +1,5 @@
 {
-  "id": "fc0caeba-b41c-4acf-9ef0-c9da22892f1a",
+  "id": "f876e0f2-dad7-4f00-adc6-e2b9b4adde3b",
   "name": "Adyen Hosted Fields",
   "values": [
     {
@@ -161,7 +161,7 @@
     ,
     {
       "key": "enableRecurring",
-      "value": "false",
+      "value": "true",
       "enabled": true
     }
     
