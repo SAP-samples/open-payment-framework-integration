@@ -17,7 +17,9 @@ c) Set up your Adyen test account to work with OPF.
 
 d) Prepare the [Postman Environment](https://github.com/SAP-samples/open-payment-framework-integration) file so the collection can be imported with all your OPF tenant and Adyen test account unique values. 
 
-e) Validate the configuration in OPF workbench.
+e) Payment methods supported in OPF
+
+f) Validate the configuration in OPF workbench.
 
 
 ## Creating an Adyen Account ##
@@ -144,7 +146,39 @@ Go to the Adyen Dashboard to set up event notifications using the URL for Notifi
 | notificationHmacKey                          | The Notification HMAC, which is used for Hosted Field notification signature. Go to **Developers** ->  **Webhooks** to get the value.                                                                                                                                                                                                                                                                  |
 | applePay**                                   | These parameters are for the OPF Quick Buy function. If you prefer to use the Apple payment method within the Adyen Web Drop-in, please leave these items unchanged.                                                                                                                                                                                                                                   |
       
-   5. Save and run the Postman collection.
+   4. Save and run the Postman collection.
+
+## Payment methods supported in OPF
+a) The list of the default support Card types in OPF
+
+* American Express
+* Diners
+* Discover
+* Maestro
+* Mastercard
+* Switch
+* Visa
+
+For other card types ,you need go to OPF workbench ,click the show Details button -> click the "Edit" in Notification
+Selection -> Authorization Notification -> edit "Payment Method" field :
+![](images/card_type_get_mapped.png)
+then map the new card type to "CREDIT_CARD"
+![](images/maps_to_CREDIT_CARD.png)
+
+b) Alternative Payment Method
+
+OPF supports  lots of  APMs ,such as `paypal` `klarna` `afterpay`. However, these APMs are not automatically activated upon importing Postman collections. Instead, you'll need to carry out the following steps in your OPF workbench:
+
+Step 1:
+Create the APM in your OPF workbench by following this [help Portal](https://help.sap.com/docs/OPEN_PAYMENT_FRAMEWORK/8ccca5bb539a49258e924b467ee4e1c2/45767bd743cc45d79f2840a549bd490c.html)
+
+Step 2:
+Go to your configuration , Edit the "Alternative Payment Method" under the "General Information" Area :
+![](images/select_configured_APM.png)
+
+Step 3:
+Check if the APM is mapped rightly in Configuration Components (Notification)
+![](images/apm_get_mapped_in_opf.png)
 
 
 ## Validating the Configuration in OPF Workbench
