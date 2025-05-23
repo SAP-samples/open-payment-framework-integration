@@ -3,7 +3,7 @@
 
 ## Overview
 
-This repository provides **working examples of pre-built integrations** for payment gateways and payment methods, delivered as Postman Collections and storefront setup samples. Leverage these resources within your SAP Commerce Cloud, Open Payment Framework tenant to streamline integration.
+This repository provides **working examples of pre-built integrations** for payment gateways and payment methods, delivered as Postman Collections and storefront setup samples. Leverage these resources to streamline integration.
 
 **Key Features**  
 - **Freedom of Choice**: Our support for Payment Service Providers (PSPs) goes beyond the examples listed, offering a broader range of choices and integrations, ensuring freedom in selecting the payment solutions that best fit your needs.  
