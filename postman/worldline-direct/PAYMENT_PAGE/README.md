@@ -87,7 +87,7 @@ The ``integrationId`` and ``configurationId`` values identify the payment integr
 * ``integrationId`` maps to ``accountGroupId`` in Postman
 * ``configurationId`` maps to ``accountId`` in Postman
 
-**4. apiKey and  apiSecret **
+**4. apiKey and  apiSecret**
 
 Fetch the stored ``apiKey and  apiSecret`` during your API key/secret pair configuration step.
 
@@ -105,7 +105,8 @@ Fetch the stored ``secret webhook secret key`` during your Webhook configuration
 Indicates if this transaction should be tokenized.The value can be :
 * True, which means the payment details are saved without asking the shopper, and reauthorization can be performed successfully.
 * False (default), which means the shopper decides whether to save the payment details. There is a checkbox for the shopper on the payment page labeled "Remember my payment details for future purchases," and reauthorization can be performed successfully only when the shopper selects this checkbox.
-  ![](../images/save_payment_for_future.png)
+  
+![](../images/save_payment_for_future.png)
 
 **7. tokenization**
 
