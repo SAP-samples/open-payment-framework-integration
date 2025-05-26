@@ -1,4 +1,4 @@
-# SAP Commerce Cloud SaaS Edition, Payment Management
+# SAP Commerce Cloud SaaS Edition, Payment Integration
 [![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/open-payment-framework-integration)](https://api.reuse.software/info/github.com/SAP-samples/open-payment-framework-integration)
 
 ## Overview
