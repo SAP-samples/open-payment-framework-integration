@@ -108,7 +108,7 @@ Indicates if this transaction should be tokenized.The value can be :
   
 ![](../images/save_payment_for_future.png)
 
-**7. tokenization**
+**8. authorizationMode**
 
 Determines the type of the authorization that will be used. Allowed values:
 * FINAL_AUTHORIZATION - The payment creation results in an authorization that is ready for capture. Final authorizations can't be reversed and need to be captured for the full amount within 7 days.
