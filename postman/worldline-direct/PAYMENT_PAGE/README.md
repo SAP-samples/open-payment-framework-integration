@@ -95,6 +95,24 @@ Fetch the stored ``apiKey and  apiSecret`` during your API key/secret pair confi
 
 Fetch the stored ``secret webhook secret key`` during your Webhook configuration step.
 
+**6. skipAuthentication**
+
+* True,3D Secure authentication will be skipped for this transaction.
+* False,3D Secure authentication will not be skipped for this transaction. 
+
+**7. tokenization**
+
+Indicates if this transaction should be tokenized.The value can be :
+* True, which means the payment details are saved without asking the shopper, and reauthorization can be performed successfully.
+* False (default), which means the shopper decides whether to save the payment details. There is a checkbox for the shopper on the payment page labeled "Remember my payment details for future purchases," and reauthorization can be performed successfully only when the shopper selects this checkbox.
+  ![](../images/save_payment_for_future.png)
+
+**7. tokenization**
+
+Determines the type of the authorization that will be used. Allowed values:
+* FINAL_AUTHORIZATION - The payment creation results in an authorization that is ready for capture. Final authorizations can't be reversed and need to be captured for the full amount within 7 days.
+* PRE_AUTHORIZATION - The payment creation results in a pre-authorization that is ready for capture. Pre-authortizations can be reversed and can be captured within 30 days. The capture amount can be lower than the authorized amount.
+* SALE - The payment creation results in an authorization that is already captured at the moment of approval.
 
 
 ### Allowlist

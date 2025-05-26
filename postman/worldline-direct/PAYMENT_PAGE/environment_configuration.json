@@ -1,5 +1,5 @@
 {
-  "id": "8a83a986-b527-47bb-941b-04565e97687e",
+  "id": "0da0b86d-7299-42d1-8185-6cd515ba4016",
   "name": "Worldline direct",
   "values": [
     {
@@ -64,12 +64,6 @@
     }
     ,
     {
-      "key": "authorizationMode",
-      "value": "PRE_AUTHORIZATION",
-      "enabled": true
-    }
-    ,
-    {
       "key": "apiKey",
       "value": "D4AB5CC32C3C94F931A0",
       "enabled": true
@@ -82,12 +76,6 @@
     }
     ,
     {
-      "key": "tokenization",
-      "value": "true",
-      "enabled": true
-    }
-    ,
-    {
       "key": "webhookSecret",
       "value": "8********************************7c0",
       "enabled": true
@@ -96,6 +84,18 @@
     {
       "key": "apiSecret",
       "value": "3********************************28d",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "tokenization",
+      "value": "false",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "authorizationMode",
+      "value": "FINAL_AUTHORIZATION",
       "enabled": true
     }
     
