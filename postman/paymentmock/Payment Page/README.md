@@ -7,23 +7,14 @@ Learn how to integrate a Payment Mock Gateway to open payment framework using Po
 2.	Create a Payment Mock integration in the OPF Payment Mock swagger UI. The URL for test environment is: <https://{opf-tenant-id}.opf.commerce.{region}.context.cloud.sap/opf-payment-mock/api/swagger-ui/index.html>. 
    
     a.) Locate the **Create Merchant Account Group** API.
-   
-    b.) Configure the request body.
-
 ![](images/create_merchant_id_step.png)
+
+    b.) Configure the request body.
 
     c.) Execute the API call.
   	
    	The following is the response example retrieved:
-  	
-  	``{
-  "merchantId": "2a263ef2-13f2-4561-b05c-ebde41f08d13",
-  "apiKey": "uBucbJJSyRhQ93hTdaSkm6M/cfSIWSbI1MD69fFkSWQ=",
-  "enableOverCapture": false,
-  "overCapturePercentage": 10
-  }
-``
-  	
+![](images/response_example.png)
     d.) Note down the ``merchantId`` and ``apiKey``. They cannot be retrieved again.
 
 3. Create a payment integration for Payment Mock in the open payment framework workbench. For reference, see [Creating Payment Integration
@@ -58,7 +49,6 @@ To ensure you receive timely updates on transactions and other important events,
     c.) Set the url in the request body noted down in step 4.
 
 ![](images/create_notification_config.png)
-
     d.) Execute the API call and note down the username and password.
 
 11. Edit the Postman Collection variables in the Postman App.
