@@ -14,7 +14,9 @@ Learn how to integrate a Payment Mock Gateway to open payment framework using Po
     c.) Execute the API call.
   	
    	The following is the response example retrieved:
+
 ![](images/response_example.png)
+
     d.) Note down the ``merchantId`` and ``apiKey``. They cannot be retrieved again.
 
 3. Create a payment integration for Payment Mock in the open payment framework workbench. For reference, see [Creating Payment Integration
