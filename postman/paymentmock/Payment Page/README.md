@@ -3,47 +3,46 @@ Learn how to integrate a Payment Mock Gateway to open payment framework using Po
 
 ## Procedure
 1.	Download both [Postman Environment](PaymentMock%20-%20PAYMENT_PAGE%20-%20PARTIAL_CHARGE%20-%20OPF_Environment_configuration.json) and [Payment Mock Postman Collection](PaymentMock%20-%20PAYMENT_PAGE%20-%20PARTIAL_CHARGE_Provider_configuration.json) files under this folder.
-   
-2.	Create a Payment Mock integration in the OPF Payment Mock swagger UI. The URL for test environment is: <https://{opf-tenant-id}.opf.commerce.{region}.context.cloud.sap/opf-payment-mock/api/swagger-ui/index.html>. 
-   
+
+2.	Create a Payment Mock integration in the OPF Payment Mock swagger UI. The URL for test environment is: <https://opf-iss-d0.opf.commerce.stage.context.cloud.sap/opf-payment-mock/api/swagger-ui/index.html>.
+
     a.) Locate the **Create Merchant Account Group** API.
+   
+    b.) Configure the request body.
+   
+    c.) Execute the API call.
+
+    d.) Note down the ``merchantId`` and ``apiKey``. They cannot be retrieved again.
+
+   	The following are the requst and response example 
 
 ![](images/create_merchant_id_step.png)
-
-    b.) Configure the request body.
-
-    c.) Execute the API call.
-  	
-   	The following is the response example retrieved:
-
 ![](images/response_example.png)
-
-   d.) Note down the ``merchantId`` and ``apiKey``. They cannot be retrieved again.
 
 3. Create a payment integration for Payment Mock in the open payment framework workbench. For reference, see [Creating Payment Integration
    ](https://help.sap.com/docs/OPEN_PAYMENT_FRAMEWORK/3580ff1b17144b8780c055bbb7c2bed3/20a64f954df1425391757759011e7e6b.html).
 
-4. Under the **General Information** section of the **Integration details** tab, copy the **Notification URL** for later use.
+4.	Under the **General Information** section of the **Integration details** tab, copy the **Notification URL** for later use.
 
 **REMEMBER**
 To ensure you receive timely updates on transactions and other important events, this URL is essential for configuring event notifications from Payment Mock.
 
-5. Click **Configure** under the **Configuration** section.
+5.	Click **Configure** under the **Configuration** section.
 
-6. Set the Merchant ID of the payment account using the value retrieved in step 2, and select a settlement method for your payment integration.
+6.	Set the Merchant ID of the payment account using the value retrieved in step 2, and select a settlement method for your payment integration.
 
-7. Click **Save**.
+7.	Click **Save**.
 
-8. Note down the ``integrationId`` and the ``configurationId``. These two values identify the payment integration and payment configuration, and can be found in the top left of your **Configuration Details** page.
+8.	Note down the ``integrationId`` and the ``configurationId``. These two values identify the payment integration and payment configuration, and can be found in the top left of your **Configuration Details** page.
 
    **Note**:
    * ``integrationId`` maps to ``accountGroupId`` in Postman
    * ``configurationId`` maps to ``accountId`` in Postman
    
-9. Add ``stage.context.cloud.sap`` to the domain allowlist in OPF workbench. For instructions, see [Adding Tenant-specific Domain to Allowlist
+9.	Add ``stage.context.cloud.sap`` to the domain allowlist in OPF workbench. For instructions, see [Adding Tenant-specific Domain to Allowlist
 ](https://help.sap.com/docs/OPEN_PAYMENT_FRAMEWORK/3580ff1b17144b8780c055bbb7c2bed3/a6836485b4494cfaad4033b4ee7a9c64.html).
 
-10. Set notification URL in the Payment Mock Swagger UI.
+10.	Set notification URL in the Payment Mock Swagger UI.
 
     a.) Locate the **Create a notification configuration** API.
 
@@ -51,10 +50,11 @@ To ensure you receive timely updates on transactions and other important events,
 
     c.) Set the url in the request body noted down in step 4.
 
-![](images/create_notification_config.png)
     d.) Execute the API call and note down the username and password.
 
-11. Edit the Postman Collection variables in the Postman App.
+![](images/create_notification_config.png)
+
+11.	Edit the Postman Collection variables in the Postman App.
 
    a.) Import the two files at the same time to Postman.
 
@@ -78,10 +78,10 @@ To ensure you receive timely updates on transactions and other important events,
 | apiKey                                                                               | The ``apiKey`` noted down in step 2.                                                                                                                                                                                                                                                                                                                                                                                     |                  
 | host                                                                                 | The base URL of your tenant account in OPF payment mock service.                                                                                                                                                                                                                                                                                                                                                         |                  
               
-12. Save and run the Postman Collection.
+12.	Save and run the Postman Collection.
 
 
-13. Validate the configuration in OPF workbench
+13.	Validate the configuration in OPF workbench
 
      a.) Log in to the OPF workbench.
    
