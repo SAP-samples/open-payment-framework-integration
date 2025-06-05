@@ -1,5 +1,5 @@
 {
-  "id": "fc4c6a7b-fab7-4a7b-a9f9-0ea44d2b8f31",
+  "id": "f3e92300-c168-415f-8b12-955879779969",
   "name": "Adyen Card Tokenization",
   "values": [
     {
@@ -148,14 +148,14 @@
     }
     ,
     {
-      "key": "sdkVersion",
-      "value": "6.5.1",
+      "key": "merchantCode",
+      "value": "SAPCOM_STAGE_GATEWAY",
       "enabled": true
     }
     ,
     {
-      "key": "merchantCode",
-      "value": "SAPCOM_STAGE_GATEWAY",
+      "key": "sdkVersion",
+      "value": "6.5.1",
       "enabled": true
     }
     
