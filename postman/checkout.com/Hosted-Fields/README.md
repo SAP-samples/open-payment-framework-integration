@@ -111,9 +111,11 @@ You will see a list of the processing channels with their corresponding IDs when
 **7. authentication_inbound_hmac_signature_calculation_secret_export_177**
 
    **Find your webhook configuration under the webhook tab**
+
    ![](images/signature_key_1.png)
 
    **Get your Signature key under this webhook configuration**
+
    ![](images/signature_key_2.png)
 
 
