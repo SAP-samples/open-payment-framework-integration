@@ -39,6 +39,18 @@ Once you have created you checkout.com test account,do the following to set it u
    
    **secret key** is used for server-to-server authentication and is supported across most of our endpoints.
 
+2. **Webhook for notification**
+
+   **There are two ways to create a workflow to start receiving webhook notifications:**
+
+   ***a. can use checkout.com [Workflows API](https://www.checkout.com/docs/developer-resources/webhooks/manage-webhooks#Add_a_new_workflow)*** to create a workflow by specifying both the events you would like to subscribe to and the necessary configurations for the webhook workflow action.
+
+   ***b. can use the [Dashboard](https://dashboard.checkout.com/) create a webhook workflow, you can refer [Create a webhook](https://www.checkout.com/docs/business-operations/use-the-dashboard/developers/webhooks#Create_a_webhook)***
+
+   **Note**:
+   1. When you create webhook via API, remember put the "Authorization" with Secret key value in the header.
+
+   2. The URL address in both ways is fetched from our OPF workbench: Notification URL.
 
 
 ### Preparing the Postman environment_configuration file ###
@@ -80,10 +92,7 @@ The value of this Variable is the **Secret (or Private) Key** which you have don
 
 **5. apiKey**
 
-The value of API key is the public key which you obtained in dashboard of checkout.com. If you haven't completed this step, please go to the dashboard to create the value. In Test environemnt, it starts with **pk_sbox**.
-
-<https://dashboard.checkout.com/>
-
+The value of API key is the public key which you obtained in dashboard of checkout.com. If you haven't completed this step, please go to the [dashboard](https://dashboard.checkout.com/) to create the value. In Test environment, it starts with **pk_sbox**.
 
 Replace the ``apiKey`` variable value in the environment file with this value starting with **pk_sbox**.
 
@@ -99,20 +108,7 @@ To find the ``processing_channel_id`` in the  [Dashboard](https://dashboard.chec
 You will see a list of the processing channels with their corresponding IDs when you access the key details.
 
 
-**7. Webhook for notification**
-
-   **There are two ways to create a workflow to start receiving webhook notifications:**
-
-   ***a. can use checkout.com [Workflows API](https://www.checkout.com/docs/developer-resources/webhooks/manage-webhooks#Add_a_new_workflow)*** to create a workflow by specifying both the events you would like to subscribe to and the necessary configurations for the webhook workflow action.
-
-   ***b. can use the [Dashboard](https://dashboard.checkout.com/) create a webhook workflow, you can refer [Create a webhook](https://www.checkout.com/docs/business-operations/use-the-dashboard/developers/webhooks#Create_a_webhook)***
-   
-**Note**:
-   1. When you create webhook via API, remember put the "Authorization" with Secret key value in the header.
-
-   2. The URL address in both ways is fetched from our OPF workbench: Notification URL
-
-**8. authentication_inbound_hmac_signature_calculation_secret_export_177**
+**7. authentication_inbound_hmac_signature_calculation_secret_export_177**
 
    **Find your webhook configuration under the webhook tab**
    ![](images/signature_key_1.png)
