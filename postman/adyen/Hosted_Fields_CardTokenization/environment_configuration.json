@@ -1,5 +1,5 @@
 {
-  "id": "f3e92300-c168-415f-8b12-955879779969",
+  "id": "16114397-ceb3-42bd-a466-75d23d7cc1d9",
   "name": "Adyen Card Tokenization",
   "values": [
     {
@@ -155,7 +155,7 @@
     ,
     {
       "key": "sdkVersion",
-      "value": "6.5.1",
+      "value": "6.10.0",
       "enabled": true
     }
     
