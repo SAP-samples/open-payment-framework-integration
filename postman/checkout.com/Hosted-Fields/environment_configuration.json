@@ -1,5 +1,5 @@
 {
-  "id": "dd6a8b9f-7de6-48a1-97fe-57b4e38ce48e",
+  "id": "1ff95c7e-e69c-4466-8b19-9a1bd1556c08",
   "name": "checkout.com hosted field",
   "values": [
     {
@@ -130,13 +130,13 @@
     }
     ,
     {
-      "key": "allow3DS2",
+      "key": "attempt_n3d",
       "value": "true",
       "enabled": true
     }
     ,
     {
-      "key": "attempt_n3d",
+      "key": "allow3DS2",
       "value": "true",
       "enabled": true
     }
