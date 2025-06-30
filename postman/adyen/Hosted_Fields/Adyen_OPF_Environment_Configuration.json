@@ -1,5 +1,5 @@
 {
-  "id": "178bcbec-f3ce-484f-8c64-94ad70e9f461",
+  "id": "36931230-3f7d-4817-80fe-7a86a897468d",
   "name": "Adyen Hosted Fields",
   "values": [
     {
@@ -27,6 +27,18 @@
       "value": "174",
       "enabled": true
     },
+    {
+      "key": "authentication_inbound_basic_auth_username_export_217",
+      "value": "(Notification Basic Auth)Adyen Hosted Field_username",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "authentication_inbound_basic_auth_password_export_217",
+      "value": "(Notification Basic Auth)Adyen Hosted Field_password",
+      "enabled": true
+    }
+    ,
     {
       "key": "authentication_outbound_api_key_value_export_240",
       "value": "(Webservice User)Adyen Hosted Field",
