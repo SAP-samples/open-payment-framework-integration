@@ -145,7 +145,5 @@ In summary you should have edited the following variables:
 - **rootUrl** https://github.com/opf-postman/commerce-cloud-open-payment-integration/blob/main/postman/stripe/Payment-Page/Stripe-Hosted_Page_environment_configuration.json#L11
 - **accountGroupId** https://github.com/opf-postman/commerce-cloud-open-payment-integration/blob/main/postman/stripe/Payment-Page/Stripe-Hosted_Page_environment_configuration.json#L21
 - **accountId** https://github.com/opf-postman/commerce-cloud-open-payment-integration/blob/main/postman/stripe/Payment-Page/Stripe-Hosted_Page_environment_configuration.json#L26
-- **authentication_outbound_basic_auth_username_export** https://github.com/opf-postman/commerce-cloud-open-payment-integration/blob/main/postman/stripe/Payment-Page/Stripe-Hosted_Page_environment_configuration.json#L31
-- **authentication_outbound_basic_auth_password_export** https://github.com/opf-postman/commerce-cloud-open-payment-integration/blob/main/postman/stripe/Payment-Page/Stripe-Hosted_Page_environment_configuration.json#L37
 - **publickey** https://github.com/opf-postman/commerce-cloud-open-payment-integration/blob/main/postman/stripe/Payment-Page/Stripe-Hosted_Page_environment_configuration.json#L73
 - **webhookSecret** https://github.com/opf-postman/commerce-cloud-open-payment-integration/blob/main/postman/stripe/Payment-Page/Stripe-Hosted_Page_environment_configuration.json#L85

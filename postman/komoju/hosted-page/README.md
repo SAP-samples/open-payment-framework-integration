@@ -74,12 +74,12 @@ The ``integrationId`` and ``configurationId`` values identify the merchant accou
 
 **4. API Credentials**
 
-The ``publiKey``, ``secretKey`` and ``authentication_outbound_basic_auth_username_export_64`` values can be found from the [Merchant Settings](https://komoju.com/merchant/settings) menu in Komoju dashboard.
+The ``publiKey``, ``secretKey``  values can be found from the [Merchant Settings](https://komoju.com/merchant/settings) menu in Komoju dashboard.
 
 ![](images/komoju-keys.png)
 
 Set the ``publicKey`` with the Publishable key (starting with pk_)
-Set both the ``secretKey`` and ``authentication_outbound_basic_auth_username_export_64`` with the Secret Key (starting with sk_).
+Set both the ``secretKey`` with the Secret Key (starting with sk_).
 
 **5. Webhook Secret**
 
@@ -125,7 +125,6 @@ In summary, you should have edited the following variables:
 #### Komoju Specific
 - ``publicKey``
 - ``secretKey``
-- ``authentication_outbound_basic_auth_username_export_64``
 - ``webhookSecret``
   
 For sandbox testing, all other values can be left as defaults.  

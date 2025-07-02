@@ -1,5 +1,5 @@
 {
-  "id": "a44fc98b-fa2c-4c9f-9cf7-aa053332d5f9",
+  "id": "be32ead8-d971-437b-834e-c5ebe8e04f06",
   "name": "Komoju",
   "values": [
     {
@@ -9,7 +9,7 @@
     },
     {
       "key": "rootUrl",
-      "value": "https:\/\/opf-iss-d0.api.commerce.stage.context.cloud.sap",
+      "value": "https:\/\/opf-iss-d0.opf.commerce.stage.context.cloud.sap",
       "enabled": true
     },
     {
@@ -18,27 +18,15 @@
       "enabled": true
     },
     {
-      "key": "integrationId",
+      "key": "accountGroupId",
       "value": "98",
       "enabled": true
     },
     {
-      "key": "configurationId",
+      "key": "accountId",
       "value": "61",
       "enabled": true
     },
-    {
-      "key": "authentication_outbound_basic_auth_username_export_64",
-      "value": "KOMOJU_username",
-      "enabled": true
-    }
-    ,
-    {
-      "key": "authentication_outbound_basic_auth_password_export_64",
-      "value": "KOMOJU_password",
-      "enabled": true
-    }
-    ,
     {
       "key": "capturePattern",
       "value": "AUTO_CAPTURE",
@@ -65,13 +53,13 @@
     ,
     {
       "key": "webhookSecret",
-      "value": "",
+      "value": "4********************************47f",
       "enabled": true
     }
     ,
     {
       "key": "secretKey",
-      "value": "",
+      "value": "9********************************10a",
       "enabled": true
     }
     ,
