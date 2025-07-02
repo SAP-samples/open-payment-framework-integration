@@ -1,5 +1,5 @@
 {
-  "id": "58ee4e31-dce0-452d-9841-1f819fdf73bf",
+  "id": "8a51fea8-e4ca-4d35-8f58-5b6b56d435ab",
   "name": "Stripe Payment Elements",
   "values": [
     {
@@ -27,18 +27,6 @@
       "value": "63",
       "enabled": true
     },
-    {
-      "key": "authentication_outbound_basic_auth_username_export_67",
-      "value": "Stripe API Key (SAP OPF)_username",
-      "enabled": true
-    }
-    ,
-    {
-      "key": "authentication_outbound_basic_auth_password_export_67",
-      "value": "Stripe API Key (SAP OPF)_password",
-      "enabled": true
-    }
-    ,
     {
       "key": "capturePattern",
       "value": "CAPTURE_PER_SHIPMENT",
@@ -102,6 +90,12 @@
     {
       "key": "setupFutureUsage",
       "value": "off_session",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "secretKey",
+      "value": "4********************************182",
       "enabled": true
     }
     
