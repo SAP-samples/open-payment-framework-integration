@@ -1,5 +1,5 @@
 {
-  "id": "62e5e7ba-dc9d-414b-80ee-154ef7dcbe21",
+  "id": "1c0baed2-fac6-4f36-8630-c677c5f65a53",
   "name": "Stripe Checkout",
   "values": [
     {
@@ -9,7 +9,7 @@
     },
     {
       "key": "rootUrl",
-      "value": "https:\/\/opf-iss-d0.api.commerce.stage.context.cloud.sap",
+      "value": "https:\/\/opf-iss-d0.opf.commerce.stage.context.cloud.sap",
       "enabled": true
     },
     {
@@ -18,27 +18,15 @@
       "enabled": true
     },
     {
-      "key": "integrationId",
+      "key": "accountGroupId",
       "value": "21",
       "enabled": true
     },
     {
-      "key": "configurationId",
+      "key": "accountId",
       "value": "17",
       "enabled": true
     },
-    {
-      "key": "authentication_outbound_basic_auth_username_export_30",
-      "value": "Stripe Cotton IT_username",
-      "enabled": true
-    }
-    ,
-    {
-      "key": "authentication_outbound_basic_auth_password_export_30",
-      "value": "Stripe Cotton IT_password",
-      "enabled": true
-    }
-    ,
     {
       "key": "capturePattern",
       "value": "CAPTURE_PER_SHIPMENT",
@@ -70,12 +58,6 @@
     }
     ,
     {
-      "key": "publickey",
-      "value": "",
-      "enabled": true
-    }
-    ,
-    {
       "key": "payButtonLabel",
       "value": "Place Order",
       "enabled": true
@@ -83,7 +65,19 @@
     ,
     {
       "key": "webhookSecret",
-      "value": "",
+      "value": "8********************************4c1",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "secretKey",
+      "value": "8********************************f26",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "publickey",
+      "value": "pk_test_DtwiHhs63jJLGiNKq45Q2yet00FpCWLASQ",
       "enabled": true
     }
     

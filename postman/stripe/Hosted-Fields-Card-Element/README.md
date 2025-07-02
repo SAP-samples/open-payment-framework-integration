@@ -59,17 +59,14 @@ The ``integrationId`` and ``configurationId`` values identify the payment integr
 * ``integrationId`` maps to ``accountGroupId`` in Postman
 * ``configurationId`` maps to ``accountId`` in Postman
 
-**4. Private Key**
+**4. Secret Key**
 The Secret (or Private) Key can be obtained here in the Stripe dashboard. In test it starts with **sk_test**.
 
 <https://dashboard.stripe.com/test/apikeys>
 
 ![](images/stripe-elements-get-secret-key.png)
 
-* Set private key as **value** for environment variable keys starting with ``authentication_outbound_basic_auth_username``.
-* Set password as **empty string** ``""`` for environment keys starting with : ``authentication_outbound_basic_auth_password``.
-
-There are 2 occurrences of both in the environment file.
+Replace the ``secretKey`` variable value in the environment file with this value starting with **sk_test**.
 
 **5. Public Key**
 
@@ -156,6 +153,4 @@ In summary, you should have edited the following variables:
 #### Stripe Specific
 - ``publicKey``
 - ``secretKey``
-- ``authentication_outbound_basic_auth_username_export_67``
-- ``authentication_outbound_basic_auth_password_export_67``
 - ``webhookSecret``

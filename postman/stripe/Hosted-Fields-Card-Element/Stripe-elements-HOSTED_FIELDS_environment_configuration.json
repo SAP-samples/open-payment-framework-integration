@@ -1,5 +1,5 @@
 {
-  "id": "f46e6e7c-6cb7-43ee-82ac-104812d87c91",
+  "id": "3e02aa30-8286-4c02-bcaa-a0987ed73d87",
   "name": "Stripe Card Elements",
   "values": [
     {
@@ -27,18 +27,6 @@
       "value": "20",
       "enabled": true
     },
-    {
-      "key": "authentication_outbound_basic_auth_username_export_67",
-      "value": "Stripe API Key (SAP OPF)_username",
-      "enabled": true
-    }
-    ,
-    {
-      "key": "authentication_outbound_basic_auth_password_export_67",
-      "value": "Stripe API Key (SAP OPF)_password",
-      "enabled": true
-    }
-    ,
     {
       "key": "capturePattern",
       "value": "CAPTURE_PER_SHIPMENT",
@@ -90,6 +78,12 @@
     {
       "key": "publickey",
       "value": "pk_test_DtwiHhs63jJLGiNKq45Q2yet00FpCWLASQ",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "secretKey",
+      "value": "c********************************a62",
       "enabled": true
     }
     
