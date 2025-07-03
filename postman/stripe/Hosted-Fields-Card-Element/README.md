@@ -1,3 +1,6 @@
+## Implementation Note ##
+Generally it is recommended to use the [Stripe Payment Element](https://github.com/SAP-samples/open-payment-framework-integration/tree/main/postman/stripe/Hosted-Fields) solution over Card Element as it supports wider use cases such as 3DS and APMs.
+
 ## Introduction ##
 The Postman Collection enables a [Stripe Card Element](https://docs.stripe.com/js/element/other_element?type=card) integration for payment processing through open payment framework(OPF). 
 
