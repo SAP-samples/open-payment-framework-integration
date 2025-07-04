@@ -20,7 +20,9 @@ d) Prepare the [Postman Environment](https://github.com/SAP-samples/open-payment
 
 e) Payment methods supported in OPF.
 
-f) Validate the configuration in OPF workbench.
+f) The language support in the Drop-in UI.
+
+g) Validate the configuration in OPF workbench.
 
 
 ## Creating an Adyen Account ##
@@ -136,11 +138,11 @@ Go to the Adyen Dashboard to set up event notifications using the URL for Notifi
 
 | Name                                                                  | Description                                                                                                                                                                                                                                                                                                                                                                                                              
 |-----------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| token                                                                 | Get your access token by [creating an external app](https://help.sap.com/docs/OPEN_PAYMENT_FRAMEWORK/8ccca5bb539a49258e924b467ee4e1c2/d927d21974fe4b368e063f72733bf0fe.html) and [making authorized API calls](https://help.sap.com/docs/OPEN_PAYMENT_FRAMEWORK/8ccca5bb539a49258e924b467ee4e1c2/40c792e66e2942209dc853a43533d78d.html). **IMPORTANT**: Ensure the value is prefixed with Bearer. e.g. Bearer {{token}}. |                  
+| token                                                                 | Get your access token by [creating an external app](https://help.sap.com/docs/OPEN_PAYMENT_FRAMEWORK/8ccca5bb539a49258e924b467ee4e1c2/d927d21974fe4b368e063f72733bf0fe.html) and [making authorized API calls](https://help.sap.com/docs/OPEN_PAYMENT_FRAMEWORK/8ccca5bb539a49258e924b467ee4e1c2/40c792e66e2942209dc853a43533d78d.html). **IMPORTANT**: Ensure the value is prefixed with Bearer. e.g. Bearer {{token}}. |
 | rootURL                                                               | The ``rootUrl`` is the ``BASE URL`` of your OPF tenant.  E.g. if your workbench/OPF cockpit url was this … https://opf-iss-d0.uis.commerce.stage.context.cloud.sap/opf-workbench. The base Url would be: https://opf-iss-d0.uis.commerce.stage.context.cloud.sap.                                                                                                                                                        |
 | service                                                               | The ``service`` is the name of your OPF service in specific environment. The value is ``opf`` by default.                                                                                                                                                                                                                                                                                                                |
 | accountGroupId                                                        | Refers to the ``integrationId`` value that identifies the payment integration, which can be found in the top left of your configuration details page.                                                                                                                                                                                                                                                                    |
-| accountId                                                             | Refers to the ``configurationId`` value that identifies the payment configuration, which can be found in the top left of your configuration details page.                                                                                                                                                                                                                                                                |                                                                        
+| accountId                                                             | Refers to the ``configurationId`` value that identifies the payment configuration, which can be found in the top left of your configuration details page.                                                                                                                                                                                                                                                                | 
 | authentication_inbound_basic_auth_username                            | The username for notification basic authentication. You can self-define the value when **Adding a Standard Notification for Your Merchant Account** in the Adyen Dashboard. Go to **Developers** -> **Webhooks** to get the value.                                                                                                                                                                                       |
 | authentication_inbound_basic_auth_password                            | The password for notification basic authentication. You can self-define the value when **Adding a Standard Notification for Your Merchant Account** in the Adyen Dashboard. Go to **Developers** -> **Webhooks** to get the value.                                                                                                                                                                                       |
 | capturePattern                                                        | ``CAPTURE_PER_SHIPMENT``                                                                                                                                                                                                                                                                                                                                                                                                 |
@@ -158,7 +160,7 @@ Go to the Adyen Dashboard to set up event notifications using the URL for Notifi
 | sdkVersion                                                            | ``6.5.1 this is the version of Web Drop-in``                                                                                                                                                                                                                                                                                                                                                                             |
 | nativeThreeDS                                                         | ``preferred``                                                                                                                                                                                                                                                                                                                                                                                                            |
 | notificationHmacKey                                                   | The Notification HMAC, which is used for Hosted Field notification signature. Go to **Developers** ->  **Webhooks** to get the value.                                                                                                                                                                                                                                                                                    |
-| applePay**                                                            | These parameters are for the OPF Quick Buy function. If you prefer to use the Apple payment method within the Adyen Web Drop-in, please leave these Quick Buy items unchanged.                                                                                                                                                                                                                                           |
+| applePay**                                                            | These parameters are for the OPF Quick Buy function. If you prefer to use the Apple payment method within the Adyen Web Drop-in, please leave these items unchanged and ensure they are unselected in your Postman collection.                                                                                                                                                                                           |
 | enableRecurring                                                       | ``false``  the payment details will not be stored for recurring payments where the shopper is not present, such as subscription or automatic top-up payments                                                                                                                                                                                                                                                             |
       
    4. Save and run the Postman collection.
@@ -174,12 +176,10 @@ a) The list of the default support Card types in OPF
 * Mastercard
 * Switch
 * Visa
+* JCB
+* CHINA UNION PAY
 
-For other card types ,you need go to OPF workbench ,click the show Details button -> click the "Edit" in Notification
-Selection -> Authorization Notification -> edit "Payment Method" field :
-![](images/card_type_get_mapped.png)
-then map the new card type to "CREDIT_CARD"
-![](images/maps_to_CREDIT_CARD.png)
+For other card types ,you need contact SAP OPF support team to add the new Card type.
 
 b) Alternative Payment Method
 
@@ -196,6 +196,18 @@ Step 3:
 Check if the APM is mapped rightly in Configuration Components (Notification)
 ![](images/apm_get_mapped_in_opf.png)
 
+## The language support in the Drop-in UI
+Default support languages are:
+
+* en-US
+* zh-CN
+* ja-JP
+* de-DE
+
+If the required language is not in the default list, you need to:
+1. Check if the required language is available in the [Adyen Document](https://github.com/Adyen/adyen-web/tree/main/packages/server/translations).
+2. Add the required language to the workbench of OPF:
+   Go to Configuration Details -> Authorization -> Payment Form Configuration Scripts, then add it into the languageMap.
 
 ## Validating the Configuration in OPF Workbench
 
