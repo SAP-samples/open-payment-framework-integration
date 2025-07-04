@@ -188,9 +188,10 @@ Default support languages are:
 * ja-JP
 * de-DE
 
-More languages you need: 
-   1. Check the required language is in the [Adyen Document](https://github.com/Adyen/adyen-web/tree/main/packages/server/translations), 
-   2. Contact SAP OPF support team.
+If the required language is not in the default list, you need to:
+1. Check if the required language is available in the [Adyen Document](https://github.com/Adyen/adyen-web/tree/main/packages/server/translations).
+2. Add the required language to the workbench of OPF:
+   Go to Configuration Details -> Authorization -> Payment Form Configuration Scripts, then add it into the languageMap.
 
 
 ## Validating the Configuration in OPF Workbench
