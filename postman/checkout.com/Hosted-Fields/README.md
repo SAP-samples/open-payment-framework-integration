@@ -92,12 +92,27 @@ The value of this Variable is the **Secret (or Private) Key** which you have don
 
 **5. apiKey**
 
-The value of API key is the public key which you obtained in dashboard of checkout.com. If you haven't completed this step, please go to the [dashboard](https://dashboard.checkout.com/) to create the value. In Test environment, it starts with **pk_sbox**.
+The value of API key is the ``public key`` which you obtained in dashboard of checkout.com. If you haven't completed this step, please go to the [dashboard](https://dashboard.checkout.com/) to create the value. In Test environment, it starts with **pk_sbox**.
 
 Replace the ``apiKey`` variable value in the environment file with this value starting with **pk_sbox**.
 
+**6. authentication_outbound_api_key_value_export_362**
 
-**6. processing_channel_id**
+The value of authentication_outbound_api_key_value_export_36 is the ``public key``, which is used for Google Pay. (This is the Quick Buy feature in OPF.)
+
+**Note**:
+You must be signed in as a Google Developer to do this. More information in [Checkout.com](https://www.checkout.com/docs/payments/add-payment-methods/google-pay#Step_1:_Integrate_with_Google_Pay) 
+
+**7. Variables for applePay**
+
+The variables starting with ``applePay`` are also for the Quick Buy feature in OPF. By default, you can keep these items unchanged and ensure they are unselected in your Postman collection.
+
+**Note**:
+If you want to enable this function, you must have an Apple Developer account. More information in [Checkout.com](https://www.checkout.com/docs/payments/add-payment-methods/apple-pay)
+
+
+
+**8. processing_channel_id**
 This parameter is requested during payment flow
 To find the ``processing_channel_id`` in the  [Dashboard](https://dashboard.checkout.com/):
 1. Login to the Dashboard.
@@ -108,7 +123,7 @@ To find the ``processing_channel_id`` in the  [Dashboard](https://dashboard.chec
 You will see a list of the processing channels with their corresponding IDs when you access the key details.
 
 
-**7. authentication_inbound_hmac_signature_calculation_secret_export_177**
+**9. authentication_inbound_hmac_signature_calculation_secret_export_177**
 
    **Find your webhook configuration under the webhook tab**
 
