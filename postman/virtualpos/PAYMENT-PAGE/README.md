@@ -32,6 +32,7 @@ After getting the account,You can sign up for a free VirtualPOS Demo Account at 
 Create a new integration in the OPF workbench and set the Merchant ID. For reference, see [Creating Payment Integration](https://help.sap.com/docs/OPEN_PAYMENT_FRAMEWORK/3580ff1b17144b8780c055bbb7c2bed3/20a64f954df1425391757759011e7e6b.html).
 
 **Note**
+
 a) You can skip step 4 for the notification, as we have included the Notification URL in the Authorization configuration.
 
 b) In step 6, you can specify a unique Merchant ID name.
