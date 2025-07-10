@@ -1,0 +1,112 @@
+{
+  "id": "4f92ffd8-a476-4294-8a59-cbd924a0f8bb",
+  "name": "Airwallex",
+  "values": [
+    {
+      "key": "token",
+      "value": "",
+      "enabled": true
+    },
+    {
+      "key": "rootUrl",
+      "value": "https:\/\/opf-iss-d0.opf.commerce.stage.context.cloud.sap",
+      "enabled": true
+    },
+    {
+      "key": "service",
+      "value": "opf",
+      "enabled": true
+    },
+    {
+      "key": "accountGroupId",
+      "value": "31",
+      "enabled": true
+    },
+    {
+      "key": "accountId",
+      "value": "24",
+      "enabled": true
+    },
+    {
+      "key": "capturePattern",
+      "value": "CAPTURE_PER_SHIPMENT",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "supportOverCapture",
+      "value": "false",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "enableOverCapture",
+      "value": "false",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "authorizationTimeoutDays",
+      "value": "7",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "statementDescriptor",
+      "value": "SAP OPF Order",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "skipRiskProcessing",
+      "value": "false",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "env",
+      "value": "demo",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "clientId",
+      "value": "S7Gc3rhMT-28TwqK-E2Rdw",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "apiKey",
+      "value": "6********************************bdd",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "webhookSecret",
+      "value": "a********************************07b",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "apiDomain",
+      "value": "api-demo.airwallex.com",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "payButtonLabel",
+      "value": "Continue to Payment",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "autoCapture",
+      "value": "false",
+      "enabled": true
+    }
+    
+  ],
+  "_postman_variable_scope": "environment",
+  "_postman_exported_at": "",
+  "_postman_exported_using": "Postman\/7.35.0"
+}
