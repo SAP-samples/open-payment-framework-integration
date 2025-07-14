@@ -97,6 +97,16 @@ Brief description of the payment
 The ``social_id`` is a required Body parameter for creating a payment object in VirtualPOS, Follow this [SAP OPF document](https://help.sap.com/docs/OPEN_PAYMENT_FRAMEWORK/8ccca5bb539a49258e924b467ee4e1c2/f49f89c6348742f997858cca1dcf9aa1.html) 
 to configure a CMS component to seamlessly pass custom payment data (e.g., social_id) to VirtualPOS during Web Checkout, leveraging Angular dependency injection and TypeScript inheritance to extend the existing open payment framework payment infrastructure without disrupting its functionality.
 
+**Note**
+The mapped valued for ``social_id`` under OPF workbench is based on what is configured in the above step.
+
+You can update the mapped value in your OPF workbench -> Configuration Details -> Session Initialization Request -> Request Mapping:
+
+![](images/mapped_social_id.png)
+
+It should match the name you have configured for the custom Cart Data, as per the  [SAP OPF document](https://help.sap.com/docs/OPEN_PAYMENT_FRAMEWORK/8ccca5bb539a49258e924b467ee4e1c2/f49f89c6348742f997858cca1dcf9aa1.html):
+
+![](images/custom_cart_data.png)
 
 
 ### Allowlist
