@@ -1,5 +1,5 @@
 {
-  "id": "90f08b1a-cb69-4a0c-ad74-66f3aab03600",
+  "id": "b90041e9-c98a-4929-a1a0-bc2c841bd671",
   "name": "VirtualPOS",
   "values": [
     {
@@ -78,6 +78,12 @@
     {
       "key": "paymentChannel",
       "value": "Web",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "paymentDescription",
+      "value": "SAP OPF",
       "enabled": true
     }
     
