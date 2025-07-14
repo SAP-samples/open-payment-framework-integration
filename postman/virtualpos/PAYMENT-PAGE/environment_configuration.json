@@ -1,6 +1,6 @@
 {
-  "id": "4f92ffd8-a476-4294-8a59-cbd924a0f8bb",
-  "name": "Airwallex",
+  "id": "90f08b1a-cb69-4a0c-ad74-66f3aab03600",
+  "name": "VirtualPOS",
   "values": [
     {
       "key": "token",
@@ -19,17 +19,17 @@
     },
     {
       "key": "accountGroupId",
-      "value": "31",
+      "value": "1555",
       "enabled": true
     },
     {
       "key": "accountId",
-      "value": "24",
+      "value": "894",
       "enabled": true
     },
     {
       "key": "capturePattern",
-      "value": "CAPTURE_PER_SHIPMENT",
+      "value": "AUTO_CAPTURE",
       "enabled": true
     }
     ,
@@ -52,56 +52,32 @@
     }
     ,
     {
-      "key": "statementDescriptor",
-      "value": "SAP OPF Order",
+      "key": "apiEndpoint",
+      "value": "api.virtualpos-sandbox.com",
       "enabled": true
     }
     ,
     {
-      "key": "skipRiskProcessing",
-      "value": "false",
-      "enabled": true
-    }
-    ,
-    {
-      "key": "env",
-      "value": "demo",
-      "enabled": true
-    }
-    ,
-    {
-      "key": "clientId",
-      "value": "S7Gc3rhMT-28TwqK-E2Rdw",
+      "key": "apiVersion",
+      "value": "v3",
       "enabled": true
     }
     ,
     {
       "key": "apiKey",
-      "value": "6********************************bdd",
+      "value": "34328c-91bf56-5c7e4e-dadc12-92557a",
       "enabled": true
     }
     ,
     {
-      "key": "webhookSecret",
-      "value": "a********************************07b",
+      "key": "apiSecretKey",
+      "value": "4********************************e06",
       "enabled": true
     }
     ,
     {
-      "key": "apiDomain",
-      "value": "api-demo.airwallex.com",
-      "enabled": true
-    }
-    ,
-    {
-      "key": "payButtonLabel",
-      "value": "Continue to Payment",
-      "enabled": true
-    }
-    ,
-    {
-      "key": "autoCapture",
-      "value": "false",
+      "key": "paymentChannel",
+      "value": "Web",
       "enabled": true
     }
     

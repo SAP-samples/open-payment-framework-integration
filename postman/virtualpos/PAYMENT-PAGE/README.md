@@ -19,6 +19,7 @@ b) Create a payment integration in OPF workbench.
 
 c) Prepare the [Postman Environment](environment_configuration.json) file so the collection can be imported with all your OPF Tenant and VirtualPOS Demo Account unique values. 
 
+d) Configuring Custom Cart Data for VirtualPOS Integration.
 
 ### Create your VirtualPOS Account
 
@@ -81,6 +82,16 @@ Then ,you can find both keys:
 
 * ``API KEY`` maps to ``apiKey`` in postman
 * ``SECRET KEY`` maps to ``apiSecretKey`` in postman
+
+**5. paymentChannel**
+
+Name of the payment channel used by your business: Portal, App, etc.
+
+
+### Configuring Custom Cart Data for VirtualPOS Integration
+
+The ``social_id`` is the required Body parameter for Creating a payment object in VirtualPOS, Following this [SAP OPF document](https://help.sap.com/docs/OPEN_PAYMENT_FRAMEWORK/8ccca5bb539a49258e924b467ee4e1c2/f49f89c6348742f997858cca1dcf9aa1.html) 
+to learn how to configure a CMS component to seamlessly pass custom payment data (e.g., social_id) to VirtualPOS during Web Checkout, leveraging Angular dependency injection and TypeScript inheritance to extend the existing open payment framework payment infrastructure without disrupting its functionality.
 
 
 
