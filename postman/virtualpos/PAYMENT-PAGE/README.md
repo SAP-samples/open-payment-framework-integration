@@ -6,11 +6,11 @@ The integration supports:
 
 * Authorization with auto capture
 
-**note**
+**Note**
 
-* VirtualPOS doesn't support refund via API, only administratively via email
+* VirtualPOS doesn't support refunds through the API; refunds can only be processed administratively by sending an email.
 
-* Phone number is a required body parameter for creating a VirtualPOS payment object. Make sure it is a mandatory item in your billing address.
+* The phone number is a required body parameter when creating a VirtualPOS payment object. Therefore, ensure it is a mandatory item in your billing address.
 
 
 
@@ -106,7 +106,7 @@ to configure a CMS component to seamlessly pass custom payment data (e.g., socia
 **Note**
 The mapped valued for ``social_id`` under OPF workbench is based on what is configured in the above step.
 
-You can update the mapped value in your OPF workbench -> Configuration Details -> Session Initialization Request -> Request Mapping:
+You can update the mapped value in your OPF workbench -> Configuration Details -> Authorization -> Session Initialization Request -> Request Mapping:
 
 ![](images/mapped_social_id.png)
 
