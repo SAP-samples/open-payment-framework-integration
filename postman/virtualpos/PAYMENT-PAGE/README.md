@@ -6,6 +6,12 @@ The integration supports:
 
 * Authorization with auto capture
 
+**note**
+
+* VirtualPOS doesn't support refund via API, only administratively via email
+
+* Phone number is a required body parameter for creating a VirtualPOS payment object. Make sure it is a mandatory item in your billing address.
+
 
 
 ## Setup Instructions
@@ -104,7 +110,7 @@ You can update the mapped value in your OPF workbench -> Configuration Details -
 
 ![](images/mapped_social_id.png)
 
-It should match the name you have configured for the custom Cart Data, as per the  [SAP OPF document](https://help.sap.com/docs/OPEN_PAYMENT_FRAMEWORK/8ccca5bb539a49258e924b467ee4e1c2/f49f89c6348742f997858cca1dcf9aa1.html):
+The Script input should match the key value you have configured under ``additionalData`` for the custom Cart Data, as per the  [SAP OPF document](https://help.sap.com/docs/OPEN_PAYMENT_FRAMEWORK/8ccca5bb539a49258e924b467ee4e1c2/f49f89c6348742f997858cca1dcf9aa1.html):
 
 ![](images/custom_cart_data.png)
 
