@@ -22,15 +22,19 @@ In summary: to import the [Postman Collection](mapping_configuration.json) this 
 
 a) Create your Stripe test account.
 
-b) Create a Stripe payment integration in OPF workbench.
+b) Install SAP Commerce Cloud OPF app in stripe dashboard.
 
-c) Set up your Stripe test account to work with OPF.
+c) Create a Stripe payment integration in OPF workbench.
 
-d) Prepare the [Postman Environment](environment_configuration.json) file so the collection can be imported with all your OPF Tenant and Stripe Test Account unique values. 
+d) Set up your Stripe test account to work with OPF.
+
+e) Prepare the [Postman Environment](environment_configuration.json) file so the collection can be imported with all your OPF Tenant and Stripe Test Account unique values. 
 
 ### Creating a Stripe Account ###
 You can sign up for a free Stripe test account at https://dashboard.stripe.com/register.
 
+### Install SAP Commerce Cloud OPF app in stripe dashboard.
+Log in to the Stripe dashboard, then search for "SAP Commerce Cloud OPF" in the app workspace, install the SAP Commerce Cloud OPF app, and on the app setting page, click "View API keys" button to retrieve the Publishable key and Restricted key, we will use thoes keys in the next step.
 
 ### Creating a Stripe Payment Integration ###
 Create a Stripe payment integration in the OPF workbench. For reference, see [Creating Payment Integration
@@ -66,23 +70,20 @@ The ``integrationId`` and ``configurationId`` values identify the payment integr
 * ``integrationId`` maps to ``accountGroupId`` in Postman
 * ``configurationId`` maps to ``accountId`` in Postman
 
-**4. Secret Key**
-The Secret (or Private) Key can be obtained here in the Stripe dashboard. In test it starts with **sk_test**.
-
-<https://dashboard.stripe.com/test/apikeys>
-
-![](images/stripe-elements-get-secret-key.png)
-
-Replace the ``secretKey`` variable value in the environment file with this value starting with **sk_test**.
+**4. Restricted Key**
+The Restricted key can be obtained through the SAP Commerce Cloud OPF app of Stripe dashboard we mentioned above. In test it starts with **rk_test**.
 
 
-**5. Public Key**
+![](images/restricted-key-screenshot-rk.png)
 
-The public (or Publishable) key can be obtained here in the Stripe dashboard. In Test it starts with **pk_test**
+Replace the ``secretKey`` variable value in the environment file with this value starting with **rk_test**.
 
-<https://dashboard.stripe.com/test/apikeys>
 
-![](images/stripe-elements-get-public-key.png)
+**5. Publishable Key**
+
+Publishable key can alse be obtained hthrough the SAP Commerce Cloud OPF app. In Test it starts with **pk_test**
+
+![](images/restricted-key-screenshot-pk.png)
 
 Replace the ``publickey`` variable value in the environment file with this value starting with **pk_test**.
 
