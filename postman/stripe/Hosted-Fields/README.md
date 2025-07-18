@@ -70,9 +70,8 @@ The ``integrationId`` and ``configurationId`` values identify the payment integr
 * ``integrationId`` maps to ``accountGroupId`` in Postman
 * ``configurationId`` maps to ``accountId`` in Postman
 
-**4. Restricted Key**
-The Restricted key can be obtained through the SAP Commerce Cloud OPF app of Stripe dashboard we mentioned above. In test it starts with **rk_test**.
-
+**4. Secret Key**
+The secret key (or restricted key in the stripe app) can be obtained through the SAP Commerce Cloud OPF app of Stripe dashboard we mentioned above. In test it starts with **rk_test**.
 
 ![](images/restricted-key-screenshot-rk.png)
 
