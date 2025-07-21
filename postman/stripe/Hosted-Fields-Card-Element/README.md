@@ -67,7 +67,7 @@ The ``integrationId`` and ``configurationId`` values identify the payment integr
 * ``configurationId`` maps to ``accountId`` in Postman
 
 **4. Secret Key**
-The secret key (or restricted key in the stripe app) can be obtained through the SAP Open Payment Framework app of Stripe dashboard we mentioned above. In test it starts with **rk_test**.
+The secret key (or restricted key in the stripe app) can be obtained through the SAP Open Payment Framework app of Stripe dashboard we mentioned above. In test environment, it starts with **rk_test**.
 
 ![](images/stripe-api-secret-key.png)
 
@@ -75,7 +75,7 @@ Replace the ``secretKey`` variable value in the environment file with this value
 
 **5. Publishable Key**
 
-Publishable key can alse be obtained through the SAP Open Payment Framework app. In Test it starts with **pk_test**
+Publishable key can alse be obtained through the SAP Open Payment Framework app. In Test environment, it starts with **pk_test**.
 
 ![](images/stripe-api-public-key.png)
 
