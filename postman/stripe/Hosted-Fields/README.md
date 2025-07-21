@@ -33,7 +33,7 @@ e) Prepare the [Postman Environment](environment_configuration.json) file so the
 ### Creating a Stripe Account ###
 You can sign up for a free Stripe test account at https://dashboard.stripe.com/register.
 
-### Install SAP Open Payment Framework App in Stripe Dashboard. ###
+### Install SAP Open Payment Framework App in Stripe Dashboard ###
 Log in to the Stripe dashboard, then search for "SAP Open Payment Framework" in the app workspace, install the SAP Open Payment Framework app, and on the app setting page, click "View API keys" button to retrieve the Publishable key and Restricted key, we will use those keys in the next step.
 
 ### Creating a Stripe Payment Integration ###
@@ -78,9 +78,9 @@ The secret key (or restricted key in the stripe app) can be obtained through the
 Replace the ``secretKey`` variable value in the environment file with this value starting with **rk_test**.
 
 
-**5. Publishable Key**
+**5. Public Key**
 
-Publishable key can alse be obtained through the SAP Open Payment Framework app. In Test environment, it starts with **pk_test**.
+The Public key ( or Publishable key) can alse be obtained through the SAP Open Payment Framework app. In Test environment, it starts with **pk_test**.
 
 ![](images/stripe-api-public-key.png)
 
