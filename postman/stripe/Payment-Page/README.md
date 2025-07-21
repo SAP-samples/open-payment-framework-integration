@@ -69,7 +69,7 @@ Replace the ``secretKey`` variable value in the environment file with this value
 
 **5. Publishable Key**
 
-Publishable key can alse be obtained hthrough the SAP Open Payment Framework app. In Test it starts with **pk_test**
+Publishable key can alse be obtained through the SAP Open Payment Framework app. In Test it starts with **pk_test**
 
 ![](images/stripe-api-public-key.png)
 
