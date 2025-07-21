@@ -42,7 +42,7 @@ Create a new integration in the OPF workbench and set the Merchant ID. For refer
 
 a) You can skip step 4 for the notification, as we have included the Notification URL in the Authorization configuration.
 
-b) In step 6, you can specify a unique Merchant ID name.
+b) In step 6, you can specify a unique Merchant ID name. And select ``Immediate Capture`` as the capture method.
 
 
 ### Preparing the Postman environment_configuration file
