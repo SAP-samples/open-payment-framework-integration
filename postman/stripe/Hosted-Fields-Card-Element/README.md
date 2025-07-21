@@ -17,7 +17,7 @@ In summary: to import the [Stripe Elements Postman Collection](Stripe-elements-H
 
 a) Create your Stripe test account.
 
-b) Install SAP Open Payment Framework app in stripe dashboard.
+b) Install SAP Open Payment Framework app in Stripe dashboard.
 
 c) Create a Stripe payment integration in OPF workbench.
 
@@ -28,8 +28,8 @@ e) Prepare the [Postman Environment](Stripe-elements-HOSTED_FIELDS_environment_c
 ## Creating a Stripe Account ##
 You can sign up for a free Stripe test account at https://dashboard.stripe.com/register.
 
-### Install SAP Open Payment Framework app in stripe dashboard.
-Log in to the Stripe dashboard, then search for "SAP Open Payment Framework" in the app workspace, install the SAP Open Payment Framework app, and on the app setting page, click "View API keys" button to retrieve the Publishable key and Restricted key, we will use thoes keys in the next step.
+## Install SAP Open Payment Framework App in Stripe Dashboard. ##
+Log in to the Stripe dashboard, then search for "SAP Open Payment Framework" in the app workspace, install the SAP Open Payment Framework app, and on the app setting page, click "View API keys" button to retrieve the Publishable key and Restricted key, we will use those keys in the next step.
 
 ## Creating a Stripe Payment Integration
 Create a Stripe payment integration in the OPF Workbench. For reference, see [Creating Payment Integration
