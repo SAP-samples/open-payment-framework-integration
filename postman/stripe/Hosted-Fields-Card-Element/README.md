@@ -17,7 +17,7 @@ In summary: to import the [Stripe Elements Postman Collection](Stripe-elements-H
 
 a) Create your Stripe test account.
 
-b) Install SAP Commerce Cloud OPF app in stripe dashboard.
+b) Install SAP Open Payment Framework app in stripe dashboard.
 
 c) Create a Stripe payment integration in OPF workbench.
 
@@ -28,8 +28,8 @@ e) Prepare the [Postman Environment](Stripe-elements-HOSTED_FIELDS_environment_c
 ## Creating a Stripe Account ##
 You can sign up for a free Stripe test account at https://dashboard.stripe.com/register.
 
-### Install SAP Commerce Cloud OPF app in stripe dashboard.
-Log in to the Stripe dashboard, then search for "SAP Commerce Cloud OPF" in the app workspace, install the SAP Commerce Cloud OPF app, and on the app setting page, click "View API keys" button to retrieve the Publishable key and Restricted key, we will use thoes keys in the next step.
+### Install SAP Open Payment Framework app in stripe dashboard.
+Log in to the Stripe dashboard, then search for "SAP Open Payment Framework" in the app workspace, install the SAP Open Payment Framework app, and on the app setting page, click "View API keys" button to retrieve the Publishable key and Restricted key, we will use thoes keys in the next step.
 
 ## Creating a Stripe Payment Integration
 Create a Stripe payment integration in the OPF Workbench. For reference, see [Creating Payment Integration
@@ -69,7 +69,7 @@ The ``integrationId`` and ``configurationId`` values identify the payment integr
 **4. Secret Key**
 The secret key (or restricted key in the stripe app) can be obtained through the SAP Commerce Cloud OPF app of Stripe dashboard we mentioned above. In test it starts with **rk_test**.
 
-![](images/restricted-key-screenshot-rk.png)
+![](images/stripe-api-secret-key.png)
 
 Replace the ``secretKey`` variable value in the environment file with this value starting with **rk_test**.
 
@@ -77,7 +77,7 @@ Replace the ``secretKey`` variable value in the environment file with this value
 
 Publishable key can alse be obtained hthrough the SAP Commerce Cloud OPF app. In Test it starts with **pk_test**
 
-![](images/restricted-key-screenshot-pk.png)
+![](images/stripe-api-public-key.png)
 
 Replace the ``publickey`` variable value in the environment file with this value starting with **pk_test**.
 
