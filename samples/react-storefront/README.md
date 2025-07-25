@@ -27,8 +27,6 @@ Replace the required `BASE_URL` of CCV2 and OPF that are configured to work toge
 
 To learn more about `opf-js-sdk`, take a look at the following resources:
 
-Setup library using the below SAP Note and documentation:
+Setup library using the below SAP Help Portal documentation:
 
-- [3548464](https://me.sap.com/notes/3548464) - Open Payment Framework: JavaScript SDK for Custom Storefronts
-
-- [Integrate opf-js-sdk Documentation](https://help.sap.com/docs/OPEN_PAYMENT_FRAMEWORK/72ae7fad40264d228a08dc3e9e57ebfb/9335430ccf5846d58fab7b49e57fa56b.html?locale=en-US&state=DRAFT&version=DEV) - learn about steps to integrate.
+- [Integrate opf-js-sdk Documentation](https://help.sap.com/docs/OPEN_PAYMENT_FRAMEWORK/8ccca5bb539a49258e924b467ee4e1c2/86d7081f42cc4e62abfa031cd100ecde.html) - learn about steps to integrate.
