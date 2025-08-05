@@ -1,0 +1,112 @@
+{
+  "id": "6b9b901d-3626-477d-830e-68a361f5a338",
+  "name": "opf-iss-d0",
+  "values": [
+    {
+      "key": "token",
+      "value": "",
+      "enabled": true
+    },
+    {
+      "key": "rootUrl",
+      "value": "https:\/\/opf-iss-d0.opf.commerce.stage.context.cloud.sap",
+      "enabled": true
+    },
+    {
+      "key": "service",
+      "value": "opf",
+      "enabled": true
+    },
+    {
+      "key": "accountGroupId",
+      "value": "1581",
+      "enabled": true
+    },
+    {
+      "key": "accountId",
+      "value": "922",
+      "enabled": true
+    },
+    {
+      "key": "authentication_outbound_basic_auth_username_export_599",
+      "value": "Razorpay_username",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "authentication_outbound_basic_auth_password_export_599",
+      "value": "Razorpay_password",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "capturePattern",
+      "value": "PARTIAL_CAPTURE",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "supportOverCapture",
+      "value": "false",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "enableOverCapture",
+      "value": "false",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "authorizationTimeoutDays",
+      "value": "7",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "apiDomain",
+      "value": "api.razorpay.com",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "apiVersion",
+      "value": "v1",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "apiKeyId",
+      "value": "rzp_test_TxTYlAd6b8dvxB",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "paymentFormLogo",
+      "value": "https:\/\/www.sap.com\/design-system\/digital\/foundations\/identity\/logo\/media_1ee0ca2bfe9b731137ecb18e0fd30e8c1a0ec6a2e.png?width=200&format=webply&optimize=medium",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "paymentFormMerchantName",
+      "value": "SAP",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "payButtonLabel",
+      "value": "Pay and Submit Order",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "webhookSecret",
+      "value": "6********************************84e",
+      "enabled": true
+    }
+    
+  ],
+  "_postman_variable_scope": "environment",
+  "_postman_exported_at": "",
+  "_postman_exported_using": "Postman\/7.35.0"
+}
