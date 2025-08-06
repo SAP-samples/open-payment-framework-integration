@@ -8,6 +8,14 @@ The integration supports:
 * Settlements
 * Refunds
 
+The integration does not support
+* Authorization reversal 
+* Reauthorization (not available)
+
+
+Roadmap:
+* Testing payment methods beyond checkout
+
 
 ## Setup Instructions
 
@@ -76,6 +84,13 @@ Then you can find both keys:
 
 * ``Key ID`` maps to ``apiKeyId`` and ``authentication_outbound_basic_auth_username_export_599`` in postman
 * ``Secret`` maps to ``authentication_outbound_basic_auth_password_export_599`` in postman
+
+**5. webhookSecret**
+
+Input your webhook secret that you entered through the [dashboard](https://dashboard.razorpay.com/app/website-app-settings/webhooks)
+
+![](images/razorpay-webhooks.png)
+ 
 
 **6. paymentFormLogo**
 
