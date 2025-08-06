@@ -14,7 +14,7 @@ The integration does not support
 
 
 Roadmap:
-* Testing payment methods beyond checkout
+* Testing of payment methods beyond card (e.g. UPI)
 
 
 ## Setup Instructions
