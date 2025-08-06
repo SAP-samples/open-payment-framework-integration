@@ -9,7 +9,7 @@ The integration supports:
 * Refunds
 
 The integration does not support
-* Authorization reversal 
+* Authorization reversal (not supported)
 * Reauthorization (not available)
 
 
