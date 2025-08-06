@@ -89,7 +89,7 @@ Then you can find both keys:
 
 IN OPF Workbench: For your new Razorpay payment integration, navigate to the General Information section of the Integration details tab to copy the Notification URL.
 
-Create a new webhook endpoint in the Razorpay [dashboard](https://dashboard.razorpay.com/app/website-app-settings/webhooks), inputting the OPF notification URL and activate at least ``payment.authorized``, ``payment.failed``, ``payment.captured`` events. 
+Create a new webhook endpoint in the Razorpay [dashboard](https://dashboard.razorpay.com/app/website-app-settings/webhooks), inputting the OPF notification URL and activate at least ``payment.authorized``, ``payment.failed``, ``payment.captured``, ``refund.processed``, ``refund.failed`` events. 
 
 Decide a suitably secure secret and input into the dashboard and the postman environment value.
 
