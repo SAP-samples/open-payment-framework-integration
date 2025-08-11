@@ -91,11 +91,17 @@ Then ,you can find both keys:
 
 **5. paymentChannel**
 
-Name of the payment channel used by your business: Portal, App, etc.
+Name of the payment channel used by your business: ``Portal``, ``App``, etc.
 
 **6. paymentDescription**
 
 Brief description of the payment
+
+**7. definedPaymentMethod**
+
+The payment method required to initialize the Web Checkout. The default value is ``all``. 
+You can specify this value from one of the following: ``webpay``, ``khipu``, ``fintoc``, ``mach``, ``redpay``, ``all``.
+
 
 
 ### Configuring Custom Cart Data for VirtualPOS Integration
