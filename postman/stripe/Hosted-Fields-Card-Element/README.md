@@ -17,15 +17,19 @@ In summary: to import the [Stripe Elements Postman Collection](Stripe-elements-H
 
 a) Create your Stripe test account.
 
-b) Create a Stripe payment integration in OPF workbench.
+b) Install SAP Open Payment Framework app in Stripe dashboard.
 
-c) Set up your Stripe test account to work with OPF.
+c) Create a Stripe payment integration in OPF workbench.
 
-d) Prepare the [Postman Environment](Stripe-elements-HOSTED_FIELDS_environment_configuration.json) file so the collection can be imported with all your OPF Tenant and Stripe Test Account unique values. 
+d) Set up your Stripe test account to work with OPF.
+
+e) Prepare the [Postman Environment](Stripe-elements-HOSTED_FIELDS_environment_configuration.json) file so the collection can be imported with all your OPF Tenant and Stripe Test Account unique values. 
 
 ## Creating a Stripe Account ##
 You can sign up for a free Stripe test account at https://dashboard.stripe.com/register.
 
+## Install SAP Open Payment Framework App in Stripe Dashboard ##
+Log in to the Stripe dashboard, then search for "SAP Open Payment Framework" in the app workspace, install the SAP Open Payment Framework app, and on the app setting page, click "View API keys" button to retrieve the Publishable key and Restricted key, we will use those keys in the next step.
 
 ## Creating a Stripe Payment Integration
 Create a Stripe payment integration in the OPF Workbench. For reference, see [Creating Payment Integration
@@ -63,21 +67,17 @@ The ``integrationId`` and ``configurationId`` values identify the payment integr
 * ``configurationId`` maps to ``accountId`` in Postman
 
 **4. Secret Key**
-The Secret (or Private) Key can be obtained here in the Stripe dashboard. In test it starts with **sk_test**.
+The secret key (or restricted key in the stripe app) can be obtained through the SAP Open Payment Framework app of Stripe dashboard we mentioned above. In test environment, it starts with **rk_test**.
 
-<https://dashboard.stripe.com/test/apikeys>
+![](images/stripe-api-secret-key.png)
 
-![](images/stripe-elements-get-secret-key.png)
-
-Replace the ``secretKey`` variable value in the environment file with this value starting with **sk_test**.
+Replace the ``secretKey`` variable value in the environment file with this value starting with **rk_test**.
 
 **5. Public Key**
 
-The public (or Publishable) key can be obtained here in the Stripe dashboard. In Test it starts with **pk_test**
+The Public key ( or Publishable key) can alse be obtained through the SAP Open Payment Framework app. In Test environment, it starts with **pk_test**.
 
-<https://dashboard.stripe.com/test/apikeys>
-
-![](images/stripe-elements-get-public-key.png)
+![](images/stripe-api-public-key.png)
 
 Replace the ``publickey`` variable value in the environment file with this value starting with **pk_test**.
 
