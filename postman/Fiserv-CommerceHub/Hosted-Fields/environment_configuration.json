@@ -1,0 +1,106 @@
+{
+  "id": "7368bc44-cfe9-42ec-a24b-9e074415c165",
+  "name": "Fiserv CommerceHub Hosted Field",
+  "values": [
+    {
+      "key": "token",
+      "value": "",
+      "enabled": true
+    },
+    {
+      "key": "rootUrl",
+      "value": "https:\/\/opf-iss-d0.opf.commerce.stage.context.cloud.sap",
+      "enabled": true
+    },
+    {
+      "key": "service",
+      "value": "opf",
+      "enabled": true
+    },
+    {
+      "key": "accountGroupId",
+      "value": "2001",
+      "enabled": true
+    },
+    {
+      "key": "accountId",
+      "value": "1342",
+      "enabled": true
+    },
+    {
+      "key": "capturePattern",
+      "value": "CAPTURE_PER_SHIPMENT",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "supportOverCapture",
+      "value": "false",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "enableOverCapture",
+      "value": "false",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "authorizationTimeoutDays",
+      "value": "7",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "apiEndpoint",
+      "value": "connect-cert.fiservapis.com\/ch",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "apiVersion",
+      "value": "v1",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "terminalId",
+      "value": "10000001",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "apiKey",
+      "value": "z2U6P17ajM2LrG0SWSwwYa1gEjQff02SApurFUQgaclkeY7A",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "apiSecret",
+      "value": "e********************************14a",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "sdkVersion",
+      "value": "3.2.12",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "payButtonLabel",
+      "value": "Place order",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "merchantId",
+      "value": "100008000003683",
+      "enabled": true
+    }
+    
+  ],
+  "_postman_variable_scope": "environment",
+  "_postman_exported_at": "",
+  "_postman_exported_using": "Postman\/7.35.0"
+}
