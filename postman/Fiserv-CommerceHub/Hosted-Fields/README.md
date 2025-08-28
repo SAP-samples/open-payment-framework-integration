@@ -8,7 +8,7 @@ The integration supports:
 * Capture
 * Refund
 * Reversal
-* Reauthorization (only for amount increased)
+* Reauthorization
 
 
 ## Setup Instructions
@@ -22,24 +22,26 @@ b) Create a payment integration in OPF workbench.
 
 c) Prepare the [Postman Environment](environment_configuration.json) file so the collection can be imported with all your OPF Tenant and fiserv. Commerce Hub Demo Account unique values. 
 
-d) Whitelist domains for use with Commerce Hub (key step for commerce hub integration) .
+d) Whitelist domains for use with Commerce Hub (key step for Commerce Hub integration) .
+
+e) Allowlist in OPF workbench.
 
 ### Create your fiserv. Commerce Hub Account
 
-a) You can Create a free Account at <https://developer.fiserv.com>
+a) You can create a free account at <https://developer.fiserv.com>
 
-b) Go to your Workspaces and add a new workspace for Commerce Hub.
+b) Go to your Workspaces and add a new Workspace for Commerce Hub.
 
 ![](images/commerceHub_workspace.png)
 
 
 
-### Creating Payment Integration
+### Create Payment Integration
 Create a new integration in the OPF workbench and set the Merchant ID. For reference, see [Creating Payment Integration](https://help.sap.com/docs/OPEN_PAYMENT_FRAMEWORK/3580ff1b17144b8780c055bbb7c2bed3/20a64f954df1425391757759011e7e6b.html).
 
 **Note**
 
-a) You can skip step 4 for the notification Since this PSP doesn't support for server to server notifications .
+a) You can skip step 4 for the notification since this PSP doesn't support for server-to-server notifications.
 
 b) In step 6, you can find the unique Merchant ID name in your Commerce Hub Workspace.
 
@@ -47,7 +49,7 @@ b) In step 6, you can find the unique Merchant ID name in your Commerce Hub Work
 
 
 
-### Preparing the Postman environment_configuration file
+### Prepare the Postman environment_configuration file
 
 **1. Token**
 
@@ -101,11 +103,11 @@ You can use the postman tool or other API tools to make this first API call. [Mo
 
 **Note**
 
-Following are the required headers for this API call. Here are the details for the [HMAC Message Signature](https://developer.fiserv.com/product/CommerceHub/docs/?path=docs/Resources/API-Documents/Authentication-Header.md&branch=main):
+The following are the required headers for this API call. Here are the details for the [HMAC Message Signature](https://developer.fiserv.com/product/CommerceHub/docs/?path=docs/Resources/API-Documents/Authentication-Header.md&branch=main):
 
 ![](images/required_headers.png)
 
-Following is an example of the body for this API call (input the base URLs of your OPF workbench and frontend)
+The following is an example of the body for this API call (input the base URLs of your OPF workbench and frontend)
 
 ![](images/body_example.png)
 

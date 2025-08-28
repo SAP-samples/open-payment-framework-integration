@@ -1,5 +1,5 @@
 {
-  "id": "31d37005-8b3d-42ba-b6d4-43c1ff617409",
+  "id": "7368bc44-cfe9-42ec-a24b-9e074415c165",
   "name": "Fiserv CommerceHub Hosted Field",
   "values": [
     {
@@ -94,8 +94,8 @@
     }
     ,
     {
-      "key": "captureFlag",
-      "value": "false",
+      "key": "merchantId",
+      "value": "100008000003683",
       "enabled": true
     }
     
