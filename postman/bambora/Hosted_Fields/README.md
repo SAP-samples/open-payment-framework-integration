@@ -82,6 +82,16 @@ You can retrieve this code in the [Member Area](https://web.na.bambora.com/). Cl
 Set to ``false`` for Pre-Authorize, and ``true`` to complete a payment.
 Default value is ``false``, If you select ``Immediate Capture`` as the capture method, Please make it as ``true``.
 
+**6. webHookKey
+
+OPF requires hash validation in the Payment Gateway Response Notification,you can generate the hash key in [Member Area](https://web.na.bambora.com/admin/sDefault.asp):Click administration, then account settings, and then order settings, under Payment Gateway.
+
+![](images/hash_key_webhook.png)
+
+**Note**:
+
+The default and supported hash algorithm in OPF is SHA-1. Please ensure that this hash algorithm is enabled.
+
 
 ### Allowlist
 
