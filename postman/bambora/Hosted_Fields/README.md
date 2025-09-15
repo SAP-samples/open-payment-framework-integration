@@ -19,19 +19,21 @@ b) Create a payment integration in OPF workbench.
 
 c) Prepare the [Postman Environment](environment_configuration.json) file so the collection can be imported with all your OPF Tenant and bambora Demo Account unique values.
 
+d) Adding a Standard Notification for Your Merchant Account
 
 ### Create your bambora Account
 
 You can sign up for a free bambora Sandbox account [here](https://dev.na.bambora.com/docs/sign_up/) 
 
 
-
 ### Creating Payment Integration
 Create a new integration in the OPF workbench and set the Merchant ID. For reference, see [Creating Payment Integration](https://help.sap.com/docs/OPEN_PAYMENT_FRAMEWORK/3580ff1b17144b8780c055bbb7c2bed3/20a64f954df1425391757759011e7e6b.html).
 
 **Note**
-In step 6:
-a) The ``Merchnat ID`` can be retrieved from your bambora test account.
+
+a) In step 4: The copied Notification URL will be used in [Adding a Standard Notification for Your Merchant Account](#adding-a-standard-notification-for-your-merchant-account)
+
+b) In step 6: The ``Merchnat ID`` can be retrieved from your bambora test account.
 
 ![](images/bambora_merchantId.png)
 
@@ -92,6 +94,11 @@ OPF requires hash validation in the Payment Gateway Response Notification,you ca
 
 The default and supported hash algorithm in OPF is SHA-1. Please ensure that this hash algorithm is enabled.
 
+### Adding a Standard Notification for Your Merchant Account
+
+The callback URL is set in the [Member Area](https://web.na.bambora.com/admin/sDefault.asp). Click administration, then account settings, and then order settings, under Response Notification.
+
+![](images/webhook.png)
 
 ### Allowlist
 
@@ -99,13 +106,6 @@ Add the following domains to the domain allowlist in OPF workbench. For instruct
 ](https://help.sap.com/docs/OPEN_PAYMENT_FRAMEWORK/3580ff1b17144b8780c055bbb7c2bed3/a6836485b4494cfaad4033b4ee7a9c64.html).
 
 ``na.bambora.com``
-
-### Adding a Standard Notification for Your Merchant Account
-
-The callback URL is set in the [Member Area](https://web.na.bambora.com/admin/sDefault.asp). Click administration, then account settings, and then order settings, under Response Notification.
-
-![](images/webhook.png)
-
 
 ### Summary
 
