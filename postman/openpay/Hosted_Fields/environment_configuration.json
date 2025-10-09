@@ -1,5 +1,5 @@
 {
-  "id": "df797acc-00f8-4110-af38-7a0081daf565",
+  "id": "4b4d4e11-52ce-46b0-b1d2-ae55938e4dc2",
   "name": "Openpay JS",
   "values": [
     {
@@ -53,7 +53,7 @@
     ,
     {
       "key": "capturePattern",
-      "value": "CAPTURE_PER_SHIPMENT",
+      "value": "PARTIAL_CAPTURE",
       "enabled": true
     }
     ,
