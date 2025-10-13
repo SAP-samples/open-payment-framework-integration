@@ -1,0 +1,88 @@
+{
+  "id": "ec7f4221-49d5-4f84-af61-3f27620a31e0",
+  "name": "UTA credit card",
+  "values": [
+    {
+      "key": "token",
+      "value": "",
+      "enabled": true
+    },
+    {
+      "key": "rootUrl",
+      "value": "https:\/\/opf-iss-d0.opf.commerce.stage.context.cloud.sap",
+      "enabled": true
+    },
+    {
+      "key": "service",
+      "value": "opf",
+      "enabled": true
+    },
+    {
+      "key": "accountGroupId",
+      "value": "2672",
+      "enabled": true
+    },
+    {
+      "key": "accountId",
+      "value": "1932",
+      "enabled": true
+    },
+    {
+      "key": "capturePattern",
+      "value": "PARTIAL_CAPTURE",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "supportOverCapture",
+      "value": "false",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "enableOverCapture",
+      "value": "false",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "authorizationTimeoutDays",
+      "value": "7",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "apiDomain",
+      "value": "demo.unitedtranzactions.com",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "accessID",
+      "value": "2********************************628",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "username",
+      "value": "opfsap",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "iframeTransactionType",
+      "value": "NEW",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "password",
+      "value": "0********************************dab",
+      "enabled": true
+    }
+    
+  ],
+  "_postman_variable_scope": "environment",
+  "_postman_exported_at": "",
+  "_postman_exported_using": "Postman\/7.35.0"
+}
