@@ -1,7 +1,7 @@
 {
   "info": {
     "_postman_id": "384a5101-034e-4ad5-9b9f-b254e6550a88",
-    "name": "OPF_Mapping_Config_Collection",
+    "name": "Checkout.com OPF Flow Mapping Config",
     "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
   },
   "item": [
@@ -662,7 +662,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\"id\":\"7346183863460954112\",\"merchantId\":\"01234567890123456789\",\"merchantName\":\"e2yCheckoutCom\",\"tenantId\":\"cchzuoqt02-e2ylimite1-d1\",\"createdAt\":\"2025-07-02T14:31:58.580Z\",\"updatedAt\":\"2025-07-02T14:31:58.580Z\"}",
+              "raw": "{\"id\":\"7346183863460954112\",\"merchantId\":\"01234567890123456789\",\"merchantName\":\"REPLACE\",\"tenantId\":\"opf-iss-d0\",\"createdAt\":\"2025-07-02T14:31:58.580Z\",\"updatedAt\":\"2025-07-02T14:31:58.580Z\"}",
               "options": {
                 "raw": {
                   "language": "json"

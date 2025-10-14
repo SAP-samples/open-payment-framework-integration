@@ -1,5 +1,5 @@
 ## Introduction ##
-This Postman Collection aids in integrating [Checkout.com Payment gateway](https://www.checkout.com/docs) into the Open Payment Framework (OPF).
+This Postman Collection aids in integrating [Checkout.com Flow UI](https://www.checkout.com/docs) into the Open Payment Framework (OPF).
 
 The integration supports:
 
@@ -35,17 +35,17 @@ Create a Checkout.com payment integration in the OPF workbench. For reference, s
 Once you have created you Checkout.com sandbox account,do the following to set it up to work with OPF:
 1. **Please refer to this [API keys](https://www.checkout.com/docs/developer-resources/api/manage-api-keys/api-keys) document to create your public key and secret key.**
 
-   **public key** is used for client-side authentication,here we use it as **Merchant ID** in OPF.
+   **Public key** is used for client-side authentication,here we use it as **Merchant ID** in OPF.
    
-   **secret key** is used for server-to-server authentication and is supported across most of Checkout.com's endpoints.
+   **Secret key** is used for server-to-server authentication and is supported across most of Checkout.com's endpoints.
 
 2. **Webhook for notification**
 
    **There are two ways to create a workflow to start receiving webhook notifications:**
 
-   ***a. can use checkout.com [Workflows API](https://www.checkout.com/docs/developer-resources/webhooks/manage-webhooks#Add_a_new_workflow)*** to create a workflow by specifying both the events you would like to subscribe to and the necessary configurations for the webhook workflow action.
+   ***a. Can use checkout.com [Workflows API](https://www.checkout.com/docs/developer-resources/webhooks/manage-webhooks#Add_a_new_workflow)*** to create a workflow by specifying both the events you would like to subscribe to and the necessary configurations for the webhook workflow action.
 
-   ***b. can use the [Dashboard](https://dashboard.checkout.com/) create a webhook workflow, you can refer [Create a webhook](https://www.checkout.com/docs/business-operations/use-the-dashboard/developers/webhooks#Create_a_webhook)***
+   ***b. Can use the [Dashboard](https://dashboard.checkout.com/) create a webhook workflow, you can refer [Create a webhook](https://www.checkout.com/docs/business-operations/use-the-dashboard/developers/webhooks#Create_a_webhook)***
 
    **Note**:
    1. When you create webhook via API, remember put the "Authorization" with Secret key value in the header.

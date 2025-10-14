@@ -1,6 +1,6 @@
 {
   "id": "ff56e021-cbda-4817-99cd-ad1125bb2dab",
-  "name": "cchzuoqt02-e2ylimite1-d1",
+  "name": "Checkout.com Hosted Fields - Flow",
   "values": [
     {
       "key": "token",
@@ -9,7 +9,7 @@
     },
     {
       "key": "rootUrl",
-      "value": "https:\/\/cchzuoqt02-e2ylimite1-d1.opf.commerce.eu.context.cloud.sap",
+      "value": "https:\/\/opf-iss-d0.opf.commerce.stage.context.cloud.sap",
       "enabled": true
     },
     {
@@ -41,19 +41,19 @@
     ,
     {
       "key": "capturePattern",
-      "value": "CAPTURE_PER_SHIPMENT",
+      "value": "PARTIAL_CAPTURE",
       "enabled": true
     }
     ,
     {
       "key": "supportOverCapture",
-      "value": "true",
+      "value": "false",
       "enabled": true
     }
     ,
     {
       "key": "enableOverCapture",
-      "value": "true",
+      "value": "false",
       "enabled": true
     }
     ,
@@ -65,13 +65,13 @@
     ,
     {
       "key": "apiKey",
-      "value": "pk_sbox_pwecmfccdzjbwdxazbybkkbk5ix",
+      "value": "pk_****************************",
       "enabled": true
     }
     ,
     {
       "key": "processing_channel_id",
-      "value": "pc_ocjmro6p3iguzfft23dievbbk4",
+      "value": "pc_****************************",
       "enabled": true
     }
     ,
