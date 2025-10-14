@@ -21,9 +21,8 @@ c) Prepare the [Postman Environment](environment_configuration.json) file so the
 d) Allowlist in OPF workbench.
 
 ### Create your United TranzActions Account
- 
 
-
+You need to contact the United TranzActions support team to obtain the login credentials.
 
 ### Create Payment Integration
 Create a new integration in the OPF workbench and set the Merchant ID. For reference, see [Creating Payment Integration](https://help.sap.com/docs/OPEN_PAYMENT_FRAMEWORK/3580ff1b17144b8780c055bbb7c2bed3/20a64f954df1425391757759011e7e6b.html).
@@ -88,7 +87,6 @@ Add the following domains to the domain allowlist in OPF workbench. For instruct
 ](https://help.sap.com/docs/OPEN_PAYMENT_FRAMEWORK/3580ff1b17144b8780c055bbb7c2bed3/a6836485b4494cfaad4033b4ee7a9c64.html).
 
 Sandbox: ``demo.unitedtranzactions.com``
-Production: ``api.openpay.mx``
 
 
 ### Summary

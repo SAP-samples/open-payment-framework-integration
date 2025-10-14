@@ -21,8 +21,8 @@ c) Prepare the [Postman Environment](environment_configuration.json) file so the
 d) Allowlist in OPF workbench.
 
 ### Create your United TranzActions Account
- 
 
+You need to contact the United TranzActions support team to obtain the login credentials.
 
 
 ### Create Payment Integration
