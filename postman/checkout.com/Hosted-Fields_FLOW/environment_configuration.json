@@ -28,13 +28,13 @@
       "enabled": true
     },
     {
-      "key": "authentication_inbound_hmac_signature_calculation_secret_export_10",
+      "key": "authentication_inbound_hmac_signature_calculation_secret_export_177",
       "value": "Checkout.com Flow Webhook Authentication_export",
       "enabled": true
     }
     ,
     {
-      "key": "authentication_outbound_api_key_value_export_2",
+      "key": "authentication_outbound_api_key_value_export_172",
       "value": "Checkout.com Private API Key_export",
       "enabled": true
     }

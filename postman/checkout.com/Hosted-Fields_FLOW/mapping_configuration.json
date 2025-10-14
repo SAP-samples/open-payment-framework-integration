@@ -553,7 +553,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\"charset\":\"UTF-8\",\"secretBaseEncoding\":\"NONE\",\"baseEncoding\":\"BASE16_LOWERCASE\",\"method\":\"HMAC_SIGNATURE_CALCULATION\",\"secretType\":\"TEXT\",\"name\":\"Checkout.com Flow Webhook Authentication_export_export\",\"secret\":\"{{authentication_inbound_hmac_signature_calculation_secret_export_10}}\",\"source\":\"${input.body}\",\"id\":10,\"isHmacSignature\":true,\"algorithm\":\"HmacSHA256\",\"target\":\"${input.headers.cko\\\\-signature}\"}",
+              "raw": "{\"charset\":\"UTF-8\",\"secretBaseEncoding\":\"NONE\",\"baseEncoding\":\"BASE16_LOWERCASE\",\"method\":\"HMAC_SIGNATURE_CALCULATION\",\"secretType\":\"TEXT\",\"name\":\"Checkout.com Flow Webhook Authentication_export_export\",\"secret\":\"{{authentication_inbound_hmac_signature_calculation_secret_export_177}}\",\"source\":\"${input.body}\",\"id\":10,\"isHmacSignature\":true,\"algorithm\":\"HmacSHA256\",\"target\":\"${input.headers.cko\\\\-signature}\"}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -604,7 +604,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\"headerName\":\"Authorization\",\"method\":\"API_KEY\",\"name\":\"Checkout.com Private API Key_export_export\",\"headerValue\":\"{{authentication_outbound_api_key_value_export_2}}\",\"id\":2}",
+              "raw": "{\"headerName\":\"Authorization\",\"method\":\"API_KEY\",\"name\":\"Checkout.com Private API Key_export_export\",\"headerValue\":\"{{authentication_outbound_api_key_value_export_172}}\",\"id\":172}",
               "options": {
                 "raw": {
                   "language": "json"
