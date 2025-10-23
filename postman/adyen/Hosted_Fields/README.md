@@ -27,8 +27,7 @@ g) Validate the configuration in OPF workbench.
 
 ## Creating an Adyen Account ##
 
-You can sign up for a free Adyen Test Account at <https://ca-test.adyen.com/ca/ca/login.shtml>.
-
+You can sign up for a free Adyen Test Account at https://www.adyen.com/signup and access it through https://ca-test.adyen.com/ca/ca/login.shtml.
 
 ## Creating an Adyen Payment Integration 
 
