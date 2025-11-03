@@ -47,7 +47,7 @@
     ,
     {
       "key": "capturePattern",
-      "value": "CAPTURE_PER_SHIPMENT",
+      "value": "PARTIAL_CAPTURE",
       "enabled": true
     }
     ,
