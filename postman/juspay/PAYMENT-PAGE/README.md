@@ -78,7 +78,7 @@ The Juspay API operates through an API key. The API key is unique for each accou
 ![](images/Create_api_key.png)
 
 *  ``API KEY`` maps to ``authentication_outbound_basic_auth_username_export_729`` in postman
-*  Empty string for ``authentication_inbound_basic_auth_password_export_730`` in postman
+*  Empty string for ``authentication_outbound_basic_auth_password_export_729`` in postman
 
 **5. webhook**
 
