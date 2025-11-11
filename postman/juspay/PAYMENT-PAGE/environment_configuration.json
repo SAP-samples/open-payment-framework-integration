@@ -1,5 +1,5 @@
 {
-  "id": "5b351ef5-eef7-4f28-8028-8964afe6ccb8",
+  "id": "b9d43923-696e-40e7-920e-577506ddcca3",
   "name": "Juspay HyperCheckout",
   "values": [
     {
@@ -84,6 +84,12 @@
     {
       "key": "jsEnv",
       "value": "sandbox",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "clientId",
+      "value": "cottonit",
       "enabled": true
     }
     

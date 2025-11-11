@@ -34,6 +34,10 @@ a) In Step 6, regarding the ``Merchant ID``, you can retrieve it from your [Jusp
 
 ![](images/Juspay_merchantId.png)
 
+Alternatively, you can retrieve the ``Merchant ID`` from your welcome email sent by Juspay:
+
+![](images/Juspay_merchantId.png)
+
 b) In Step 6, select ``Immediate Capture`` as the capture method.
 
 
@@ -73,8 +77,8 @@ The Juspay API operates through an API key. The API key is unique for each accou
 
 ![](images/Create_api_key.png)
 
-*  ``Username`` maps to ``authentication_outbound_basic_auth_username_export_729`` in postman
-*  Empty string for ``authentication_outbound_basic_auth_password_export_729`` in postman
+*  ``API KEY`` maps to ``authentication_outbound_basic_auth_username_export_729`` in postman
+*  Empty string for ``authentication_inbound_basic_auth_password_export_730`` in postman
 
 **5. webhook**
 
@@ -82,12 +86,17 @@ After the completion of every payment or refund call, Juspay will provide direct
 
 ![](images/Juspay_webhook.png)
 
-* ``API KEY`` maps to ``authentication_inbound_basic_auth_password_export_730`` in postman
+* ``Username`` maps to ``authentication_inbound_basic_auth_username_export_730`` in postman
 * ``Password`` maps to ``authentication_inbound_basic_auth_password_export_730`` in postman
 
 **Note**
 You can follow this guide on [Configuring Webhooks](https://juspay.io/in/docs/resources/docs/common-resources/webhooks#Configuring-Webhooks) to finish the configuration in your Juspay dashboard.
 If you do not receive any notification from Juspay, please contact the Juspay support team to whitelist the webhook domain.
+
+**6. clientId**
+
+Unique Client id shared during onboarding, you can retrieve the ``clientId`` from your welcome email sent by Juspay.
+
 
 
 ### Allowlist
@@ -114,6 +123,7 @@ In summary, you should have edited the following variables:
 - ``authentication_outbound_basic_auth_password_export_729``
 - ``authentication_inbound_basic_auth_password_export_730``
 - ``authentication_inbound_basic_auth_password_export_730``
+- ``clientId``
   
 For sandbox testing, all other values can be left as defaults.  
 
