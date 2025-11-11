@@ -121,7 +121,7 @@ In summary, you should have edited the following variables:
 #### Juspay Specific
 - ``authentication_outbound_basic_auth_username_export_729``
 - ``authentication_outbound_basic_auth_password_export_729``
-- ``authentication_inbound_basic_auth_password_export_730``
+- ``authentication_inbound_basic_auth_username_export_730``
 - ``authentication_inbound_basic_auth_password_export_730``
 - ``clientId``
   
