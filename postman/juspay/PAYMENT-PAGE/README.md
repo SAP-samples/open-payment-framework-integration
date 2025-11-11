@@ -36,7 +36,7 @@ a) In Step 6, regarding the ``Merchant ID``, you can retrieve it from your [Jusp
 
 Alternatively, you can retrieve the ``Merchant ID`` from your welcome email sent by Juspay:
 
-![](images/Juspay_merchantId.png)
+![](images/welcome_email.png)
 
 b) In Step 6, select ``Immediate Capture`` as the capture method.
 
