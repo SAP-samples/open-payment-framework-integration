@@ -12,13 +12,13 @@ The integration supports:
 ## Setup Instructions
 
 ### Overview
-To import the [Juspay Hypercheckout](mapping_configuration.json) this page will take you through the following steps:
+To import the [Juspay Hypercheckout](mixed/mapping_configuration.json) this page will take you through the following steps:
 
 a) Create your Juspay Account
 
 b) Create a payment integration in OPF workbench.
 
-c) Prepare the [Postman Environment](environment_configuration.json) file so the collection can be imported with all your OPF Tenant and Juspay Account unique values. 
+c) Prepare the [Postman Environment](mixed/environment_configuration.json) file so the collection can be imported with all your OPF Tenant and Juspay Account unique values. 
 
 
 ### Create your Juspay Account
