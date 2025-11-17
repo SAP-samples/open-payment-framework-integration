@@ -9,7 +9,7 @@ The integration supports:
 * Refunds
 * Reversal
 * Recurrent Authorization
-* Paypal support
+* Paypal [Enterprise Checkout](https://developer.paypal.com/docs/checkout/#link-enterprisecheckout) support
 
 ## Known Issues
 * Card refunds will fail if initiated before they are sent to Settlement.
@@ -119,7 +119,7 @@ API Key Configuration
 For sandbox testing, all other values can be left as defaults.  
 
 ## Setup PayPal
-The integration supports adding PayPal as an additional payment method to cards.
+The integration supports adding PayPal as an additional payment method to cards. It is an integration with the PayPal [Enterprise Checkout](https://developer.paypal.com/docs/checkout/#link-enterprisecheckout) option.
 
 ### OPF Setup
 To enable PayPal OPF side, you will add a APM and describe to OPF how PayPal payments should be handled.
