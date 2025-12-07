@@ -1,5 +1,5 @@
 {
-  "id": "2150b059-f9c5-4b04-8296-c8add832fd3d",
+  "id": "981946d7-ee7a-4d23-b625-75626eb1496f",
   "name": "Afterpay",
   "values": [
     {
@@ -9,7 +9,7 @@
     },
     {
       "key": "rootUrl",
-      "value": "https:\/\/opf-iss-d0.api.commerce.stage.context.cloud.sap",
+      "value": "https:\/\/opf-iss-d0.opf.commerce.stage.context.cloud.sap",
       "enabled": true
     },
     {
