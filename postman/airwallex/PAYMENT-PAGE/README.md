@@ -1,6 +1,6 @@
 ## Introduction
 
-The Postman Collection enables a [Airwallex Hosted Page](https://developer.paypal.com/braintree/docs/start/hosted-fields) Payment Form to be used to take payments through OPF. 
+The Postman Collection enables a [Airwallex Hosted Page](https://www.airwallex.com/docs/payments/online-payments/hosted-payment-page) Payment Form to be used to take payments through OPF. 
 
 The integration supports:
 

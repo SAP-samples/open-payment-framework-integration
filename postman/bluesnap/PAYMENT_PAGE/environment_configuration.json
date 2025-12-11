@@ -1,5 +1,5 @@
 {
-  "id": "c9851fd7-3ff6-4954-b165-112ec6c22fb5",
+  "id": "ebe35c77-4b76-463d-a6ce-b6a0c1d64f29",
   "name": "BlueSnap HostedPage",
   "values": [
     {
@@ -70,18 +70,6 @@
     }
     ,
     {
-      "key": "payButtonLabel",
-      "value": "place order",
-      "enabled": true
-    }
-    ,
-    {
-      "key": "merchantId",
-      "value": "2035028",
-      "enabled": true
-    }
-    ,
-    {
       "key": "payApiEnv",
       "value": "sandpay.bluesnap.com",
       "enabled": true
@@ -102,6 +90,18 @@
     {
       "key": "authenticationRequired3ds",
       "value": "true",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "payButtonLabelBN",
+      "value": "place order",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "merchantId",
+      "value": "831263",
       "enabled": true
     }
     

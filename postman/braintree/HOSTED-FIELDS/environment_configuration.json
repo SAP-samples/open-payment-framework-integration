@@ -1,5 +1,5 @@
 {
-  "id": "15c1b5bb-daec-4767-be07-46ffe3ba5640",
+  "id": "2349df0c-6208-4465-b905-54ac2bc0f5cc",
   "name": "Braintree",
   "values": [
     {
@@ -9,7 +9,7 @@
     },
     {
       "key": "rootUrl",
-      "value": "https:\/\/opf-iss-d0.api.commerce.stage.context.cloud.sap",
+      "value": "https:\/\/opf-iss-d0.opf.commerce.stage.context.cloud.sap",
       "enabled": true
     },
     {
@@ -18,24 +18,24 @@
       "enabled": true
     },
     {
-      "key": "integrationId",
+      "key": "accountGroupId",
       "value": "45",
       "enabled": true
     },
     {
-      "key": "configurationId",
+      "key": "accountId",
       "value": "25",
       "enabled": true
     },
     {
-      "key": "authentication_outbound_basic_auth_username_export_51",
-      "value": "Braintree_API_Credential_export_export_username",
+      "key": "authentication_outbound_basic_auth_username_export_758",
+      "value": "Braintree_API_Credential_username",
       "enabled": true
     }
     ,
     {
-      "key": "authentication_outbound_basic_auth_password_export_51",
-      "value": "Braintree_API_Credential_export_export_password",
+      "key": "authentication_outbound_basic_auth_password_export_758",
+      "value": "Braintree_API_Credential_password",
       "enabled": true
     }
     ,

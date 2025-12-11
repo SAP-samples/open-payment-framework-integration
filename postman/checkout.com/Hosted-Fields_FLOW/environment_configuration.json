@@ -1,5 +1,5 @@
 {
-  "id": "ff56e021-cbda-4817-99cd-ad1125bb2dab",
+  "id": "4451a8dd-082d-4245-b874-52bc83e9c82d",
   "name": "Checkout.com Hosted Fields - Flow",
   "values": [
     {
@@ -19,23 +19,23 @@
     },
     {
       "key": "accountGroupId",
-      "value": "11",
+      "value": "3398",
       "enabled": true
     },
     {
       "key": "accountId",
-      "value": "11",
+      "value": "2582",
       "enabled": true
     },
     {
-      "key": "authentication_inbound_hmac_signature_calculation_secret_export_177",
-      "value": "Checkout.com Flow Webhook Authentication_export",
+      "key": "authentication_inbound_hmac_signature_calculation_secret_export_763",
+      "value": "Checkout.com Flow Webhook Authentication_export_export",
       "enabled": true
     }
     ,
     {
-      "key": "authentication_outbound_api_key_value_export_172",
-      "value": "Checkout.com Private API Key_export",
+      "key": "authentication_outbound_api_key_value_export_764",
+      "value": "Checkout.com Flow Private API Key",
       "enabled": true
     }
     ,
@@ -65,13 +65,13 @@
     ,
     {
       "key": "apiKey",
-      "value": "pk_****************************",
+      "value": "pk_sbox_ubhj3eergfxaae6eoroaamagjm7",
       "enabled": true
     }
     ,
     {
       "key": "processing_channel_id",
-      "value": "pc_****************************",
+      "value": "pc_rs2e3wtn5sgubgqbiebojsw52y",
       "enabled": true
     }
     ,
