@@ -1,5 +1,5 @@
 {
-  "id": "de5d89ec-9bcd-48aa-b9d7-fa17dbcad124",
+  "id": "06206276-9b2a-4823-b8b7-6e58c22cadd6",
   "name": "GoCardless",
   "values": [
     {
@@ -9,7 +9,7 @@
     },
     {
       "key": "rootUrl",
-      "value": "https:\/\/tmnk3t3hbf-bambooint1-d1.opf.commerce.eu.context.cloud.sap",
+      "value": "https:\/\/opf-iss-d0.opf.commerce.stage.context.cloud.sap",
       "enabled": true
     },
     {
@@ -19,12 +19,12 @@
     },
     {
       "key": "accountGroupId",
-      "value": "9",
+      "value": "86",
       "enabled": true
     },
     {
       "key": "accountId",
-      "value": "9",
+      "value": "54",
       "enabled": true
     },
     {
@@ -47,7 +47,7 @@
     ,
     {
       "key": "authorizationTimeoutDays",
-      "value": "30",
+      "value": "7",
       "enabled": true
     }
     ,
@@ -77,13 +77,13 @@
     ,
     {
       "key": "accessToken",
-      "value": "c********************************a09",
+      "value": "5********************************d89",
       "enabled": true
     }
     ,
     {
       "key": "webhookSecret",
-      "value": "8********************************7e1",
+      "value": "9********************************d8f",
       "enabled": true
     }
     
