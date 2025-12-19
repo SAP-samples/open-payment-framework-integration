@@ -1,0 +1,172 @@
+{
+  "id": "caa6d798-2b2e-4330-8e67-097237d853a3",
+  "name": "Adyen Hosted Fields",
+  "values": [
+    {
+      "key": "token",
+      "value": "",
+      "enabled": true
+    },
+    {
+      "key": "rootUrl",
+      "value": "https:\/\/opf-iss-d0.opf.commerce.stage.context.cloud.sap",
+      "enabled": true
+    },
+    {
+      "key": "service",
+      "value": "opf",
+      "enabled": true
+    },
+    {
+      "key": "accountGroupId",
+      "value": "453",
+      "enabled": true
+    },
+    {
+      "key": "accountId",
+      "value": "174",
+      "enabled": true
+    },
+    {
+      "key": "authentication_inbound_basic_auth_username_export_217",
+      "value": "(Notification Basic Auth)Adyen Hosted Field_username",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "authentication_inbound_basic_auth_password_export_217",
+      "value": "(Notification Basic Auth)Adyen Hosted Field_password",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "authentication_outbound_api_key_value_export_240",
+      "value": "(Webservice User)Adyen Hosted Field",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "capturePattern",
+      "value": "PARTIAL_CAPTURE",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "supportOverCapture",
+      "value": "true",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "enableOverCapture",
+      "value": "false",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "authorizationTimeoutDays",
+      "value": "7",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "applePayMerchantId",
+      "value": "applePayMerchantId",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "applePayMerchantName",
+      "value": "applePayMerchantName",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "applePayMerchantPassword",
+      "value": "applePayMerchantPassword",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "applePayCountryCode",
+      "value": "applePayCountryCode",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "applePayConfigId",
+      "value": "1",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "checkoutPaymentHost",
+      "value": "checkout-test.adyen.com",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "mode",
+      "value": "test",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "notificationHmacKey",
+      "value": "d********************************b04",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "clientKey",
+      "value": "test_7MSJX6KWXJFUFJYRMAHIFFQ5OEXONJ5W",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "channel",
+      "value": "web",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "serviceVersion",
+      "value": "v71",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "nativeThreeDS",
+      "value": "preferred",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "checkoutShopperHost",
+      "value": "checkoutshopper-test.cdn.adyen.com",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "merchantCode",
+      "value": "SAPCOM_STAGE_GATEWAY",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "sdkVersion",
+      "value": "6.5.1",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "enableRecurring",
+      "value": "true",
+      "enabled": true
+    }
+    
+  ],
+  "_postman_variable_scope": "environment",
+  "_postman_exported_at": "",
+  "_postman_exported_using": "Postman\/7.35.0"
+}

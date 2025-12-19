@@ -1,0 +1,94 @@
+{
+  "id": "62924805-d57e-4021-8969-af4cb65ec605",
+  "name": "Worldline Saferpay",
+  "values": [
+    {
+      "key": "token",
+      "value": "",
+      "enabled": true
+    },
+    {
+      "key": "rootUrl",
+      "value": "https:\/\/opf-iss-d0.opf.commerce.stage.context.cloud.sap",
+      "enabled": true
+    },
+    {
+      "key": "service",
+      "value": "opf",
+      "enabled": true
+    },
+    {
+      "key": "accountGroupId",
+      "value": "413",
+      "enabled": true
+    },
+    {
+      "key": "accountId",
+      "value": "158",
+      "enabled": true
+    },
+    {
+      "key": "authentication_outbound_basic_auth_username_export_211",
+      "value": "Saferpay Basic Auth_username",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "authentication_outbound_basic_auth_password_export_211",
+      "value": "Saferpay Basic Auth_password",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "capturePattern",
+      "value": "PARTIAL_CAPTURE",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "supportOverCapture",
+      "value": "false",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "enableOverCapture",
+      "value": "false",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "authorizationTimeoutDays",
+      "value": "7",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "checkoutpaymentAPI",
+      "value": "test.saferpay.com\/api",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "transactionDescription",
+      "value": "SAP OPF",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "terminalIdCommerce",
+      "value": "17733314",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "specVersion",
+      "value": "1.42",
+      "enabled": true
+    }
+    
+  ],
+  "_postman_variable_scope": "environment",
+  "_postman_exported_at": "",
+  "_postman_exported_using": "Postman\/7.35.0"
+}

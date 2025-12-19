@@ -1,0 +1,94 @@
+{
+  "id": "30d640f7-6d28-436d-914c-069c06b22a28",
+  "name": "Stripe Card Elements",
+  "values": [
+    {
+      "key": "token",
+      "value": "",
+      "enabled": true
+    },
+    {
+      "key": "rootUrl",
+      "value": "https:\/\/opf-iss-d0.opf.commerce.stage.context.cloud.sap",
+      "enabled": true
+    },
+    {
+      "key": "service",
+      "value": "opf",
+      "enabled": true
+    },
+    {
+      "key": "accountGroupId",
+      "value": "24",
+      "enabled": true
+    },
+    {
+      "key": "accountId",
+      "value": "20",
+      "enabled": true
+    },
+    {
+      "key": "capturePattern",
+      "value": "PARTIAL_CAPTURE",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "supportOverCapture",
+      "value": "false",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "enableOverCapture",
+      "value": "false",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "authorizationTimeoutDays",
+      "value": "7",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "payButtonLabel",
+      "value": "Submit Payment",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "cardColor",
+      "value": "#32325d",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "checkoutLineItemName",
+      "value": "SAP OPF Order",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "webhookSecret",
+      "value": "7********************************fb9",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "publickey",
+      "value": "pk_test_DtwiHhs63jJLGiNKq45Q2yet00FpCWLASQ",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "secretKey",
+      "value": "c********************************a62",
+      "enabled": true
+    }
+    
+  ],
+  "_postman_variable_scope": "environment",
+  "_postman_exported_at": "",
+  "_postman_exported_using": "Postman\/7.35.0"
+}

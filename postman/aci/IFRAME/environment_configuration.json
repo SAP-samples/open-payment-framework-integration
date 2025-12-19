@@ -1,0 +1,70 @@
+{
+  "id": "0d0518c4-7aab-49eb-abe5-14f4df7b74b4",
+  "name": "ACI Worldwide",
+  "values": [
+    {
+      "key": "token",
+      "value": "",
+      "enabled": true
+    },
+    {
+      "key": "rootUrl",
+      "value": "https:\/\/opf-iss-d0.api.commerce.stage.context.cloud.sap",
+      "enabled": true
+    },
+    {
+      "key": "service",
+      "value": "opf",
+      "enabled": true
+    },
+    {
+      "key": "integrationId",
+      "value": "114",
+      "enabled": true
+    },
+    {
+      "key": "configurationId",
+      "value": "78",
+      "enabled": true
+    },
+    {
+      "key": "capturePattern",
+      "value": "PARTIAL_CAPTURE",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "supportOverCapture",
+      "value": "false",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "enableOverCapture",
+      "value": "false",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "authorizationTimeoutDays",
+      "value": "7",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "apiToken",
+      "value": "3********************************c42",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "apiDomain",
+      "value": "eu-test.oppwa.com",
+      "enabled": true
+    }
+    
+  ],
+  "_postman_variable_scope": "environment",
+  "_postman_exported_at": "",
+  "_postman_exported_using": "Postman\/7.35.0"
+}

@@ -1,0 +1,88 @@
+{
+  "id": "8c832e5f-5d02-4cf3-ab2c-5545512a012d",
+  "name": "payever",
+  "values": [
+    {
+      "key": "token",
+      "value": "",
+      "enabled": true
+    },
+    {
+      "key": "rootUrl",
+      "value": "https:\/\/opf-iss-d0.opf.commerce.stage.context.cloud.sap",
+      "enabled": true
+    },
+    {
+      "key": "service",
+      "value": "opf",
+      "enabled": true
+    },
+    {
+      "key": "accountGroupId",
+      "value": "431",
+      "enabled": true
+    },
+    {
+      "key": "accountId",
+      "value": "166",
+      "enabled": true
+    },
+    {
+      "key": "capturePattern",
+      "value": "PARTIAL_CAPTURE",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "supportOverCapture",
+      "value": "false",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "enableOverCapture",
+      "value": "false",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "authorizationTimeoutDays",
+      "value": "7",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "apiDomain",
+      "value": "proxy.staging.devpayever.com",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "clientId",
+      "value": "2746_6abnuat5q10kswsk4ckk4ssokw4kgk8wow08sg0c8csggk4o00",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "secret",
+      "value": "6********************************251",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "apiVersion",
+      "value": "v3",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "paymentMethod",
+      "value": "zinia_installment_de",
+      "enabled": true
+    }
+    
+  ],
+  "_postman_variable_scope": "environment",
+  "_postman_exported_at": "",
+  "_postman_exported_using": "Postman\/7.35.0"
+}

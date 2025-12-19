@@ -1,0 +1,528 @@
+{
+  "info": {
+    "_postman_id": "bed99934-d0b3-4922-b2cd-bfcc1504479b",
+    "name": "Komoju OPF Configuration",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Variable",
+      "item": [
+        {
+          "name": "Variable_webhookSecret",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "{{token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"id\":156,\"sensitive\":true,\"value\":\"{{webhookSecret}}\",\"key\":\"webhookSecret\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{rootUrl}}/{{service}}\/merchant\/accountgroups\/{{accountGroupId}}\/accounts\/{{accountId}}\/variables",
+              "host": [
+                "{{rootUrl}}"
+              ],
+              "path": [
+                "{{service}}"
+                ,
+                "merchant"
+                ,
+                "accountgroups"
+                ,
+                "{{accountGroupId}}"
+                ,
+                "accounts"
+                ,
+                "{{accountId}}"
+                ,
+                "variables"
+                
+              ]
+            }
+          },
+          "response": []
+        }
+        ,
+        {
+          "name": "Variable_secretKey",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "{{token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"id\":157,\"sensitive\":true,\"value\":\"{{secretKey}}\",\"key\":\"secretKey\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{rootUrl}}/{{service}}\/merchant\/accountgroups\/{{accountGroupId}}\/accounts\/{{accountId}}\/variables",
+              "host": [
+                "{{rootUrl}}"
+              ],
+              "path": [
+                "{{service}}"
+                ,
+                "merchant"
+                ,
+                "accountgroups"
+                ,
+                "{{accountGroupId}}"
+                ,
+                "accounts"
+                ,
+                "{{accountId}}"
+                ,
+                "variables"
+                
+              ]
+            }
+          },
+          "response": []
+        }
+        ,
+        {
+          "name": "Variable_publicKey",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "{{token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"id\":158,\"sensitive\":false,\"value\":\"{{publicKey}}\",\"key\":\"publicKey\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{rootUrl}}/{{service}}\/merchant\/accountgroups\/{{accountGroupId}}\/accounts\/{{accountId}}\/variables",
+              "host": [
+                "{{rootUrl}}"
+              ],
+              "path": [
+                "{{service}}"
+                ,
+                "merchant"
+                ,
+                "accountgroups"
+                ,
+                "{{accountGroupId}}"
+                ,
+                "accounts"
+                ,
+                "{{accountId}}"
+                ,
+                "variables"
+                
+              ]
+            }
+          },
+          "response": []
+        }
+        ,
+        {
+          "name": "Variable_apiDomain",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "{{token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"id\":159,\"sensitive\":false,\"value\":\"{{apiDomain}}\",\"key\":\"apiDomain\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{rootUrl}}/{{service}}\/merchant\/accountgroups\/{{accountGroupId}}\/accounts\/{{accountId}}\/variables",
+              "host": [
+                "{{rootUrl}}"
+              ],
+              "path": [
+                "{{service}}"
+                ,
+                "merchant"
+                ,
+                "accountgroups"
+                ,
+                "{{accountGroupId}}"
+                ,
+                "accounts"
+                ,
+                "{{accountId}}"
+                ,
+                "variables"
+                
+              ]
+            }
+          },
+          "response": []
+        }
+        
+      ],
+      "protocolProfileBehavior": {}
+    }
+    ,
+    {
+      "name": "Account",
+      "item": [
+        {
+          "name": "Account Patch",
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "{{token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"supportOverCapture\":\"{{supportOverCapture}}\",\"enableOverCapture\":\"{{enableOverCapture}}\",\"capturePattern\":\"{{capturePattern}}\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{rootUrl}}/{{service}}\/merchant\/accountgroups\/{{accountGroupId}}\/accounts\/{{accountId}}",
+              "host": [
+                "{{rootUrl}}"
+              ],
+              "path": [
+                "{{service}}"
+                ,
+                "merchant"
+                ,
+                "accountgroups"
+                ,
+                "{{accountGroupId}}"
+                ,
+                "accounts"
+                ,
+                "{{accountId}}"
+                
+              ]
+            }
+          },
+          "response": []
+        }
+        
+      ],
+      "protocolProfileBehavior": {}
+    }
+    ,
+    {
+      "name": "AccountGroup",
+      "item": [
+        {
+          "name": "Account Group Patch",
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "{{token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"authorizationTimeoutDays\":{{authorizationTimeoutDays}}}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{rootUrl}}/{{service}}\/merchant\/accountgroups\/{{accountGroupId}}",
+              "host": [
+                "{{rootUrl}}"
+              ],
+              "path": [
+                "{{service}}"
+                ,
+                "merchant"
+                ,
+                "accountgroups"
+                ,
+                "{{accountGroupId}}"
+                
+              ]
+            }
+          },
+          "response": []
+        }
+        
+      ],
+      "protocolProfileBehavior": {}
+    }
+    ,
+    {
+      "name": "Authentications",
+      "item": [
+        {
+          "name": "Hmac_signature_calculation",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "3111731e-11f1-4b40-9faa-8eda0f1e6c09",
+                "exec": [
+                  "tests[\"Status code is 201\"] = responseCode.code === 201;    \npm.test(\"Location is present\", function () {\n    pm.response.to.have.header(\"Location\");\n    var location=pm.response.headers.get(\"Location\");\n    pm.environment.set(\"authentication_inbound_hmac_signature_calculation_767\", location.substring(location.lastIndexOf(\"\/\")+1,location.length));\n});"
+                  
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "{{token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"charset\":\"UTF-8\",\"secretBaseEncoding\":\"NONE\",\"baseEncoding\":\"BASE16_LOWERCASE\",\"method\":\"HMAC_SIGNATURE_CALCULATION\",\"secretType\":\"SCRIPT\",\"name\":\"Komoju Webhook HMAC_export_export\",\"secret\":\"${vars.webhookSecret}\",\"source\":\"${input.body}\",\"id\":767,\"isHmacSignature\":true,\"algorithm\":\"HmacSHA256\",\"target\":\"${input.headers.x\\\\-komoju\\\\-signature}\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{rootUrl}}/{{service}}\/merchant\/authentications",
+              "host": [
+                "{{rootUrl}}"
+              ],
+              "path": [
+                "{{service}}"
+                ,
+                "merchant"
+                ,
+                "authentications"
+                
+              ]
+            }
+          },
+          "response": []
+        }
+        
+      ],
+      "protocolProfileBehavior": {}
+    }
+    ,
+    {
+      "name": "Notification",
+      "item": [
+        {
+          "name": "Notification",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "{{token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"id\":192,\"requestType\":\"NOTIFICATION\",\"enabled\":null,\"configurationId\":null,\"googlePayGateway\":null,\"createdAt\":\"2024-04-25T07:48:14.595Z\",\"updatedAt\":\"2024-04-25T07:48:14.595Z\",\"inboundMapping\":{\"preprocessingMethodId\":null,\"authenticationIds\":[\"{{authentication_inbound_hmac_signature_calculation_767}}\"],\"contentType\":\"application\/json\",\"requestMapping\":{\"authorization\":{\"requestExample\":\"{\\\"id\\\":\\\"bpfl3snnlrhdnpisaosd1ya8w\\\",\\\"type\\\":\\\"payment.captured\\\",\\\"resource\\\":\\\"event\\\",\\\"data\\\":{\\\"id\\\":\\\"0hi9qs70udhwk5bkhpsgcuda3\\\",\\\"resource\\\":\\\"payment\\\",\\\"status\\\":\\\"captured\\\",\\\"amount\\\":1144,\\\"tax\\\":0,\\\"customer\\\":null,\\\"payment_deadline\\\":\\\"2024-05-02T14:59:59Z\\\",\\\"payment_details\\\":{\\\"type\\\":\\\"credit_card\\\",\\\"email\\\":\\\"r.cotton@sap.com\\\",\\\"brand\\\":\\\"visa\\\",\\\"last_four_digits\\\":\\\"1111\\\",\\\"month\\\":3,\\\"year\\\":2035},\\\"payment_method_fee\\\":0,\\\"total\\\":1144,\\\"currency\\\":\\\"JPY\\\",\\\"description\\\":null,\\\"captured_at\\\":\\\"2024-04-30T07:14:34Z\\\",\\\"external_order_num\\\":null,\\\"metadata\\\":{},\\\"created_at\\\":\\\"2024-04-30T07:14:34Z\\\",\\\"amount_refunded\\\":0,\\\"locale\\\":\\\"ja\\\",\\\"session\\\":\\\"efiuaogwcb16mzoyyrvkpguc0\\\",\\\"customer_family_name\\\":null,\\\"customer_given_name\\\":null,\\\"mcc\\\":null,\\\"statement_descriptor\\\":null,\\\"refunds\\\":[],\\\"refund_requests\\\":[]},\\\"created_at\\\":\\\"2024-04-30T07:14:34Z\\\",\\\"reason\\\":null}\",\"requestMappingFields\":{\"mappings\":[{\"from\":\"data.payment_details.month\",\"to\":\"cardExpMonth\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":false,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.payment_details.year\",\"to\":\"cardExpYear\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":false,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.payment_details.last_four_digits\",\"to\":\"cardLast4\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":false,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.payment_details.brand\",\"to\":\"cardType\",\"map\":{\"visa\":\"VISA\",\"mastercard\":\"MASTERCARD\",\"amex\":\"AMEX\",\"discover\":\"DISCOVER\",\"maestro\":\"MAESTRO\",\"switch\":\"SWITCH\",\"diners\":\"DINERS\",\"unionpay\":\"CHINA_UNION_PAY\",\"jcb\":\"JCB\"},\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":false,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.id\",\"to\":\"pspReference\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":false,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.payment_details.type\",\"to\":\"paymentMethod\",\"map\":{\"credit_card\":\"CREDIT_CARD\"},\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":false,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"type\",\"to\":\"requestType\",\"map\":{\"payment.captured\":\"AUTHORIZATION\"},\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":false,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.status\",\"to\":\"transactionStatus\",\"map\":{\"captured\":\"ACCEPTED\"},\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":false,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"reason\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isScript\":false},{\"from\":\"data.metadata.#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isScript\":false},{\"from\":\"data.external_order_num\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.payment_details.#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isScript\":false},{\"from\":\"data.payment_details.email\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.session\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.customer_family_name\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.description\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.captured_at\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.created_at\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.locale\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.mcc\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.amount_refunded\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.['refunds.#object']\",\"to\":null,\"map\":null,\"arrayPath\":\"data.\",\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isScript\":false},{\"from\":\"data.statement_descriptor\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.total\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.customer_given_name\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.currency\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.amount\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.payment_method_fee\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.resource\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.tax\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.payment_deadline\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.['refund_requests.#object']\",\"to\":null,\"map\":null,\"arrayPath\":\"data.\",\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isScript\":false},{\"from\":\"data.customer\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"resource\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"created_at\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"id\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isScript\":false}]}},\"refund\":{\"requestExample\":\"{\\\"id\\\":\\\"4gwhx5tojfmk40dcnhotzd05t\\\",\\\"type\\\":\\\"payment.refunded\\\",\\\"resource\\\":\\\"event\\\",\\\"data\\\":{\\\"id\\\":\\\"83l0n908gk9o10rdc30np5iiu\\\",\\\"resource\\\":\\\"payment\\\",\\\"status\\\":\\\"refunded\\\",\\\"amount\\\":46181,\\\"tax\\\":0,\\\"customer\\\":null,\\\"payment_deadline\\\":\\\"2025-07-04T14:59:59Z\\\",\\\"payment_details\\\":{\\\"type\\\":\\\"credit_card\\\",\\\"email\\\":\\\"test4@sap.com\\\",\\\"brand\\\":\\\"visa\\\",\\\"last_four_digits\\\":\\\"1111\\\",\\\"month\\\":3,\\\"year\\\":2030},\\\"payment_method_fee\\\":0,\\\"total\\\":46181,\\\"currency\\\":\\\"JPY\\\",\\\"description\\\":null,\\\"captured_at\\\":\\\"2025-07-02T07:37:58Z\\\",\\\"external_order_num\\\":null,\\\"metadata\\\":{},\\\"created_at\\\":\\\"2025-07-02T07:37:58Z\\\",\\\"amount_refunded\\\":46181,\\\"locale\\\":\\\"ja\\\",\\\"session\\\":\\\"60pjvebgkbll76bszuk7k86ka\\\",\\\"customer_family_name\\\":null,\\\"customer_given_name\\\":null,\\\"mcc\\\":null,\\\"statement_descriptor\\\":null,\\\"refunds\\\":[{\\\"id\\\":\\\"aup5y8vzoma2k3gbppiv7z14v\\\",\\\"resource\\\":\\\"refund\\\",\\\"amount\\\":46181,\\\"currency\\\":\\\"JPY\\\",\\\"payment\\\":\\\"83l0n908gk9o10rdc30np5iiu\\\",\\\"description\\\":null,\\\"created_at\\\":\\\"2025-07-02T07:56:27Z\\\",\\\"chargeback\\\":false}],\\\"refund_requests\\\":[]},\\\"created_at\\\":\\\"2025-07-02T07:56:27Z\\\",\\\"reason\\\":null}\",\"requestMappingFields\":{\"mappings\":[{\"from\":\"data.id\",\"to\":\"pspReference\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":false,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"type\",\"to\":\"requestType\",\"map\":{\"payment.refunded\":\"REFUND\"},\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":false,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.status\",\"to\":\"transactionStatus\",\"map\":{\"refunded\":\"ACCEPTED\"},\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":false,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"reason\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isScript\":false},{\"from\":\"data.metadata.#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isScript\":false},{\"from\":\"data.external_order_num\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.payment_details.#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isScript\":false},{\"from\":\"data.payment_details.month\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.payment_details.year\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.payment_details.type\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.payment_details.last_four_digits\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.payment_details.brand\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.payment_details.email\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.session\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.customer_family_name\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.description\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.captured_at\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.created_at\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.locale\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.mcc\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.amount_refunded\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.['refunds.#object']\",\"to\":null,\"map\":null,\"arrayPath\":\"data.\",\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isScript\":false},{\"from\":\"data.refunds[*].amount\",\"to\":null,\"map\":null,\"arrayPath\":\"data.refunds\",\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.refunds[*].resource\",\"to\":null,\"map\":null,\"arrayPath\":\"data.refunds\",\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.refunds[*].chargeback\",\"to\":null,\"map\":null,\"arrayPath\":\"data.refunds\",\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.refunds[*].description\",\"to\":null,\"map\":null,\"arrayPath\":\"data.refunds\",\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.refunds[*].created_at\",\"to\":null,\"map\":null,\"arrayPath\":\"data.refunds\",\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.refunds[*].currency\",\"to\":null,\"map\":null,\"arrayPath\":\"data.refunds\",\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.refunds[*].payment\",\"to\":null,\"map\":null,\"arrayPath\":\"data.refunds\",\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.refunds[*].id\",\"to\":null,\"map\":null,\"arrayPath\":\"data.refunds\",\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.statement_descriptor\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.total\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.customer_given_name\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.currency\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.amount\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.payment_method_fee\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.resource\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.tax\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.payment_deadline\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.['refund_requests.#object']\",\"to\":null,\"map\":null,\"arrayPath\":\"data.\",\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isScript\":false},{\"from\":\"data.customer\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"resource\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"created_at\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"id\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isScript\":false}]}}},\"responseMapping\":{\"content\":\"OK\"}}}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{rootUrl}}/{{service}}\/merchant\/accountgroups\/{{accountGroupId}}\/accounts\/{{accountId}}\/notification",
+              "host": [
+                "{{rootUrl}}"
+              ],
+              "path": [
+                "{{service}}"
+                ,
+                "merchant"
+                ,
+                "accountgroups"
+                ,
+                "{{accountGroupId}}"
+                ,
+                "accounts"
+                ,
+                "{{accountId}}"
+                ,
+                "notification"
+                
+              ]
+            }
+          },
+          "response": []
+        }
+        
+      ],
+      "protocolProfileBehavior": {}
+    }
+    ,
+    {
+      "name": "Refund",
+      "item": [
+        {
+          "name": "Refund",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "{{token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"id\":195,\"requestType\":\"REFUND\",\"outboundMappings\":[{\"url\":\"https:\/\/komoju.com\/api\/v1\/payments\/${input.authPspReference}\/refund\",\"authenticationIds\":[],\"method\":\"POST\",\"requestContentType\":\"application\/json\",\"requestExample\":\"{\\\"amount\\\":500}\",\"responseExample\":\"{\\n  \\\"id\\\": \\\"9be3ilnbxovz8q648uoazcqjy\\\",\\n  \\\"resource\\\": \\\"payment\\\",\\n  \\\"status\\\": \\\"refunded\\\",\\n  \\\"amount\\\": 1000,\\n  \\\"tax\\\": 100,\\n  \\\"customer\\\": null,\\n  \\\"payment_deadline\\\": \\\"2024-05-02T14:59:59Z\\\",\\n  \\\"payment_details\\\": {\\n    \\\"type\\\": \\\"credit_card\\\",\\n    \\\"email\\\": \\\"test@example.com\\\",\\n    \\\"brand\\\": \\\"visa\\\",\\n    \\\"last_four_digits\\\": \\\"1111\\\",\\n    \\\"month\\\": 1,\\n    \\\"year\\\": 2029\\n  },\\n  \\\"payment_method_fee\\\": 0,\\n  \\\"total\\\": 1100,\\n  \\\"currency\\\": \\\"JPY\\\",\\n  \\\"description\\\": null,\\n  \\\"captured_at\\\": \\\"2024-04-30T06:27:54Z\\\",\\n  \\\"external_order_num\\\": null,\\n  \\\"metadata\\\": {},\\n  \\\"created_at\\\": \\\"2024-04-30T06:27:54Z\\\",\\n  \\\"amount_refunded\\\": 1100,\\n  \\\"locale\\\": \\\"ja\\\",\\n  \\\"session\\\": null,\\n  \\\"customer_family_name\\\": null,\\n  \\\"customer_given_name\\\": null,\\n  \\\"mcc\\\": null,\\n  \\\"statement_descriptor\\\": null,\\n  \\\"refunds\\\": [\\n    {\\n      \\\"id\\\": \\\"0xfuqh4zz55ys2mb43idylio5\\\",\\n      \\\"resource\\\": \\\"refund\\\",\\n      \\\"amount\\\": 1100,\\n      \\\"currency\\\": \\\"JPY\\\",\\n      \\\"payment\\\": \\\"9be3ilnbxovz8q648uoazcqjy\\\",\\n      \\\"description\\\": null,\\n      \\\"created_at\\\": \\\"2024-04-30T06:27:54Z\\\",\\n      \\\"chargeback\\\": false\\n    }\\n  ],\\n  \\\"refund_requests\\\": [],\\n   \\\"error\\\": {\\n    \\\"code\\\": \\\"not_refundable\\\",\\n    \\\"message\\\": \\\"Use partial capture instead, minus amount you want to refund.\\\",\\n    \\\"param\\\": null,\\n    \\\"details\\\": {}\\n  }\\n}\",\"requestMappingFields\":{\"mappings\":[{\"from\":\"$.amount\",\"to\":\"${input.amountInExponent}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false}]},\"responseHeaders\":null,\"responseMappingFields\":{\"mappings\":[{\"from\":\"error.code\",\"to\":\"errorCode\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":false,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"id\",\"to\":\"pspReference\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":false,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"status\",\"to\":\"transactionStatus\",\"map\":{\"refunded\":\"ACCEPTED\",\"captured\":\"ACCEPTED\"},\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":false,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"metadata.#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isScript\":false},{\"from\":\"external_order_num\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"payment_details.#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isScript\":false},{\"from\":\"payment_details.month\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"payment_details.year\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"payment_details.type\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"payment_details.last_four_digits\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"payment_details.brand\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"payment_details.email\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"session\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"customer_family_name\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"description\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"captured_at\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"created_at\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"locale\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"mcc\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"error.#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isScript\":false},{\"from\":\"error.param\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"error.details.#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isScript\":false},{\"from\":\"error.message\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"amount_refunded\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"['refunds.#object']\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isScript\":false},{\"from\":\"refunds[0].amount\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"refunds[0].resource\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"refunds[0].chargeback\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"refunds[0].description\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"refunds[0].created_at\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"refunds[0].currency\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"refunds[0].payment\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"refunds[0].id\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"statement_descriptor\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"total\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"customer_given_name\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"currency\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"amount\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"payment_method_fee\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"resource\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"tax\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"payment_deadline\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"['refund_requests.#object']\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isScript\":false},{\"from\":\"customer\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isScript\":false}]},\"responseContentType\":\"application\/json\",\"headers\":{\"Authorization\":\"Basic ${functions.encodeMessage('BASE64','UTF-8','${vars.secretKey}:')}\",\"X-KOMOJU-IDEMPOTENCY\":\"${input.idempotencyKey}\"},\"formArrayIndicator\":null}],\"enabled\":null,\"configurationId\":null,\"googlePayGateway\":null,\"createdAt\":\"2024-04-30T07:25:36.647Z\",\"updatedAt\":\"2024-04-30T07:25:36.647Z\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{rootUrl}}/{{service}}\/merchant\/accountgroups\/{{accountGroupId}}\/accounts\/{{accountId}}\/refund",
+              "host": [
+                "{{rootUrl}}"
+              ],
+              "path": [
+                "{{service}}"
+                ,
+                "merchant"
+                ,
+                "accountgroups"
+                ,
+                "{{accountGroupId}}"
+                ,
+                "accounts"
+                ,
+                "{{accountId}}"
+                ,
+                "refund"
+                
+              ]
+            }
+          },
+          "response": []
+        }
+        
+      ],
+      "protocolProfileBehavior": {}
+    }
+    ,
+    {
+      "name": "Authorization",
+      "item": [
+        {
+          "name": "Authorization",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "{{token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"id\":193,\"pattern\":\"FULL_PAGE\",\"requestType\":\"AUTHORIZATION\",\"destination\":{\"url\":\"${input.redirectUrl}\",\"method\":\"POST\",\"contentType\":\"application\/x-www-form-urlencoded\",\"body\":null,\"authenticationIds\":[],\"form\":[]},\"enabled\":null,\"configurationId\":null,\"googlePayGateway\":null,\"createdAt\":\"2024-04-25T07:59:52.562Z\",\"updatedAt\":\"2025-07-02T07:27:16.546Z\",\"remoteApiOutboundMappings\":[{\"url\":\"https:\/\/${vars.apiDomain}\/api\/v1\/sessions\",\"authenticationIds\":[],\"method\":\"POST\",\"requestContentType\":\"application\/x-www-form-urlencoded\",\"requestExample\":\"amount=1000&currency=JPY&return_url=https:\/\/example.com&email=a@b.com\",\"responseExample\":\"{\\n  \\\"id\\\": \\\"dfacaj2fok7k70hhzibwbn70c\\\",\\n  \\\"resource\\\": \\\"session\\\",\\n  \\\"mode\\\": \\\"payment\\\",\\n  \\\"amount\\\": 1000,\\n  \\\"currency\\\": \\\"JPY\\\",\\n  \\\"session_url\\\": \\\"https:\/\/komoju.com\/sessions\/dfacaj2fok7k70hhzibwbn70c\\\",\\n  \\\"return_url\\\": \\\"https:\/\/example.com\\\",\\n  \\\"default_locale\\\": \\\"ja\\\",\\n  \\\"payment_methods\\\": [\\n    {\\n      \\\"type\\\": \\\"credit_card\\\",\\n      \\\"brands\\\": [\\n        \\\"visa\\\",\\n        \\\"american_express\\\",\\n        \\\"master\\\",\\n        \\\"jcb\\\",\\n        \\\"diners_club\\\"\\n      ],\\n      \\\"amount\\\": 1000,\\n      \\\"currency\\\": \\\"JPY\\\",\\n      \\\"exchange_rate\\\": 1\\n    },\\n    {\\n      \\\"type\\\": \\\"konbini\\\",\\n      \\\"customer_fee\\\": 190,\\n      \\\"brands\\\": {\\n        \\\"seven-eleven\\\": {\\n          \\\"icon\\\": \\\"\/assets\/konbini\/seven-eleven-da31532062f5984f6bbe946cb934414a8794ec777a66d7c04631e7732bef8bbf.svg\\\"\\n        },\\n        \\\"lawson\\\": {\\n          \\\"icon\\\": \\\"\/assets\/konbini\/lawson-b078fed95aae5ab473f8af8203e011da7b71aabcbc01053856eb5276492b8795.svg\\\"\\n        },\\n        \\\"family-mart\\\": {\\n          \\\"icon\\\": \\\"\/assets\/konbini\/family-mart-21bffdc147df8d8aac409229cd1489fb70decf4a0d256078c0ff8f29a74de2b5.svg\\\"\\n        },\\n        \\\"ministop\\\": {\\n          \\\"icon\\\": \\\"\/assets\/konbini\/ministop-7f94431ad31371a9271fe7b8b1f4c711c3c7a3b3373e07cc7e02acfcaf3d759e.svg\\\"\\n        },\\n        \\\"daily-yamazaki\\\": {\\n          \\\"icon\\\": \\\"\/assets\/konbini\/daily-yamazaki-da33e025c337133a7a17c3df51a0fd7be8d7636b49befb814eb6ff296801c434.svg\\\"\\n        },\\n        \\\"seicomart\\\": {\\n          \\\"icon\\\": \\\"\/assets\/konbini\/seicomart-0dd22c56a5bee2440a4dda655bc350339cafd2ef704e2163d25df1711d29e021.svg\\\"\\n        }\\n      },\\n      \\\"amount\\\": 1000,\\n      \\\"currency\\\": \\\"JPY\\\",\\n      \\\"exchange_rate\\\": 1\\n    },\\n    {\\n      \\\"type\\\": \\\"paypay\\\",\\n      \\\"offsite\\\": true,\\n      \\\"additional_fields\\\": [],\\n      \\\"amount\\\": 1000,\\n      \\\"currency\\\": \\\"JPY\\\",\\n      \\\"exchange_rate\\\": 1\\n    },\\n    {\\n      \\\"type\\\": \\\"bank_transfer\\\",\\n      \\\"customer_fee\\\": 0,\\n      \\\"amount\\\": 1000,\\n      \\\"currency\\\": \\\"JPY\\\",\\n      \\\"exchange_rate\\\": 1\\n    }\\n  ],\\n  \\\"created_at\\\": \\\"2023-01-20T11:57:55.000+09:00\\\",\\n  \\\"cancelled_at\\\": null,\\n  \\\"completed_at\\\": null,\\n  \\\"status\\\": \\\"pending\\\",\\n  \\\"expired\\\": false,\\n  \\\"metadata\\\": {},\\n  \\\"payment\\\": null,\\n  \\\"secure_token\\\": null\\n}\",\"requestMappingFields\":{\"mappings\":[{\"from\":\"amount\",\"to\":\"${input.amountInExponent}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"return_url\",\"to\":\"${input.resultURL}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"currency\",\"to\":\"${input.currency}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"email\",\"to\":\"${input.emailAddress}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false}]},\"responseHeaders\":null,\"responseMappingFields\":{\"mappings\":[{\"from\":\"session_url\",\"to\":\"redirectUrl\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":false,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"id\",\"to\":\"session_id\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":false,\"isCustom\":true,\"persistCustomField\":true,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"cancelled_at\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"amount\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"metadata.#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isScript\":false},{\"from\":\"resource\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"created_at\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"mode\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"['payment_methods.#object']\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isScript\":false},{\"from\":\"payment_methods[0].amount\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"payment_methods[0].['brands.#object']\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isScript\":false},{\"from\":\"payment_methods[0].brands[0]\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"payment_methods[0].exchange_rate\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"payment_methods[0].currency\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"payment_methods[0].type\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"completed_at\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"secure_token\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"expired\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"return_url\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"default_locale\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"currency\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"payment\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"status\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isScript\":false}]},\"responseContentType\":\"application\/json\",\"headers\":{\"Authorization\":\"Basic ${functions.encodeMessage('BASE64','UTF-8','${vars.secretKey}:')}\",\"X-KOMOJU-IDEMPOTENCY\":\"${input.idempotencyKey}\"},\"formArrayIndicator\":\"[\"}],\"verify\":{\"localVerifyMapping\":null,\"localVerifyAuthenticationId\":null,\"remoteVerifyMappings\":[{\"url\":\"https:\/\/${vars.apiDomain}\/api\/v1\/sessions\/${input.customFields.session_id}\",\"authenticationIds\":[],\"method\":\"GET\",\"requestContentType\":\"application\/json\",\"requestExample\":null,\"responseExample\":\"{\\n  \\\"id\\\": \\\"1ukhobs8hoa3shhimqa15nq3p\\\",\\n  \\\"resource\\\": \\\"session\\\",\\n  \\\"mode\\\": \\\"payment\\\",\\n  \\\"amount\\\": 118,\\n  \\\"currency\\\": \\\"USD\\\",\\n  \\\"session_url\\\": \\\"https:\/\/komoju.com\/sessions\/1ukhobs8hoa3shhimqa15nq3p\\\",\\n  \\\"return_url\\\": \\\"https:\/\/opf-iss-d0.opf.commerce.stage.context.cloud.sap\/opf\/gateway\/relay-redirect\/00507086_982489159405674497\\\",\\n  \\\"default_locale\\\": \\\"ja\\\",\\n  \\\"payment_methods\\\": [\\n    {\\n      \\\"type\\\": \\\"konbini\\\",\\n      \\\"customer_fee\\\": 190,\\n      \\\"brands\\\": {\\n        \\\"seven-eleven\\\": {\\n          \\\"icon\\\": \\\"\/assets\/konbini\/seven-eleven-da31532062f5984f6bbe946cb934414a8794ec777a66d7c04631e7732bef8bbf.svg\\\"\\n        },\\n        \\\"lawson\\\": {\\n          \\\"icon\\\": \\\"\/assets\/konbini\/lawson-b078fed95aae5ab473f8af8203e011da7b71aabcbc01053856eb5276492b8795.svg\\\"\\n        },\\n        \\\"family-mart\\\": {\\n          \\\"icon\\\": \\\"\/assets\/konbini\/family-mart-21bffdc147df8d8aac409229cd1489fb70decf4a0d256078c0ff8f29a74de2b5.svg\\\"\\n        },\\n        \\\"ministop\\\": {\\n          \\\"icon\\\": \\\"\/assets\/konbini\/ministop-7f94431ad31371a9271fe7b8b1f4c711c3c7a3b3373e07cc7e02acfcaf3d759e.svg\\\"\\n        },\\n        \\\"daily-yamazaki\\\": {\\n          \\\"icon\\\": \\\"\/assets\/konbini\/daily-yamazaki-da33e025c337133a7a17c3df51a0fd7be8d7636b49befb814eb6ff296801c434.svg\\\"\\n        },\\n        \\\"seicomart\\\": {\\n          \\\"icon\\\": \\\"\/assets\/konbini\/seicomart-0dd22c56a5bee2440a4dda655bc350339cafd2ef704e2163d25df1711d29e021.svg\\\"\\n        }\\n      },\\n      \\\"seven_eleven_merchant_number\\\": null,\\n      \\\"amount\\\": 184,\\n      \\\"currency\\\": \\\"JPY\\\",\\n      \\\"exchange_rate\\\": 155.9322033898305,\\n      \\\"hashed_gateway\\\": \\\"0c2ab1dc173939ae\\\"\\n    },\\n    {\\n      \\\"type\\\": \\\"paypay\\\",\\n      \\\"offsite\\\": true,\\n      \\\"additional_fields\\\": [],\\n      \\\"amount\\\": 184,\\n      \\\"currency\\\": \\\"JPY\\\",\\n      \\\"exchange_rate\\\": 155.9322033898305,\\n      \\\"hashed_gateway\\\": \\\"c2420dec7af5cc5d\\\"\\n    },\\n    {\\n      \\\"type\\\": \\\"linepay\\\",\\n      \\\"offsite\\\": true,\\n      \\\"additional_fields\\\": [],\\n      \\\"amount\\\": 184,\\n      \\\"currency\\\": \\\"JPY\\\",\\n      \\\"exchange_rate\\\": 155.9322033898305,\\n      \\\"hashed_gateway\\\": \\\"89cb1d97db38194a\\\"\\n    },\\n    {\\n      \\\"type\\\": \\\"merpay\\\",\\n      \\\"offsite\\\": true,\\n      \\\"additional_fields\\\": [],\\n      \\\"amount\\\": 184,\\n      \\\"currency\\\": \\\"JPY\\\",\\n      \\\"exchange_rate\\\": 155.9322033898305,\\n      \\\"hashed_gateway\\\": \\\"7914b9d088fac4e1\\\"\\n    },\\n    {\\n      \\\"type\\\": \\\"bank_transfer\\\",\\n      \\\"customer_fee\\\": 0,\\n      \\\"amount\\\": 184,\\n      \\\"currency\\\": \\\"JPY\\\",\\n      \\\"exchange_rate\\\": 155.9322033898305,\\n      \\\"hashed_gateway\\\": \\\"869c736e1b796765\\\"\\n    },\\n    {\\n      \\\"type\\\": \\\"pay_easy\\\",\\n      \\\"customer_fee\\\": 190,\\n      \\\"amount\\\": 184,\\n      \\\"currency\\\": \\\"JPY\\\",\\n      \\\"exchange_rate\\\": 155.9322033898305,\\n      \\\"hashed_gateway\\\": \\\"0c2ab1dc173939ae\\\"\\n    },\\n    {\\n      \\\"type\\\": \\\"web_money\\\",\\n      \\\"amount\\\": 184,\\n      \\\"currency\\\": \\\"JPY\\\",\\n      \\\"exchange_rate\\\": 155.9322033898305,\\n      \\\"hashed_gateway\\\": \\\"481e160b774154cc\\\"\\n    },\\n    {\\n      \\\"type\\\": \\\"bit_cash\\\",\\n      \\\"amount\\\": 184,\\n      \\\"currency\\\": \\\"JPY\\\",\\n      \\\"exchange_rate\\\": 155.9322033898305,\\n      \\\"hashed_gateway\\\": \\\"e83dfe11357f60d3\\\"\\n    },\\n    {\\n      \\\"type\\\": \\\"net_cash\\\",\\n      \\\"amount\\\": 184,\\n      \\\"currency\\\": \\\"JPY\\\",\\n      \\\"exchange_rate\\\": 155.9322033898305,\\n      \\\"hashed_gateway\\\": \\\"7b3e56e03cdd6bc1\\\"\\n    },\\n    {\\n      \\\"type\\\": \\\"paidy\\\",\\n      \\\"offsite\\\": true,\\n      \\\"additional_fields\\\": [\\n        \\\"name\\\",\\n        \\\"phone\\\"\\n      ],\\n      \\\"amount\\\": 184,\\n      \\\"currency\\\": \\\"JPY\\\",\\n      \\\"exchange_rate\\\": 155.9322033898305,\\n      \\\"hashed_gateway\\\": \\\"0eea143ee0f08fd0\\\"\\n    },\\n    {\\n      \\\"type\\\": \\\"rakutenpay\\\",\\n      \\\"offsite\\\": true,\\n      \\\"additional_fields\\\": [],\\n      \\\"amount\\\": 184,\\n      \\\"currency\\\": \\\"JPY\\\",\\n      \\\"exchange_rate\\\": 155.9322033898305,\\n      \\\"hashed_gateway\\\": \\\"97a127baa4bf0e5d\\\"\\n    },\\n    {\\n      \\\"type\\\": \\\"aupay\\\",\\n      \\\"offsite\\\": true,\\n      \\\"additional_fields\\\": [],\\n      \\\"amount\\\": 184,\\n      \\\"currency\\\": \\\"JPY\\\",\\n      \\\"exchange_rate\\\": 155.9322033898305,\\n      \\\"hashed_gateway\\\": \\\"d2c2db89f3c6782f\\\"\\n    },\\n    {\\n      \\\"type\\\": \\\"alipay\\\",\\n      \\\"second_icon\\\": \\\"alipay_plus_partner\\\",\\n      \\\"offsite\\\": true,\\n      \\\"additional_fields\\\": [],\\n      \\\"amount\\\": 184,\\n      \\\"currency\\\": \\\"JPY\\\",\\n      \\\"exchange_rate\\\": 155.9322033898305,\\n      \\\"hashed_gateway\\\": \\\"bbbd861388abf3e0\\\"\\n    }\\n  ],\\n  \\\"created_at\\\": \\\"2024-04-30T02:02:15.000+09:00\\\",\\n  \\\"cancelled_at\\\": null,\\n  \\\"completed_at\\\": \\\"2024-04-30T02:03:16.000+09:00\\\",\\n  \\\"status\\\": \\\"completed\\\",\\n  \\\"expired\\\": false,\\n  \\\"metadata\\\": {},\\n  \\\"payment\\\": {\\n    \\\"id\\\": \\\"9q4f8ya5i6nmif242crqbv6sz\\\",\\n    \\\"resource\\\": \\\"payment\\\",\\n    \\\"status\\\": \\\"captured\\\",\\n    \\\"amount\\\": 184,\\n    \\\"tax\\\": 0,\\n    \\\"customer\\\": null,\\n    \\\"payment_deadline\\\": null,\\n    \\\"payment_details\\\": {\\n      \\\"type\\\": \\\"web_money\\\",\\n      \\\"email\\\": null,\\n      \\\"short_amount\\\": 0,\\n      \\\"prepaid_cards\\\": [\\n        {\\n          \\\"last_four_digits\\\": \\\"1111\\\",\\n          \\\"points\\\": 184\\n        }\\n      ]\\n    },\\n    \\\"payment_method_fee\\\": 0,\\n    \\\"total\\\": 184,\\n    \\\"currency\\\": \\\"JPY\\\",\\n    \\\"description\\\": null,\\n    \\\"captured_at\\\": \\\"2024-04-29T17:03:15Z\\\",\\n    \\\"external_order_num\\\": null,\\n    \\\"metadata\\\": {},\\n    \\\"created_at\\\": \\\"2024-04-29T17:03:15Z\\\",\\n    \\\"amount_refunded\\\": 0,\\n    \\\"locale\\\": \\\"ja\\\",\\n    \\\"session\\\": \\\"1ukhobs8hoa3shhimqa15nq3p\\\",\\n    \\\"customer_family_name\\\": null,\\n    \\\"customer_given_name\\\": null,\\n    \\\"mcc\\\": null,\\n    \\\"statement_descriptor\\\": null,\\n    \\\"refunds\\\": [],\\n    \\\"refund_requests\\\": []\\n  },\\n  \\\"secure_token\\\": null,\\n  \\\"payment_data\\\": {\\n    \\\"capture\\\": \\\"auto\\\"\\n  }\\n}\",\"requestMappingFields\":{\"mappings\":[]},\"responseHeaders\":null,\"responseMappingFields\":{\"mappings\":[{\"from\":\"payment.id\",\"to\":\"pspReference\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":false,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"status\",\"to\":\"result\",\"map\":{\"completed\":\"AUTHORIZED\",\"pending\":\"CANCELLED\"},\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":false,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"cancelled_at\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"amount\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"metadata.#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isScript\":false},{\"from\":\"resource\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"session_url\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"created_at\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"mode\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"['payment_methods.#object']\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isScript\":false},{\"from\":\"payment_methods[0].amount\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"payment_methods[0].brands.#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isScript\":false},{\"from\":\"payment_methods[0].brands.family-mart.#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isScript\":false},{\"from\":\"payment_methods[0].brands.family-mart.icon\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"payment_methods[0].brands.seven-eleven.#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isScript\":false},{\"from\":\"payment_methods[0].brands.seven-eleven.icon\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"payment_methods[0].brands.ministop.#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isScript\":false},{\"from\":\"payment_methods[0].brands.ministop.icon\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"payment_methods[0].brands.seicomart.#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isScript\":false},{\"from\":\"payment_methods[0].brands.seicomart.icon\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"payment_methods[0].brands.lawson.#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isScript\":false},{\"from\":\"payment_methods[0].brands.lawson.icon\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"payment_methods[0].brands.daily-yamazaki.#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isScript\":false},{\"from\":\"payment_methods[0].brands.daily-yamazaki.icon\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"payment_methods[0].seven_eleven_merchant_number\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"payment_methods[0].exchange_rate\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"payment_methods[0].hashed_gateway\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"payment_methods[0].customer_fee\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"payment_methods[0].currency\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"payment_methods[0].type\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"completed_at\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"secure_token\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"expired\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"return_url\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"default_locale\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"currency\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"payment.#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isScript\":false},{\"from\":\"payment.metadata.#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isScript\":false},{\"from\":\"payment.external_order_num\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"payment.payment_details.#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isScript\":false},{\"from\":\"payment.payment_details.short_amount\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"payment.payment_details.['prepaid_cards.#object']\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isScript\":false},{\"from\":\"payment.payment_details.prepaid_cards[0].last_four_digits\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"payment.payment_details.prepaid_cards[0].points\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"payment.payment_details.type\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"payment.payment_details.email\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"payment.session\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"payment.customer_family_name\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"payment.description\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"payment.captured_at\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"payment.created_at\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"payment.locale\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"payment.mcc\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"payment.amount_refunded\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"payment.['refunds.#object']\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isScript\":false},{\"from\":\"payment.statement_descriptor\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"payment.total\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"payment.customer_given_name\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"payment.currency\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"payment.amount\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"payment.payment_method_fee\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"payment.resource\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"payment.tax\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"payment.payment_deadline\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"payment.['refund_requests.#object']\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isScript\":false},{\"from\":\"payment.status\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"payment.customer\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"payment_data.#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isScript\":false},{\"from\":\"payment_data.capture\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"id\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isScript\":false}]},\"responseContentType\":\"application\/json\",\"headers\":{\"Authorization\":\"Basic ${functions.encodeMessage('BASE64','UTF-8','${vars.secretKey}:')}\"},\"formArrayIndicator\":null}]},\"redirectFilteringParamDto\":{\"redirectParamFilterPolicy\":null,\"filteringParams\":[]}}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{rootUrl}}/{{service}}\/merchant\/accountgroups\/{{accountGroupId}}\/accounts\/{{accountId}}\/authorization",
+              "host": [
+                "{{rootUrl}}"
+              ],
+              "path": [
+                "{{service}}"
+                ,
+                "merchant"
+                ,
+                "accountgroups"
+                ,
+                "{{accountGroupId}}"
+                ,
+                "accounts"
+                ,
+                "{{accountId}}"
+                ,
+                "authorization"
+                
+              ]
+            }
+          },
+          "response": []
+        }
+        
+      ],
+      "protocolProfileBehavior": {}
+    }
+    
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "exec": [
+          "let url = pm.request.url.toString();\nif(pm.environment.get(\"service\")==null || pm.environment.get(\"service\")===\"\"){\n    let updateUrl = url.replace(\"\/{{service}}\",\"\")\n    pm.request.url = updateUrl;\n}"
+        ]
+      }
+    }
+  ]
+  ,
+  "protocolProfileBehavior": {}
+}

@@ -1,0 +1,88 @@
+{
+  "id": "50e9c302-e558-4724-933a-787c88e7550e",
+  "name": "Monei Payment Page",
+  "values": [
+    {
+      "key": "token",
+      "value": "",
+      "enabled": true
+    },
+    {
+      "key": "rootUrl",
+      "value": "https:\/\/opf-iss-d0.opf.commerce.stage.context.cloud.sap",
+      "enabled": true
+    },
+    {
+      "key": "service",
+      "value": "opf",
+      "enabled": true
+    },
+    {
+      "key": "accountGroupId",
+      "value": "621",
+      "enabled": true
+    },
+    {
+      "key": "accountId",
+      "value": "220",
+      "enabled": true
+    },
+    {
+      "key": "authentication_outbound_api_key_value_export_366",
+      "value": "Monei payment Page Auth",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "capturePattern",
+      "value": "PARTIAL_CAPTURE",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "supportOverCapture",
+      "value": "false",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "enableOverCapture",
+      "value": "false",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "authorizationTimeoutDays",
+      "value": "7",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "apiEnv",
+      "value": "api.monei.com",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "transactionType",
+      "value": "AUTH",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "webHookKey",
+      "value": "pk_test_9cd4a847ffdf12f7824606b636837209",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "generatePaymentToken",
+      "value": "true",
+      "enabled": true
+    }
+    
+  ],
+  "_postman_variable_scope": "environment",
+  "_postman_exported_at": "",
+  "_postman_exported_using": "Postman\/7.35.0"
+}

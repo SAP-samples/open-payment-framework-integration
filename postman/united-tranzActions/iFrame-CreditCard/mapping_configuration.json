@@ -1,0 +1,410 @@
+{
+  "info": {
+    "_postman_id": "d7789dcf-13b6-4753-8f8d-a9802e599d3b",
+    "name": "UTA credit card Config Collection",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Variable",
+      "item": [
+        {
+          "name": "Variable_apiDomain",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "{{token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"id\":2596,\"sensitive\":false,\"value\":\"{{apiDomain}}\",\"key\":\"apiDomain\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{rootUrl}}/{{service}}\/merchant\/accountgroups\/{{accountGroupId}}\/accounts\/{{accountId}}\/variables",
+              "host": [
+                "{{rootUrl}}"
+              ],
+              "path": [
+                "{{service}}"
+                ,
+                "merchant"
+                ,
+                "accountgroups"
+                ,
+                "{{accountGroupId}}"
+                ,
+                "accounts"
+                ,
+                "{{accountId}}"
+                ,
+                "variables"
+                
+              ]
+            }
+          },
+          "response": []
+        }
+        ,
+        {
+          "name": "Variable_accessID",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "{{token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"id\":2597,\"sensitive\":true,\"value\":\"{{accessID}}\",\"key\":\"accessID\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{rootUrl}}/{{service}}\/merchant\/accountgroups\/{{accountGroupId}}\/accounts\/{{accountId}}\/variables",
+              "host": [
+                "{{rootUrl}}"
+              ],
+              "path": [
+                "{{service}}"
+                ,
+                "merchant"
+                ,
+                "accountgroups"
+                ,
+                "{{accountGroupId}}"
+                ,
+                "accounts"
+                ,
+                "{{accountId}}"
+                ,
+                "variables"
+                
+              ]
+            }
+          },
+          "response": []
+        }
+        ,
+        {
+          "name": "Variable_username",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "{{token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"id\":2598,\"sensitive\":false,\"value\":\"{{username}}\",\"key\":\"username\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{rootUrl}}/{{service}}\/merchant\/accountgroups\/{{accountGroupId}}\/accounts\/{{accountId}}\/variables",
+              "host": [
+                "{{rootUrl}}"
+              ],
+              "path": [
+                "{{service}}"
+                ,
+                "merchant"
+                ,
+                "accountgroups"
+                ,
+                "{{accountGroupId}}"
+                ,
+                "accounts"
+                ,
+                "{{accountId}}"
+                ,
+                "variables"
+                
+              ]
+            }
+          },
+          "response": []
+        }
+        ,
+        {
+          "name": "Variable_iframeTransactionType",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "{{token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"id\":2599,\"sensitive\":false,\"value\":\"{{iframeTransactionType}}\",\"key\":\"iframeTransactionType\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{rootUrl}}/{{service}}\/merchant\/accountgroups\/{{accountGroupId}}\/accounts\/{{accountId}}\/variables",
+              "host": [
+                "{{rootUrl}}"
+              ],
+              "path": [
+                "{{service}}"
+                ,
+                "merchant"
+                ,
+                "accountgroups"
+                ,
+                "{{accountGroupId}}"
+                ,
+                "accounts"
+                ,
+                "{{accountId}}"
+                ,
+                "variables"
+                
+              ]
+            }
+          },
+          "response": []
+        }
+        ,
+        {
+          "name": "Variable_password",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "{{token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"id\":2600,\"sensitive\":true,\"value\":\"{{password}}\",\"key\":\"password\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{rootUrl}}/{{service}}\/merchant\/accountgroups\/{{accountGroupId}}\/accounts\/{{accountId}}\/variables",
+              "host": [
+                "{{rootUrl}}"
+              ],
+              "path": [
+                "{{service}}"
+                ,
+                "merchant"
+                ,
+                "accountgroups"
+                ,
+                "{{accountGroupId}}"
+                ,
+                "accounts"
+                ,
+                "{{accountId}}"
+                ,
+                "variables"
+                
+              ]
+            }
+          },
+          "response": []
+        }
+        
+      ],
+      "protocolProfileBehavior": {}
+    }
+    ,
+    {
+      "name": "Account",
+      "item": [
+        {
+          "name": "Account Patch",
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "{{token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"supportOverCapture\":\"{{supportOverCapture}}\",\"enableOverCapture\":\"{{enableOverCapture}}\",\"capturePattern\":\"{{capturePattern}}\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{rootUrl}}/{{service}}\/merchant\/accountgroups\/{{accountGroupId}}\/accounts\/{{accountId}}",
+              "host": [
+                "{{rootUrl}}"
+              ],
+              "path": [
+                "{{service}}"
+                ,
+                "merchant"
+                ,
+                "accountgroups"
+                ,
+                "{{accountGroupId}}"
+                ,
+                "accounts"
+                ,
+                "{{accountId}}"
+                
+              ]
+            }
+          },
+          "response": []
+        }
+        
+      ],
+      "protocolProfileBehavior": {}
+    }
+    ,
+    {
+      "name": "AccountGroup",
+      "item": [
+        {
+          "name": "Account Group Patch",
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "{{token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"authorizationTimeoutDays\":{{authorizationTimeoutDays}}}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{rootUrl}}/{{service}}\/merchant\/accountgroups\/{{accountGroupId}}",
+              "host": [
+                "{{rootUrl}}"
+              ],
+              "path": [
+                "{{service}}"
+                ,
+                "merchant"
+                ,
+                "accountgroups"
+                ,
+                "{{accountGroupId}}"
+                
+              ]
+            }
+          },
+          "response": []
+        }
+        
+      ],
+      "protocolProfileBehavior": {}
+    }
+    ,
+    {
+      "name": "Authorization",
+      "item": [
+        {
+          "name": "Authorization",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "{{token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"id\":3665,\"pattern\":\"IFRAME\",\"requestType\":\"AUTHORIZATION\",\"enabled\":null,\"configurationId\":null,\"googlePayGateway\":null,\"dynamicScript\":{\"html\":\"<form id=\\\"form1\\\"  method=\\\"post\\\"><\/form>\\n\\n<div class=\\\"container-fluid py-3\\\">\\n  <form id=\\\"divForm\\\" autocomplete=\\\"off\\\" onsubmit=\\\"return false;\\\">\\n    <div  id=\\\"utacontainer\\\" style=\\\"display: none; width: 100%; height: 40vh;\\\">\\n      <iframe id=\\\"ifrmCCProcessor\\\"\\n              name=\\\"ifrmCCProcessor\\\" title=\\\"iFrame Test website\\\"\\n              style=\\\"width: 100%; height: 100%; border: 1px solid #ccc; border-radius: 4px;\\\"\\n              allowfullscreen=\\\"true\\\"><\/iframe>\\n    <\/div>\\n  <\/form>\\n<\/div>\\n\\n<script>\\n  \\n\\nfunction initializePayment() {\\n    var target = \\\"ifrmCCProcessor\\\";\\n    const params = {\\n        action: \\\"${functions.htmlEncode(vars.iframeTransactionType)}\\\",\\n        processtoken: \\\"${input.responseBody}\\\",\\n        redirect: \\\"Y\\\",\\n        posturl: \\\"${functions.htmlEncode(input.resultURL)}\\\",\\n        street: \\\"${functions.htmlEncode(input.billingAddress.addressLine1)}\\\",\\n        city: \\\"${functions.htmlEncode(input.billingAddress.city)}\\\",\\n        state: \\\"${functions.htmlEncode(input.billingAddress.state)}\\\",\\n        zipcode: \\\"${functions.htmlEncode(input.billingAddress.postalCode)}\\\",\\n        amount: \\\"${functions.htmlEncode(input.amount)}\\\",\\n        tax: \\\"${functions.htmlEncode(input.totalProductTax)}\\\",\\n        txtemail: \\\"${functions.htmlEncode(input.emailAddress)}\\\",\\n        txtPphone: \\\"${functions.htmlEncode(input.billingAddress.phoneNumber)}\\\",\\n        txtFname: \\\"${functions.htmlEncode(input.billingAddress.firstName)}\\\",\\n        txtLname: \\\"${functions.htmlEncode(input.billingAddress.lastName)}\\\",\\n        nameOnCard: \\\"${functions.htmlEncode(input.billingAddress.firstName)} ${functions.htmlEncode(input.billingAddress.lastName)}\\\",\\n        txtCID: \\\"${functions.htmlEncode(input.referenceId)}\\\", \\n        invoiceno: \\\"${functions.htmlEncode(input.referenceId)}\\\",\\n        showamount: \\\"true\\\",\\n        showfulladdress: \\\"true\\\",\\n        showzipcode: \\\"true\\\",\\n        sameaddress: \\\"true\\\",\\n        showCVV: \\\"true\\\",\\n        showinvoiceno: \\\"false\\\",\\n        isPreAuth: \\\"true\\\",\\n        preAuthAmount: \\\"${functions.htmlEncode(input.amount)}\\\"\\n    };\\n\\n    iframePost(target, params);\\n    document.getElementById(\\\"utacontainer\\\").style.display = \\\"block\\\";\\n}\\n  \\nif (document.readyState === 'loading') {\\n    document.addEventListener('DOMContentLoaded', initializePayment);\\n} else {\\n    console.log('DOM already loaded, executing immediately');\\n    initializePayment();\\n}\\n\\n\\nfunction iframePost(target, data) {\\n    var url = \\\"https:\/\/${functions.htmlEncode(vars.apiDomain)}\/hostediframe\/CCIFrame.aspx\\\";\\n    var form = document.getElementById(\\\"form1\\\");\\n    \\n  \\n    \/\/ Set form attributes\\n    form.setAttribute(\\\"target\\\", target);\\n    form.setAttribute(\\\"action\\\", url);\\n   form.setAttribute(\\\"method\\\", \\\"POST\\\");\\n\\n    \/\/ Clear existing hidden inputs (prevents duplicates on multiple calls)\\n    [...form.querySelectorAll('input[type=\\\"hidden\\\"]')].forEach(el => el.remove());\\n\\n    \/\/ Append new hidden inputs\\n    for (let [name, value] of Object.entries(data)) {\\n        let input = document.createElement(\\\"input\\\");\\n        input.type = \\\"hidden\\\";\\n        input.name = name;\\n        input.value = value;\\n        form.appendChild(input);\\n    }\\n  \\n\\n    \/\/ Submit the form\\n    form.submit();\\n}\\n<\/script>\",\"afterRedirectHtml\":null},\"remoteApiOutboundMappings\":[{\"url\":\"https:\/\/${vars.apiDomain}\/hostediframe\/security\/iframeaccess\",\"authenticationIds\":[],\"method\":\"POST\",\"requestContentType\":\"text\/plain\",\"requestExample\":null,\"responseExample\":\"e3339693-c6cd-49bd-876a-c45bdb37bd63\",\"requestMappingFields\":null,\"responseHeaders\":null,\"responseMappingFields\":null,\"responseContentType\":\"text\/plain\",\"headers\":{\"Authorization\":\"Bearer ${vars.accessID}\"},\"formArrayIndicator\":null}],\"verify\":{\"localVerifyMapping\":null,\"localVerifyAuthenticationId\":null,\"remoteVerifyAuthorizationMappings\":[{\"url\":\"https:\/\/${vars.apiDomain}\/xmlapi\/xml.ashx\",\"authenticationIds\":[],\"method\":\"POST\",\"requestContentType\":\"application\/xml\",\"requestExample\":\"<UTA>\\n    <USERINFO>\\n        <USERNAME>opfsap<\/USERNAME>\\n        <PASSWORD>123345<\/PASSWORD>\\n        <MERCHANTNO>040000CR01<\/MERCHANTNO>\\n    <\/USERINFO>\\n<CREDITCARDS>\\n    <ACTION>PREAUTH<\/ACTION>\\n    <CREDITCARD APPLYSURCHARGE=\\\"AUTO\\\">\\n        <CUSTOMERID><![CDATA[000000L000000OOY_7376169001175220224]]><\/CUSTOMERID>\\n        <TRANSACTIONDATE>9\/23\/2025<\/TRANSACTIONDATE>\\n        <AMOUNT>570.39<\/AMOUNT>\\n        <TOKENID><![CDATA[D5909782-B978-4C08-A8FA-E4F1F021C75E]]><\/TOKENID>\\n    <\/CREDITCARD>\\n<\/CREDITCARDS>\\n<\/UTA>\",\"responseExample\":\"<?xml version=\\\"1.0\\\" encoding=\\\"ISO-8859-1\\\"?>\\n<UTA>\\n    <RESPONSE SEQUENCE=\\\"1\\\">\\n        <STATUS>A<\/STATUS>\\n        <TRANSID>3905185<\/TRANSID>\\n        <AUTHCODE>000009<\/AUTHCODE>\\n        <RETURNCODE>0<\/RETURNCODE>\\n        <RETURNMSG>APPROVED: 3905185<\/RETURNMSG>\\n        <CCTYPE>Visa<\/CCTYPE>\\n        <SURCHARGE>N<\/SURCHARGE>\\n        <SURCHARGERATE>0<\/SURCHARGERATE>\\n        <SURCHARGEAMOUNT>0<\/SURCHARGEAMOUNT>\\n        <TOTALAMOUNT>570.39<\/TOTALAMOUNT>\\n        <AVSCODE>N<\/AVSCODE>\\n        <AVSMSG>Street Address does not match, Postal Code does not match.<\/AVSMSG>\\n        <DATESTAMP>2025-09-23T15:09:14.299Z<\/DATESTAMP>\\n        <CREDITCARD APPLYSURCHARGE=\\\"AUTO\\\">\\n            <CUSTOMERID>\\n                <![CDATA[000000L000000OOY_7376169001175220224]]>\\n            <\/CUSTOMERID>\\n            <TRANSACTIONDATE>9\/23\/2025<\/TRANSACTIONDATE>\\n            <AMOUNT>570.39<\/AMOUNT>\\n            <TOKENID>\\n                <![CDATA[D5909782-B978-4C08-A8FA-E4F1F021C75E]]>\\n            <\/TOKENID>\\n        <\/CREDITCARD>\\n    <\/RESPONSE>\\n<\/UTA>\",\"requestMappingFields\":{\"mappings\":[{\"from\":\"\/UTA\/USERINFO\/USERNAME\",\"to\":\"${vars.username}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"\/UTA\/USERINFO\/PASSWORD\",\"to\":\"${vars.password}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"\/UTA\/USERINFO\/MERCHANTNO\",\"to\":\"${input.merchantId}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"\/UTA\/CREDITCARDS\/ACTION\",\"to\":\"PREAUTH\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":true,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"\/UTA\/CREDITCARDS\/CREDITCARD\/@APPLYSURCHARGE\",\"to\":\"AUTO\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":true,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"\/UTA\/CREDITCARDS\/CREDITCARD\/CUSTOMERID\",\"to\":\"${input.referenceId}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"\/UTA\/CREDITCARDS\/CREDITCARD\/TRANSACTIONDATE\",\"to\":\"${.now?string.iso}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":true},{\"from\":\"\/UTA\/CREDITCARDS\/CREDITCARD\/AMOUNT\",\"to\":\"${input.customFields.AmountBeforeSurcharge}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":true},{\"from\":\"\/UTA\/CREDITCARDS\/CREDITCARD\/TOKENID\",\"to\":\"${input.customFields.CCToken}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":true}]},\"responseHeaders\":null,\"responseMappingFields\":{\"mappings\":[{\"from\":\"UTA.RESPONSE.TOTALAMOUNT.#text\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"UTA.RESPONSE.CREDITCARD.CUSTOMERID.#text\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"UTA.RESPONSE.CREDITCARD.APPLYSURCHARGE\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"UTA.RESPONSE.CREDITCARD.TRANSACTIONDATE.#text\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"UTA.RESPONSE.DATESTAMP.#text\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"UTA.RESPONSE.AVSCODE.#text\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"UTA.RESPONSE.RETURNMSG.#text\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"UTA.RESPONSE.AVSMSG.#text\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"UTA.RESPONSE.SURCHARGERATE.#text\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"UTA.RESPONSE.SURCHARGEAMOUNT.#text\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"UTA.RESPONSE.CCTYPE.#text\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"UTA.RESPONSE.SEQUENCE\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"UTA.RESPONSE.SURCHARGE.#text\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"UTA.RESPONSE.RETURNCODE.#text\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"UTA.RESPONSE.AUTHCODE.#text\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"UTA.#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isScript\":false},{\"from\":\"UTA.RESPONSE.CREDITCARD.#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isScript\":false},{\"from\":\"UTA.RESPONSE.#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isScript\":false},{\"from\":\"#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isScript\":false},{\"from\":\"UTA.RESPONSE.CREDITCARD.AMOUNT.#text\",\"to\":\"authorizationAmount\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":false,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"UTA.RESPONSE.TRANSID.#text\",\"to\":\"pspReference\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":false,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"UTA.RESPONSE.CREDITCARD.TOKENID.#text\",\"to\":\"token\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":false,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"UTA.RESPONSE.STATUS.#text\",\"to\":\"transactionStatus\",\"map\":{\"A\":\"ACCEPTED\",\"E\":\"REJECTED\"},\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":false,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"UTA.RESPONSE.STATUS.#text\",\"to\":\"result\",\"map\":{\"A\":\"AUTHORIZED\",\"E\":\"UNAUTHORIZED\"},\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":\"BODY\",\"fixed\":false,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false}]},\"responseContentType\":\"application\/xml\",\"headers\":{\"Authorization\":\"Bearer ${vars.accessID}\"},\"formArrayIndicator\":null}]},\"redirectFilteringParamDto\":{\"redirectParamFilterPolicy\":null,\"filteringParams\":[]}}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{rootUrl}}/{{service}}\/merchant\/accountgroups\/{{accountGroupId}}\/accounts\/{{accountId}}\/authorization",
+              "host": [
+                "{{rootUrl}}"
+              ],
+              "path": [
+                "{{service}}"
+                ,
+                "merchant"
+                ,
+                "accountgroups"
+                ,
+                "{{accountGroupId}}"
+                ,
+                "accounts"
+                ,
+                "{{accountId}}"
+                ,
+                "authorization"
+                
+              ]
+            }
+          },
+          "response": []
+        }
+        
+      ],
+      "protocolProfileBehavior": {}
+    }
+    
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "exec": [
+          "let url = pm.request.url.toString();\nif(pm.environment.get(\"service\")==null || pm.environment.get(\"service\")===\"\"){\n    let updateUrl = url.replace(\"\/{{service}}\",\"\")\n    pm.request.url = updateUrl;\n}"
+        ]
+      }
+    }
+  ]
+  ,
+  "protocolProfileBehavior": {}
+}

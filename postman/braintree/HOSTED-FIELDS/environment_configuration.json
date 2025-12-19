@@ -1,0 +1,94 @@
+{
+  "id": "2349df0c-6208-4465-b905-54ac2bc0f5cc",
+  "name": "Braintree",
+  "values": [
+    {
+      "key": "token",
+      "value": "",
+      "enabled": true
+    },
+    {
+      "key": "rootUrl",
+      "value": "https:\/\/opf-iss-d0.opf.commerce.stage.context.cloud.sap",
+      "enabled": true
+    },
+    {
+      "key": "service",
+      "value": "opf",
+      "enabled": true
+    },
+    {
+      "key": "accountGroupId",
+      "value": "45",
+      "enabled": true
+    },
+    {
+      "key": "accountId",
+      "value": "25",
+      "enabled": true
+    },
+    {
+      "key": "authentication_outbound_basic_auth_username_export_758",
+      "value": "Braintree_API_Credential_username",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "authentication_outbound_basic_auth_password_export_758",
+      "value": "Braintree_API_Credential_password",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "capturePattern",
+      "value": "CAPTURE_PER_SHIPMENT",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "supportOverCapture",
+      "value": "false",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "enableOverCapture",
+      "value": "false",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "authorizationTimeoutDays",
+      "value": "7",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "paymentsApiHost",
+      "value": "payments.sandbox.braintree-api.com",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "braintreeVersion",
+      "value": "2019-01-01",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "payButtonLabel",
+      "value": "Submit Order",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "merchantAccountIdPrefix",
+      "value": "sap-",
+      "enabled": true
+    }
+    
+  ],
+  "_postman_variable_scope": "environment",
+  "_postman_exported_at": "",
+  "_postman_exported_using": "Postman\/7.35.0"
+}

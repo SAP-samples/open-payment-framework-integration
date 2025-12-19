@@ -1,0 +1,634 @@
+{
+  "info": {
+    "_postman_id": "29e281fb-7bed-4c36-b1f9-04ca788f53e9",
+    "name": "Braintree OPF Mapping",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Variable",
+      "item": [
+        {
+          "name": "Variable_paymentsApiHost",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "{{token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"id\":112,\"sensitive\":false,\"value\":\"{{paymentsApiHost}}\",\"key\":\"paymentsApiHost\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{rootUrl}}/{{service}}\/merchant\/accountgroups\/{{accountGroupId}}\/accounts\/{{accountId}}\/variables",
+              "host": [
+                "{{rootUrl}}"
+              ],
+              "path": [
+                "{{service}}"
+                ,
+                "merchant"
+                ,
+                "accountgroups"
+                ,
+                "{{accountGroupId}}"
+                ,
+                "accounts"
+                ,
+                "{{accountId}}"
+                ,
+                "variables"
+                
+              ]
+            }
+          },
+          "response": []
+        }
+        ,
+        {
+          "name": "Variable_braintreeVersion",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "{{token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"id\":114,\"sensitive\":false,\"value\":\"{{braintreeVersion}}\",\"key\":\"braintreeVersion\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{rootUrl}}/{{service}}\/merchant\/accountgroups\/{{accountGroupId}}\/accounts\/{{accountId}}\/variables",
+              "host": [
+                "{{rootUrl}}"
+              ],
+              "path": [
+                "{{service}}"
+                ,
+                "merchant"
+                ,
+                "accountgroups"
+                ,
+                "{{accountGroupId}}"
+                ,
+                "accounts"
+                ,
+                "{{accountId}}"
+                ,
+                "variables"
+                
+              ]
+            }
+          },
+          "response": []
+        }
+        ,
+        {
+          "name": "Variable_payButtonLabel",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "{{token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"id\":119,\"sensitive\":false,\"value\":\"{{payButtonLabel}}\",\"key\":\"payButtonLabel\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{rootUrl}}/{{service}}\/merchant\/accountgroups\/{{accountGroupId}}\/accounts\/{{accountId}}\/variables",
+              "host": [
+                "{{rootUrl}}"
+              ],
+              "path": [
+                "{{service}}"
+                ,
+                "merchant"
+                ,
+                "accountgroups"
+                ,
+                "{{accountGroupId}}"
+                ,
+                "accounts"
+                ,
+                "{{accountId}}"
+                ,
+                "variables"
+                
+              ]
+            }
+          },
+          "response": []
+        }
+        ,
+        {
+          "name": "Variable_merchantAccountIdPrefix",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "{{token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"id\":127,\"sensitive\":false,\"value\":\"{{merchantAccountIdPrefix}}\",\"key\":\"merchantAccountIdPrefix\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{rootUrl}}/{{service}}\/merchant\/accountgroups\/{{accountGroupId}}\/accounts\/{{accountId}}\/variables",
+              "host": [
+                "{{rootUrl}}"
+              ],
+              "path": [
+                "{{service}}"
+                ,
+                "merchant"
+                ,
+                "accountgroups"
+                ,
+                "{{accountGroupId}}"
+                ,
+                "accounts"
+                ,
+                "{{accountId}}"
+                ,
+                "variables"
+                
+              ]
+            }
+          },
+          "response": []
+        }
+        
+      ],
+      "protocolProfileBehavior": {}
+    }
+    ,
+    {
+      "name": "Account",
+      "item": [
+        {
+          "name": "Account Patch",
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "{{token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"supportOverCapture\":\"{{supportOverCapture}}\",\"enableOverCapture\":\"{{enableOverCapture}}\",\"capturePattern\":\"{{capturePattern}}\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{rootUrl}}/{{service}}\/merchant\/accountgroups\/{{accountGroupId}}\/accounts\/{{accountId}}",
+              "host": [
+                "{{rootUrl}}"
+              ],
+              "path": [
+                "{{service}}"
+                ,
+                "merchant"
+                ,
+                "accountgroups"
+                ,
+                "{{accountGroupId}}"
+                ,
+                "accounts"
+                ,
+                "{{accountId}}"
+                
+              ]
+            }
+          },
+          "response": []
+        }
+        
+      ],
+      "protocolProfileBehavior": {}
+    }
+    ,
+    {
+      "name": "AccountGroup",
+      "item": [
+        {
+          "name": "Account Group Patch",
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "{{token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"authorizationTimeoutDays\":{{authorizationTimeoutDays}}}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{rootUrl}}/{{service}}\/merchant\/accountgroups\/{{accountGroupId}}",
+              "host": [
+                "{{rootUrl}}"
+              ],
+              "path": [
+                "{{service}}"
+                ,
+                "merchant"
+                ,
+                "accountgroups"
+                ,
+                "{{accountGroupId}}"
+                
+              ]
+            }
+          },
+          "response": []
+        }
+        
+      ],
+      "protocolProfileBehavior": {}
+    }
+    ,
+    {
+      "name": "Authentications",
+      "item": [
+        {
+          "name": "Basic_auth",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "2f9da0b4-7a3e-4ac0-9f23-da45c5999992",
+                "exec": [
+                  "tests[\"Status code is 201\"] = responseCode.code === 201;    \npm.test(\"Location is present\", function () {\n    pm.response.to.have.header(\"Location\");\n    var location=pm.response.headers.get(\"Location\");\n    pm.environment.set(\"authentication_outbound_basic_auth_758\", location.substring(location.lastIndexOf(\"\/\")+1,location.length));\n});"
+                  
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "{{token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"password\":\"{{authentication_outbound_basic_auth_password_export_758}}\",\"method\":\"BASIC_AUTH\",\"name\":\"Braintree_API_Credential_export\",\"id\":758,\"username\":\"{{authentication_outbound_basic_auth_username_export_758}}\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{rootUrl}}/{{service}}\/merchant\/authentications",
+              "host": [
+                "{{rootUrl}}"
+              ],
+              "path": [
+                "{{service}}"
+                ,
+                "merchant"
+                ,
+                "authentications"
+                
+              ]
+            }
+          },
+          "response": []
+        }
+        
+      ],
+      "protocolProfileBehavior": {}
+    }
+    ,
+    {
+      "name": "Authorization",
+      "item": [
+        {
+          "name": "Authorization",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "{{token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"id\":124,\"pattern\":\"HOSTED_FIELDS\",\"requestType\":\"AUTHORIZATION\",\"outboundMappings\":[{\"url\":\"https:\/\/${vars.paymentsApiHost}\/graphql\",\"authenticationIds\":[\"{{authentication_outbound_basic_auth_758}}\"],\"method\":\"POST\",\"requestContentType\":\"application\/json\",\"requestExample\":\"{\\\"query\\\":\\\"mutation Authorize($input: AuthorizePaymentMethodInput!) {\\\\n  authorizePaymentMethod(input: $input) {\\\\n    transaction {\\\\n      id\\\\n      status\\\\n  paymentMethod {\\\\n id\\\\n details {\\\\n __typename\\\\n }\\\\n }\\\\n  amount {\\\\n          value\\\\n          currencyCode\\\\n      }\\\\n      orderId\\\\n    }\\\\n  }\\\\n}\\\",\\\"variables\\\":{\\\"input\\\":{\\\"clientMutationId\\\": \\\"\\\",\\\"paymentMethodId\\\":\\\"id_of_payment_method\\\",\\\"transaction\\\":{ \\\"merchantAccountId\\\": \\\"sap-eur\\\", \\\"vaultPaymentMethodAfterTransacting\\\": {\\n        \\\"when\\\": \\\"ON_SUCCESSFUL_TRANSACTION\\\"\\n      }, \\\"amount\\\":\\\"11.23\\\",\\\"orderId\\\":\\\"123\\\",\\\"shipping\\\":{\\\"shippingAddress\\\":{\\\"firstName\\\":\\\"fn\\\",\\\"lastName\\\":\\\"ln\\\",\\\"streetAddress\\\":\\\"street\\\",\\\"extendedAddress\\\":\\\"1\\\",\\\"locality\\\":\\\"city\\\",\\\"region\\\":\\\"state\\\",\\\"postalCode\\\":\\\"postal\\\",\\\"countryCode\\\":\\\"country code\\\"},\\\"shippingAmount\\\":\\\"shp fee\\\"},\\\"discountAmount\\\": \\\"12.12\\\",\\\"lineItems\\\":[{\\\"discountAmount\\\":\\\"12.23\\\",\\\"name\\\":\\\"name\\\",\\\"kind\\\":\\\"DEBIT\\\",\\\"quantity\\\":\\\"1\\\",\\\"unitAmount\\\":\\\"unit amount\\\",\\\"totalAmount\\\":\\\"total amount\\\",\\\"productCode\\\":\\\"prd code\\\"},{\\\"name\\\":\\\"name\\\",\\\"kind\\\":\\\"DEBIT\\\",\\\"quantity\\\":\\\"1\\\",\\\"unitAmount\\\":\\\"unit amount\\\",\\\"totalAmount\\\":\\\"total amount\\\",\\\"productCode\\\":\\\"prd code\\\"}]}}}}\",\"responseExample\":\"{\\n  \\\"data\\\": {\\n    \\\"authorizePaymentMethod\\\": {\\n      \\\"transaction\\\": {\\n        \\\"id\\\": \\\"dHJhbnNhY3Rpb25fYnJoODhzZnQ\\\",\\n        \\\"status\\\": \\\"AUTHORIZED\\\",\\n        \\\"paymentMethodSnapshot\\\": {\\n          \\\"__typename\\\": \\\"CreditCardDetails\\\",\\n          \\\"last4\\\": \\\"1881\\\",\\n          \\\"brandCode\\\": \\\"VISA\\\",\\n          \\\"expirationYear\\\": \\\"2025\\\",\\n          \\\"expirationMonth\\\": \\\"12\\\",\\n          \\\"cardOnFileNetworkTokenized\\\": false\\n        },\\n        \\\"amount\\\": {\\n          \\\"value\\\": \\\"172.52\\\",\\n          \\\"currencyCode\\\": \\\"EUR\\\"\\n        },\\n        \\\"orderId\\\": \\\"00540112\\\",\\n        \\\"paymentMethod\\\": {\\n          \\\"id\\\": \\\"cGF5bWVudG1ldGhvZF9jY18wdjVzMHNwNw\\\"\\n        }\\n      }\\n    }\\n  },\\n  \\\"extensions\\\": {\\n    \\\"requestId\\\": \\\"2f92e595-ca9d-412f-8f66-8584872f20aa\\\"\\n  },\\n  \\\"errors\\\": [\\n    {\\n      \\\"message\\\": \\\"The variables input contains a field name 'paymentMethodId' that is not defined for input object type 'TransactionSearchInput' \\\"\\n    }\\n  ]\\n}\",\"requestMappingFields\":{\"mappings\":[{\"from\":\"$.variables.input.clientMutationId\",\"to\":\"${input.referenceId}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"$.variables.input.paymentMethodId\",\"to\":\"${input.additionalData.nonce}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":true,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"$.variables.input.transaction.vaultPaymentMethodAfterTransacting.when\",\"to\":\"ON_SUCCESSFUL_TRANSACTION\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":true,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"$.variables.input.transaction.amount\",\"to\":\"${input.amount}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"$.variables.input.transaction.shipping.shippingAddress.firstName\",\"to\":\"${input.billingAddress.firstName}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"$.variables.input.transaction.shipping.shippingAddress.lastName\",\"to\":\"${input.billingAddress.lastName}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"$.variables.input.transaction.shipping.shippingAddress.streetAddress\",\"to\":\"${input.billingAddress.addressLine1}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"$.variables.input.transaction.shipping.shippingAddress.countryCode\",\"to\":\"${input.billingAddress.country}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"$.variables.input.transaction.shipping.shippingAddress.postalCode\",\"to\":\"${input.billingAddress.postalCode}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"$.variables.input.transaction.shipping.shippingAddress.locality\",\"to\":\"${input.billingAddress.city}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"$.variables.input.transaction.shipping.shippingAddress.extendedAddress\",\"to\":\"${input.billingAddress.addressLine2}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"$.variables.input.transaction.shipping.shippingAddress.region\",\"to\":\"${input.billingAddress.state}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"$.variables.input.transaction.shipping.shippingAmount\",\"to\":\"${input.shippingOption.shFeeWithTax}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"$.variables.input.transaction.orderId\",\"to\":\"${input.orderId}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"$.variables.input.transaction.discountAmount\",\"to\":\"${input.totalDiscount}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"$.variables.input.transaction.merchantAccountId\",\"to\":\"${vars.merchantAccountIdPrefix}${input.currency?lower_case}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":true},{\"from\":\"$.query\",\"to\":\"mutation Authorize($input: AuthorizePaymentMethodInput!) {   authorizePaymentMethod(input: $input) {     \\n    transaction {       \\n       id       \\n       status     \\n       paymentMethodSnapshot {         \\n          __typename      \\n       \\n          ... on CreditCardDetails {\\n            last4\\n            brandCode\\n            expirationYear\\n            expirationMonth\\n            cardOnFileNetworkTokenized\\n          }\\n        }     \\n        amount {           \\n            value           \\n            currencyCode       \\n        }       \\n        orderId,\\n        paymentMethod {\\n          id\\n        }\\n    }  \\n  } \\n}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":true},{\"from\":\"$.variables.input.transaction.lineItems[0].totalAmount\",\"to\":\"${input.lineItems[*].lineTotal}\",\"map\":null,\"arrayPath\":\"$.variables.input.transaction.lineItems\",\"arrayMapping\":true,\"mappingFieldType\":null,\"fixed\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"$.variables.input.transaction.lineItems[0].quantity\",\"to\":\"${input.lineItems[*].quantity}\",\"map\":null,\"arrayPath\":\"$.variables.input.transaction.lineItems\",\"arrayMapping\":true,\"mappingFieldType\":null,\"fixed\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"$.variables.input.transaction.lineItems[0].productCode\",\"to\":\"${input.lineItems[*].productId}\",\"map\":null,\"arrayPath\":\"$.variables.input.transaction.lineItems\",\"arrayMapping\":true,\"mappingFieldType\":null,\"fixed\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"$.variables.input.transaction.lineItems[0].kind\",\"to\":\"DEBIT\",\"map\":null,\"arrayPath\":\"$.variables.input.transaction.lineItems\",\"arrayMapping\":true,\"mappingFieldType\":null,\"fixed\":true,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"$.variables.input.transaction.lineItems[0].name\",\"to\":\"${input.lineItems[*].productName?truncate(35)}\",\"map\":null,\"arrayPath\":\"$.variables.input.transaction.lineItems\",\"arrayMapping\":true,\"mappingFieldType\":null,\"fixed\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":true},{\"from\":\"$.variables.input.transaction.lineItems[0].discountAmount\",\"to\":\"${input.lineItems[*].lineDiscount}\",\"map\":null,\"arrayPath\":\"$.variables.input.transaction.lineItems\",\"arrayMapping\":true,\"mappingFieldType\":null,\"fixed\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"$.variables.input.transaction.lineItems[0].unitAmount\",\"to\":\"${input.lineItems[*].unitPriceWithTax}\",\"map\":null,\"arrayPath\":\"$.variables.input.transaction.lineItems\",\"arrayMapping\":true,\"mappingFieldType\":null,\"fixed\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false}]},\"responseHeaders\":null,\"responseMappingFields\":{\"mappings\":[{\"from\":\"data.authorizePaymentMethod.transaction.paymentMethodSnapshot.expirationMonth\",\"to\":\"cardExpMonth\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":false,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.authorizePaymentMethod.transaction.paymentMethodSnapshot.expirationYear\",\"to\":\"cardExpYear\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":false,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.authorizePaymentMethod.transaction.paymentMethodSnapshot.last4\",\"to\":\"cardLast4\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":false,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.authorizePaymentMethod.transaction.paymentMethodSnapshot.brandCode\",\"to\":\"cardType\",\"map\":{\"VISA\":\"VISA\",\"MASTERCARD\":\"MASTERCARD\",\"AMERICAN_EXPRESS\":\"AMEX\",\"DISCOVER\":\"DISCOVER\",\"visa\":\"VISA\",\"mastercard\":\"MASTERCARD\",\"american_express\":\"AMEX\",\"discover\":\"DISCOVER\"},\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":false,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"errors[0].message\",\"to\":\"errorCode\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":false,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.authorizePaymentMethod.transaction.id\",\"to\":\"pspReference\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":false,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.authorizePaymentMethod.transaction.paymentMethodSnapshot.__typename\",\"to\":\"paymentMethod\",\"map\":{\"PayPalTransactionDetails\":\"paypal\",\"CreditCardDetails\":\"CREDIT_CARD\"},\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":false,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.authorizePaymentMethod.transaction.paymentMethod.id\",\"to\":\"token\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":false,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.authorizePaymentMethod.transaction.status\",\"to\":\"transactionStatus\",\"map\":{\"AUTHORIZED\":\"ACCEPTED\",\"GATEWAY_REJECTED\":\"REJECTED\",\"PROCESSOR_DECLINED\":\"REJECTED\"},\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":false,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"extensions.requestId\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.authorizePaymentMethod.transaction.amount.value\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.authorizePaymentMethod.transaction.amount.currencyCode\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.authorizePaymentMethod.transaction.paymentMethodSnapshot.cardOnFileNetworkTokenized\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.authorizePaymentMethod.transaction.orderId\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"extensions.#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isScript\":false},{\"from\":\"data.#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isScript\":false},{\"from\":\"data.authorizePaymentMethod.#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isScript\":false},{\"from\":\"data.authorizePaymentMethod.transaction.#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isScript\":false},{\"from\":\"data.authorizePaymentMethod.transaction.amount.#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isScript\":false},{\"from\":\"data.authorizePaymentMethod.transaction.paymentMethodSnapshot.#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isScript\":false},{\"from\":\"data.authorizePaymentMethod.transaction.paymentMethod.#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isScript\":false},{\"from\":\"['errors.#object']\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isScript\":false},{\"from\":\"#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isScript\":false}]},\"responseContentType\":\"application\/json\",\"headers\":{\"Braintree-Version\":\"${vars.braintreeVersion}\",\"Idempotency-Key\":\"${input.idempotencyKey}\"},\"formArrayIndicator\":null}],\"enabled\":null,\"configurationId\":null,\"googlePayGateway\":null,\"createdAt\":\"2024-03-11T17:53:53.286Z\",\"updatedAt\":\"2024-03-11T17:53:53.286Z\",\"dynamicScript\":{\"html\":\"<div id=\\\"dropin-container\\\"><\/div>\\n\\n<div class=\\\"cx-payment-link\\\">\\n  <a id=\\\"braintree-submit-button\\\" class=\\\"btn btn-primary\\\" >${functions.htmlEncode(vars.payButtonLabel)}<\/a>\\n<\/div>\\n\\n<script>\\n  var submitButton = document.querySelector('#braintree-submit-button');\\n\\n  braintree.dropin.create({\\n    authorization: '${functions.jsEncode(input.customFields.clientToken)}',\\n    container: '#dropin-container',\\n    paypal: {\\n      amount: ${functions.jsEncode(input.amount)},\\n      currency: '${functions.jsEncode(input.currency)}',\\n      flow: 'checkout'\\n    }\\n  }, function (err, dropinInstance) {\\n    if (err) {\\n      \/\/ Handle any errors that might've occurred when creating Drop-in\\n      console.error(err);\\n      return;\\n    }\\n    submitButton.addEventListener('click', function () {\\n      dropinInstance.requestPaymentMethod(function (err, payload) {\\n        if (err) {\\n          \/\/ Handle errors in requesting payment method\\n        }\\n\\n        \/\/ Send payload.nonce to your server\\n        window.Opf.payments.checkout.submit({additionalData: [{key: 'nonce', value: payload.nonce}]});\\n      });\\n    });\\n  });\\n<\/script>\",\"htmlContentMode\":\"MIXED\",\"afterRedirectHtml\":null,\"afterRedirectHtmlContentMode\":\"SEPARATE\",\"jsUrls\":[{\"url\":\"https:\/\/js.braintreegateway.com\/web\/dropin\/1.33.0\/js\/dropin.min.js\",\"sri\":\"\",\"attributes\":null}]},\"remoteApiOutboundMappings\":[{\"url\":\"https:\/\/${vars.paymentsApiHost}\/graphql\",\"authenticationIds\":[\"{{authentication_outbound_basic_auth_758}}\"],\"method\":\"POST\",\"requestContentType\":\"application\/json\",\"requestExample\":\"{\\\"query\\\":\\\"mutation {\\\\n  createClientToken {\\\\n    clientToken\\\\n  }\\\\n}\\\",\\\"variables\\\":{}}\",\"responseExample\":\"{\\n    \\\"data\\\": {\\n        \\\"createClientToken\\\": {\\n            \\\"clientToken\\\": \\\"eyJ2ZXJzaW9uIjoyLCJhdXRob3JpemF0aW9uRmluZ2VycHJpbnQiOiJleUowZVhBaU9pSktWMVFpTENKaGJHY2lPaUpGVXpJMU5pSXNJbXRwWkNJNklqSXdNVGd3TkRJMk1UWXRjMkZ1WkdKdmVDSXNJbWx6Y3lJNkltaDBkSEJ6T2k4dllYQnBMbk5oYm1SaWIzZ3VZbkpoYVc1MGNtVmxaMkYwWlhkaGVTNWpiMjBpZlEuZXlKbGVIQWlPakUyTkRneU1EVTVPVElzSW1wMGFTSTZJamxpTW1Zd01EZ3hMV1V3TVRVdE5EWTVOQzA0WWpnM0xUTXdZV05pWW1ZMlpUVXlPU0lzSW5OMVlpSTZJbmwyYzJ0cVlubG9OR2QwZG5jMk0zY2lMQ0pwYzNNaU9pSm9kSFJ3Y3pvdkwyRndhUzV6WVc1a1ltOTRMbUp5WVdsdWRISmxaV2RoZEdWM1lYa3VZMjl0SWl3aWJXVnlZMmhoYm5RaU9uc2ljSFZpYkdsalgybGtJam9pZVhaemEycGllV2cwWjNSMmR6WXpkeUlzSW5abGNtbG1lVjlqWVhKa1gySjVYMlJsWm1GMWJIUWlPbVpoYkhObGZTd2ljbWxuYUhSeklqcGJJbTFoYm1GblpWOTJZWFZzZENKZExDSnpZMjl3WlNJNld5SkNjbUZwYm5SeVpXVTZWbUYxYkhRaVhTd2liM0IwYVc5dWN5STZlMzE5LkxHVjlZZkxhR2VNZC1BU3pvQ29GOEM2NGhBWlU1T00zdkhKVHFMbTBoWmF2VDRtREZyUFQ0cnZxWXV4M3dnc1BTZU81UmN1NmgwWjk5NzBGMjRKN1J3IiwiY29uZmlnVXJsIjoiaHR0cHM6Ly9hcGkuc2FuZGJveC5icmFpbnRyZWVnYXRld2F5LmNvbTo0NDMvbWVyY2hhbnRzL3l2c2tqYnloNGd0dnc2M3cvY2xpZW50X2FwaS92MS9jb25maWd1cmF0aW9uIiwiZ3JhcGhRTCI6eyJ1cmwiOiJodHRwczovL3BheW1lbnRzLnNhbmRib3guYnJhaW50cmVlLWFwaS5jb20vZ3JhcGhxbCIsImRhdGUiOiIyMDE4LTA1LTA4IiwiZmVhdHVyZXMiOlsidG9rZW5pemVfY3JlZGl0X2NhcmRzIl19LCJjbGllbnRBcGlVcmwiOiJodHRwczovL2FwaS5zYW5kYm94LmJyYWludHJlZWdhdGV3YXkuY29tOjQ0My9tZXJjaGFudHMveXZza2pieWg0Z3R2dzYzdy9jbGllbnRfYXBpIiwiZW52aXJvbm1lbnQiOiJzYW5kYm94IiwibWVyY2hhbnRJZCI6Inl2c2tqYnloNGd0dnc2M3ciLCJhc3NldHNVcmwiOiJodHRwczovL2Fzc2V0cy5icmFpbnRyZWVnYXRld2F5LmNvbSIsImF1dGhVcmwiOiJodHRwczovL2F1dGgudmVubW8uc2FuZGJveC5icmFpbnRyZWVnYXRld2F5LmNvbSIsInZlbm1vIjoib2ZmIiwiY2hhbGxlbmdlcyI6W10sInRocmVlRFNlY3VyZUVuYWJsZWQiOnRydWUsImFuYWx5dGljcyI6eyJ1cmwiOiJodHRwczovL29yaWdpbi1hbmFseXRpY3Mtc2FuZC5zYW5kYm94LmJyYWludHJlZS1hcGkuY29tL3l2c2tqYnloNGd0dnc2M3cifSwicGF5cGFsRW5hYmxlZCI6dHJ1ZSwicGF5cGFsIjp7ImJpbGxpbmdBZ3JlZW1lbnRzRW5hYmxlZCI6dHJ1ZSwiZW52aXJvbm1lbnROb05ldHdvcmsiOnRydWUsInVudmV0dGVkTWVyY2hhbnQiOmZhbHNlLCJhbGxvd0h0dHAiOnRydWUsImRpc3BsYXlOYW1lIjoiU2VsZi1lbXBsb3llZCIsImNsaWVudElkIjpudWxsLCJwcml2YWN5VXJsIjoiaHR0cDovL2V4YW1wbGUuY29tL3BwIiwidXNlckFncmVlbWVudFVybCI6Imh0dHA6Ly9leGFtcGxlLmNvbS90b3MiLCJiYXNlVXJsIjoiaHR0cHM6Ly9hc3NldHMuYnJhaW50cmVlZ2F0ZXdheS5jb20iLCJhc3NldHNVcmwiOiJodHRwczovL2NoZWNrb3V0LnBheXBhbC5jb20iLCJkaXJlY3RCYXNlVXJsIjpudWxsLCJlbnZpcm9ubWVudCI6Im9mZmxpbmUiLCJicmFpbnRyZWVDbGllbnRJZCI6Im1hc3RlcmNsaWVudDMiLCJtZXJjaGFudEFjY291bnRJZCI6InNlbGZlbXBsb3llZCIsImN1cnJlbmN5SXNvQ29kZSI6IkVVUiJ9fQ==\\\"\\n        }\\n    },\\n    \\\"extensions\\\": {\\n        \\\"requestId\\\": \\\"3b8bccfd-5d2e-4524-8916-c154dfefd622\\\"\\n    }\\n}\",\"requestMappingFields\":{\"mappings\":[{\"from\":\"$.query\",\"to\":\"mutation {\\n  createClientToken {\\n    clientToken\\n  }\\n}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":true,\"isSensitive\":false,\"isObject\":false,\"isScript\":false}]},\"responseHeaders\":null,\"responseMappingFields\":{\"mappings\":[{\"from\":\"data.createClientToken.clientToken\",\"to\":\"clientToken\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":false,\"isCustom\":true,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"extensions.requestId\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"extensions.#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isScript\":false},{\"from\":\"data.#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isScript\":false},{\"from\":\"data.createClientToken.#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isScript\":false},{\"from\":\"#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isScript\":false}]},\"responseContentType\":\"application\/json\",\"headers\":{\"Braintree-Version\":\"${vars.braintreeVersion}\"},\"formArrayIndicator\":null}]}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{rootUrl}}/{{service}}\/merchant\/accountgroups\/{{accountGroupId}}\/accounts\/{{accountId}}\/authorization",
+              "host": [
+                "{{rootUrl}}"
+              ],
+              "path": [
+                "{{service}}"
+                ,
+                "merchant"
+                ,
+                "accountgroups"
+                ,
+                "{{accountGroupId}}"
+                ,
+                "accounts"
+                ,
+                "{{accountId}}"
+                ,
+                "authorization"
+                
+              ]
+            }
+          },
+          "response": []
+        }
+        
+      ],
+      "protocolProfileBehavior": {}
+    }
+    ,
+    {
+      "name": "Refund",
+      "item": [
+        {
+          "name": "Refund",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "{{token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"id\":125,\"requestType\":\"REFUND\",\"outboundMappings\":[{\"url\":\"https:\/\/${vars.paymentsApiHost}\/graphql\",\"authenticationIds\":[\"{{authentication_outbound_basic_auth_758}}\"],\"method\":\"POST\",\"requestContentType\":\"application\/json\",\"requestExample\":\"{\\\"query\\\":\\\"mutation Refund($input: RefundTransactionInput!) {\\\\n  refundTransaction(input: $input) {\\\\n    refund {\\\\n      id\\\\n      amount {\\\\n        value\\\\n      }\\\\n      orderId\\\\n      status\\\\n      refundedTransaction {\\\\n        id\\\\n        amount {\\\\n          value\\\\n        }\\\\n        orderId\\\\n        status\\\\n      }\\\\n    }\\\\n  }\\\\n}\\\",\\\"variables\\\":{\\\"input\\\":{\\\"clientMutationId\\\":\\\"asd\\\",\\\"transactionId\\\":\\\"7havzd4g\\\",\\\"refund\\\":{\\\"amount\\\":10,\\\"orderId\\\":\\\"orderId\\\"}}}}\",\"responseExample\":\"{\\n  \\\"errors\\\":[{\\\"message\\\":\\\"The variables input contains a field name 'refund' that is not defined for input object type 'ReverseTransactionInput' \\\"}],  \\n  \\\"data\\\": {\\n        \\\"refundTransaction\\\": {\\n            \\\"refund\\\": {\\n                \\\"id\\\": \\\"cmVmdW5kXzMzcGM5ODd5\\\",\\n                \\\"amount\\\": {\\n                    \\\"value\\\": \\\"10.00\\\"\\n                },\\n                \\\"orderId\\\": \\\"orderId\\\",\\n                \\\"status\\\": \\\"SUBMITTED_FOR_SETTLEMENT\\\",\\n                \\\"refundedTransaction\\\": {\\n                    \\\"id\\\": \\\"dHJhbnNhY3Rpb25fN2hhdnpkNGc\\\",\\n                    \\\"amount\\\": {\\n                        \\\"value\\\": \\\"10.00\\\"\\n                    },\\n                    \\\"orderId\\\": null,\\n                    \\\"status\\\": \\\"SETTLED\\\"\\n                }\\n            }\\n        }\\n    },\\n    \\\"extensions\\\": {\\n        \\\"requestId\\\": \\\"c8048a3c-1c9d-45c1-bc77-f0c8e988a408\\\"\\n    }\\n}\",\"requestMappingFields\":{\"mappings\":[{\"from\":\"$.variables.input.clientMutationId\",\"to\":\"${input.referenceId}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"$.variables.input.transactionId\",\"to\":\"${input.settlementPspReference}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"$.variables.input.refund.amount\",\"to\":\"${input.amount}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"$.variables.input.refund.orderId\",\"to\":\"${input.orderId}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"$.query\",\"to\":\"mutation Refund($input: RefundTransactionInput!) {   refundTransaction(input: $input) {     refund {       id       amount {         value       }       orderId       status       refundedTransaction {         id         amount {           value         }         orderId         status       }     }   } }\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":true,\"isSensitive\":false,\"isObject\":false,\"isScript\":false}]},\"responseHeaders\":null,\"responseMappingFields\":{\"mappings\":[{\"from\":\"errors[0].message\",\"to\":\"errorCode\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":false,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.refundTransaction.refund.id\",\"to\":\"pspReference\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":false,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.refundTransaction.refund.status\",\"to\":\"transactionStatus\",\"map\":{\"SUBMITTED_FOR_SETTLEMENT\":\"ACCEPTED\",\"SETTLING\":\"ACCEPTED\"},\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":false,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"extensions.requestId\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.refundTransaction.refund.amount.value\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.refundTransaction.refund.orderId\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.refundTransaction.refund.refundedTransaction.amount.value\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.refundTransaction.refund.refundedTransaction.orderId\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.refundTransaction.refund.refundedTransaction.id\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.refundTransaction.refund.refundedTransaction.status\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"extensions.#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isScript\":false},{\"from\":\"data.#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isScript\":false},{\"from\":\"data.refundTransaction.#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isScript\":false},{\"from\":\"data.refundTransaction.refund.#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isScript\":false},{\"from\":\"data.refundTransaction.refund.amount.#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isScript\":false},{\"from\":\"data.refundTransaction.refund.refundedTransaction.#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isScript\":false},{\"from\":\"data.refundTransaction.refund.refundedTransaction.amount.#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isScript\":false},{\"from\":\"['errors.#object']\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isScript\":false},{\"from\":\"#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isScript\":false}]},\"responseContentType\":\"application\/json\",\"headers\":{\"Braintree-Version\":\"${vars.braintreeVersion}\",\"Idempotency-Key\":\"${input.idempotencyKey}\"},\"formArrayIndicator\":null}],\"enabled\":null,\"configurationId\":null,\"googlePayGateway\":null,\"createdAt\":\"2024-03-11T17:54:19.422Z\",\"updatedAt\":\"2024-03-11T17:54:19.422Z\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{rootUrl}}/{{service}}\/merchant\/accountgroups\/{{accountGroupId}}\/accounts\/{{accountId}}\/refund",
+              "host": [
+                "{{rootUrl}}"
+              ],
+              "path": [
+                "{{service}}"
+                ,
+                "merchant"
+                ,
+                "accountgroups"
+                ,
+                "{{accountGroupId}}"
+                ,
+                "accounts"
+                ,
+                "{{accountId}}"
+                ,
+                "refund"
+                
+              ]
+            }
+          },
+          "response": []
+        }
+        
+      ],
+      "protocolProfileBehavior": {}
+    }
+    ,
+    {
+      "name": "Settlement",
+      "item": [
+        {
+          "name": "Settlement",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "{{token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"id\":126,\"requestType\":\"SETTLEMENT\",\"outboundMappings\":[{\"url\":\"https:\/\/${vars.paymentsApiHost}\/graphql\",\"authenticationIds\":[\"{{authentication_outbound_basic_auth_758}}\"],\"method\":\"POST\",\"requestContentType\":\"application\/json\",\"requestExample\":\"{\\\"query\\\":\\\"mutation Capture($input: CaptureTransactionInput!) {\\\\n  captureTransaction(input: $input) {\\\\n    transaction {\\\\n      id\\\\n      status\\\\n      amount {\\\\n          value\\\\n          currencyCode\\\\n      }\\\\n      orderId\\\\n    }\\\\n  }\\\\n}\\\",\\\"variables\\\":{\\\"input\\\":{\\\"transactionId\\\":\\\"dHJhbnNhY3Rpb25fMmJxYW03bWo\\\"}}}\",\"responseExample\":\"{\\n    \\\"errors\\\":[{\\\"message\\\":\\\"The variables input contains a field name 'refund' that is not defined for input object type 'ReverseTransactionInput' \\\"}], \\n    \\\"data\\\": {\\n        \\\"captureTransaction\\\": {\\n            \\\"transaction\\\": {\\n                \\\"id\\\": \\\"dHJhbnNhY3Rpb25fMmJxYW03bWo\\\",\\n                \\\"status\\\": \\\"SUBMITTED_FOR_SETTLEMENT\\\",\\n                \\\"amount\\\": {\\n                    \\\"value\\\": \\\"3.00\\\",\\n                    \\\"currencyCode\\\": \\\"EUR\\\"\\n                },\\n                \\\"orderId\\\": \\\"123\\\"\\n            }\\n        }\\n    },\\n    \\\"extensions\\\": {\\n        \\\"requestId\\\": \\\"21bd8bd8-45dc-47f1-b6dc-6f8468ee8323\\\"\\n    }\\n}\",\"requestMappingFields\":{\"mappings\":[{\"from\":\"$.variables.input.transactionId\",\"to\":\"${input.pspReference}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"$.query\",\"to\":\"mutation Capture($input: CaptureTransactionInput!) {\\n  captureTransaction(input: $input) {\\n    transaction {\\n      id\\n      status\\n      amount {\\n          value\\n          currencyCode\\n      }\\n      orderId\\n    }\\n  }\\n}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":true,\"isSensitive\":false,\"isObject\":false,\"isScript\":false}]},\"responseHeaders\":null,\"responseMappingFields\":{\"mappings\":[{\"from\":\"errors[0].message\",\"to\":\"errorCode\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":false,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.captureTransaction.transaction.id\",\"to\":\"pspReference\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":false,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.captureTransaction.transaction.status\",\"to\":\"transactionStatus\",\"map\":{\"SUBMITTED_FOR_SETTLEMENT\":\"ACCEPTED\",\"SETTLEMENT_DECLINED\":\"REJECTED\",\"SETTLING\":\"ACCEPTED\"},\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":false,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"extensions.requestId\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.captureTransaction.transaction.amount.value\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.captureTransaction.transaction.amount.currencyCode\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.captureTransaction.transaction.orderId\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"extensions.#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isScript\":false},{\"from\":\"data.#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isScript\":false},{\"from\":\"data.captureTransaction.#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isScript\":false},{\"from\":\"data.captureTransaction.transaction.#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isScript\":false},{\"from\":\"data.captureTransaction.transaction.amount.#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isScript\":false},{\"from\":\"['errors.#object']\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isScript\":false},{\"from\":\"#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isScript\":false}]},\"responseContentType\":\"application\/json\",\"headers\":{\"Braintree-Version\":\"${vars.braintreeVersion}\",\"Idempotency-Key\":\"${input.idempotencyKey}\"},\"formArrayIndicator\":null}],\"enabled\":null,\"configurationId\":null,\"googlePayGateway\":null,\"createdAt\":\"2024-03-11T17:54:28.712Z\",\"updatedAt\":\"2024-03-11T17:54:28.712Z\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{rootUrl}}/{{service}}\/merchant\/accountgroups\/{{accountGroupId}}\/accounts\/{{accountId}}\/settlement",
+              "host": [
+                "{{rootUrl}}"
+              ],
+              "path": [
+                "{{service}}"
+                ,
+                "merchant"
+                ,
+                "accountgroups"
+                ,
+                "{{accountGroupId}}"
+                ,
+                "accounts"
+                ,
+                "{{accountId}}"
+                ,
+                "settlement"
+                
+              ]
+            }
+          },
+          "response": []
+        }
+        
+      ],
+      "protocolProfileBehavior": {}
+    }
+    ,
+    {
+      "name": "Authorization_reversal",
+      "item": [
+        {
+          "name": "Authorization_reversal",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "{{token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"id\":137,\"requestType\":\"AUTHORIZATION_REVERSAL\",\"outboundMappings\":[{\"url\":\"https:\/\/${vars.paymentsApiHost}\/graphql\",\"authenticationIds\":[\"{{authentication_outbound_basic_auth_758}}\"],\"method\":\"POST\",\"requestContentType\":\"application\/json\",\"requestExample\":\"{\\n \\\"query\\\" : \\\"mutation Reverse($input: ReverseTransactionInput!) { reverseTransaction(input: $input) {    reversal {  ... on Transaction{ id,status}}}}\\\",\\n\\n\\n\\\"variables\\\" : {\\n  \\\"input\\\": {\\n    \\\"transactionId\\\": \\\"dHJhbnNhY3Rpb25fNTluMW4zNzU\\\"\\n  }\\n}\\n}\",\"responseExample\":\"{\\n  \\\"errors\\\":[{\\\"message\\\":\\\"The variables input contains a field name 'refund' that is not defined for input object type 'ReverseTransactionInput' \\\"}],\\n  \\\"data\\\": {\\n    \\\"reverseTransaction\\\": {\\n      \\\"reversal\\\": {\\n        \\\"id\\\": \\\"dHJhbnNhY3Rpb25fNTluMW4zNzU\\\",\\n        \\\"status\\\": \\\"VOIDED\\\"\\n      }\\n    }\\n  },\\n  \\\"extensions\\\": {\\n    \\\"requestId\\\": \\\"b817dfc1-1c7a-4acd-aa68-ab40aa4265d3\\\"\\n  }\\n}\",\"requestMappingFields\":{\"mappings\":[{\"from\":\"$.variables.input.transactionId\",\"to\":\"${input.authorizationPspReference}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"$.query\",\"to\":\"mutation Reverse($input: ReverseTransactionInput!) {\\n  reverseTransaction(input: $input) {     \\n    reversal {     \\n      ... on Transaction{\\n        \\tid,\\n          status\\n      }\\n    }  \\n  } \\n}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":true}]},\"responseHeaders\":null,\"responseMappingFields\":{\"mappings\":[{\"from\":\"errors[0].message\",\"to\":\"errorCode\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":false,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.reverseTransaction.reversal.id\",\"to\":\"pspReference\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":false,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.reverseTransaction.reversal.status\",\"to\":\"transactionStatus\",\"map\":{\"VOIDED\":\"ACCEPTED\"},\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":false,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"extensions.requestId\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"extensions.#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isScript\":false},{\"from\":\"data.#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isScript\":false},{\"from\":\"data.reverseTransaction.#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isScript\":false},{\"from\":\"data.reverseTransaction.reversal.#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isScript\":false},{\"from\":\"['errors.#object']\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isScript\":false},{\"from\":\"#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isScript\":false}]},\"responseContentType\":\"application\/json\",\"headers\":{\"Braintree-Version\":\"${vars.braintreeVersion}\",\"Idempotency-Key\":\"${input.idempotencyKey}\"},\"formArrayIndicator\":null}],\"enabled\":null,\"configurationId\":null,\"googlePayGateway\":null,\"createdAt\":\"2024-03-18T16:42:12.374Z\",\"updatedAt\":\"2024-03-18T16:42:12.374Z\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{rootUrl}}/{{service}}\/merchant\/accountgroups\/{{accountGroupId}}\/accounts\/{{accountId}}\/authorization_reversal",
+              "host": [
+                "{{rootUrl}}"
+              ],
+              "path": [
+                "{{service}}"
+                ,
+                "merchant"
+                ,
+                "accountgroups"
+                ,
+                "{{accountGroupId}}"
+                ,
+                "accounts"
+                ,
+                "{{accountId}}"
+                ,
+                "authorization_reversal"
+                
+              ]
+            }
+          },
+          "response": []
+        }
+        
+      ],
+      "protocolProfileBehavior": {}
+    }
+    ,
+    {
+      "name": "Recurrent_authorization",
+      "item": [
+        {
+          "name": "Recurrent_authorization",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "{{token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"id\":143,\"requestType\":\"RECURRENT_AUTHORIZATION\",\"outboundMappings\":[{\"url\":\"https:\/\/${vars.paymentsApiHost}\/graphql\",\"authenticationIds\":[\"{{authentication_outbound_basic_auth_758}}\"],\"method\":\"POST\",\"requestContentType\":\"application\/json\",\"requestExample\":\"{\\n  \\\"query\\\" : \\\"mutation Authorize($input: AuthorizePaymentMethodInput!) {   authorizePaymentMethod(input: $input) {     transaction {       id       status     paymentMethodSnapshot {         __typename      ... on CreditCardDetails { last4 brandCode expirationYear expirationMonth cardOnFileNetworkTokenized } }   amount {           value           currencyCode       }  orderId, paymentMethod { id } }\\\",\\n  \\\"variables\\\" : {\\n  \\\"input\\\": {\\n    \\\"paymentMethodId\\\": \\\"cGF5bWVudG1ldGhvZF9jY182am5rZmo5NQ\\\",\\n    \\\"transaction\\\": {\\n      \\\"merchantAccountId\\\": \\\"sap-eur\\\",\\n      \\\"amount\\\": 10,\\n      \\\"orderId\\\": \\\"00540112\\\"\\n    } \\n  }\\n}\\n}\",\"responseExample\":\"{\\n  \\\"data\\\": {\\n    \\\"authorizePaymentMethod\\\": {\\n      \\\"transaction\\\": {\\n        \\\"id\\\": \\\"dHJhbnNhY3Rpb25fbjAzano3c3g\\\",\\n        \\\"status\\\": \\\"AUTHORIZED\\\",\\n        \\\"paymentMethodSnapshot\\\": {\\n          \\\"__typename\\\": \\\"CreditCardDetails\\\",\\n          \\\"last4\\\": \\\"1111\\\",\\n          \\\"brandCode\\\": \\\"VISA\\\",\\n          \\\"expirationYear\\\": \\\"2030\\\",\\n          \\\"expirationMonth\\\": \\\"03\\\",\\n          \\\"cardOnFileNetworkTokenized\\\": false\\n        },\\n        \\\"amount\\\": {\\n          \\\"value\\\": \\\"10.00\\\",\\n          \\\"currencyCode\\\": \\\"EUR\\\"\\n        },\\n        \\\"orderId\\\": \\\"00540112\\\",\\n        \\\"paymentMethod\\\": {\\n          \\\"id\\\": \\\"cGF5bWVudG1ldGhvZF9jY182am5rZmo5NQ\\\"\\n        }\\n      }\\n    }\\n  },\\n  \\\"extensions\\\": {\\n    \\\"requestId\\\": \\\"d66571c2-4391-446b-9718-d2d6dc6878c0\\\"\\n  }\\n}\",\"requestMappingFields\":{\"mappings\":[{\"from\":\"$.variables.input.paymentMethodId\",\"to\":\"${input.token}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"$.variables.input.transaction.amount\",\"to\":\"${input.amount}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"$.variables.input.transaction.orderId\",\"to\":\"${input.orderId}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"$.variables.input.transaction.merchantAccountId\",\"to\":\"${vars.merchantAccountIdPrefix}${input.currency?lower_case}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":true},{\"from\":\"$.query\",\"to\":\"mutation Authorize($input: AuthorizePaymentMethodInput!) {   authorizePaymentMethod(input: $input) {     transaction {       id       status     paymentMethodSnapshot {         __typename      ... on CreditCardDetails { last4 brandCode expirationYear expirationMonth cardOnFileNetworkTokenized } }   amount {           value           currencyCode       }  orderId, paymentMethod { id } }}}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":true}]},\"responseHeaders\":null,\"responseMappingFields\":{\"mappings\":[{\"from\":\"data.authorizePaymentMethod.transaction.paymentMethodSnapshot.expirationMonth\",\"to\":\"cardExpMonth\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":false,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.authorizePaymentMethod.transaction.paymentMethodSnapshot.expirationYear\",\"to\":\"cardExpYear\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":false,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.authorizePaymentMethod.transaction.paymentMethodSnapshot.last4\",\"to\":\"cardLast4\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":false,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.authorizePaymentMethod.transaction.paymentMethodSnapshot.brandCode\",\"to\":\"cardType\",\"map\":{\"VISA\":\"VISA\",\"MASTERCARD\":\"MASTERCARD\",\"AMERICAN_EXPRESS\":\"AMEX\",\"DISCOVER\":\"DISCOVER\",\"visa\":\"VISA\",\"mastercard\":\"MASTERCARD\",\"american_express\":\"AMEX\",\"discover\":\"DISCOVER\"},\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":false,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.authorizePaymentMethod.transaction.id\",\"to\":\"pspReference\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":false,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.authorizePaymentMethod.transaction.paymentMethodSnapshot.__typename\",\"to\":\"paymentMethod\",\"map\":{\"PayPalTransactionDetails\":\"paypal\",\"CreditCardDetails\":\"CREDIT_CARD\"},\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":false,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.authorizePaymentMethod.transaction.status\",\"to\":\"transactionStatus\",\"map\":{\"AUTHORIZED\":\"ACCEPTED\",\"GATEWAY_REJECTED\":\"REJECTED\",\"PROCESSOR_DECLINED\":\"REJECTED\"},\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":false,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"extensions.requestId\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.authorizePaymentMethod.transaction.amount.value\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.authorizePaymentMethod.transaction.amount.currencyCode\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.authorizePaymentMethod.transaction.paymentMethodSnapshot.cardOnFileNetworkTokenized\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.authorizePaymentMethod.transaction.orderId\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"data.authorizePaymentMethod.transaction.paymentMethod.id\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isScript\":false},{\"from\":\"extensions.#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isScript\":false},{\"from\":\"data.#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isScript\":false},{\"from\":\"data.authorizePaymentMethod.#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isScript\":false},{\"from\":\"data.authorizePaymentMethod.transaction.#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isScript\":false},{\"from\":\"data.authorizePaymentMethod.transaction.amount.#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isScript\":false},{\"from\":\"data.authorizePaymentMethod.transaction.paymentMethodSnapshot.#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isScript\":false},{\"from\":\"data.authorizePaymentMethod.transaction.paymentMethod.#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isScript\":false},{\"from\":\"#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"mappingFieldType\":null,\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isScript\":false}]},\"responseContentType\":\"application\/json\",\"headers\":{\"Braintree-Version\":\"${vars.braintreeVersion}\",\"Idempotency-Key\":\"${input.idempotencyKey}\"},\"formArrayIndicator\":null}],\"enabled\":null,\"configurationId\":null,\"googlePayGateway\":null,\"createdAt\":\"2024-03-19T14:15:21.323Z\",\"updatedAt\":\"2024-03-19T14:15:21.323Z\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{rootUrl}}/{{service}}\/merchant\/accountgroups\/{{accountGroupId}}\/accounts\/{{accountId}}\/recurrent_authorization",
+              "host": [
+                "{{rootUrl}}"
+              ],
+              "path": [
+                "{{service}}"
+                ,
+                "merchant"
+                ,
+                "accountgroups"
+                ,
+                "{{accountGroupId}}"
+                ,
+                "accounts"
+                ,
+                "{{accountId}}"
+                ,
+                "recurrent_authorization"
+                
+              ]
+            }
+          },
+          "response": []
+        }
+        
+      ],
+      "protocolProfileBehavior": {}
+    }
+    
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "exec": [
+          "let url = pm.request.url.toString();\nif(pm.environment.get(\"service\")==null || pm.environment.get(\"service\")===\"\"){\n    let updateUrl = url.replace(\"\/{{service}}\",\"\")\n    pm.request.url = updateUrl;\n}"
+        ]
+      }
+    }
+  ]
+  ,
+  "protocolProfileBehavior": {}
+}

@@ -1,0 +1,27 @@
+.products-container {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 50px;
+  row-gap: 50px;
+  margin: 20px;
+  padding-top: 0.1rem;
+
+  @media (max-width: 1200px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 992px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.parent-container {
+  display: flex;
+  justify-content: center;
+  width: 100rem;
+}

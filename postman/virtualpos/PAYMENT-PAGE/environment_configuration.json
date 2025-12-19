@@ -1,0 +1,100 @@
+{
+  "id": "3f4a0270-8851-4eee-8e67-7e1b764d16dd",
+  "name": "VirtualPOS",
+  "values": [
+    {
+      "key": "token",
+      "value": "",
+      "enabled": true
+    },
+    {
+      "key": "rootUrl",
+      "value": "https:\/\/opf-iss-d0.opf.commerce.stage.context.cloud.sap",
+      "enabled": true
+    },
+    {
+      "key": "service",
+      "value": "opf",
+      "enabled": true
+    },
+    {
+      "key": "accountGroupId",
+      "value": "1555",
+      "enabled": true
+    },
+    {
+      "key": "accountId",
+      "value": "894",
+      "enabled": true
+    },
+    {
+      "key": "capturePattern",
+      "value": "AUTO_CAPTURE",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "supportOverCapture",
+      "value": "false",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "enableOverCapture",
+      "value": "false",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "authorizationTimeoutDays",
+      "value": "7",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "apiEndpoint",
+      "value": "api.virtualpos-sandbox.com",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "apiVersion",
+      "value": "v3",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "apiKey",
+      "value": "34328c-91bf56-5c7e4e-dadc12-92557a",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "apiSecretKey",
+      "value": "4********************************e06",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "paymentChannel",
+      "value": "Web",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "paymentDescription",
+      "value": "SAP OPF",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "definedPaymentMethod",
+      "value": "all",
+      "enabled": true
+    }
+    
+  ],
+  "_postman_variable_scope": "environment",
+  "_postman_exported_at": "",
+  "_postman_exported_using": "Postman\/7.35.0"
+}
