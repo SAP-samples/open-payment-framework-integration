@@ -110,7 +110,7 @@ Depending on your environment, add the following domains to the domain allowlist
 
 ## Adding a Standard Notification for Your Merchant Account
 
-Go to the Adyen Dashboard to set up event notifications using the URL for Notification previsouly saved. For instructions, see <https://docs.adyen.com/issuing/set-up-webhooks/#configure-customer-area>.
+Go to the Adyen Dashboard to set up event notifications using the URL for Notification previously saved. For instructions, see <https://docs.adyen.com/issuing/set-up-webhooks/#configure-customer-area>.
     
 
 ## Editing the Postman Collection in the Postman App
