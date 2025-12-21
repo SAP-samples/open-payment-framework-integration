@@ -1,6 +1,6 @@
 {
-  "id": "0b6911bd-78b1-43bf-b743-02c68d50d064",
-  "name": "Adyen Hosted Field",
+  "id": "b8099523-7c8f-42b5-b9f7-e2ee3db6d757",
+  "name": "Adyen Component",
   "values": [
     {
       "key": "token",
@@ -19,29 +19,29 @@
     },
     {
       "key": "accountGroupId",
-      "value": "453",
+      "value": "814",
       "enabled": true
     },
     {
       "key": "accountId",
-      "value": "174",
+      "value": "355",
       "enabled": true
     },
     {
-      "key": "authentication_inbound_basic_auth_username_export_217",
-      "value": "(Notification Basic Auth)Adyen Hosted Field_username",
+      "key": "authentication_inbound_basic_auth_username_export_761",
+      "value": "(Notification Basic Auth)Adyen Hosted Field_export_username",
       "enabled": true
     }
     ,
     {
-      "key": "authentication_inbound_basic_auth_password_export_217",
-      "value": "(Notification Basic Auth)Adyen Hosted Field_password",
+      "key": "authentication_inbound_basic_auth_password_export_761",
+      "value": "(Notification Basic Auth)Adyen Hosted Field_export_password",
       "enabled": true
     }
     ,
     {
-      "key": "authentication_outbound_api_key_value_export_240",
-      "value": "(Webservice User)Adyen Hosted Field",
+      "key": "authentication_outbound_api_key_value_export_546",
+      "value": "(Webservice User)Adyen Componet Hosted Field",
       "enabled": true
     }
     ,
@@ -113,7 +113,7 @@
     ,
     {
       "key": "notificationHmacKey",
-      "value": "d********************************b04",
+      "value": "5********************************c4a",
       "enabled": true
     }
     ,
@@ -154,14 +154,14 @@
     }
     ,
     {
-      "key": "sdkVersion",
-      "value": "6.5.1",
+      "key": "enableRecurring",
+      "value": "true",
       "enabled": true
     }
     ,
     {
-      "key": "enableRecurring",
-      "value": "true",
+      "key": "sdkVersion",
+      "value": "6.22.0",
       "enabled": true
     }
     
