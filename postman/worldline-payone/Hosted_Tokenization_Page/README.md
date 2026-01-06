@@ -15,12 +15,12 @@ a) [Create your Payone test account](https://signup.preprod.payone.com).
 
 b) Create a Payone payment integration in OPF.
 
-c) Get the credentials for your Payone direct integration.
+c) Get the credentials for your Payone integration.
 
 d) Prepare the [Postman Environment](environment_configuration.json) file so the collection can be imported with all your OPF Tenant and Payone Test Account unique values. 
 
 ### Creating a Payone Account ###
-You can sign up for a free Payone  test account at [Create your Payone Direct test account](https://signup.preprod.payone.com).
+You can sign up for a free Payone  test account at [Create your Payone test account](https://signup.preprod.payone.com).
 Once registered, activate at least one of Payone's available card payment methods (e.g., Visa, Mastercard) through the merchant portal under Business > Payment methods.
 
 ### Creating a Payone Payment Integration ###
@@ -129,7 +129,7 @@ In summary, you should have edited the following variables:
 - ``accountGroupId``
 - ``accountId`` 
 
-#### Worldline direct Specific
+#### Payone Specific
 - ``apiKey``
 - ``apiSecret``
 - ``webhookSecret`` 
