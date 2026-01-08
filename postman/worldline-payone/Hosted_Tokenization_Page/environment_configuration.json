@@ -1,5 +1,5 @@
 {
-  "id": "d08b0179-df05-4ddc-b0c1-f4ace0d29724",
+  "id": "365c823d-0b09-49fd-86e0-ebefe5638f59",
   "name": "Worldline Payone",
   "values": [
     {
@@ -70,18 +70,6 @@
     }
     ,
     {
-      "key": "apiKey",
-      "value": "218135A5D09710BC6B9C",
-      "enabled": true
-    }
-    ,
-    {
-      "key": "skipThreeDSAuth",
-      "value": "false",
-      "enabled": true
-    }
-    ,
-    {
       "key": "definedContextType",
       "value": "application\/json",
       "enabled": true
@@ -90,6 +78,18 @@
     {
       "key": "webhookSecret",
       "value": "2********************************c95",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "skipThreeDSAuth",
+      "value": "true",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "apiKey",
+      "value": "356261AB79B2B31E00E8",
       "enabled": true
     }
     
