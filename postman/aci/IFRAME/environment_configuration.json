@@ -1,5 +1,5 @@
 {
-  "id": "0d0518c4-7aab-49eb-abe5-14f4df7b74b4",
+  "id": "5db629c0-42a9-4b18-9cdd-81e7983fbe8f",
   "name": "ACI Worldwide",
   "values": [
     {
@@ -9,7 +9,7 @@
     },
     {
       "key": "rootUrl",
-      "value": "https:\/\/opf-iss-d0.api.commerce.stage.context.cloud.sap",
+      "value": "https:\/\/opf-iss-d0.opf.commerce.stage.context.cloud.sap",
       "enabled": true
     },
     {
@@ -18,12 +18,12 @@
       "enabled": true
     },
     {
-      "key": "integrationId",
+      "key": "accountGroupId",
       "value": "114",
       "enabled": true
     },
     {
-      "key": "configurationId",
+      "key": "accountId",
       "value": "78",
       "enabled": true
     },
