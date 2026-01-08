@@ -1,0 +1,100 @@
+{
+  "id": "365c823d-0b09-49fd-86e0-ebefe5638f59",
+  "name": "Worldline Payone",
+  "values": [
+    {
+      "key": "token",
+      "value": "",
+      "enabled": true
+    },
+    {
+      "key": "rootUrl",
+      "value": "https:\/\/opf-iss-d0.opf.commerce.stage.context.cloud.sap",
+      "enabled": true
+    },
+    {
+      "key": "service",
+      "value": "opf",
+      "enabled": true
+    },
+    {
+      "key": "accountGroupId",
+      "value": "3540",
+      "enabled": true
+    },
+    {
+      "key": "accountId",
+      "value": "2710",
+      "enabled": true
+    },
+    {
+      "key": "capturePattern",
+      "value": "PARTIAL_CAPTURE",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "supportOverCapture",
+      "value": "false",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "enableOverCapture",
+      "value": "false",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "authorizationTimeoutDays",
+      "value": "7",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "apiEndpoint",
+      "value": "payment.preprod.payone.com",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "apiVersion",
+      "value": "v2",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "apiSecret",
+      "value": "5********************************76f",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "definedContextType",
+      "value": "application\/json",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "webhookSecret",
+      "value": "2********************************c95",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "skipThreeDSAuth",
+      "value": "true",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "apiKey",
+      "value": "356261AB79B2B31E00E8",
+      "enabled": true
+    }
+    
+  ],
+  "_postman_variable_scope": "environment",
+  "_postman_exported_at": "",
+  "_postman_exported_using": "Postman\/7.35.0"
+}
