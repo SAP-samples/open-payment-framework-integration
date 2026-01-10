@@ -1,5 +1,5 @@
 {
-  "id": "aefda26a-1763-4275-a01e-48a60bf66aec",
+  "id": "df8f35c4-718c-4e2b-bfef-aed93dacfce6",
   "name": "Worldline direct",
   "values": [
     {
@@ -64,12 +64,6 @@
     }
     ,
     {
-      "key": "apiKey",
-      "value": "D4AB5CC32C3C94F931A0",
-      "enabled": true
-    }
-    ,
-    {
       "key": "skipAuthentication",
       "value": "false",
       "enabled": true
@@ -96,6 +90,18 @@
     {
       "key": "authorizationMode",
       "value": "FINAL_AUTHORIZATION",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "definedContextType",
+      "value": "application\/json",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "apiKey",
+      "value": "79C892A74BA8A318AC46",
       "enabled": true
     }
     
