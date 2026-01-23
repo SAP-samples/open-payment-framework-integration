@@ -1,74 +1,88 @@
 {
-	"id": "9ce09437-77a4-40ca-b254-eb31143a9777",
-	"name": "worladpay-iFrame",
-	"values": [
-		{
-			"key": "token",
-			"value": "",
-			"enabled": true
-		},
-		{
-			"key": "rootUrl",
-			"value": "https://opf-iss-d0.api.commerce.stage.context.cloud.sap",
-			"enabled": true
-		},
-		{
-			"key": "service",
-			"value": "opf",
-			"enabled": true
-		},
-		{
-			"key": "integrationId",
-			"value": "7",
-			"enabled": true
-		},
-		{
-			"key": "configurationId",
-			"value": "4",
-			"enabled": true
-		},
-		{
-			"key": "authentication_outbound_basic_auth_username_export_10",
-			"value": "worldpay_basic_auth_export_export_username",
-			"enabled": true
-		},
-		{
-			"key": "authentication_outbound_basic_auth_password_export_10",
-			"value": "worldpay_basic_auth_export_export_password",
-			"enabled": true
-		},
-		{
-			"key": "capturePattern",
-			"value": "CAPTURE_PER_SHIPMENT",
-			"enabled": true
-		},
-		{
-			"key": "supportOverCapture",
-			"value": "false",
-			"enabled": true
-		},
-		{
-			"key": "enableOverCapture",
-			"value": "false",
-			"enabled": true
-		},
-		{
-			"key": "authorizationTimeoutDays",
-			"value": "7",
-			"enabled": true
-		},
-		{
-			"key": "installationId",
-			"value": "1402695",
-			"enabled": true
-		},
-		{
-			"key": "merchantCode",
-			"value": "SAPUPSECOMTEST",
-			"enabled": true
-		}
-	],
-	"_postman_variable_scope": "environment",
-	"_postman_exported_at": "2024-04-12T04:07:52.097Z",
-	"_postman_exported_using": "Postman/8.12.1"
+  "id": "31036472-950a-45f4-9f1c-335bf9e9ebd0",
+  "name": "worladpay-iFrame",
+  "values": [
+    {
+      "key": "token",
+      "value": "",
+      "enabled": true
+    },
+    {
+      "key": "rootUrl",
+      "value": "https:\/\/opf-iss-d0.opf.commerce.stage.context.cloud.sap",
+      "enabled": true
+    },
+    {
+      "key": "service",
+      "value": "opf",
+      "enabled": true
+    },
+    {
+      "key": "accountGroupId",
+      "value": "7",
+      "enabled": true
+    },
+    {
+      "key": "accountId",
+      "value": "4",
+      "enabled": true
+    },
+    {
+      "key": "authentication_outbound_basic_auth_username_export_755",
+      "value": "worldpay_basic_auth_username",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "authentication_outbound_basic_auth_password_export_755",
+      "value": "worldpay_basic_auth_password",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "capturePattern",
+      "value": "CAPTURE_PER_SHIPMENT",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "supportOverCapture",
+      "value": "false",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "enableOverCapture",
+      "value": "false",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "authorizationTimeoutDays",
+      "value": "7",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "installationId",
+      "value": "1402695",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "xssJSContext",
+      "value": "AT&T",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "apiEndpoint",
+      "value": "secure-test.worldpay.com",
+      "enabled": true
+    }
+    
+  ],
+  "_postman_variable_scope": "environment",
+  "_postman_exported_at": "",
+  "_postman_exported_using": "Postman\/7.35.0"
 }
