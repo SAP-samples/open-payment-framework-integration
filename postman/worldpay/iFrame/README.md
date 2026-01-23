@@ -30,6 +30,9 @@ You can sign up for a free Worldpay test account at <https://secure.worldpay.com
 Create a Worldpay payment integration in the OPF workbench. For reference, see [Creating Payment Integration
 ](https://help.sap.com/docs/OPEN_PAYMENT_FRAMEWORK/3580ff1b17144b8780c055bbb7c2bed3/20a64f954df1425391757759011e7e6b.html).
 
+For step 6. The Merchant ID is the merchant code, You can obtain your merchant ID in the Worldpay Dashboard.
+
+![](./images/merchant_code.png)
 
 ## Setting up Your Worldpay Test Account to Work with OPF
 
@@ -55,9 +58,7 @@ Create a Worldpay payment integration in the OPF workbench. For reference, see [
    For detailed instructions to configure a direct Google Pay integration to WorldPay, see <https://developer.worldpay.com/docs/wpg/mobilewallets/googlepay>.
    
 
-4. In the left navigation panel, choose **Integration** -> **Configuration Details** to deactivate the **Capture Delay** option.
-
-5. In the left navigation panel, choose **Integration**-> **Installations** to copy the installation ID.
+4.  In the left navigation panel, choose **Integration**-> **Installations** to copy the installation ID.
 
 
 
@@ -84,9 +85,11 @@ The ``integrationId`` and ``configurationId`` values identify the payment integr
 * ``integrationId`` maps to ``accountGroupId`` in Postman
 * ``configurationId`` maps to ``accountId`` in Postman
 
-**4. merchantCode** 
+**4. webhook configuration** 
 
-You can obtain your merchant ID in the Worldpay Dashboard.
+Configure notifications in the Worldpay Dashboard. For guidance, see [Setting up notifications](https://docs.worldpay.com/apis/wpg/manage)
+
+The URL that receives notifications for both test and production environments can be found in the OPF Workbench under General Information, in the Notification URL field
 
 
 ## Summary
