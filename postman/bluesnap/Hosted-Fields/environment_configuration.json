@@ -1,5 +1,5 @@
 {
-  "id": "a5520c60-d3dd-4c31-87da-e938a3eeb500",
+  "id": "c8e0c5a6-7097-4a35-9d57-2b8719f01cb5",
   "name": "BlueSnap HostedFields",
   "values": [
     {
@@ -100,12 +100,6 @@
     }
     ,
     {
-      "key": "allow3DS2",
-      "value": "false",
-      "enabled": true
-    }
-    ,
-    {
       "key": "payButtonText",
       "value": "Place Order",
       "enabled": true
@@ -114,6 +108,18 @@
     {
       "key": "webhookSecretKey",
       "value": "c********************************bfe",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "allow3DS2",
+      "value": "false",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "threeDSIndicator",
+      "value": "03",
       "enabled": true
     }
     

@@ -110,6 +110,14 @@ Then you can add an encryption key by using the Generate Key button to create on
 
 ``sandpay.bluesnap.com`` for sandbox script element
 
+**8. threeDSIndicator**
+Type of action for which you are using 3-D Secure authentication
+01: Payment
+02: Recurring
+03: Payment + Store Card (where the cardholder chooses to store/save their card during the payment flow)
+04: Add Card
+05: Maintain / Update Card
+06: RFU
 
 ### Allowlist
 Add the following domains to the domain allowlist in OPF workbench. For instructions, see [Adding Tenant-specific Domain to Allowlist
