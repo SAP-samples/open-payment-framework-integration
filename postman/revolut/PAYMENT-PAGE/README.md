@@ -73,7 +73,7 @@ The ``integrationId`` and ``configurationId`` values identify the payment integr
 **4. API Credentials**
 
 The Revolut Merchant API requires a public and secret key to be generated as per [the following instructions](https://developer.revolut.com/docs/guides/accept-payments/get-started/generate-the-api-key). They are located in the Settings -> API.
-![](images/revout-api-keys.png)
+![](images/revolut-api-keys.png)
 
 
 * ``secretKey``
