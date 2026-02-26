@@ -1,37 +1,34 @@
 ## Introduction
 
-The Postman Collection enables a [Razorpay Web Checkout](https://razorpay.com/docs/payments/payment-gateway/web-integration/standard/) Payment Form to be used to take payments through OPF. 
+The Postman Collection enables a [Revolut Hosted Checkout Page](https://developer.revolut.com/docs/guides/accept-payments/online-payments/hosted-checkout-page/introduction) Payment Form to be used to take payments through OPF. 
 
 The integration supports:
 
-* Authorization with manual or auto capture
+* Authorization with delayed capture
 * Settlements
 * Refunds
-
-The integration does not support
-* Authorization reversal (not supported)
-* Reauthorization (not available)
-
+* Authorization Reversal
 
 Roadmap:
-* Testing of payment methods beyond card (e.g. UPI)
+* Reauthorization
+* Passing tracking info at Capture
 
 
 ## Setup Instructions
 
 ### Overview
-To import the [Razorpay Web Checkout](mapping_configuration.json) this page will take you through the following steps:
+To import the [Revolut Hosted Checkout](Revolut-mapping_configuration.json) this page will take you through the following steps:
 
-a) Create your Razorpay Account
+a) Create your Revolut Merchant APU Account
 
 b) Create a payment integration in OPF workbench.
 
-c) Prepare the [Postman Environment](environment_configuration.json) file so the collection can be imported with all your OPF Tenant and Razorpay Demo Account unique values. 
+c) Prepare the [Postman Environment](Revolut-environment_configuration.json) file so the collection can be imported with all your OPF Tenant and Revolut Sandbox Account unique values. 
 
 
-### Create your Razorpay Account
+### Create your Revolut Account
 
-A Individual or business account can be created through the [signup](https://dashboard.razorpay.com/signup) process.
+A sandbox account can be created as per [sandbox sign up instructions](https://developer.revolut.com/docs/guides/accept-payments/get-started/set-up-sandbox) .
 
 
 ### Creating Payment Integration
@@ -39,9 +36,8 @@ Create a new integration in the OPF workbench and set the Merchant ID. For refer
 
 **Note**
 
-In step 6, you can specify a unique Merchant ID name which is obtainable from the [account section of the dashboard](https://dashboard.razorpay.com/app/account-settings).
-![](images/razorpay-merchant-id.png)
-
+In step 6, you can specify a unique Merchant ID name which is obtainable from the [business account section of the dashboard](https://sandbox-business.revolut.com/settings/business-account).
+![](images/revolut-account-id.png)
 
 
 ### Preparing the Postman environment_configuration file
@@ -76,46 +72,43 @@ The ``integrationId`` and ``configurationId`` values identify the payment integr
 
 **4. API Credentials**
 
-The RazorPay API operates using a key id and secret value, and each set of keys are unique for each account and environment (sandbox or production) and must be retrieved from the [dashboard](https://dashboard.razorpay.com/app/website-app-settings/api-keys)
+The Revolut Merchant API requires a public and secret key to be generated as per [the following instructions](https://developer.revolut.com/docs/guides/accept-payments/get-started/generate-the-api-key). They are located in the Settings -> API.
+![](images/revout-api-keys.png)
 
-![](images/razorpay-apikey.png)
 
-Then you can find both keys:
-
-* ``Key ID`` maps to ``apiKeyId`` and ``authentication_outbound_basic_auth_username_export_599`` in postman
-* ``Secret`` maps to ``authentication_outbound_basic_auth_password_export_599`` in postman
+* ``secretKey``
+* ``publicKey``
 
 **5. webhookSecret**
 
-IN OPF Workbench: For your new Razorpay payment integration, navigate to the General Information section of the Integration details tab to copy the Notification URL.
+IN OPF Workbench: For your new Revolut payment integration, navigate to the General Information section of the Integration details tab to copy the Notification URL.
 
-Create a new webhook endpoint in the Razorpay [dashboard](https://dashboard.razorpay.com/app/website-app-settings/webhooks), inputting the OPF notification URL and activate at least ``payment.authorized``, ``payment.failed``, ``payment.captured``, ``refund.processed``, ``refund.failed`` events. 
+You will need to create the webhook though an API call using the secret key from step 4. Here is an example curl request. 
 
-Decide a suitably secure secret and input into the dashboard and the postman environment value.
-
-![](images/razorpay-webhooks.png)
+``curl --location 'https://sandbox-merchant.revolut.com/api/1.0/webhooks' \
+--header 'Content-Type: application/json' \
+--header 'Accept: application/json' \
+--header 'Authorization: Bearer sk_*******' \
+--data '{
+  "url": "__NOTIFICATION_URL__",
+  "events": [
+    "ORDER_COMPLETED",
+    "ORDER_AUTHORISED",
+    "ORDER_CANCELLED",
+    "ORDER_FAILED",
+    "ORDER_PAYMENT_DECLINED"
+  ]
+}'``
  
-
-**6. paymentFormLogo**
-
-You can configure an image link to display in the Razorpay payment form.
-
-**7. paymentFormMerchantName**
-
-The name of the merchant you want to appear in the Razorpay payment form
-
-**8. payButtonLabel**
-
-The label to appear on the payment button in checkout.
-
-
+On successful creation copy the generated secret into the ``signingSecret`` variable.
 
 
 ### Allowlist
 Add the following domains to the domain allowlist in OPF workbench. For instructions, see [Adding Tenant-specific Domain to Allowlist
 ](https://help.sap.com/docs/OPEN_PAYMENT_FRAMEWORK/3580ff1b17144b8780c055bbb7c2bed3/a6836485b4494cfaad4033b4ee7a9c64.html).
 
-``api.razorpay.com``
+``merchant.revolut.com``
+``sandbox-merchant.revolut.com``
 
 
 ### Summary
@@ -130,14 +123,11 @@ In summary, you should have edited the following variables:
 - ``accountGroupId``
 - ``accountId``
 
-#### Razorpay Specific
-- ``apiKeyId``
-- ``authentication_outbound_basic_auth_username_export_599``
-- ``authentication_outbound_basic_auth_password_export_599``
-- ``paymentFormLogo``
-- ``paymentFormMerchantName``
-- ``payButtonLabel``
-- ``webhookSecret``
+#### Revolut Specific
+- ``secretKey``
+- ``publicKey``
+- ``signingSecret``
+
   
 For sandbox testing, all other values can be left as defaults.  
 
