@@ -19,7 +19,7 @@ Roadmap:
 ### Overview
 To import the [Revolut Hosted Checkout](Revolut-mapping_configuration.json) this page will take you through the following steps:
 
-a) Create your Revolut Merchant APU Account
+a) Create your Revolut Merchant API Account
 
 b) Create a payment integration in OPF workbench.
 
