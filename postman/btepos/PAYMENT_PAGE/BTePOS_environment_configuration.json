@@ -1,0 +1,76 @@
+{
+  "id": "7f4423f8-20f8-4653-91ef-cc78b9f77571",
+  "name": "opf-iss-d0",
+  "values": [
+    {
+      "key": "token",
+      "value": "",
+      "enabled": true
+    },
+    {
+      "key": "rootUrl",
+      "value": "https:\/\/opf-iss-d0.opf.commerce.stage.context.cloud.sap",
+      "enabled": true
+    },
+    {
+      "key": "service",
+      "value": "opf",
+      "enabled": true
+    },
+    {
+      "key": "accountGroupId",
+      "value": "3727",
+      "enabled": true
+    },
+    {
+      "key": "accountId",
+      "value": "2880",
+      "enabled": true
+    },
+    {
+      "key": "authentication_outbound_basic_auth_username_export_792",
+      "value": "BTePOS IPAY_username",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "authentication_outbound_basic_auth_password_export_792",
+      "value": "BTePOS IPAY_password",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "capturePattern",
+      "value": "CAPTURE_PER_SHIPMENT",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "supportOverCapture",
+      "value": "false",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "enableOverCapture",
+      "value": "false",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "authorizationTimeoutDays",
+      "value": "5",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "apiDomain",
+      "value": "ecclients-sandbox.btrl.ro",
+      "enabled": true
+    }
+    
+  ],
+  "_postman_variable_scope": "environment",
+  "_postman_exported_at": "",
+  "_postman_exported_using": "Postman\/7.35.0"
+}
