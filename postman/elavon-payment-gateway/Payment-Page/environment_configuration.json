@@ -1,5 +1,5 @@
 {
-  "id": "2cd25c09-0683-4013-9310-5eced54bebd6",
+  "id": "a5ce4c50-8b08-45f2-88e3-0500b7c47236",
   "name": "Elavon EPG",
   "values": [
     {
@@ -41,7 +41,7 @@
     ,
     {
       "key": "capturePattern",
-      "value": "PARTIAL_CAPTURE",
+      "value": "CAPTURE_PER_SHIPMENT",
       "enabled": true
     }
     ,
@@ -66,6 +66,12 @@
     {
       "key": "apiEndpoint",
       "value": "uat.api.converge.eu.elavonaws.com",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "shippingCoutryCode",
+      "value": "USA",
       "enabled": true
     }
     
