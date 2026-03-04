@@ -56,24 +56,20 @@ The ``integrationId`` and ``configurationId`` values identify the payment integr
 * ``integrationId`` maps to ``accountGroupId`` in Postman
 * ``configurationId`` maps to ``accountId`` in Postman
 
-**4. Secret Key**
-The Secret (or Private) Key can be obtained here in the Stripe dashboard. In test it starts with **sk_test**.
+**4. API Keys**
 
-<https://dashboard.stripe.com/test/apikeys>
+The Publishable Key and Restricted Key (used as Secret Key) are obtained via the [SAP OPF Stripe Integration](https://marketplace.stripe.com/apps/open-payment-framework-integration) app, available on the Stripe App Marketplace.
+![app_marketplace](images/opf-payment-framework-integration-app-in-marketplace.png)
+1. Install the SAP OPF Stripe Integration app.
+2. Click the **"View API Keys"** button in the upper right corner of the app.
+![app_api_key](images/opf-payment-framework-integration-app-api-key.png)
+1. Copy both your **Publishable Key** (starts with ``pk_test``) and the generated **Restricted Key** (starts with ``rk_test``).
 
-![](images/stripe-elements-get-secret-key.png)
+Replace the ``secretKey`` variable value in the environment file with the **Restricted Key**.
 
-Replace the ``secretKey`` variable value in the environment file with this value starting with **sk_test**.
-
-**5. Public Key**
-
-The public (or Publishable) key can be obtained here in the Stripe dashboard. In Test it starts with **pk_test**.
-
-<https://dashboard.stripe.com/test/apikeys>
-
-![](images/stripe-elements-get-public-key.png)
-
-Replace the ``publickey`` variable value in the environment file with this value starting with **pk_test**.
+Replace the ``publicKey`` variable value in the environment file with the **Publishable Key**.
+![app_env_config](images/opf-payment-framework-integration-app-env-configuration.png)
+> **Note**: To rotate the Restricted Key, navigate to **Developers → API Keys** in the Stripe Dashboard. In the **Restricted keys** section, find the key named "Key for com.stripe.open-payment-framework-integration" with the App tag, click the three-dot menu, and select **Rotate**.
 
 **6. Webhook Secret**
 
