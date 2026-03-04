@@ -71,10 +71,9 @@ The Publishable Key and Restricted Key (used as Secret Key) are obtained via the
 ![app_api_key](images/opf-payment-framework-integration-app-api-key.png)
 1. Copy both your **Publishable Key** (starts with ``pk_test``) and the generated **Restricted Key** (starts with ``rk_test``).
 
-Replace the ``secretKey`` variable value in the environment file with the **Restricted Key**.
+``Publishable Key`` maps to ``publicKey`` in Postman
+``Restricted Key`` maps to ``secretKey`` in Postman
 
-Replace the ``publicKey`` variable value in the environment file with the **Publishable Key**.
-![app_env_config](images/opf-payment-framework-integration-app-env-configuration.png)
 > **Note**: To rotate the Restricted Key, navigate to **Developers → API Keys** in the Stripe Dashboard. In the **Restricted keys** section, find the key named "Key for com.stripe.open-payment-framework-integration" with the App tag, click the three-dot menu, and select **Rotate**.
 
 **5. Webhook Secret**
