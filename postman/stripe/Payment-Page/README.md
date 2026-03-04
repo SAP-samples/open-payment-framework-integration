@@ -59,10 +59,14 @@ The ``integrationId`` and ``configurationId`` values identify the payment integr
 **4. API Keys**
 
 The Publishable Key and Restricted Key (used as Secret Key) are obtained via the [SAP OPF Stripe Integration](https://marketplace.stripe.com/apps/open-payment-framework-integration) app, available on the Stripe App Marketplace.
-![app_marketplace](images/opf-payment-framework-integration-app-in-marketplace.png)
+<div align="center">
+  <img src="images/opf-payment-framework-integration-app-in-marketplace.png" alt="app_marketplace" style="width:80%; display:block; margin:auto;" />
+</div>
 1. Install the SAP OPF Stripe Integration app.
 2. Click the **"View API Keys"** button in the upper right corner of the app.
-![app_api_key](images/opf-payment-framework-integration-app-api-key.png)
+<div align="center">
+  <img src="images/opf-payment-framework-integration-app-api-key.png" alt="app_api_key" style="width:80%; display:block; margin:auto;" />
+</div>
 1. Copy both your **Publishable Key** (starts with ``pk_test``) and the generated **Restricted Key** (starts with ``rk_test``).
 
 ``Publishable Key`` maps to ``publicKey`` in Postman
