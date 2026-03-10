@@ -100,6 +100,14 @@ Add the following domains to the domain allowlist in OPF workbench. For instruct
 ``proxy.staging.devpayever.com`` for test account
 
 
+### Test Requirement 
+The payment method is only available when both of the following conditions are met:
+
+a). Amount Range: €50–€750. The amount or product you are testing must fall within this range.
+
+b).  Billing and shipping address must match and should be a valid German address.
+
+
 ### Summary
 
 The environment file is now ready for importing into Postman together with the Mapping Configuration Collection file. Ensure you select the correct environment before running the collection.
