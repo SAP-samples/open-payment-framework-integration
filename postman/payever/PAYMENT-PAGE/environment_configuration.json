@@ -1,5 +1,5 @@
 {
-  "id": "8c832e5f-5d02-4cf3-ab2c-5545512a012d",
+  "id": "5c9dbef2-0d58-405d-b427-8e8d2a3caf7c",
   "name": "payever",
   "values": [
     {
@@ -70,14 +70,14 @@
     }
     ,
     {
-      "key": "apiVersion",
-      "value": "v3",
+      "key": "paymentMethod",
+      "value": "zinia_installment_de",
       "enabled": true
     }
     ,
     {
-      "key": "paymentMethod",
-      "value": "zinia_installment_de",
+      "key": "apiVersion",
+      "value": "v3",
       "enabled": true
     }
     
