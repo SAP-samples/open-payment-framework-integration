@@ -1,5 +1,5 @@
 {
-  "id": "365c823d-0b09-49fd-86e0-ebefe5638f59",
+  "id": "3b10c88e-fc77-492b-b2af-3580b42bdfde",
   "name": "Worldline Payone",
   "values": [
     {
@@ -82,14 +82,14 @@
     }
     ,
     {
-      "key": "skipThreeDSAuth",
-      "value": "true",
+      "key": "apiKey",
+      "value": "356261AB79B2B31E00E8",
       "enabled": true
     }
     ,
     {
-      "key": "apiKey",
-      "value": "356261AB79B2B31E00E8",
+      "key": "skipThreeDSAuth",
+      "value": "false",
       "enabled": true
     }
     
