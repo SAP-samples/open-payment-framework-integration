@@ -4,8 +4,8 @@ please make sure the version of Bruno is 3.1.4 or above.
 
 The integration supports:
 
-* Authorization.
-* Capture 
+* Authorization that supports saving payment for the Cards component.
+* Deferred Capture support
 * Refunds
 * Reversal
 
@@ -186,7 +186,7 @@ Step 3:
 Check if the APM is mapped rightly in Configuration Components (Notification)
 ![](images/apm_get_mapped_in_opf.png)
 
-## The language support in the Adyen UI
+## The language support in the Drop-in UI
 Default support languages are:
 
 * en-US
