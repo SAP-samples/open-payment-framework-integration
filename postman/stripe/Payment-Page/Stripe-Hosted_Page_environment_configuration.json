@@ -1,5 +1,5 @@
 {
-  "id": "a956aa95-9ffd-4fa2-bfdb-3b43baba6998",
+  "id": "1f5d39f9-6233-4342-b0a2-3354955dc85e",
   "name": "Stripe Checkout",
   "values": [
     {
@@ -34,13 +34,13 @@
     }
     ,
     {
-      "key": "supportOverCapture",
+      "key": "enableOverCapture",
       "value": "false",
       "enabled": true
     }
     ,
     {
-      "key": "enableOverCapture",
+      "key": "enableCaptureReAuth",
       "value": "false",
       "enabled": true
     }

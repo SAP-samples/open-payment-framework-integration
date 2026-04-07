@@ -1,5 +1,5 @@
 {
-  "id": "ee0c3a80-be2d-4594-9d2e-a04510acd4bf",
+  "id": "3ff74a16-4a64-49a6-9eb8-fc3a4a139859",
   "name": "Stripe Payment Elements",
   "values": [
     {
@@ -34,13 +34,13 @@
     }
     ,
     {
-      "key": "supportOverCapture",
+      "key": "enableOverCapture",
       "value": "false",
       "enabled": true
     }
     ,
     {
-      "key": "enableOverCapture",
+      "key": "enableCaptureReAuth",
       "value": "false",
       "enabled": true
     }
