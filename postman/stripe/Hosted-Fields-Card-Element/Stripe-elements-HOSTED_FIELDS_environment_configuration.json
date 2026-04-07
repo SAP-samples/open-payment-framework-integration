@@ -1,5 +1,5 @@
 {
-  "id": "50c970de-8981-4085-a162-647267bf27bb",
+  "id": "1c90d24d-290b-43e6-9880-a8ee1dc32360",
   "name": "Stripe Card Elements",
   "values": [
     {
@@ -34,13 +34,13 @@
     }
     ,
     {
-      "key": "supportOverCapture",
+      "key": "enableOverCapture",
       "value": "false",
       "enabled": true
     }
     ,
     {
-      "key": "enableOverCapture",
+      "key": "enableCaptureReAuth",
       "value": "false",
       "enabled": true
     }
