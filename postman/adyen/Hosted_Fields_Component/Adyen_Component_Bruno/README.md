@@ -22,7 +22,7 @@ d) Prepare Bruno Environment Variables so the collection can be imported with al
 
 e) Payment methods supported in OPF.
 
-f) Upload Apple Pay certificate to OPF (optional).
+f) Upload Apple Pay certificate to OPF.
 
 g) Validate the configuration in OPF workbench.
 
@@ -173,7 +173,7 @@ The environment file is now ready to import into Bruno. Make sure you have enabl
 ![](../images/bruno_run.png)
 
 
-## Upload Apple Pay Certificate to OPF (Optional)
+## Upload Apple Pay Certificate to OPF 
 
 Log in to the OPF workbench, select Apple Pay in the merchant configuration and open the setting of Apple Pay Merchant Account:
 
