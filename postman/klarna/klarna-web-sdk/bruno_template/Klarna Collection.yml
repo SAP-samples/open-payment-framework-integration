@@ -249,6 +249,32 @@ items:
           followRedirects: true
           maxRedirects: 5
   - info:
+      name: Notification
+      type: folder
+      seq: 6
+    request:
+      auth: inherit
+    items:
+      - info:
+          name: Notification
+          type: http
+          seq: 1
+        http:
+          method: PUT
+          url: '{{rootUrl}}/{{service}}/merchant/accountgroups/{{accountGroupId}}/accounts/{{accountId}}/notification'
+          headers:
+            - name: Authorization
+              value: '{{token}}'
+          body:
+            type: json
+            data: '{"id":6507,"requestType":"NOTIFICATION","enabled":null,"configurationId":null,"googlePayGateway":null,"createdAt":"2026-04-01T06:28:25.292Z","updatedAt":"2026-04-01T06:28:25.292Z","inboundMapping":{"preprocessingMethodId":"{{preprocessingMethod_Klarna_Server_Calback_d6a24f14-9b1f-46c2-91ce-c380df320860}}","authenticationIds":["{{authentication_inbound_secure_random_token_inbound_817}}"],"contentType":"application/json","requestMapping":{"authorization":{"requestExample":"{\n  \"merchant_reference1\": \"000000M000001T6Z_7414211363725901825\",\n  \"session_id\": \"30bfa892-8310-6cc2-9dbd-b955948fbb35\",\n  \"authorization_token\": \"42beeb83-8238-6810-9a11-d9dc8a448964\"\n}","requestMappingFields":{"mappings":[{"from":"session_id","to":"pspReference","map":null,"arrayPath":null,"arrayMapping":false,"lineItemGroup":null,"mappingFieldType":"BODY","fixed":false,"isCustom":false,"persistCustomField":false,"isSensitive":false,"isObject":false,"isScript":false},{"from":"authorization_token","to":null,"map":null,"arrayPath":null,"arrayMapping":false,"lineItemGroup":null,"mappingFieldType":"BODY","fixed":true,"isCustom":false,"persistCustomField":false,"isSensitive":false,"isObject":false,"isScript":false},{"from":"merchant_reference1","to":null,"map":null,"arrayPath":null,"arrayMapping":false,"lineItemGroup":null,"mappingFieldType":"BODY","fixed":true,"isCustom":false,"persistCustomField":false,"isSensitive":false,"isObject":false,"isScript":false},{"from":"#object","to":null,"map":null,"arrayPath":null,"arrayMapping":false,"lineItemGroup":null,"mappingFieldType":"BODY","fixed":true,"isCustom":false,"persistCustomField":false,"isSensitive":false,"isObject":true,"isScript":false},{"from":"AUTHORIZATION","to":"paymentMethod","map":null,"arrayPath":null,"arrayMapping":false,"lineItemGroup":null,"mappingFieldType":null,"fixed":true,"isCustom":false,"persistCustomField":false,"isSensitive":false,"isObject":false,"isScript":false},{"from":"AUTHORIZATION","to":"requestType","map":null,"arrayPath":null,"arrayMapping":false,"lineItemGroup":null,"mappingFieldType":null,"fixed":true,"isCustom":false,"persistCustomField":false,"isSensitive":false,"isObject":false,"isScript":false},{"from":"PENDING","to":"transactionStatus","map":null,"arrayPath":null,"arrayMapping":false,"lineItemGroup":null,"mappingFieldType":null,"fixed":true,"isCustom":false,"persistCustomField":false,"isSensitive":false,"isObject":false,"isScript":false}]}}},"responseMapping":{"content":"OK"}}}'
+          auth: inherit
+        settings:
+          encodeUrl: true
+          timeout: 0
+          followRedirects: true
+          maxRedirects: 5
+  - info:
       name: Preprocessing_methods
       type: folder
       seq: 5
@@ -279,34 +305,8 @@ items:
                 test("Location is present", function () {
                     expect(res.getHeaders()).to.have.property("Location".toLowerCase());
                     var location=res.getHeader("location");
-                    bru.setEnvVar("preprocessingMethod_Klarna Server Calback_d6a24f14-9b1f-46c2-91ce-c380df320860", location.substring(location.lastIndexOf("/")+1,location.length));
+                    bru.setEnvVar("preprocessingMethod_Klarna_Server_Calback_d6a24f14-9b1f-46c2-91ce-c380df320860", location.substring(location.lastIndexOf("/")+1,location.length));
                 });
-        settings:
-          encodeUrl: true
-          timeout: 0
-          followRedirects: true
-          maxRedirects: 5
-  - info:
-      name: Notification
-      type: folder
-      seq: 6
-    request:
-      auth: inherit
-    items:
-      - info:
-          name: Notification
-          type: http
-          seq: 1
-        http:
-          method: PUT
-          url: '{{rootUrl}}/{{service}}/merchant/accountgroups/{{accountGroupId}}/accounts/{{accountId}}/notification'
-          headers:
-            - name: Authorization
-              value: '{{token}}'
-          body:
-            type: json
-            data: '{"id":6507,"requestType":"NOTIFICATION","enabled":null,"configurationId":null,"googlePayGateway":null,"createdAt":"2026-04-01T06:28:25.292Z","updatedAt":"2026-04-01T06:28:25.292Z","inboundMapping":{"preprocessingMethodId":"{{preprocessingMethod_Klarna Server Calback_d6a24f14-9b1f-46c2-91ce-c380df320860}}","authenticationIds":["{{authentication_inbound_secure_random_token_inbound_817}}"],"contentType":"application/json","requestMapping":{"authorization":{"requestExample":"{\n  \"merchant_reference1\": \"000000M000001T6Z_7414211363725901825\",\n  \"session_id\": \"30bfa892-8310-6cc2-9dbd-b955948fbb35\",\n  \"authorization_token\": \"42beeb83-8238-6810-9a11-d9dc8a448964\"\n}","requestMappingFields":{"mappings":[{"from":"session_id","to":"pspReference","map":null,"arrayPath":null,"arrayMapping":false,"lineItemGroup":null,"mappingFieldType":"BODY","fixed":false,"isCustom":false,"persistCustomField":false,"isSensitive":false,"isObject":false,"isScript":false},{"from":"authorization_token","to":null,"map":null,"arrayPath":null,"arrayMapping":false,"lineItemGroup":null,"mappingFieldType":"BODY","fixed":true,"isCustom":false,"persistCustomField":false,"isSensitive":false,"isObject":false,"isScript":false},{"from":"merchant_reference1","to":null,"map":null,"arrayPath":null,"arrayMapping":false,"lineItemGroup":null,"mappingFieldType":"BODY","fixed":true,"isCustom":false,"persistCustomField":false,"isSensitive":false,"isObject":false,"isScript":false},{"from":"#object","to":null,"map":null,"arrayPath":null,"arrayMapping":false,"lineItemGroup":null,"mappingFieldType":"BODY","fixed":true,"isCustom":false,"persistCustomField":false,"isSensitive":false,"isObject":true,"isScript":false},{"from":"AUTHORIZATION","to":"paymentMethod","map":null,"arrayPath":null,"arrayMapping":false,"lineItemGroup":null,"mappingFieldType":null,"fixed":true,"isCustom":false,"persistCustomField":false,"isSensitive":false,"isObject":false,"isScript":false},{"from":"AUTHORIZATION","to":"requestType","map":null,"arrayPath":null,"arrayMapping":false,"lineItemGroup":null,"mappingFieldType":null,"fixed":true,"isCustom":false,"persistCustomField":false,"isSensitive":false,"isObject":false,"isScript":false},{"from":"PENDING","to":"transactionStatus","map":null,"arrayPath":null,"arrayMapping":false,"lineItemGroup":null,"mappingFieldType":null,"fixed":true,"isCustom":false,"persistCustomField":false,"isSensitive":false,"isObject":false,"isScript":false}]}}},"responseMapping":{"content":"OK"}}}'
-          auth: inherit
         settings:
           encodeUrl: true
           timeout: 0
@@ -443,5 +443,5 @@ extensions:
     ignore:
       - node_modules
       - .git
-    exportedAt: '2026-04-09T05:46:50.878Z'
+    exportedAt: '2026-04-09T08:50:28.713Z'
     exportedUsing: Bruno
