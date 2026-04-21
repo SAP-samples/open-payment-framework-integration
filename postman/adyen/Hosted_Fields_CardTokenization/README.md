@@ -77,11 +77,7 @@ The ``integrationId`` and ``configurationId`` values identify the payment integr
 * ``integrationId`` maps to ``accountGroupId`` in postman
 * ``configurationId`` maps to ``accountId`` in postman
 
-**4. merchantCode** 
-
-You can obtain your merchant ID in the Adyen Dashboard.
-
-**5. clientkey**
+**4.clientkey**
 
 The client Key can be obtained in the Adyen dashboard. 
 
@@ -137,7 +133,6 @@ Go to the Adyen Dashboard to set up event notifications using the URL for Notifi
 | authentication_outbound_api_key_value_export | The Webservice User API key. Go to **Developers** -> **API credentials** -> **ws User** -> **Authentication** to get the value.                                                                                                                                                                                                                                                                                         |
 | googlePayGateway                             | ``Adyen``  this is only for OPF Quick Buy function                                                                                                                                                                                                                                                                                                                                                                      | 
 | checkoutPaymentHost                          | ``checkout-test.adyen.com``                                                                                                                                                                                                                                                                                                                                                                                             |
-| merchantCode                                 | You can obtain your merchant ID in the Adyen Dashboard.                                                                                                                                                                                                                                                                                                                                                                 |
 | serviceVersion                               | v71                                                                                                                                                                                                                                                                                                                                                                                                                     |
 | clientKey                                    | Go to **Developers** -> **API credentials** -> **ws User** to copy Client Key.                                                                                                                                                                                                                                                                                                                                          |  
 | checkoutShopperHost                          | ``checkoutshopper-test.cdn.adyen.com``                                                                                                                                                                                                                                                                                                                                                                                  |

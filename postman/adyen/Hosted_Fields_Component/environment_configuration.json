@@ -1,5 +1,5 @@
 {
-  "id": "fa4b69f4-1d16-4e33-90d3-3a48f1d89c48",
+  "id": "21951414-c352-43de-95c0-eb6243b921be",
   "name": "Adyen Component",
   "values": [
     {
@@ -52,13 +52,13 @@
     }
     ,
     {
-      "key": "supportOverCapture",
-      "value": "true",
+      "key": "enableOverCapture",
+      "value": "false",
       "enabled": true
     }
     ,
     {
-      "key": "enableOverCapture",
+      "key": "enableCaptureReAuth",
       "value": "false",
       "enabled": true
     }
@@ -95,7 +95,7 @@
     ,
     {
       "key": "applePayConfigId",
-      "value": "1",
+      "value": "16",
       "enabled": true
     }
     ,
@@ -144,12 +144,6 @@
     {
       "key": "checkoutShopperHost",
       "value": "checkoutshopper-test.cdn.adyen.com",
-      "enabled": true
-    }
-    ,
-    {
-      "key": "merchantCode",
-      "value": "SAPCOM_STAGE_GATEWAY",
       "enabled": true
     }
     ,

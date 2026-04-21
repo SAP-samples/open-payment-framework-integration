@@ -43,15 +43,15 @@ Create an Adyen payment integration in the OPF workbench. For detailed instructi
 
    With Adyen, you have a single [company account](https://docs.adyen.com/account/account-structure/#company-account), and one or more sub-accounts called [merchant accounts](https://docs.adyen.com/account/account-structure/#company-account). Determine an initial structure for testing that will best represent what you will do once you are processing live. You will have another opportunity when going live to finalize your account structure.
 
-3. **Create a user for yourself and your team members**
+2. **Create a user for yourself and your team members**
 
    You receive an admin user account for yourself when signing up. [Create additional users](https://docs.adyen.com/account/users/) for your team members as needed.
 
-5. **Get API credentials** 
+3. **Get API credentials** 
 
    Get your test API key and client key, which you'll need when building your integration. You can refer to [Create an API credential](https://docs.adyen.com/development-resources/api-credentials/#new-credential) for detailed instructions.
 
-7. **Add payment methods**
+4. **Add payment methods**
 
    [Add the payment methods](https://docs.adyen.com/payment-methods/add-payment-methods/) you want to accept with your integration.
 
@@ -78,24 +78,20 @@ The ``integrationId`` and ``configurationId`` values identify the payment integr
 * ``integrationId`` maps to ``accountGroupId`` in postman
 * ``configurationId`` maps to ``accountId`` in postman
 
-**4. merchantCode** 
-
-You can obtain your merchant ID in the Adyen Dashboard.
-
-**5. clientkey**
+**4. clientkey**
 
 The client Key can be obtained in the Adyen dashboard. 
 
 Go to **Developers -> API credentials -> ws User** to copy the ``Client Key``.
 
-**6. nativeThreeDS**
+**5. nativeThreeDS**
 
 Indicates if native 3D Secure authentication should be used when available.
 Possible values:
 preferred: Use native 3D Secure authentication when available.
 disabled: Only use the redirect 3D Secure authentication flow.
 
-**7. enableRecurring**
+**6. enableRecurring**
 
 Payment details will be stored for recurring cardholder-not-present transactions only when both conditions are met:
 `enableRecurring` is set to `true` and a valid `shopperReference` is provided
@@ -151,7 +147,6 @@ Go to the Adyen Dashboard to set up event notifications using the URL for Notifi
 | authentication_outbound_api_key_value_export                          | The Webservice User API key. Go to **Developers** -> **API credentials** -> **ws User** -> **Authentication** to get the value.                                                                                                                                                                                                                                                                                          |
 | googlePayGateway                                                      | ``Adyen``  this is only for OPF Quick Buy function                                                                                                                                                                                                                                                                                                                                                                       | 
 | checkoutPaymentHost                                                   | ``checkout-test.adyen.com``                                                                                                                                                                                                                                                                                                                                                                                              |
-| merchantCode                                                          | You can obtain your merchant ID in the Adyen Dashboard.                                                                                                                                                                                                                                                                                                                                                                  |
 | serviceVersion                                                        | v71                                                                                                                                                                                                                                                                                                                                                                                                                      |
 | clientKey                                                             | Go to **Developers** -> **API credentials** -> **ws User** to copy Client Key.                                                                                                                                                                                                                                                                                                                                           |
 | checkoutShopperHost                                                   | ``checkoutshopper-test.cdn.adyen.com``                                                                                                                                                                                                                                                                                                                                                                                   |

@@ -1,5 +1,5 @@
 {
-  "id": "40a87a23-4941-4cbd-ac6a-8263fbe1062a",
+  "id": "98b1d003-0505-4141-8648-22f48a69b640",
   "name": "Adyen Payment Page",
   "values": [
     {
@@ -52,13 +52,13 @@
     }
     ,
     {
-      "key": "supportOverCapture",
-      "value": "true",
+      "key": "enableOverCapture",
+      "value": "false",
       "enabled": true
     }
     ,
     {
-      "key": "enableOverCapture",
+      "key": "enableCaptureReAuth",
       "value": "false",
       "enabled": true
     }
@@ -108,12 +108,6 @@
     {
       "key": "checkoutPaymentHost",
       "value": "checkout-test.adyen.com",
-      "enabled": true
-    }
-    ,
-    {
-      "key": "merchantCode",
-      "value": "SAPCOM_STAGE_GATEWAY",
       "enabled": true
     }
     ,

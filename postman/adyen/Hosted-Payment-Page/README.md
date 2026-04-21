@@ -72,11 +72,7 @@ The ``integrationId`` and ``configurationId`` values identify the payment integr
 * ``integrationId`` maps to ``accountGroupId`` in postman
 * ``configurationId`` maps to ``accountId`` in postman
 
-**4. merchantCode** 
-
-You can obtain your merchant ID in the Adyen Dashboard.
-
-**5.apiVersion**
+**4. .apiVersion**
 The Checkout API version of Adyen you want to call. suggestion value is v70 or above.
 
 
@@ -118,7 +114,6 @@ Go to the Adyen Dashboard to set up event notifications using the URL for Notifi
 | enableOverCapture                                                                    | ``true``|                  
 | authorizationTimeoutDays                                                             | 7   |                  
 | authentication_outbound_api_key_value_export                                         | The Webservice User API key. Go to **Developers** -> **API credentials** -> **ws User** -> **Authentication** to get the value.|                  
-|merchantCode                                                                          |You can obtain your merchant ID in the Adyen Dashboard.|
 |checkoutPaymentHost                                                                   |``checkout-test.adyen.com``|
 |hostedPaymentPageHost                                                                 |``test.adyen.com``|
 |standardPaymentHost                                                                   |``pal-test.adyen.com``|
