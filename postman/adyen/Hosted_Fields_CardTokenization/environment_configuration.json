@@ -1,5 +1,5 @@
 {
-  "id": "a942c04b-4120-46e0-a3aa-a3a5399f66a2",
+  "id": "56c59b39-a08b-4f5f-b957-57b2405f3024",
   "name": "Adyen Card Tokenization",
   "values": [
     {
@@ -40,6 +40,12 @@
     }
     ,
     {
+      "key": "authentication_outbound_api_key_value_export_6",
+      "value": "(Webservice User)Adyen Hosted Field_export_export_export",
+      "enabled": true
+    }
+    ,
+    {
       "key": "authentication_outbound_api_key_value_export_515",
       "value": "(Webservice User)Adyen Tokenization Hosted Field",
       "enabled": true
@@ -52,13 +58,13 @@
     }
     ,
     {
-      "key": "supportOverCapture",
-      "value": "true",
+      "key": "enableOverCapture",
+      "value": "false",
       "enabled": true
     }
     ,
     {
-      "key": "enableOverCapture",
+      "key": "enableCaptureReAuth",
       "value": "false",
       "enabled": true
     }
@@ -144,12 +150,6 @@
     {
       "key": "checkoutShopperHost",
       "value": "checkoutshopper-test.cdn.adyen.com",
-      "enabled": true
-    }
-    ,
-    {
-      "key": "merchantCode",
-      "value": "SAPCOM_STAGE_GATEWAY",
       "enabled": true
     }
     ,
