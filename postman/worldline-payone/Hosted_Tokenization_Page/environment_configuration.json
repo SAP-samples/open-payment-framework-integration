@@ -1,5 +1,5 @@
 {
-  "id": "3b10c88e-fc77-492b-b2af-3580b42bdfde",
+  "id": "ee5d461a-f2d3-4dbb-9794-4b58f22ce5df",
   "name": "Worldline Payone",
   "values": [
     {
@@ -34,13 +34,13 @@
     }
     ,
     {
-      "key": "supportOverCapture",
+      "key": "enableOverCapture",
       "value": "false",
       "enabled": true
     }
     ,
     {
-      "key": "enableOverCapture",
+      "key": "enableCaptureReAuth",
       "value": "false",
       "enabled": true
     }
