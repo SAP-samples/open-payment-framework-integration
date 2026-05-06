@@ -1,5 +1,5 @@
 {
-  "id": "56c59b39-a08b-4f5f-b957-57b2405f3024",
+  "id": "1698218e-c722-4353-9833-bf3afcbaf47a",
   "name": "Adyen Card Tokenization",
   "values": [
     {
@@ -36,12 +36,6 @@
     {
       "key": "authentication_inbound_basic_auth_password_export_520",
       "value": "(Notification Basic Auth)Adyen Hosted Field_export_password",
-      "enabled": true
-    }
-    ,
-    {
-      "key": "authentication_outbound_api_key_value_export_6",
-      "value": "(Webservice User)Adyen Hosted Field_export_export_export",
       "enabled": true
     }
     ,
