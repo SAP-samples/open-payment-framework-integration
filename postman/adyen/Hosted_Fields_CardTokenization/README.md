@@ -21,7 +21,9 @@ e) Payment methods supported in OPF.
 
 f) The language support in the Drop-in UI.
 
-g) Validate the configuration in OPF workbench.
+g) The removal of stored payment methods managed by OPF.
+
+h) Validate the configuration in OPF workbench.
 
 
 ## Creating an Adyen Account ##
@@ -186,6 +188,15 @@ If the required language is not in the default list, you need to:
 1. Check if the required language is available in the [Adyen Document](https://github.com/Adyen/adyen-web/tree/main/packages/server/translations).
 2. Add the required language to the workbench of OPF:
    Go to Configuration Details -> Authorization -> Payment Form Configuration Scripts, then add it into the languageMap.
+
+
+## The removal of stored payment methods managed by OPF.
+Currently, the removal of stored payment methods is exclusively managed by OPF. Please ensure that the showRemovePaymentMethodButton parameter remains at its default value of false and is not changed to true in the Drop-in configuration.
+
+Navigate to: Configuration Details -> Authorization ->  Payment Form Configuration Scripts.
+Check that the value is set to false:
+
+![](images/showRemovePaymentMethodButton_false.png)
 
 
 ## Validating the Configuration in OPF Workbench
