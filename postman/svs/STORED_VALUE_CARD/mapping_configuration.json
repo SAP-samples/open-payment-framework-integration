@@ -1,0 +1,777 @@
+{
+  "info": {
+    "_postman_id": "bf6202af-eb37-4dff-a2cb-47428b75c9a8",
+    "name": "svs_config_collection",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Variable",
+      "item": [
+        {
+          "name": "Variable_authId",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "{{token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"id\":3708,\"sensitive\":false,\"value\":\"{{authId}}\",\"key\":\"authId\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{rootUrl}}/{{service}}\/merchant\/accountgroups\/{{accountGroupId}}\/accounts\/{{accountId}}\/variables",
+              "host": [
+                "{{rootUrl}}"
+              ],
+              "path": [
+                "{{service}}"
+                ,
+                "merchant"
+                ,
+                "accountgroups"
+                ,
+                "{{accountGroupId}}"
+                ,
+                "accounts"
+                ,
+                "{{accountId}}"
+                ,
+                "variables"
+                
+              ]
+            }
+          },
+          "response": []
+        }
+        ,
+        {
+          "name": "Variable_storeNumber",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "{{token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"id\":3719,\"sensitive\":false,\"value\":\"{{storeNumber}}\",\"key\":\"storeNumber\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{rootUrl}}/{{service}}\/merchant\/accountgroups\/{{accountGroupId}}\/accounts\/{{accountId}}\/variables",
+              "host": [
+                "{{rootUrl}}"
+              ],
+              "path": [
+                "{{service}}"
+                ,
+                "merchant"
+                ,
+                "accountgroups"
+                ,
+                "{{accountGroupId}}"
+                ,
+                "accounts"
+                ,
+                "{{accountId}}"
+                ,
+                "variables"
+                
+              ]
+            }
+          },
+          "response": []
+        }
+        ,
+        {
+          "name": "Variable_accountCode",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "{{token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"id\":4035,\"sensitive\":false,\"value\":\"{{accountCode}}\",\"key\":\"accountCode\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{rootUrl}}/{{service}}\/merchant\/accountgroups\/{{accountGroupId}}\/accounts\/{{accountId}}\/variables",
+              "host": [
+                "{{rootUrl}}"
+              ],
+              "path": [
+                "{{service}}"
+                ,
+                "merchant"
+                ,
+                "accountgroups"
+                ,
+                "{{accountGroupId}}"
+                ,
+                "accounts"
+                ,
+                "{{accountId}}"
+                ,
+                "variables"
+                
+              ]
+            }
+          },
+          "response": []
+        }
+        ,
+        {
+          "name": "Variable_CardStyleCode",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "{{token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"id\":4034,\"sensitive\":false,\"value\":\"{{CardStyleCode}}\",\"key\":\"CardStyleCode\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{rootUrl}}/{{service}}\/merchant\/accountgroups\/{{accountGroupId}}\/accounts\/{{accountId}}\/variables",
+              "host": [
+                "{{rootUrl}}"
+              ],
+              "path": [
+                "{{service}}"
+                ,
+                "merchant"
+                ,
+                "accountgroups"
+                ,
+                "{{accountGroupId}}"
+                ,
+                "accounts"
+                ,
+                "{{accountId}}"
+                ,
+                "variables"
+                
+              ]
+            }
+          },
+          "response": []
+        }
+        ,
+        {
+          "name": "Variable_StorefrontCode",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "{{token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"id\":4061,\"sensitive\":false,\"value\":\"{{StorefrontCode}}\",\"key\":\"StorefrontCode\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{rootUrl}}/{{service}}\/merchant\/accountgroups\/{{accountGroupId}}\/accounts\/{{accountId}}\/variables",
+              "host": [
+                "{{rootUrl}}"
+              ],
+              "path": [
+                "{{service}}"
+                ,
+                "merchant"
+                ,
+                "accountgroups"
+                ,
+                "{{accountGroupId}}"
+                ,
+                "accounts"
+                ,
+                "{{accountId}}"
+                ,
+                "variables"
+                
+              ]
+            }
+          },
+          "response": []
+        }
+        ,
+        {
+          "name": "Variable_svsPaymentHost",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "{{token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"id\":4728,\"sensitive\":false,\"value\":\"{{svsPaymentHost}}\",\"key\":\"svsPaymentHost\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{rootUrl}}/{{service}}\/merchant\/accountgroups\/{{accountGroupId}}\/accounts\/{{accountId}}\/variables",
+              "host": [
+                "{{rootUrl}}"
+              ],
+              "path": [
+                "{{service}}"
+                ,
+                "merchant"
+                ,
+                "accountgroups"
+                ,
+                "{{accountGroupId}}"
+                ,
+                "accounts"
+                ,
+                "{{accountId}}"
+                ,
+                "variables"
+                
+              ]
+            }
+          },
+          "response": []
+        }
+        
+      ],
+      "protocolProfileBehavior": {}
+    }
+    ,
+    {
+      "name": "Account",
+      "item": [
+        {
+          "name": "Account Patch",
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "{{token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"maxStoredValueCardRefund\":{{maxStoredValueCardRefund}},\"enableCaptureReAuth\":\"{{enableCaptureReAuth}}\",\"refundPattern\":\"{{refundPattern}}\",\"enableOverCapture\":\"{{enableOverCapture}}\",\"capturePattern\":\"{{capturePattern}}\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{rootUrl}}/{{service}}\/merchant\/accountgroups\/{{accountGroupId}}\/accounts\/{{accountId}}",
+              "host": [
+                "{{rootUrl}}"
+              ],
+              "path": [
+                "{{service}}"
+                ,
+                "merchant"
+                ,
+                "accountgroups"
+                ,
+                "{{accountGroupId}}"
+                ,
+                "accounts"
+                ,
+                "{{accountId}}"
+                
+              ]
+            }
+          },
+          "response": []
+        }
+        
+      ],
+      "protocolProfileBehavior": {}
+    }
+    ,
+    {
+      "name": "AccountGroup",
+      "item": [
+        {
+          "name": "Account Group Patch",
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "{{token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"authorizationTimeoutDays\":{{authorizationTimeoutDays}}}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{rootUrl}}/{{service}}\/merchant\/accountgroups\/{{accountGroupId}}",
+              "host": [
+                "{{rootUrl}}"
+              ],
+              "path": [
+                "{{service}}"
+                ,
+                "merchant"
+                ,
+                "accountgroups"
+                ,
+                "{{accountGroupId}}"
+                
+              ]
+            }
+          },
+          "response": []
+        }
+        
+      ],
+      "protocolProfileBehavior": {}
+    }
+    ,
+    {
+      "name": "Authentications",
+      "item": [
+        {
+          "name": "Encrypted_session_auth",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "9ca89e00-150b-4751-b644-9f90820cca7b",
+                "exec": [
+                  "tests[\"Status code is 201\"] = responseCode.code === 201;    \npm.test(\"Location is present\", function () {\n    pm.response.to.have.header(\"Location\");\n    var location=pm.response.headers.get(\"Location\");\n    pm.environment.set(\"authentication_outbound_encrypted_session_auth_812\", location.substring(location.lastIndexOf(\"\/\")+1,location.length));\n});"
+                  
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "{{token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"password\":\"{{authentication_outbound_encrypted_session_password_export_812}}\",\"method\":\"ENCRYPTED_SESSION_AUTH\",\"name\":\"svsGiftCardAuthenticate2_export\",\"id\":812,\"username\":\"{{authentication_outbound_encrypted_session_username_export_812}}\",\"encryptedSession\":{\"authUrl\":\"{{authentication_outbound_encrypted_session_auth_url_export_812}}\",\"initialVector\":\"{{authentication_outbound_encrypted_session_initial_vector_export_812}}\",\"authId\":\"{{authentication_outbound_encrypted_session_auth_id_export_812}}\",\"rootKey\":\"{{authentication_outbound_encrypted_session_root_key_export_812}}\",\"algorithm\":\"{{authentication_outbound_encrypted_session_algorithm_export_812}}\"}}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{rootUrl}}/{{service}}\/merchant\/authentications",
+              "host": [
+                "{{rootUrl}}"
+              ],
+              "path": [
+                "{{service}}"
+                ,
+                "merchant"
+                ,
+                "authentications"
+                
+              ]
+            }
+          },
+          "response": []
+        }
+        ,
+        {
+          "name": "Oauth2",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "b43eeea7-c8ff-4f54-9cca-3203014718b6",
+                "exec": [
+                  "tests[\"Status code is 201\"] = responseCode.code === 201;    \npm.test(\"Location is present\", function () {\n    pm.response.to.have.header(\"Location\");\n    var location=pm.response.headers.get(\"Location\");\n    pm.environment.set(\"authentication_outbound_oauth2_1026\", location.substring(location.lastIndexOf(\"\/\")+1,location.length));\n});"
+                  
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "{{token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"method\":\"OAUTH2\",\"name\":\"SVS oAuth2 Authentication_export\",\"id\":1026,\"oauth2\":{\"audience\":\"{{authentication_outbound_oauth2_audience_export_1026}}\",\"tokenUrl\":\"{{authentication_outbound_oauth2_token_url_export_1026}}\",\"clientId\":\"{{authentication_outbound_oauth2_client_id_export_1026}}\",\"useBasicAuth\":\"{{authentication_outbound_oauth2_use_basic_auth_export_1026}}\",\"scope\":null,\"clientSecret\":\"{{authentication_outbound_oauth2_client_secret_export_1026}}\"}}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{rootUrl}}/{{service}}\/merchant\/authentications",
+              "host": [
+                "{{rootUrl}}"
+              ],
+              "path": [
+                "{{service}}"
+                ,
+                "merchant"
+                ,
+                "authentications"
+                
+              ]
+            }
+          },
+          "response": []
+        }
+        
+      ],
+      "protocolProfileBehavior": {}
+    }
+    ,
+    {
+      "name": "Refund",
+      "item": [
+        {
+          "name": "Refund",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "{{token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"id\":5438,\"requestType\":\"REFUND\",\"outboundMappings\":[{\"url\":\"https:\/\/uat-api-gc.egiftlabs.com\/api\/v1\/storefront\/${vars.StorefrontCode}\/${vars.accountCode}\",\"authenticationIds\":[\"{{authentication_outbound_oauth2_1026}}\"],\"method\":\"GET\",\"requestContentType\":\"application\/xml\",\"requestExample\":null,\"responseExample\":\"{\\n  \\\"name\\\": \\\"H&M\\\",\\n  \\\"code\\\": \\\"545bee2c-528b-4320-b9d7-17f519e7317c\\\",\\n  \\\"canPurchaseSmsGiftCards\\\": false,\\n  \\\"canPurchaseEmailGiftCards\\\": true,\\n  \\\"canPurchasePhysicalGiftCards\\\": false,\\n  \\\"cardStyles\\\": [\\n    {\\n      \\\"code\\\": \\\"3077036f-17a0-480c-b1a4-bd13d4c5b04d\\\",\\n      \\\"name\\\": \\\"145239\\\",\\n      \\\"amountRestrictions\\\": {\\n        \\\"minimum\\\": 0,\\n        \\\"maximum\\\": 0,\\n        \\\"availableAmounts\\\": [\\n          0\\n        ]\\n      }\\n    }\\n  ],\\n  \\\"isCardStyleAmountRestricted\\\": false,\\n  \\\"amountRestrictions\\\": {\\n    \\\"minimum\\\": 0,\\n    \\\"maximum\\\": 500\\n  },\\n  \\\"isEnclosureEnabled\\\": false,\\n  \\\"enclosures\\\": [],\\n  \\\"shippingCountries\\\": [\\n    {\\n      \\\"name\\\": \\\"United States\\\",\\n      \\\"frenchName\\\": \\\"\u00C9tats-Unis\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"USA\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Canada\\\",\\n      \\\"frenchName\\\": \\\"Canada\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"CAN\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"United Kingdom\\\",\\n      \\\"frenchName\\\": \\\"Royaume-Uni\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"GBR\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Afghanistan\\\",\\n      \\\"frenchName\\\": \\\"Afghanistan\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"AFG\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"\u00C5land Islands\\\",\\n      \\\"frenchName\\\": \\\"\u00CEles d'\u00C5land\u00A0\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"ALA\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Albania\\\",\\n      \\\"frenchName\\\": \\\"Albanie\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"ALB\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Algeria\\\",\\n      \\\"frenchName\\\": \\\"Alg\u00E9rie\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"DZA\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"American Samoa\\\",\\n      \\\"frenchName\\\": \\\"Samoa am\u00E9ricaines\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"ASM\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Andorra\\\",\\n      \\\"frenchName\\\": \\\"Andorre\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"AND\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Angola\\\",\\n      \\\"frenchName\\\": \\\"Angola\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"AGO\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Anguilla\\\",\\n      \\\"frenchName\\\": \\\"Anguilla\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"AIA\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Antarctica\\\",\\n      \\\"frenchName\\\": \\\"Antarctique\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"ATA\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Antigua and Barbuda\\\",\\n      \\\"frenchName\\\": \\\"Antigua-et-Barbuda\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"ATG\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Argentina\\\",\\n      \\\"frenchName\\\": \\\"Argentine\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"ARG\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Aruba\\\",\\n      \\\"frenchName\\\": \\\"Aruba\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"ABW\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Australia\\\",\\n      \\\"frenchName\\\": \\\"Australie\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"AUS\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Austria\\\",\\n      \\\"frenchName\\\": \\\"Autriche\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"AUT\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Bahamas\\\",\\n      \\\"frenchName\\\": \\\"Bahamas\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"BHS\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Bahrain\\\",\\n      \\\"frenchName\\\": \\\"Bahre\u00EFn\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"BHR\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Barbados\\\",\\n      \\\"frenchName\\\": \\\"Barbade\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"BRB\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Belgium\\\",\\n      \\\"frenchName\\\": \\\"Belgique\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"BEL\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Belize\\\",\\n      \\\"frenchName\\\": \\\"Belize\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"BLZ\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Benin\\\",\\n      \\\"frenchName\\\": \\\"B\u00E9nin\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"BEN\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Bermuda\\\",\\n      \\\"frenchName\\\": \\\"Bermudes\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"BMU\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Bhutan\\\",\\n      \\\"frenchName\\\": \\\"Bhoutan\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"BTN\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Bolivia\\\",\\n      \\\"frenchName\\\": \\\"Bolivie\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"BOL\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Botswana\\\",\\n      \\\"frenchName\\\": \\\"Botswana\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"BWA\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Bouvet Island\\\",\\n      \\\"frenchName\\\": \\\"\u00CEle Bouvet\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"BVT\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Brazil\\\",\\n      \\\"frenchName\\\": \\\"Br\u00E9sil\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"BRA\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"British Indian Ocean Territory\\\",\\n      \\\"frenchName\\\": \\\"Territoire britannique de l'oc\u00E9an Indien\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"IOT\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Brunei Darussalam\\\",\\n      \\\"frenchName\\\": \\\"Brunei Darussalam\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"BRN\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Bulgaria\\\",\\n      \\\"frenchName\\\": \\\"Bulgarie\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"BGR\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Burkina Faso\\\",\\n      \\\"frenchName\\\": \\\"Burkina Faso\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"BFA\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Burundi\\\",\\n      \\\"frenchName\\\": \\\"Burundi\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"BDI\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Cameroon\\\",\\n      \\\"frenchName\\\": \\\"Cameroun\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"CMR\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Cape Verde\\\",\\n      \\\"frenchName\\\": \\\"Cap-Vert\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"CPV\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Cayman Islands\\\",\\n      \\\"frenchName\\\": \\\"\u00CEles Ca\u00EFmans\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"CYM\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Chad\\\",\\n      \\\"frenchName\\\": \\\"Tchad\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"TCD\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Chile\\\",\\n      \\\"frenchName\\\": \\\"Chili\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"CHL\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"China\\\",\\n      \\\"frenchName\\\": \\\"Chine\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"CHN\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Christmas Island\\\",\\n      \\\"frenchName\\\": \\\"\u00CEle Christmas\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"CXR\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Cocos (Keeling) Islands\\\",\\n      \\\"frenchName\\\": \\\"\u00CEles Cocos (Keeling)\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"CCK\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Colombia\\\",\\n      \\\"frenchName\\\": \\\"Colombie\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"COL\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Comoros\\\",\\n      \\\"frenchName\\\": \\\"Les Comores\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"COM\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Congo\\\",\\n      \\\"frenchName\\\": \\\"Congo\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"COG\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Congo, The Democratic Republic of the\\\",\\n      \\\"frenchName\\\": \\\"Congo, R\u00E9publique d\u00E9mocratique du\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"COD\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Cook Islands\\\",\\n      \\\"frenchName\\\": \\\"\u00CEles Cook\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"COK\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Costa Rica\\\",\\n      \\\"frenchName\\\": \\\"Costa Rica\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"CRI\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"C\u00F4te D\\u2019ivoire\\\",\\n      \\\"frenchName\\\": \\\"C\u00F4te D\\u2019ivoire\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"CIV\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Croatia\\\",\\n      \\\"frenchName\\\": \\\"Croatie\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"HRV\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Cuba\\\",\\n      \\\"frenchName\\\": \\\"Cuba\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"CUB\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Cyprus\\\",\\n      \\\"frenchName\\\": \\\"Chypre\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"CYP\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Czech Republic\\\",\\n      \\\"frenchName\\\": \\\"R\u00E9publique tch\u00E8que\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"CZE\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Denmark\\\",\\n      \\\"frenchName\\\": \\\"Danemark\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"DNK\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Djibouti\\\",\\n      \\\"frenchName\\\": \\\"Djibouti\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"DJI\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Dominica\\\",\\n      \\\"frenchName\\\": \\\"Dominique\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"DMA\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Dominican Republic\\\",\\n      \\\"frenchName\\\": \\\"R\u00E9publique dominicaine\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"DOM\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Ecuador\\\",\\n      \\\"frenchName\\\": \\\"\u00C9quateur\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"ECU\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Egypt\\\",\\n      \\\"frenchName\\\": \\\"\u00C9gypte\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"EGY\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"El Salvador\\\",\\n      \\\"frenchName\\\": \\\"Salvador\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"SLV\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Equatorial Guinea\\\",\\n      \\\"frenchName\\\": \\\"Guin\u00E9e-\u00C9quatoriale\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"GNQ\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Eritrea\\\",\\n      \\\"frenchName\\\": \\\"\u00C9rythr\u00E9e\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"ERI\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Estonia\\\",\\n      \\\"frenchName\\\": \\\"Estonie\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"EST\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Ethiopia\\\",\\n      \\\"frenchName\\\": \\\"\u00C9thiopie\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"ETH\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Falkland Islands (Malvinas)\\\",\\n      \\\"frenchName\\\": \\\"Iles Falkland (Malvinas)\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"FLK\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Faroe Islands\\\",\\n      \\\"frenchName\\\": \\\"\u00CEles F\u00E9ro\u00E9\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"FRO\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Fiji\\\",\\n      \\\"frenchName\\\": \\\"Fidji\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"FJI\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Finland\\\",\\n      \\\"frenchName\\\": \\\"Finlande\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"FIN\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"France\\\",\\n      \\\"frenchName\\\": \\\"France\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"FRA\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"French Guiana\\\",\\n      \\\"frenchName\\\": \\\"Guyane fran\u00E7aise\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"GUF\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"French Polynesia\\\",\\n      \\\"frenchName\\\": \\\"Polyn\u00E9sie fran\u00E7aise\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"PYF\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"French Southern Territories\\\",\\n      \\\"frenchName\\\": \\\"Terres australes et antarctiques fran\u00E7aises\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"ATF\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Gabon\\\",\\n      \\\"frenchName\\\": \\\"Gabon\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"GAB\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Gambia\\\",\\n      \\\"frenchName\\\": \\\"Gambie\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"GMB\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Georgia\\\",\\n      \\\"frenchName\\\": \\\"G\u00E9orgie\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"GEO\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Germany\\\",\\n      \\\"frenchName\\\": \\\"Allemagne\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"DEU\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Gibraltar\\\",\\n      \\\"frenchName\\\": \\\"Gibraltar\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"GIB\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Greece\\\",\\n      \\\"frenchName\\\": \\\"Gr\u00E8ce\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"GRC\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Greenland\\\",\\n      \\\"frenchName\\\": \\\"Groenland\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"GRL\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Grenada\\\",\\n      \\\"frenchName\\\": \\\"Grenade\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"GRD\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Guadeloupe\\\",\\n      \\\"frenchName\\\": \\\"Guadeloupe\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"GLP\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Guam\\\",\\n      \\\"frenchName\\\": \\\"Guam\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"GUM\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Guatemala\\\",\\n      \\\"frenchName\\\": \\\"Guatemala\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"GTM\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Guinea\\\",\\n      \\\"frenchName\\\": \\\"Guin\u00E9e\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"GIN\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Guinea-Bissau\\\",\\n      \\\"frenchName\\\": \\\"Guin\u00E9e-Bissau\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"GNB\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Guyana\\\",\\n      \\\"frenchName\\\": \\\"Guyane\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"GUY\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Haiti\\\",\\n      \\\"frenchName\\\": \\\"Ha\u00EFti\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"HTI\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Heard Island and McDonald Islands\\\",\\n      \\\"frenchName\\\": \\\"\u00CEles Heard-et-McDonald\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"HMD\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Holy See (Vatican City state)\\\",\\n      \\\"frenchName\\\": \\\"Saint-Si\u00E8ge (\u00C9tat de la cit\u00E9 du Vatican)\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"VAT\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Honduras\\\",\\n      \\\"frenchName\\\": \\\"Honduras\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"HND\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Hong Kong, China\\\",\\n      \\\"frenchName\\\": \\\"Hong Kong, Chine\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"HKG\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Hungary\\\",\\n      \\\"frenchName\\\": \\\"Hongrie\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"HUN\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Iceland\\\",\\n      \\\"frenchName\\\": \\\"Islande\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"ISL\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"India\\\",\\n      \\\"frenchName\\\": \\\"Inde\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"IND\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Ireland\\\",\\n      \\\"frenchName\\\": \\\"Irlande\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"IRL\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Israel\\\",\\n      \\\"frenchName\\\": \\\"Isra\u00EBl\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"ISR\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Italy\\\",\\n      \\\"frenchName\\\": \\\"Italie\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"ITA\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Jamaica\\\",\\n      \\\"frenchName\\\": \\\"Jama\u00EFque\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"JAM\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Japan\\\",\\n      \\\"frenchName\\\": \\\"Japon\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"JPN\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Jordan\\\",\\n      \\\"frenchName\\\": \\\"Jordanie\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"JOR\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Kenya\\\",\\n      \\\"frenchName\\\": \\\"Kenya\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"KEN\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Kiribati\\\",\\n      \\\"frenchName\\\": \\\"Kiribati\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"KIR\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Korea, Republic of\\\",\\n      \\\"frenchName\\\": \\\"Cor\u00E9e, R\u00E9publique de\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"KOR\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Kuwait\\\",\\n      \\\"frenchName\\\": \\\"Kowe\u00EFt\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"KWT\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Latvia\\\",\\n      \\\"frenchName\\\": \\\"Lettonie\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"LVA\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Lesotho\\\",\\n      \\\"frenchName\\\": \\\"Lesotho\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"LSO\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Liberia\\\",\\n      \\\"frenchName\\\": \\\"Lib\u00E9ria\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"LBR\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Liechtenstein\\\",\\n      \\\"frenchName\\\": \\\"Liechtenstein\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"LIE\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Lithuania\\\",\\n      \\\"frenchName\\\": \\\"Lituanie\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"LTU\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Luxembourg\\\",\\n      \\\"frenchName\\\": \\\"Luxembourg\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"LUX\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Macao, China\\\",\\n      \\\"frenchName\\\": \\\"Macao, Chine\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"MAC\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Madagascar\\\",\\n      \\\"frenchName\\\": \\\"Madagascar\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"MDG\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Malawi\\\",\\n      \\\"frenchName\\\": \\\"Malawi\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"MWI\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Malaysia\\\",\\n      \\\"frenchName\\\": \\\"Malaisie\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"MYS\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Maldives\\\",\\n      \\\"frenchName\\\": \\\"Maldives\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"MDV\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Mali\\\",\\n      \\\"frenchName\\\": \\\"Mali\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"MLI\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Malta\\\",\\n      \\\"frenchName\\\": \\\"Malte\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"MLT\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Marshall Islands\\\",\\n      \\\"frenchName\\\": \\\"\u00CEles Marshall\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"MHL\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Martinique\\\",\\n      \\\"frenchName\\\": \\\"Martinique\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"MTQ\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Mauritania\\\",\\n      \\\"frenchName\\\": \\\"Mauritanie\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"MRT\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Mauritius\\\",\\n      \\\"frenchName\\\": \\\"Maurice\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"MUS\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Mayotte\\\",\\n      \\\"frenchName\\\": \\\"Mayotte\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"MYT\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Mexico\\\",\\n      \\\"frenchName\\\": \\\"Mexique\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"MEX\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Micronesia, Federated States of\\\",\\n      \\\"frenchName\\\": \\\"\u00C9tats f\u00E9d\u00E9r\u00E9s de Micron\u00E9sie\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"FSM\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Moldova, Republic of\\\",\\n      \\\"frenchName\\\": \\\"Moldavie\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"MDA\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Monaco\\\",\\n      \\\"frenchName\\\": \\\"Monaco\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"MCO\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Mongolia\\\",\\n      \\\"frenchName\\\": \\\"Mongolie\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"MNG\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Montserrat\\\",\\n      \\\"frenchName\\\": \\\"Montserrat\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"MSR\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Morocco\\\",\\n      \\\"frenchName\\\": \\\"Maroc\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"MAR\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Mozambique\\\",\\n      \\\"frenchName\\\": \\\"Mozambique\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"MOZ\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Myanmar\\\",\\n      \\\"frenchName\\\": \\\"Myanmar\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"MMR\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Namibia\\\",\\n      \\\"frenchName\\\": \\\"Namibie\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"NAM\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Nauru\\\",\\n      \\\"frenchName\\\": \\\"Nauru\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"NRU\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Nepal\\\",\\n      \\\"frenchName\\\": \\\"N\u00E9pal\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"NPL\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Netherlands\\\",\\n      \\\"frenchName\\\": \\\"Pays-Bas\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"NLD\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Netherlands Antilles\\\",\\n      \\\"frenchName\\\": \\\"Antilles n\u00E9erlandaises\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"ANT\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"New Caledonia\\\",\\n      \\\"frenchName\\\": \\\"Nouvelle-Cal\u00E9donie\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"NCL\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"New Zealand\\\",\\n      \\\"frenchName\\\": \\\"Nouvelle-Z\u00E9lande\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"NZL\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Nicaragua\\\",\\n      \\\"frenchName\\\": \\\"Nicaragua\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"NIC\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Niue\\\",\\n      \\\"frenchName\\\": \\\"Niue\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"NIU\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Norfolk Island\\\",\\n      \\\"frenchName\\\": \\\"\u00CEle Norfolk\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"NFK\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Northern Mariana Islands\\\",\\n      \\\"frenchName\\\": \\\"\u00CEles Mariannes du Nord\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"MNP\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Norway\\\",\\n      \\\"frenchName\\\": \\\"Norv\u00E8ge\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"NOR\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Oman\\\",\\n      \\\"frenchName\\\": \\\"Oman\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"OMN\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Pakistan\\\",\\n      \\\"frenchName\\\": \\\"Pakistan\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"PAK\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Palau\\\",\\n      \\\"frenchName\\\": \\\"Palaos\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"PLW\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Panama\\\",\\n      \\\"frenchName\\\": \\\"Panama\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"PAN\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Papua New Guinea\\\",\\n      \\\"frenchName\\\": \\\"Papouasie-Nouvelle-Guin\u00E9e\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"PNG\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Paraguay\\\",\\n      \\\"frenchName\\\": \\\"Paraguay\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"PRY\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Peru\\\",\\n      \\\"frenchName\\\": \\\"P\u00E9rou\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"PER\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Philippines\\\",\\n      \\\"frenchName\\\": \\\"Philippines\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"PHL\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Pitcairn\\\",\\n      \\\"frenchName\\\": \\\"Pitcairn\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"PCN\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Poland\\\",\\n      \\\"frenchName\\\": \\\"Pologne\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"POL\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Portugal\\\",\\n      \\\"frenchName\\\": \\\"Portugal\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"PRT\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Puerto Rico\\\",\\n      \\\"frenchName\\\": \\\"Porto Rico\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"PRI\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Qatar\\\",\\n      \\\"frenchName\\\": \\\"Qatar\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"QAT\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Reunion\\\",\\n      \\\"frenchName\\\": \\\"R\u00E9union\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"REU\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Romania\\\",\\n      \\\"frenchName\\\": \\\"Roumanie\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"ROU\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Russian Federation\\\",\\n      \\\"frenchName\\\": \\\"F\u00E9d\u00E9ration Russe\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"RUS\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Saint Helena\\\",\\n      \\\"frenchName\\\": \\\"\u00CEle Sainte-H\u00E9l\u00E8ne\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"SHN\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Saint Kitts and Nevis\\\",\\n      \\\"frenchName\\\": \\\"Saint-Christophe-et-Ni\u00E9v\u00E8s\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"KNA\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Saint Lucia\\\",\\n      \\\"frenchName\\\": \\\"Sainte-Lucie\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"LCA\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Saint Pierre and Miquelon\\\",\\n      \\\"frenchName\\\": \\\"Saint-Pierre et Miquelon\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"SPM\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Saint Vincent and the Grenadines\\\",\\n      \\\"frenchName\\\": \\\"Saint-Vincent-et-les-Grenadines\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"VCT\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Samoa\\\",\\n      \\\"frenchName\\\": \\\"Samoa\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"WSM\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"San Marino\\\",\\n      \\\"frenchName\\\": \\\"Saint-Marin\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"SMR\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Sao Tome and Principe\\\",\\n      \\\"frenchName\\\": \\\"Sao Tom\u00E9-et-Principe\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"STP\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Saudi Arabia\\\",\\n      \\\"frenchName\\\": \\\"Arabie Saoudite\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"SAU\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Senegal\\\",\\n      \\\"frenchName\\\": \\\"S\u00E9n\u00E9gal\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"SEN\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Seychelles\\\",\\n      \\\"frenchName\\\": \\\"Seychelles\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"SYC\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Singapore\\\",\\n      \\\"frenchName\\\": \\\"Singapour\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"SGP\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Solomon Islands\\\",\\n      \\\"frenchName\\\": \\\"\u00EEles Salomon\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"SLB\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"South Africa\\\",\\n      \\\"frenchName\\\": \\\"Afrique du Sud\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"ZAF\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"South Georgia and the South Sandwich Islands\\\",\\n      \\\"frenchName\\\": \\\"G\u00E9orgie du Sud-et-les \u00EEles Sandwich du Sud\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"SGS\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Spain\\\",\\n      \\\"frenchName\\\": \\\"Espagne\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"ESP\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Sri Lanka\\\",\\n      \\\"frenchName\\\": \\\"Sri Lanka\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"LKA\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Suriname\\\",\\n      \\\"frenchName\\\": \\\"Suriname\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"SUR\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Svalbard and Jan Mayen\\\",\\n      \\\"frenchName\\\": \\\"Svalbard et Jan Mayen\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"SJM\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Sweden\\\",\\n      \\\"frenchName\\\": \\\"Su\u00E8de\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"SWE\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Switzerland\\\",\\n      \\\"frenchName\\\": \\\"Suisse\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"CHE\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Syrian Arab Republic\\\",\\n      \\\"frenchName\\\": \\\"R\u00E9publique arabe syrienne\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"SYR\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Taiwan, Province of China\\\",\\n      \\\"frenchName\\\": \\\"Taiwan, Province de Chine\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"TWN\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Tanzania, United Republic of\\\",\\n      \\\"frenchName\\\": \\\"Tanzanie\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"TZA\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Thailand\\\",\\n      \\\"frenchName\\\": \\\"Tha\u00EFlande\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"THA\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Timor-Leste\\\",\\n      \\\"frenchName\\\": \\\"Timor oriental\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"TLS\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Togo\\\",\\n      \\\"frenchName\\\": \\\"Togo\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"TGO\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Tokelau\\\",\\n      \\\"frenchName\\\": \\\"Tokelau\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"TKL\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Tonga\\\",\\n      \\\"frenchName\\\": \\\"Tonga\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"TON\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Trinidad and Tobago\\\",\\n      \\\"frenchName\\\": \\\"Trinit\u00E9-et-Tobago\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"TTO\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Tunisia\\\",\\n      \\\"frenchName\\\": \\\"Tunisie\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"TUN\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Turkey\\\",\\n      \\\"frenchName\\\": \\\"Turquie\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"TUR\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Turkmenistan\\\",\\n      \\\"frenchName\\\": \\\"Turkm\u00E9nistan\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"TKM\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Turks and Caicos Islands\\\",\\n      \\\"frenchName\\\": \\\"\u00EEles Turques-et-Ca\u00EFques\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"TCA\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Tuvalu\\\",\\n      \\\"frenchName\\\": \\\"Tuvalu\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"TUV\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Ukraine\\\",\\n      \\\"frenchName\\\": \\\"Ukraine\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"UKR\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"United Arab Emirates\\\",\\n      \\\"frenchName\\\": \\\"\u00C9mirats Arabes Unis\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"ARE\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"United States Minor Outlying Islands\\\",\\n      \\\"frenchName\\\": \\\"\u00CEles mineures \u00E9loign\u00E9es des \u00C9tats-Unis\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"UMI\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Uruguay\\\",\\n      \\\"frenchName\\\": \\\"Uruguay\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"URY\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Vanuatu\\\",\\n      \\\"frenchName\\\": \\\"Vanuatu\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"VUT\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Venezuela\\\",\\n      \\\"frenchName\\\": \\\"Venezuela\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"VEN\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Virgin Islands, British\\\",\\n      \\\"frenchName\\\": \\\"\u00CEles Vierges britanniques\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"VGB\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Virgin Islands, U.S.\\\",\\n      \\\"frenchName\\\": \\\"\u00CEles Vierges am\u00E9ricaines\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"VIR\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Wallis and Futuna\\\",\\n      \\\"frenchName\\\": \\\"Wallis et Futuna\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"WLF\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Western Sahara\\\",\\n      \\\"frenchName\\\": \\\"Sahara occidental\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"ESH\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Yemen\\\",\\n      \\\"frenchName\\\": \\\"Y\u00E9men\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"YEM\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Zambia\\\",\\n      \\\"frenchName\\\": \\\"Zambie\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"ZMB\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Zimbabwe\\\",\\n      \\\"frenchName\\\": \\\"Zimbabwe\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"ZWE\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Country Not In List\\\",\\n      \\\"frenchName\\\": \\\"Pays pas dans la liste\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"DCC\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Republic of Macedonia\\\",\\n      \\\"frenchName\\\": \\\"Mac\u00E9doine du Nord \\\",\\n      \\\"threeLettersIsoCode\\\": \\\"MKD\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Lebanon\\\",\\n      \\\"frenchName\\\": \\\"Liban\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"LBN\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Lebanon\\\",\\n      \\\"frenchName\\\": \\\"Liban\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"LBN\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Armenia\\\",\\n      \\\"frenchName\\\": \\\"Arm\u00E9nie\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"ARM\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Azerbaijan\\\",\\n      \\\"frenchName\\\": \\\"Azerba\u00EFdjan\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"AZE\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Bangladesh\\\",\\n      \\\"frenchName\\\": \\\"Bangladesh\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"BGD\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Bosnia and Herzegovina\\\",\\n      \\\"frenchName\\\": \\\"Bosnie-Herz\u00E9govine\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"BIH\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Cambodia\\\",\\n      \\\"frenchName\\\": \\\"Cambodge\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"KHM\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Eswatini\\\",\\n      \\\"frenchName\\\": \\\"Eswatini\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"SWZ\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Ghana\\\",\\n      \\\"frenchName\\\": \\\"Ghana\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"GHA\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Isle of Man\\\",\\n      \\\"frenchName\\\": \\\"\u00CEle de Man\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"IMN\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Kazakhstan\\\",\\n      \\\"frenchName\\\": \\\"Kazakhstan\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"KAZ\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Kyrgyzstan\\\",\\n      \\\"frenchName\\\": \\\"Kirghizistan\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"KGZ\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Laos\\\",\\n      \\\"frenchName\\\": \\\"Laos\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"LAO\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Montenegro\\\",\\n      \\\"frenchName\\\": \\\"Mont\u00E9n\u00E9gro\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"MNE\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Niger\\\",\\n      \\\"frenchName\\\": \\\"Niger\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"NER\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Nigeria\\\",\\n      \\\"frenchName\\\": \\\"Nig\u00E9ria\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"NGA\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"North Macedonia\\\",\\n      \\\"frenchName\\\": \\\"Mac\u00E9doine du Nord\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"MKD\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Rwanda\\\",\\n      \\\"frenchName\\\": \\\"Rwanda\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"RWA\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Sierra Leone\\\",\\n      \\\"frenchName\\\": \\\"Sierra Leone\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"SLE\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Slovakia\\\",\\n      \\\"frenchName\\\": \\\"Slovaquie\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"SVK\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Slovenia\\\",\\n      \\\"frenchName\\\": \\\"Slov\u00E9nie\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"SVN\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Tajikistan\\\",\\n      \\\"frenchName\\\": \\\"Tadjikistan\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"TJK\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Uganda\\\",\\n      \\\"frenchName\\\": \\\"Ouganda\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"UGA\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Uzbekistan\\\",\\n      \\\"frenchName\\\": \\\"Ouzb\u00E9kistan\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"UZB\\\"\\n    },\\n    {\\n      \\\"name\\\": \\\"Vietnam\\\",\\n      \\\"frenchName\\\": \\\"Vi\u00EAt Nam\\\",\\n      \\\"threeLettersIsoCode\\\": \\\"VNM\\\"\\n    }\\n  ],\\n  \\\"alternateIdentifier\\\": \\\"7006\\\"\\n}\",\"requestMappingFields\":{\"mappings\":[]},\"responseHeaders\":null,\"responseMappingFields\":{\"mappings\":[{\"from\":\"isCardStyleAmountRestricted\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"code\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"cardStyles[0].name\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"cardStyles[0].amountRestrictions.availableAmounts[0]\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"cardStyles[0].amountRestrictions.maximum\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"cardStyles[0].amountRestrictions.minimum\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"canPurchaseSmsGiftCards\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"canPurchasePhysicalGiftCards\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"name\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"canPurchaseEmailGiftCards\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"amountRestrictions.maximum\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"amountRestrictions.minimum\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"alternateIdentifier\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"shippingCountries[0].name\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"shippingCountries[0].frenchName\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"shippingCountries[0].threeLettersIsoCode\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"isEnclosureEnabled\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"cardStyles[0].code\",\"to\":\"card_style_code\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":false,\"isCustom\":true,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"['cardStyles.#object']\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"cardStyles[0].amountRestrictions.#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"cardStyles[0].amountRestrictions.['availableAmounts.#object']\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"amountRestrictions.#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"['shippingCountries.#object']\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"['enclosures.#object']\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"cardStyles[0].amountRestrictions.availableAmounts\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"cardStyles\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"shippingCountries\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"enclosures\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false}]},\"responseContentType\":\"application\/json\",\"headers\":{},\"formArrayIndicator\":null},{\"url\":\"https:\/\/uat-api-gc.egiftlabs.com\/api\/v1\/emailorder\/create\",\"authenticationIds\":[\"{{authentication_outbound_oauth2_1026}}\"],\"method\":\"POST\",\"requestContentType\":\"application\/json\",\"requestExample\":\"{\\n\\\"AccountCode\\\": \\\"eac364ba-9fbb-4b56-bd7e-5846d6df1e8b\\\",\\n\\\"StorefrontCode\\\": \\\"00000000-0000-0000-0000-000000000000\\\"\\n,\\n\\\"GiftCards\\\": [{\\n\\\"Email\\\": \\\"recipient@email.com\\\",\\n\\\"CardStyleCode\\\": \\\"00000000-0000-0000-0000-000000000000\\\"\\n,\\n\\\"Quantity\\\": 2,\\n\\\"Amount\\\": 20.00,\\n\\\"FirstName\\\": \\\"Giftcard\\\",\\n\\\"LastName\\\": \\\"Recipient\\\",\\n\\\"SenderFirstName\\\": \\\"G.C.\\\",\\n\\\"SenderLastName\\\": \\\"Sender\\\",\\n\\\"Message\\\": \\\"Congratulations!\\\",\\n\\\"ExpiryMessage\\\": \\\"This card is no longer valid.\\\",\\n\\\"ActivationDateUtc\\\": \\\"2025-12-25T09:00:00\\\"\\n,\\n\\\"SendToRecipient\\\": true,\\n\\\"StoreId\\\": null,\\n\\\"Category\\\": null,\\n\\\"InternalNotes\\\": null\\n}\\n]\\n}\",\"responseExample\":\"{\\n\\\"orderNumber\\\": 123456,\\n\\\"totalNumberOfCards\\\": 2,\\n\\\"totalAmount\\\": 40.0,\\n\\\"currency\\\": \\\"USD\\\"\\n}\",\"requestMappingFields\":{\"mappings\":[{\"from\":\"$.StorefrontCode\",\"to\":\"${vars.StorefrontCode}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":null,\"fixed\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"$.GiftCards[0].Email\",\"to\":\"${input.customerEmail}\",\"map\":null,\"arrayPath\":\"$.GiftCards\",\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":null,\"fixed\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"$.GiftCards[0].Category\",\"to\":\"null\",\"map\":null,\"arrayPath\":\"$.GiftCards\",\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":null,\"fixed\":true,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"$.GiftCards[0].SenderLastName\",\"to\":\"Sender\",\"map\":null,\"arrayPath\":\"$.GiftCards\",\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":null,\"fixed\":true,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"$.GiftCards[0].Message\",\"to\":\"Congratulations!\",\"map\":null,\"arrayPath\":\"$.GiftCards\",\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":null,\"fixed\":true,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"$.GiftCards[0].FirstName\",\"to\":\"${input.firstName}\",\"map\":null,\"arrayPath\":\"$.GiftCards\",\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":null,\"fixed\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"$.GiftCards[0].Amount\",\"to\":\"${input.amount}\",\"map\":null,\"arrayPath\":\"$.GiftCards\",\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":null,\"fixed\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"$.GiftCards[0].SenderFirstName\",\"to\":\"G.C.\",\"map\":null,\"arrayPath\":\"$.GiftCards\",\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":null,\"fixed\":true,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"$.GiftCards[0].CardStyleCode\",\"to\":\"${input.customFields.card_style_code}\",\"map\":null,\"arrayPath\":\"$.GiftCards\",\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":null,\"fixed\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":true},{\"from\":\"$.GiftCards[0].Quantity\",\"to\":\"1\",\"map\":null,\"arrayPath\":\"$.GiftCards\",\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":null,\"fixed\":true,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"$.GiftCards[0].InternalNotes\",\"to\":\"null\",\"map\":null,\"arrayPath\":\"$.GiftCards\",\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":null,\"fixed\":true,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"$.GiftCards[0].ActivationDateUtc\",\"to\":\"${(.now?long + 86400000)?number_to_datetime?iso_utc?replace('Z', '')}\",\"map\":null,\"arrayPath\":\"$.GiftCards\",\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":null,\"fixed\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":true},{\"from\":\"$.GiftCards[0].StoreId\",\"to\":\"null\",\"map\":null,\"arrayPath\":\"$.GiftCards\",\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":null,\"fixed\":true,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"$.GiftCards[0].LastName\",\"to\":\"${input.lastName}\",\"map\":null,\"arrayPath\":\"$.GiftCards\",\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":null,\"fixed\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"$.GiftCards[0].ExpiryMessage\",\"to\":\"This card is no longer valid.\",\"map\":null,\"arrayPath\":\"$.GiftCards\",\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":null,\"fixed\":true,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"$.GiftCards[0].SendToRecipient\",\"to\":\"true\",\"map\":null,\"arrayPath\":\"$.GiftCards\",\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":null,\"fixed\":true,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"$.AccountCode\",\"to\":\"${vars.accountCode}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":null,\"fixed\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false}]},\"responseHeaders\":null,\"responseMappingFields\":{\"mappings\":[{\"from\":\"totalAmount\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"orderNumber\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"totalNumberOfCards\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"currency\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"httpStatusCode\",\"to\":\"transactionStatus\",\"map\":{\"201\":\"ACCEPTED\"},\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"STATUS\",\"fixed\":false,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false}]},\"responseContentType\":\"application\/json\",\"headers\":{\"Content-Type\":\"application\/json\"},\"formArrayIndicator\":null}],\"enabled\":null,\"configurationId\":null,\"googlePayGateway\":null,\"createdAt\":\"2026-01-22T06:36:13.607Z\",\"updatedAt\":\"2026-01-22T06:36:13.607Z\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{rootUrl}}/{{service}}\/merchant\/accountgroups\/{{accountGroupId}}\/accounts\/{{accountId}}\/refund",
+              "host": [
+                "{{rootUrl}}"
+              ],
+              "path": [
+                "{{service}}"
+                ,
+                "merchant"
+                ,
+                "accountgroups"
+                ,
+                "{{accountGroupId}}"
+                ,
+                "accounts"
+                ,
+                "{{accountId}}"
+                ,
+                "refund"
+                
+              ]
+            }
+          },
+          "response": []
+        }
+        
+      ],
+      "protocolProfileBehavior": {}
+    }
+    ,
+    {
+      "name": "Recurrent_authorization",
+      "item": [
+        {
+          "name": "Recurrent_authorization",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "{{token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"id\":5439,\"requestType\":\"RECURRENT_AUTHORIZATION\",\"outboundMappings\":[{\"url\":\"https:\/\/\",\"authenticationIds\":[],\"method\":\"GET\",\"requestContentType\":\"application\/xml\",\"requestExample\":null,\"responseExample\":null,\"requestMappingFields\":null,\"responseHeaders\":null,\"responseMappingFields\":null,\"responseContentType\":\"application\/xml\",\"headers\":null,\"formArrayIndicator\":null}],\"enabled\":null,\"configurationId\":null,\"googlePayGateway\":null,\"createdAt\":\"2026-01-22T06:36:47.703Z\",\"updatedAt\":\"2026-01-22T06:36:47.703Z\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{rootUrl}}/{{service}}\/merchant\/accountgroups\/{{accountGroupId}}\/accounts\/{{accountId}}\/recurrent_authorization",
+              "host": [
+                "{{rootUrl}}"
+              ],
+              "path": [
+                "{{service}}"
+                ,
+                "merchant"
+                ,
+                "accountgroups"
+                ,
+                "{{accountGroupId}}"
+                ,
+                "accounts"
+                ,
+                "{{accountId}}"
+                ,
+                "recurrent_authorization"
+                
+              ]
+            }
+          },
+          "response": []
+        }
+        
+      ],
+      "protocolProfileBehavior": {}
+    }
+    ,
+    {
+      "name": "Authorization",
+      "item": [
+        {
+          "name": "Authorization",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "{{token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"id\":5580,\"requestType\":\"AUTHORIZATION\",\"outboundMappings\":[{\"url\":\"https:\/\/${vars.svsPaymentHost}\/oltp-gift\/v1\/pre-authorization\",\"authenticationIds\":[\"{{authentication_outbound_encrypted_session_auth_812}}\"],\"method\":\"POST\",\"requestContentType\":\"application\/json\",\"requestExample\":\"{\\n  \\\"merchantId\\\": 70577,\\n  \\\"storeNumber\\\": \\\"0000001234\\\",\\n  \\\"invoiceNumber\\\": \\\"00004321\\\",\\n  \\\"currencyCode\\\": \\\"USD\\\",\\n  \\\"amount\\\": 12.50,\\n  \\\"posTime\\\": \\\"22:15:59\\\",\\n  \\\"posDate\\\": \\\"2026-02-04\\\",\\n  \\\"cardNumber\\\": \\\"6006491561419910391\\\",\\n  \\\"pin\\\": \\\"2972\\\",\\n  \\\"cardType\\\":\\\"REQUESTED\\\",\\n  \\\"stan\\\":1234\\n}\",\"responseExample\":\"{\\n  \\\"responseCode\\\": \\\"5\\\",\\n  \\\"approvedAmount\\\": 0.00,\\n  \\\"cardBalance\\\": 0.00,\\n  \\\"currencyCode\\\": \\\"USD\\\",\\n  \\\"conversionRate\\\": \\\"61187900\\\",\\n  \\\"cardCurrencyCode\\\": \\\"EUR\\\",\\n  \\\"eovDate\\\": \\\"20760201T0500Z\\\",\\n  \\\"cardType\\\": null\\n}\",\"requestMappingFields\":{\"mappings\":[{\"from\":\"$.posTime\",\"to\":\"${.now?string('HH:mm:ss')}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":null,\"fixed\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":true},{\"from\":\"$.storeNumber\",\"to\":\"${vars.storeNumber}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":null,\"fixed\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"$.amount\",\"to\":\"${input.amount}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":null,\"fixed\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"$.pin\",\"to\":\"${input.storedValueCardSecurityCode}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":null,\"fixed\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"$.merchantId\",\"to\":\"${input.merchantId}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":null,\"fixed\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"$.invoiceNumber\",\"to\":\"${input.orderPaymentId}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":null,\"fixed\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"$.cardType\",\"to\":\"REQUESTED\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":null,\"fixed\":true,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"$.stan\",\"to\":\"${input.referenceId?substring(input.referenceId?length - 6)}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":null,\"fixed\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":true},{\"from\":\"$.posDate\",\"to\":\"${.now?string('yyyy-MM-dd')}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":null,\"fixed\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":true},{\"from\":\"$.currencyCode\",\"to\":\"${input.currency}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":null,\"fixed\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"$.cardNumber\",\"to\":\"${input.storedValueCardNumber}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":null,\"fixed\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false}]},\"responseHeaders\":null,\"responseMappingFields\":{\"mappings\":[{\"from\":\"cardCurrencyCode\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"eovDate\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"cardBalance\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"currencyCode\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"conversionRate\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"approvedAmount\",\"to\":\"authorizationAmount\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":false,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"responseCode\",\"to\":\"transactionStatus\",\"map\":{\"1\":\"ACCEPTED\",\"2\":\"REJECTED\",\"3\":\"REJECTED\",\"4\":\"REJECTED\",\"5\":\"REJECTED\",\"6\":\"REJECTED\",\"7\":\"REJECTED\",\"8\":\"REJECTED\",\"9\":\"REJECTED\",\"10\":\"REJECTED\",\"13\":\"REJECTED\",\"14\":\"REJECTED\",\"15\":\"REJECTED\",\"16\":\"REJECTED\",\"17\":\"REJECTED\",\"18\":\"REJECTED\",\"19\":\"REJECTED\",\"20\":\"REJECTED\",\"21\":\"REJECTED\",\"22\":\"REJECTED\",\"23\":\"REJECTED\",\"24\":\"REJECTED\",\"25\":\"REJECTED\",\"26\":\"REJECTED\",\"27\":\"REJECTED\",\"28\":\"REJECTED\",\"29\":\"REJECTED\",\"30\":\"REJECTED\",\"31\":\"REJECTED\",\"32\":\"REJECTED\",\"33\":\"REJECTED\",\"34\":\"REJECTED\",\"36\":\"REJECTED\",\"37\":\"REJECTED\",\"38\":\"REJECTED\",\"43\":\"REJECTED\",\"47\":\"REJECTED\",\"93\":\"REJECTED\"},\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":false,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"cardType\",\"to\":\"cardType\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":false,\"isCustom\":true,\"persistCustomField\":true,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false}]},\"responseContentType\":\"application\/json\",\"headers\":{\"Auth-ID\":\"${vars.authId}\",\"content-type\":\"application\/json\",\"Accept\":\"application\/json\",\"Retry\":\"${input.retryRequest?then('Y', '')}\"},\"formArrayIndicator\":null}],\"enabled\":null,\"configurationId\":null,\"googlePayGateway\":null,\"createdAt\":\"2026-02-03T06:32:50.148Z\",\"updatedAt\":\"2026-02-03T06:32:50.148Z\",\"storedValueBalanceCheckOutboundMappings\":[{\"url\":\"https:\/\/${vars.svsPaymentHost}\/oltp-gift\/v1\/balance-inquiry\",\"authenticationIds\":[\"{{authentication_outbound_encrypted_session_auth_812}}\"],\"method\":\"POST\",\"requestContentType\":\"application\/json\",\"requestExample\":\"{\\n  \\\"merchantId\\\": 10001242,\\n  \\\"storeNumber\\\": \\\"0000001234\\\",\\n  \\\"invoiceNumber\\\": \\\"00004321\\\",\\n  \\\"currencyCode\\\": \\\"USD\\\",\\n  \\\"cardNumber\\\": \\\"6006491561419910607\\\",\\n  \\\"pin\\\": \\\"2208\\\",\\n  \\\"posTime\\\": \\\"17:20:59\\\",\\n  \\\"posDate\\\":\\\"2026-02-12\\\",\\n  \\\"cardType\\\":\\\"REQUESTED\\\",\\n  \\\"stan\\\":123456\\n}\",\"responseExample\":\"{\\n  \\\"responseCode\\\": \\\"3\\\",\\n  \\\"approvedAmount\\\": 0,\\n  \\\"cardBalance\\\": 0,\\n  \\\"currencyCode\\\": \\\"USD\\\",\\n  \\\"conversionRate\\\": \\\"61187900\\\",\\n  \\\"cardCurrencyCode\\\": \\\"EUR\\\",\\n  \\\"eovDate\\\": \\\"20760201T0500Z\\\",\\n  \\\"cardType\\\": \\\"\\\",\\n  \\\"auxiliaryData\\\": \\\"\\\"\\n}\",\"requestMappingFields\":{\"mappings\":[{\"from\":\"$.posTime\",\"to\":\"${.now?string('HH:mm:ss')}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":null,\"fixed\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":true},{\"from\":\"$.storeNumber\",\"to\":\"${vars.storeNumber}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":null,\"fixed\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"$.pin\",\"to\":\"${input.storedValueCardSecurityCode}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":null,\"fixed\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"$.merchantId\",\"to\":\"${input.merchantId}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":null,\"fixed\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"$.invoiceNumber\",\"to\":\"${input.invoiceNumber}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":null,\"fixed\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"$.cardType\",\"to\":\"REQUESTED\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":null,\"fixed\":true,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"$.stan\",\"to\":\"${functions.secureRandom(6)}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":null,\"fixed\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":true},{\"from\":\"$.posDate\",\"to\":\"${.now?string('yyyy-MM-dd')}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":null,\"fixed\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":true},{\"from\":\"$.currencyCode\",\"to\":\"${input.currency}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":null,\"fixed\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"$.cardNumber\",\"to\":\"${input.storedValueCardNumber}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":null,\"fixed\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false}]},\"responseHeaders\":null,\"responseMappingFields\":{\"mappings\":[{\"from\":\"cardCurrencyCode\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"eovDate\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"cardBalance\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"cardType\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"conversionRate\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"responseCode\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"auxiliaryData\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"approvedAmount\",\"to\":\"storedValueAvailableValue\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":false,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"currencyCode\",\"to\":\"storedValueCurrency\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":false,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false}]},\"responseContentType\":\"application\/json\",\"headers\":{\"Auth-ID\":\"${vars.authId}\",\"content-type\":\"application\/json\",\"Accept\":\"application\/json\",\"Retry\":\"${input.retryRequest?then('Y', '')}\"},\"formArrayIndicator\":null}]}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{rootUrl}}/{{service}}\/merchant\/accountgroups\/{{accountGroupId}}\/accounts\/{{accountId}}\/authorization",
+              "host": [
+                "{{rootUrl}}"
+              ],
+              "path": [
+                "{{service}}"
+                ,
+                "merchant"
+                ,
+                "accountgroups"
+                ,
+                "{{accountGroupId}}"
+                ,
+                "accounts"
+                ,
+                "{{accountId}}"
+                ,
+                "authorization"
+                
+              ]
+            }
+          },
+          "response": []
+        }
+        
+      ],
+      "protocolProfileBehavior": {}
+    }
+    ,
+    {
+      "name": "Settlement",
+      "item": [
+        {
+          "name": "Settlement",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "{{token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"id\":5887,\"requestType\":\"SETTLEMENT\",\"outboundMappings\":[{\"url\":\"https:\/\/${vars.svsPaymentHost}\/oltp-gift\/v1\/completion\",\"authenticationIds\":[\"{{authentication_outbound_encrypted_session_auth_812}}\"],\"method\":\"POST\",\"requestContentType\":\"application\/json\",\"requestExample\":\"{\\n  \\\"merchantId\\\": 900002,\\n  \\\"storeNumber\\\": \\\"0000001234\\\",\\n  \\\"invoiceNumber\\\": \\\"00004321\\\",\\n  \\\"stan\\\": 123456,\\n  \\\"currencyCode\\\": \\\"USD\\\",\\n  \\\"amount\\\": 12.50,\\n  \\\"posTime\\\": \\\"22:15:59\\\",\\n  \\\"posDate\\\": \\\"2020-05-04\\\",\\n  \\\"cardNumber\\\": \\\"6006491234567890123\\\",\\n  \\\"cardType\\\":\\\"REQUESTED\\\",\\n  \\\"pin\\\": \\\"0123\\\"\\n}\",\"responseExample\":\"{\\n  \\\"responseCode\\\": \\\"01\\\",\\n  \\\"approvedAmount\\\": \\\"12.50\\\",\\n  \\\"cardBalance\\\": 12.50,\\n  \\\"currencyCode\\\": \\\"USD\\\",\\n  \\\"cardCurrencyCode\\\": \\\"USD\\\",\\n  \\\"conversionRate\\\": \\\"61000000\\\",\\n  \\\"cardType\\\": \\\"\\\",\\n  \\\"eovDate\\\": \\\"20291230T2359Z\\\"\\n}\",\"requestMappingFields\":{\"mappings\":[{\"from\":\"$.posTime\",\"to\":\"${.now?string('HH:mm:ss')}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":null,\"fixed\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":true},{\"from\":\"$.storeNumber\",\"to\":\"${vars.storeNumber}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":null,\"fixed\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"$.amount\",\"to\":\"${input.amount}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":null,\"fixed\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"$.pin\",\"to\":\"${input.storedValueCardSecurityCode}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":null,\"fixed\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"$.merchantId\",\"to\":\"${input.merchantId}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":null,\"fixed\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"$.invoiceNumber\",\"to\":\"${input.orderId}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":null,\"fixed\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"$.stan\",\"to\":\"${input.referenceId?substring(input.referenceId?length - 6)}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":null,\"fixed\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":true},{\"from\":\"$.cardType\",\"to\":\"REQUESTED\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":null,\"fixed\":true,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"$.posDate\",\"to\":\"${.now?string('yyyy-MM-dd')}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":null,\"fixed\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":true},{\"from\":\"$.currencyCode\",\"to\":\"${input.currency}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":null,\"fixed\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"$.cardNumber\",\"to\":\"${input.storedValueCardNumber}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":null,\"fixed\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false}]},\"responseHeaders\":null,\"responseMappingFields\":{\"mappings\":[{\"from\":\"responseCode\",\"to\":\"transactionStatus\",\"map\":{\"1\":\"ACCEPTED\",\"2\":\"REJECTED\",\"3\":\"REJECTED\",\"4\":\"REJECTED\",\"5\":\"REJECTED\",\"6\":\"REJECTED\",\"7\":\"REJECTED\",\"8\":\"REJECTED\",\"9\":\"REJECTED\",\"10\":\"REJECTED\",\"13\":\"REJECTED\",\"14\":\"REJECTED\",\"15\":\"REJECTED\",\"16\":\"REJECTED\",\"17\":\"REJECTED\",\"18\":\"REJECTED\",\"19\":\"REJECTED\",\"20\":\"REJECTED\",\"21\":\"REJECTED\",\"22\":\"REJECTED\",\"23\":\"REJECTED\",\"24\":\"REJECTED\",\"25\":\"REJECTED\",\"26\":\"REJECTED\",\"27\":\"REJECTED\",\"28\":\"REJECTED\",\"29\":\"REJECTED\",\"30\":\"REJECTED\",\"31\":\"REJECTED\",\"32\":\"REJECTED\",\"33\":\"REJECTED\",\"34\":\"REJECTED\",\"36\":\"REJECTED\",\"37\":\"REJECTED\",\"38\":\"REJECTED\",\"43\":\"REJECTED\",\"47\":\"REJECTED\",\"93\":\"REJECTED\"},\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":false,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"cardType\",\"to\":\"cardType\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":false,\"isCustom\":true,\"persistCustomField\":true,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"cardCurrencyCode\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"eovDate\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"cardBalance\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"approvedAmount\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"currencyCode\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"conversionRate\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isArrayElement\":false,\"isScript\":false}]},\"responseContentType\":\"application\/json\",\"headers\":{\"Auth-ID\":\"${vars.authId}\",\"content-type\":\"application\/json\",\"Accept\":\"application\/json\",\"Retry\":\"${input.retryRequest?then('Y', '')}\"},\"formArrayIndicator\":null}],\"enabled\":null,\"configurationId\":null,\"googlePayGateway\":null,\"createdAt\":\"2026-02-27T06:59:20.268Z\",\"updatedAt\":\"2026-02-27T06:59:20.268Z\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{rootUrl}}/{{service}}\/merchant\/accountgroups\/{{accountGroupId}}\/accounts\/{{accountId}}\/settlement",
+              "host": [
+                "{{rootUrl}}"
+              ],
+              "path": [
+                "{{service}}"
+                ,
+                "merchant"
+                ,
+                "accountgroups"
+                ,
+                "{{accountGroupId}}"
+                ,
+                "accounts"
+                ,
+                "{{accountId}}"
+                ,
+                "settlement"
+                
+              ]
+            }
+          },
+          "response": []
+        }
+        
+      ],
+      "protocolProfileBehavior": {}
+    }
+    ,
+    {
+      "name": "Authorization_reversal",
+      "item": [
+        {
+          "name": "Authorization_reversal",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "{{token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"id\":6246,\"requestType\":\"AUTHORIZATION_REVERSAL\",\"outboundMappings\":[{\"url\":\"https:\/\/${vars.svsPaymentHost}\/oltp-gift\/v1\/completion\",\"authenticationIds\":[\"{{authentication_outbound_encrypted_session_auth_812}}\"],\"method\":\"POST\",\"requestContentType\":\"application\/json\",\"requestExample\":\"{\\n  \\\"merchantId\\\": 900002,\\n  \\\"storeNumber\\\": \\\"0000001234\\\",\\n  \\\"invoiceNumber\\\": \\\"00004321\\\",\\n  \\\"stan\\\": 123456,\\n  \\\"currencyCode\\\": \\\"USD\\\",\\n  \\\"amount\\\": 12.50,\\n  \\\"posTime\\\": \\\"22:15:59\\\",\\n  \\\"posDate\\\": \\\"2020-05-04\\\",\\n  \\\"cardNumber\\\": \\\"6006491234567890123\\\",\\n  \\\"cardType\\\":\\\"REQUESTED\\\",\\n  \\\"pin\\\": \\\"0123\\\"\\n}\",\"responseExample\":\"{\\n  \\\"responseCode\\\": \\\"01\\\",\\n  \\\"approvedAmount\\\": \\\"12.50\\\",\\n  \\\"cardBalance\\\": 12.50,\\n  \\\"currencyCode\\\": \\\"USD\\\",\\n  \\\"cardCurrencyCode\\\": \\\"USD\\\",\\n  \\\"conversionRate\\\": \\\"61000000\\\",\\n  \\\"cardType\\\": \\\"\\\",\\n  \\\"eovDate\\\": \\\"20291230T2359Z\\\"\\n}\",\"requestMappingFields\":{\"mappings\":[{\"from\":\"$.posTime\",\"to\":\"${.now?string('HH:mm:ss')}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":null,\"fixed\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":true},{\"from\":\"$.storeNumber\",\"to\":\"${vars.storeNumber}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":null,\"fixed\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"$.amount\",\"to\":\"0\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":null,\"fixed\":true,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"$.pin\",\"to\":\"${input.storedValueCardSecurityCode}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":null,\"fixed\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"$.merchantId\",\"to\":\"${input.merchantId}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":null,\"fixed\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"$.invoiceNumber\",\"to\":\"${input.orderId}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":null,\"fixed\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"$.stan\",\"to\":\"${input.referenceId?substring(input.referenceId?length - 6)}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":null,\"fixed\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":true},{\"from\":\"$.cardType\",\"to\":\"REQUESTED\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":null,\"fixed\":true,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"$.posDate\",\"to\":\"${.now?string('yyyy-MM-dd')}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":null,\"fixed\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":true},{\"from\":\"$.currencyCode\",\"to\":\"${input.currency}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":null,\"fixed\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"$.cardNumber\",\"to\":\"${input.storedValueCardNumber}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":null,\"fixed\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false}]},\"responseHeaders\":null,\"responseMappingFields\":{\"mappings\":[{\"from\":\"cardCurrencyCode\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"eovDate\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"cardBalance\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"approvedAmount\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"currencyCode\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"conversionRate\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"responseCode\",\"to\":\"transactionStatus\",\"map\":{\"1\":\"ACCEPTED\",\"2\":\"REJECTED\",\"3\":\"REJECTED\",\"4\":\"REJECTED\",\"5\":\"REJECTED\",\"6\":\"REJECTED\",\"7\":\"REJECTED\",\"8\":\"REJECTED\",\"9\":\"REJECTED\",\"10\":\"REJECTED\",\"13\":\"REJECTED\",\"14\":\"REJECTED\",\"15\":\"REJECTED\",\"16\":\"REJECTED\",\"17\":\"REJECTED\",\"18\":\"REJECTED\",\"19\":\"REJECTED\",\"20\":\"REJECTED\",\"21\":\"REJECTED\",\"22\":\"REJECTED\",\"23\":\"REJECTED\",\"24\":\"REJECTED\",\"25\":\"REJECTED\",\"26\":\"REJECTED\",\"27\":\"REJECTED\",\"28\":\"REJECTED\",\"29\":\"REJECTED\",\"30\":\"REJECTED\",\"31\":\"REJECTED\",\"32\":\"REJECTED\",\"33\":\"REJECTED\",\"34\":\"REJECTED\",\"36\":\"REJECTED\",\"37\":\"REJECTED\",\"38\":\"REJECTED\",\"43\":\"REJECTED\",\"47\":\"REJECTED\",\"93\":\"REJECTED\"},\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":false,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"cardType\",\"to\":\"cardType\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":false,\"isCustom\":true,\"persistCustomField\":true,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isArrayElement\":false,\"isScript\":false}]},\"responseContentType\":\"application\/json\",\"headers\":{\"Content-Type\":\"application\/json\",\"Auth-ID\":\"${vars.authId}\",\"Accept\":\"application\/json\",\"Retry\":\"${input.retryRequest?then('Y', '')}\"},\"formArrayIndicator\":null}],\"enabled\":null,\"configurationId\":null,\"googlePayGateway\":null,\"createdAt\":\"2026-03-20T06:53:19.256Z\",\"updatedAt\":\"2026-03-20T06:53:19.256Z\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{rootUrl}}/{{service}}\/merchant\/accountgroups\/{{accountGroupId}}\/accounts\/{{accountId}}\/authorization_reversal",
+              "host": [
+                "{{rootUrl}}"
+              ],
+              "path": [
+                "{{service}}"
+                ,
+                "merchant"
+                ,
+                "accountgroups"
+                ,
+                "{{accountGroupId}}"
+                ,
+                "accounts"
+                ,
+                "{{accountId}}"
+                ,
+                "authorization_reversal"
+                
+              ]
+            }
+          },
+          "response": []
+        }
+        
+      ],
+      "protocolProfileBehavior": {}
+    }
+    
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "exec": [
+          "let url = pm.request.url.toString();\nif(pm.environment.get(\"service\")==null || pm.environment.get(\"service\")===\"\"){\n    let updateUrl = url.replace(\"\/{{service}}\",\"\")\n    pm.request.url = updateUrl;\n}"
+        ]
+      }
+    }
+  ]
+  ,
+  "protocolProfileBehavior": {}
+}
