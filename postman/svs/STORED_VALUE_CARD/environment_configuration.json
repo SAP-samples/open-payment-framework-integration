@@ -1,0 +1,178 @@
+{
+  "id": "c3ad2f82-1a30-43c2-b75d-396b38d56510",
+  "name": "svs",
+  "values": [
+    {
+      "key": "token",
+      "value": "",
+      "enabled": true
+    },
+    {
+      "key": "rootUrl",
+      "value": "https:\/\/opf-iss-d0.opf.commerce.stage.context.cloud.sap",
+      "enabled": true
+    },
+    {
+      "key": "service",
+      "value": "opf",
+      "enabled": true
+    },
+    {
+      "key": "accountGroupId",
+      "value": "3776",
+      "enabled": true
+    },
+    {
+      "key": "accountId",
+      "value": "2921",
+      "enabled": true
+    },
+    {
+      "key": "authentication_outbound_oauth2_token_url_export_1026",
+      "value": "https:\/\/buyatab-uat.us.auth0.com\/oauth\/token",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "authentication_outbound_oauth2_client_id_export_1026",
+      "value": "SVS oAuth2 Authentication_clientId",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "authentication_outbound_oauth2_client_secret_export_1026",
+      "value": "SVS oAuth2 Authentication_clientSecret",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "authentication_outbound_oauth2_use_basic_auth_export_1026",
+      "value": "false",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "authentication_outbound_oauth2_audience_export_1026",
+      "value": "https:\/\/uat-api-gc.egiftlabs.com",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "authentication_outbound_encrypted_session_username_export_812",
+      "value": "svsGiftCardAuthenticate2_username",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "authentication_outbound_encrypted_session_password_export_812",
+      "value": "svsGiftCardAuthenticate2_password",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "authentication_outbound_encrypted_session_root_key_export_812",
+      "value": "svsGiftCardAuthenticate2_rootKey",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "authentication_outbound_encrypted_session_auth_id_export_812",
+      "value": "svsGiftCardAuthenticate2_authId",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "authentication_outbound_encrypted_session_auth_url_export_812",
+      "value": "svsGiftCardAuthenticate2_authUrl",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "authentication_outbound_encrypted_session_algorithm_export_812",
+      "value": "svsGiftCardAuthenticate2_algorithm",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "authentication_outbound_encrypted_session_initial_vector_export_812",
+      "value": "svsGiftCardAuthenticate2_initialVector",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "capturePattern",
+      "value": "PARTIAL_CAPTURE",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "enableOverCapture",
+      "value": "false",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "enableCaptureReAuth",
+      "value": "false",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "refundPattern",
+      "value": "REFUND_TO_NEW_PAYMENT",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "maxStoredValueCardRefund",
+      "value": "300.00",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "authorizationTimeoutDays",
+      "value": "7",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "authId",
+      "value": "10001242",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "storeNumber",
+      "value": "0000001234",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "accountCode",
+      "value": "eac364ba-9fbb-4b56-bd7e-5846d6df1e8b",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "CardStyleCode",
+      "value": "3077036f-17a0-480c-b1a4-bd13d4c5b04d",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "StorefrontCode",
+      "value": "545bee2c-528b-4320-b9d7-17f519e7317c",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "svsPaymentHost",
+      "value": "svc-cert.storedvalue.com",
+      "enabled": true
+    }
+    
+  ],
+  "_postman_variable_scope": "environment",
+  "_postman_exported_at": "",
+  "_postman_exported_using": "Postman\/7.35.0"
+}
