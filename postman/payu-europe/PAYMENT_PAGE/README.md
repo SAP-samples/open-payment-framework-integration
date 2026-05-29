@@ -88,7 +88,7 @@ The ``integrationId`` and ``configurationId`` values identify the payment integr
 * ``integrationId`` maps to ``accountGroupId`` in Postman
 * ``configurationId`` maps to ``accountId`` in Postman
 
-**4. apiKey and  apiSecret**
+**4. authentication_outbound_oauth2_client_secret_export_1053 and  authentication_outbound_oauth2_client_secret_export_1053**
 
 Obtain your ``apiKey`` and ``apiSecret`` during the [Get the credentials for your PayU Europe  integration](#get-the-credentials-for-your-payu-europe--integration-) step.
 
@@ -100,7 +100,9 @@ Retrieve your POS ID from your  [Merchant Panel](https://merch-prod.snd.payu.com
 ![](images/payu_posId.png)
 
 **7. refundType**
+
 The following refund types are available:
+
 ``REFUND_PAYMENT_STANDARD`` – Standard refund procedure
 ``FAST`` – Expedited refund process with potentially higher fees. Available only to merchants operating through PayU GPO Romania
 
@@ -135,7 +137,7 @@ In summary, you should have edited the following variables:
 - ``accountId`` 
 
 #### PayU Europe Specific
-- ``apiKey``
-- ``apiSecret``
-- ``webhookSecret`` 
+- ``authentication_outbound_oauth2_client_id_export_1053``
+- ``authentication_outbound_oauth2_client_secret_export_1053``
+- ``posId`` 
   
