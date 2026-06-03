@@ -1,0 +1,88 @@
+{
+  "id": "67d3ea2c-b9e8-4034-a44f-097cc966b1ec",
+  "name": "Klarna-web-sdk",
+  "values": [
+    {
+      "key": "token",
+      "value": "",
+      "enabled": true
+    },
+    {
+      "key": "rootUrl",
+      "value": "https:\/\/opf-iss-d0.opf.commerce.stage.context.cloud.sap",
+      "enabled": true
+    },
+    {
+      "key": "service",
+      "value": "opf",
+      "enabled": true
+    },
+    {
+      "key": "accountGroupId",
+      "value": "4580",
+      "enabled": true
+    },
+    {
+      "key": "accountId",
+      "value": "3597",
+      "enabled": true
+    },
+    {
+      "key": "authentication_outbound_basic_auth_username_export_873",
+      "value": "Klarna Basic Auth EUR_username",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "authentication_outbound_basic_auth_password_export_873",
+      "value": "Klarna Basic Auth EUR_password",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "capturePattern",
+      "value": "PARTIAL_CAPTURE",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "enableOverCapture",
+      "value": "false",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "enableCaptureReAuth",
+      "value": "false",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "authorizationTimeoutDays",
+      "value": "7",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "apiUrl",
+      "value": "api.playground.klarna.com",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "intent",
+      "value": "buy",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "customPaymentMethodId",
+      "value": "online",
+      "enabled": true
+    }
+    
+  ],
+  "_postman_variable_scope": "environment",
+  "_postman_exported_at": "",
+  "_postman_exported_using": "Postman\/7.35.0"
+}
