@@ -1,5 +1,5 @@
 {
-  "id": "5c9dbef2-0d58-405d-b427-8e8d2a3caf7c",
+  "id": "01273f3d-eb1b-40d2-b385-ca0f7d466ae4",
   "name": "payever",
   "values": [
     {
@@ -28,19 +28,43 @@
       "enabled": true
     },
     {
+      "key": "authentication_outbound_oauth2_token_url_export_1080",
+      "value": "https:\/\/proxy.staging.devpayever.com\/oauth\/v2\/token",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "authentication_outbound_oauth2_client_id_export_1080",
+      "value": "Payever oAuth2 Auth_clientId",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "authentication_outbound_oauth2_client_secret_export_1080",
+      "value": "Payever oAuth2 Auth_clientSecret",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "authentication_outbound_oauth2_use_basic_auth_export_1080",
+      "value": "false",
+      "enabled": true
+    }
+    ,
+    {
       "key": "capturePattern",
       "value": "PARTIAL_CAPTURE",
       "enabled": true
     }
     ,
     {
-      "key": "supportOverCapture",
+      "key": "enableOverCapture",
       "value": "false",
       "enabled": true
     }
     ,
     {
-      "key": "enableOverCapture",
+      "key": "enableCaptureReAuth",
       "value": "false",
       "enabled": true
     }
@@ -70,14 +94,14 @@
     }
     ,
     {
-      "key": "paymentMethod",
-      "value": "zinia_installment_de",
+      "key": "apiVersion",
+      "value": "v3",
       "enabled": true
     }
     ,
     {
-      "key": "apiVersion",
-      "value": "v3",
+      "key": "paymentMethod",
+      "value": "zinia_installment_de",
       "enabled": true
     }
     
