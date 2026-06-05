@@ -1,0 +1,142 @@
+{
+  "id": "30fad2e8-f2b3-4d73-82c5-0f67a2106438",
+  "name": "PayPalCheckout-HostedFields",
+  "values": [
+    {
+      "key": "token",
+      "value": "",
+      "enabled": true
+    },
+    {
+      "key": "rootUrl",
+      "value": "https:\/\/opf-iss-d0.opf.commerce.stage.context.cloud.sap",
+      "enabled": true
+    },
+    {
+      "key": "service",
+      "value": "opf",
+      "enabled": true
+    },
+    {
+      "key": "accountGroupId",
+      "value": "5565",
+      "enabled": true
+    },
+    {
+      "key": "accountId",
+      "value": "4469",
+      "enabled": true
+    },
+    {
+      "key": "authentication_outbound_oauth2_token_url_export_1028",
+      "value": "https:\/\/api-m.sandbox.paypal.com\/v1\/oauth2\/token",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "authentication_outbound_oauth2_client_id_export_1028",
+      "value": "Paypal_CheckOut_oAuth2_Auth_clientId",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "authentication_outbound_oauth2_client_secret_export_1028",
+      "value": "Paypal_CheckOut_oAuth2_Auth_clientSecret",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "authentication_outbound_oauth2_use_basic_auth_export_1028",
+      "value": "true",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "capturePattern",
+      "value": "PARTIAL_CAPTURE",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "enableOverCapture",
+      "value": "false",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "enableCaptureReAuth",
+      "value": "false",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "authorizationTimeoutDays",
+      "value": "7",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "apiEndpoint",
+      "value": "api-m.sandbox.paypal.com",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "apiVersion",
+      "value": "v2",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "enableFunding",
+      "value": "paylater",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "shippingPreference",
+      "value": "GET_FROM_FILE",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "prefer",
+      "value": "return=representation",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "landingPage",
+      "value": "NO_PREFERENCE",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "restClientId",
+      "value": "ASTBLZCLAJYgCOPlayKXN4SXJZA8lcQXIsNXDcBDzBW_4K_8QQrXz9w3UHYM2IQBVEcmbivyeoxetp18",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "disableFunding",
+      "value": "venmo,paylater,card",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "userAction",
+      "value": "CONTINUE",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "webhookId",
+      "value": "4T8315705K2947434",
+      "enabled": true
+    }
+    
+  ],
+  "_postman_variable_scope": "environment",
+  "_postman_exported_at": "",
+  "_postman_exported_using": "Postman\/7.35.0"
+}
