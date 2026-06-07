@@ -1,5 +1,5 @@
 {
-  "id": "2349df0c-6208-4465-b905-54ac2bc0f5cc",
+  "id": "437ba747-0587-45eb-8d50-e0d9361f19be",
   "name": "Braintree",
   "values": [
     {
@@ -46,13 +46,13 @@
     }
     ,
     {
-      "key": "supportOverCapture",
+      "key": "enableOverCapture",
       "value": "false",
       "enabled": true
     }
     ,
     {
-      "key": "enableOverCapture",
+      "key": "enableCaptureReAuth",
       "value": "false",
       "enabled": true
     }
