@@ -99,11 +99,11 @@ Retrieve the stored ``apiKey`` and ``apiSecret`` that you configured during the 
 
 Retrieve the stored ``webhookId`` that you configured during the [Webhook configuration step](#webhook-configuration-).
 
-**6. restClientId**
+**6. clientId**
 
 This is the client ID that identifies your application. You need this credential to enable the PayPal payment button and integrated credit/debit card payment fields.
-Note: If you are using the frontend provided by SAP Commerce (for OPF), you must configure this  restClientid.
-To obtain your restClientid: Copy it from your PayPal API credentials.
+Note: If you are using the frontend provided by SAP Commerce (for OPF), you must configure this  clientId.
+To obtain your clientId: Copy it from your PayPal API credentials.
 
 
 

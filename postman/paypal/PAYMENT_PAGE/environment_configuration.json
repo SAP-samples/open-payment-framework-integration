@@ -1,5 +1,5 @@
 {
-  "id": "44a38a44-16b6-4135-becc-b5237ace5109",
+  "id": "00061cb4-3a96-4110-8f9f-2339a9b461a3",
   "name": "PayPal-Checkout",
   "values": [
     {
@@ -107,7 +107,7 @@
     ,
     {
       "key": "userAction",
-      "value": "CONTINUE",
+      "value": "PAY_NOW",
       "enabled": true
     }
     ,
