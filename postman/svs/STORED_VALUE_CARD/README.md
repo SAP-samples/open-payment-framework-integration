@@ -5,6 +5,7 @@ The integration supports:
 
 * Authorization and capture of gift card payments via the SVS REST Gift Card API (Pre-Auth → Pre-Auth Complete flow)
 * Deferred and partial capture
+* Recurrent authorization (re-authorization when the original Pre-Auth has expired and a capture is still pending)
 * Refunds (Refund-To-New-Payment)
 * Reversals / cancellations
 * Card Valet (Buyatab) digital gift card issuance via OAuth2-secured API
@@ -59,14 +60,14 @@ The `environment_configuration.json` file ships with placeholder values that mus
 
 These values are PATCHed onto the payment configuration by the collection. Values reflect the recommended defaults for SVS gift cards.
 
-| Variable | Description                                                                                                                                                                                                                                                                                  |
-| --- |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `capturePattern` | Capture pattern. Default `PARTIAL_CAPTURE` so partial captures (multi-shipment) are supported on top of an SVS Pre-Authorization. Other valid values: `IMMEDIATE_CAPTURE`, `CAPTURE_PER_SHIPMENT`.                                                                                           |
-| `enableOverCapture` | Whether to allow capture amounts greater than the original authorization. Default `false`. SVS Pre-Auth Completes can exceed the held amount (per *Pre-Auth guidelines v1.4*), but the OPF default is to disallow it unless explicitly required.                                             |
-| `enableCaptureReAuth` | Whether to issue a fresh authorization when the original SVS Pre-Auth has expired and a capture is still pending. Default `false`.                                                                                                                                                           |
-| `refundPattern` | Refund pattern. Default `REFUND_TO_NEW_PAYMENT` — refunds are issued as new gift card credit transactions rather than reversing a captured transaction. Other valid value: `REFUND_FOLLOW_ON`.                                                                                               |
-| `maxStoredValueCardRefund` | Maximum amount that may be refunded to a stored-value (gift) card per transaction, expressed in the integration's currency. Default `300.00` (test value — set to your operational ceiling).                                                                                                 |
-| `authorizationTimeoutDays` | Number of days an SVS Pre-Authorization is considered valid in OPF before it must be re-issued. Default `7`. Aligns with the SVS server-side hold expiry policy described in the Pre-Auth guidelines (a Pre-Auth hold is indefinite at SVS but should be released by completion or timeout). |
+| Variable | Description                                                                                                                                                                                                                                                                                            |
+| --- |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `capturePattern` | Capture pattern. Default `CAPTURE_PER_SHIPMENT` — one capture request is issued per shipment against the original SVS Pre-Authorization. Other valid values: `IMMEDIATE_CAPTURE`, `PARTIAL_CAPTURE`.                                                                                                   |
+| `enableOverCapture` | Whether to allow capture amounts greater than the original authorization. Default `false`. SVS Pre-Auth Completes can exceed the held amount (per *Pre-Auth guidelines v1.4*), but the OPF default is to disallow it unless explicitly required.                                                       |
+| `enableCaptureReAuth` | Whether to issue a fresh authorization (recurrent authorization) when the original SVS Pre-Auth has expired and a capture is still pending. Default `true` — OPF will automatically trigger a `RECURRENT_AUTHORIZATION` via the SVS Pre-Auth endpoint to renew the hold before completing the capture. |
+| `refundPattern` | Refund pattern. Default `REFUND_TO_NEW_PAYMENT` — refunds are issued as new gift card credit transactions rather than reversing a captured transaction. Other valid value: `REFUND_FOLLOW_ON`.                                                                                                         |
+| `maxStoredValueCardRefund` | Maximum amount that may be refunded to a stored-value (gift) card per transaction, expressed in the integration's currency. Default `500.00` (test value — set to your operational ceiling).                                                                                                           |
+| `authorizationTimeoutDays` | Number of days an SVS Pre-Authorization is considered valid in OPF before it must be re-issued. Default `7`. Aligns with the SVS server-side hold expiry policy described in the Pre-Auth guidelines (a Pre-Auth hold is indefinite at SVS but should be released by completion or timeout).           |
 
 ### 3. SVS REST Gift Card API authentication
 
@@ -96,7 +97,7 @@ These five variables populate the `OAUTH2_AUTHENTICATION` outbound authenticatio
 
 ### 5. SVS payment-method variables
 
-These five values are written into the integration's variable bag by the *Variable* requests in the collection. They are referenced by FreeMarker templates inside the SVS mapping at request time.
+These values are written into the integration's variable bag by the *Variable* requests in the collection. They are referenced by FreeMarker templates inside the SVS mapping at request time.
 
 | Variable | Description |
 | --- | --- |
@@ -106,6 +107,7 @@ These five values are written into the integration's variable bag by the *Variab
 | `CardStyleCode` | A GUID identifying the visual style applied to the new digital gift card. **Used by the REFUND flow** to choose which card design is rendered on the gift card issued as the refund. Per *Card Valet API Reference v2.0.0* — *Storefront Restrictions*: the unique identifier for the image displayed with the gift card (the image shown on the digital gift card web page). |
 | `StorefrontCode` | A GUID identifying the brand entity (storefront) the new gift card is issued under. **Used by the REFUND flow** to associate the issued refund gift card with the correct brand. Per *Card Valet API Reference v2.0.0* — *Storefront Restrictions*: the unique identifier for a particular brand entity. Used in `GET /v1/storefront/{StorefrontCode}/{accountCode}`. |
 | `svsPaymentHost` | The SVS REST API host used as the base for outbound payment calls in the mapping. UAT default: `svc-cert.storedvalue.com`. Production: `svc.storedvalue.com` (per the *SVS SOA External Consumer Guide* §1.1). |
+| `multiStorefrontCode` | A JSON map of locale-to-GUID entries identifying the brand entity (storefront) the new gift card is issued under, keyed by Accept-Language locale (e.g. `{"en-US": "545bee2c-528b-4320-b9d7-17f519e7317c", "zh-CN": "..."}`). **Used by the REFUND flow** to associate the issued refund gift card with the correct brand. The appropriate storefront GUID is resolved at runtime based on the request locale and used in `GET /v1/storefront/${vars.multiStorefrontCode?eval[input.contentLanguage]}/${vars.accountCode}`. Per *Card Valet API Reference v2.0.0* — *Storefront Restrictions*: the unique identifier for a particular brand entity. |
 
 ### Allowlist
 Add the following domains to the domain allowlist in OPF workbench. For instructions, see [Adding Tenant-specific Domain to Allowlist](https://help.sap.com/docs/OPEN_PAYMENT_FRAMEWORK/3580ff1b17144b8780c055bbb7c2bed3/a6836485b4494cfaad4033b4ee7a9c64.html).
@@ -168,4 +170,5 @@ In summary, you should have edited the following variables:
 - ``accountCode``
 - ``CardStyleCode``
 - ``StorefrontCode``
+- ``multiStorefrontCode``
 - ``svsPaymentHost``
