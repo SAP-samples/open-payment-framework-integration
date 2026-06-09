@@ -1,5 +1,5 @@
 {
-  "id": "30fad2e8-f2b3-4d73-82c5-0f67a2106438",
+  "id": "a6b1f106-3a04-4da2-a5e5-eaa1706950fb",
   "name": "PayPalCheckout-HostedFields",
   "values": [
     {
@@ -112,12 +112,6 @@
     }
     ,
     {
-      "key": "restClientId",
-      "value": "ASTBLZCLAJYgCOPlayKXN4SXJZA8lcQXIsNXDcBDzBW_4K_8QQrXz9w3UHYM2IQBVEcmbivyeoxetp18",
-      "enabled": true
-    }
-    ,
-    {
       "key": "disableFunding",
       "value": "venmo,paylater,card",
       "enabled": true
@@ -125,13 +119,19 @@
     ,
     {
       "key": "userAction",
-      "value": "CONTINUE",
+      "value": "PAY_NOW",
       "enabled": true
     }
     ,
     {
       "key": "webhookId",
-      "value": "4T8315705K2947434",
+      "value": "4T8******34",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "clientId",
+      "value": "AV8a3********CQgFjmOSPdsf7oXh",
       "enabled": true
     }
     
