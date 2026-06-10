@@ -1,5 +1,5 @@
 {
-  "id": "c3ad2f82-1a30-43c2-b75d-396b38d56510",
+  "id": "830a4fd5-4960-470d-a878-5b2aecbd2d91",
   "name": "svs",
   "values": [
     {
@@ -101,7 +101,7 @@
     ,
     {
       "key": "capturePattern",
-      "value": "PARTIAL_CAPTURE",
+      "value": "CAPTURE_PER_SHIPMENT",
       "enabled": true
     }
     ,
@@ -113,7 +113,7 @@
     ,
     {
       "key": "enableCaptureReAuth",
-      "value": "false",
+      "value": "true",
       "enabled": true
     }
     ,
@@ -125,7 +125,7 @@
     ,
     {
       "key": "maxStoredValueCardRefund",
-      "value": "300.00",
+      "value": "500.00",
       "enabled": true
     }
     ,
@@ -160,14 +160,14 @@
     }
     ,
     {
-      "key": "StorefrontCode",
-      "value": "545bee2c-528b-4320-b9d7-17f519e7317c",
+      "key": "svsPaymentHost",
+      "value": "svc-cert.storedvalue.com",
       "enabled": true
     }
     ,
     {
-      "key": "svsPaymentHost",
-      "value": "svc-cert.storedvalue.com",
+      "key": "multiStorefrontCode",
+      "value": "{\"en-US\":\"545bee2c-528b-4320-b9d7-17f519e7317c\",\"zh-CN\":\"storefrontCode_ZH\"}",
       "enabled": true
     }
     
