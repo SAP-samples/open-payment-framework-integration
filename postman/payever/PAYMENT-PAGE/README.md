@@ -39,15 +39,9 @@ The following ecommerce payment methods (and their issuers) are available via th
 | Santander BNPL | santander_invoice_at | — | AT |
 | Santander Installments Austria | santander_installment_at | — | AT |
 | Santander Installments Belgium | santander_installment_be | — | BE |
-| Santander Installments Denmark | santander_installment_dk | — | DK |
-| Santander Installments Finland | santander_installment_fi | — | FI |
-| Santander Installments Germany | santander_installment | — | DE |
-| Santander Installments Netherlands | santander_installment_nl | — | NL |
-| Santander Installments Norway | santander_installment_no | — | NO |
-| Santander Installments Sweden | santander_installment_se | — | SE |
-| Santander Installments United Kingdom | santander_installment_uk | — | UK |
-| Santander Invoice Norway | santander_invoice_no | — | NO |
 | Santander Pay by Bank | santander_instant | — | AT |
+| Resurs BNPL | resurs_bnpl | — | DK, FI, NO, SE |
+| Resurs Installments | resurs_installments | — | DK, FI, NO, SE |
 | Verifone Credit Card | credit_card | verifone | DE, DK, ES, FI, NL, NO, PL, SE, UK, AT, BE |
 | Verifone Direct Debit | direct_debit | verifone | DE, AT, CH |
 | Verifone BNPL | bnpl | verifone | DE, AT |
@@ -69,8 +63,6 @@ The following ecommerce payment methods (and their issuers) are available via th
 | PAYBACK PAY | payback | — | DE |
 | PayPal | paypal | — | All |
 | Przelewy24 | przelewy24 | ppro | PL |
-| Resurs BNPL | resurs_bnpl | — | DK, FI, NO, SE |
-| Resurs Installments | resurs_installments | — | DK, FI, NO, SE |
 | SOFORT Banking | sofort | — | DE, AT |
 | Stripe Credit Card | credit_card | stripe | All |
 | Stripe Direct Debit | direct_debit | stripe | All |
