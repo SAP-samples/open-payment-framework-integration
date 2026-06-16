@@ -157,7 +157,7 @@ For the exact conditions of each payment method, refer to the [payever Payments 
 
 ## Summary
 
-The environment file is now ready to be imported into Postman together with the Mapping Configuration Collection file. Ensure you select the correct environment before running the collection.
+The environment file is now ready to be imported into Postman together with the Mapping Configuration Collection file. Ensure you select the correct environment before running the collection. For all possible parameters for field mapping, you can review [payever API](https://docs.payever.org/api/payments/v3/create-payment/).
 
 In summary, you should have edited the following variables:
 
