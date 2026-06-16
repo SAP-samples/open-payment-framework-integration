@@ -41,7 +41,9 @@ The following ecommerce payment methods (and their issuers) are available via th
 | Santander Installments Belgium | santander_installment_be | — | BE |
 | Santander Pay by Bank | santander_instant | — | AT |
 | Resurs BNPL | resurs_bnpl | — | DK, FI, NO, SE |
-| Resurs Installments | resurs_installments | — | DK, FI, NO, SE |
+| Resurs Installments | resurs_installment | — | DK, FI, NO, SE 
+| PowerPay BNPL | power_pay_bnpl | — | CH |
+| PowerPay Installments | pay_pay_installment | — | CH |
 | Verifone Credit Card | credit_card | verifone | DE, DK, ES, FI, NL, NO, PL, SE, UK, AT, BE |
 | Verifone Direct Debit | direct_debit | verifone | DE, AT, CH |
 | Verifone BNPL | bnpl | verifone | DE, AT |
