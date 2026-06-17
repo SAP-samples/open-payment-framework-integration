@@ -1,6 +1,6 @@
 {
-  "id": "497c0fd2-9d80-49e3-800f-ac302f147f0f",
-  "name": "PayU Europe",
+  "id": "2c9678cc-6703-4662-9bc3-29334ebe3f6e",
+  "name": "PayU_Europe_Payment_page",
   "values": [
     {
       "key": "token",
@@ -19,12 +19,12 @@
     },
     {
       "key": "accountGroupId",
-      "value": "5356",
+      "value": "5812",
       "enabled": true
     },
     {
       "key": "accountId",
-      "value": "4287",
+      "value": "4686",
       "enabled": true
     },
     {
@@ -96,6 +96,12 @@
     {
       "key": "refundType",
       "value": "REFUND_PAYMENT_STANDARD",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "webhookSecretKey",
+      "value": "c********************************b32",
       "enabled": true
     }
     
