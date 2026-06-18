@@ -1,0 +1,88 @@
+{
+  "id": "ee4b3981-895d-493d-8a70-69766ecc7df2",
+  "name": "paymetric",
+  "values": [
+    {
+      "key": "token",
+      "value": "",
+      "enabled": true
+    },
+    {
+      "key": "rootUrl",
+      "value": "https:\/\/opf-iss-d0.opf.commerce.stage.context.cloud.sap",
+      "enabled": true
+    },
+    {
+      "key": "service",
+      "value": "opf",
+      "enabled": true
+    },
+    {
+      "key": "accountGroupId",
+      "value": "5281",
+      "enabled": true
+    },
+    {
+      "key": "accountId",
+      "value": "4219",
+      "enabled": true
+    },
+    {
+      "key": "capturePattern",
+      "value": "PARTIAL_CAPTURE",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "enableOverCapture",
+      "value": "false",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "enableCaptureReAuth",
+      "value": "false",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "authorizationTimeoutDays",
+      "value": "7",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "sharedKey",
+      "value": "0********************************b24",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "baseXiPayEndpoint",
+      "value": "cert-xipayapi.worldpay.com",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "baseXieCommEndpoint",
+      "value": "cert-xiecomm.worldpay.com",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "XiPayUsername",
+      "value": "WSASAPOPFDV",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "XiPayPassword",
+      "value": "8********************************1f4",
+      "enabled": true
+    }
+    
+  ],
+  "_postman_variable_scope": "environment",
+  "_postman_exported_at": "",
+  "_postman_exported_using": "Postman\/7.35.0"
+}
