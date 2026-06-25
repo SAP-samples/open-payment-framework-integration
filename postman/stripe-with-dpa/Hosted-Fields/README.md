@@ -111,10 +111,10 @@ The Publishable Key and Restricted Key (used as Secret Key) are obtained via the
 
 **5. DPA API Keys**
 
-``url`` maps to ``authentication_outbound_oauth2_token_url_export_1119`` in Postman
-``clientid`` maps to ``authentication_outbound_oauth2_client_id_export_1119`` in Postman
-``clientsecret`` maps to ``authentication_outbound_oauth2_client_secret_export_1119`` in Postman
-``uri`` maps to ``dpaApiBaseUrl`` in Postman
+* ``url`` maps to ``authentication_outbound_oauth2_token_url_export_1119`` in Postman
+* ``clientid`` maps to ``authentication_outbound_oauth2_client_id_export_1119`` in Postman
+* ``clientsecret`` maps to ``authentication_outbound_oauth2_client_secret_export_1119`` in Postman
+* ``uri`` maps to ``dpaApiBaseUrl`` in Postman
 
 **6. dpaPaymentServiceProvider**
 
