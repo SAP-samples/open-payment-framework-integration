@@ -153,6 +153,7 @@ v) In the environment file, set the ``webhookSecret`` value to the key starting 
 Add the following domain to the allowlist in the OPF workbench. For instructions, see [Adding a Tenant-specific Domain to the Allowlist](https://help.sap.com/docs/OPEN_PAYMENT_FRAMEWORK/3580ff1b17144b8780c055bbb7c2bed3/a6836485b4494cfaad4033b4ee7a9c64.html).
 
 ``stripe.com``
+``<Region>.hana.ondemand.com``
 
 ### Summary
 
