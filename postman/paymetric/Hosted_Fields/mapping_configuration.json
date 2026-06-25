@@ -1,0 +1,468 @@
+{
+  "info": {
+    "_postman_id": "9ee3fcc0-8b67-48ce-9657-3632ca237ce2",
+    "name": "paymetric_Config_Collection",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Variable",
+      "item": [
+        {
+          "name": "Variable_sharedKey",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "{{token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"id\":4765,\"sensitive\":true,\"value\":\"{{sharedKey}}\",\"key\":\"sharedKey\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{rootUrl}}/{{service}}\/merchant\/accountgroups\/{{accountGroupId}}\/accounts\/{{accountId}}\/variables",
+              "host": [
+                "{{rootUrl}}"
+              ],
+              "path": [
+                "{{service}}"
+                ,
+                "merchant"
+                ,
+                "accountgroups"
+                ,
+                "{{accountGroupId}}"
+                ,
+                "accounts"
+                ,
+                "{{accountId}}"
+                ,
+                "variables"
+                
+              ]
+            }
+          },
+          "response": []
+        }
+        ,
+        {
+          "name": "Variable_baseXiPayEndpoint",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "{{token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"id\":4766,\"sensitive\":false,\"value\":\"{{baseXiPayEndpoint}}\",\"key\":\"baseXiPayEndpoint\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{rootUrl}}/{{service}}\/merchant\/accountgroups\/{{accountGroupId}}\/accounts\/{{accountId}}\/variables",
+              "host": [
+                "{{rootUrl}}"
+              ],
+              "path": [
+                "{{service}}"
+                ,
+                "merchant"
+                ,
+                "accountgroups"
+                ,
+                "{{accountGroupId}}"
+                ,
+                "accounts"
+                ,
+                "{{accountId}}"
+                ,
+                "variables"
+                
+              ]
+            }
+          },
+          "response": []
+        }
+        ,
+        {
+          "name": "Variable_baseXieCommEndpoint",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "{{token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"id\":4767,\"sensitive\":false,\"value\":\"{{baseXieCommEndpoint}}\",\"key\":\"baseXieCommEndpoint\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{rootUrl}}/{{service}}\/merchant\/accountgroups\/{{accountGroupId}}\/accounts\/{{accountId}}\/variables",
+              "host": [
+                "{{rootUrl}}"
+              ],
+              "path": [
+                "{{service}}"
+                ,
+                "merchant"
+                ,
+                "accountgroups"
+                ,
+                "{{accountGroupId}}"
+                ,
+                "accounts"
+                ,
+                "{{accountId}}"
+                ,
+                "variables"
+                
+              ]
+            }
+          },
+          "response": []
+        }
+        ,
+        {
+          "name": "Variable_XiPayUsername",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "{{token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"id\":4768,\"sensitive\":false,\"value\":\"{{XiPayUsername}}\",\"key\":\"XiPayUsername\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{rootUrl}}/{{service}}\/merchant\/accountgroups\/{{accountGroupId}}\/accounts\/{{accountId}}\/variables",
+              "host": [
+                "{{rootUrl}}"
+              ],
+              "path": [
+                "{{service}}"
+                ,
+                "merchant"
+                ,
+                "accountgroups"
+                ,
+                "{{accountGroupId}}"
+                ,
+                "accounts"
+                ,
+                "{{accountId}}"
+                ,
+                "variables"
+                
+              ]
+            }
+          },
+          "response": []
+        }
+        ,
+        {
+          "name": "Variable_XiPayPassword",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "{{token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"id\":4769,\"sensitive\":true,\"value\":\"{{XiPayPassword}}\",\"key\":\"XiPayPassword\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{rootUrl}}/{{service}}\/merchant\/accountgroups\/{{accountGroupId}}\/accounts\/{{accountId}}\/variables",
+              "host": [
+                "{{rootUrl}}"
+              ],
+              "path": [
+                "{{service}}"
+                ,
+                "merchant"
+                ,
+                "accountgroups"
+                ,
+                "{{accountGroupId}}"
+                ,
+                "accounts"
+                ,
+                "{{accountId}}"
+                ,
+                "variables"
+                
+              ]
+            }
+          },
+          "response": []
+        }
+        
+      ],
+      "protocolProfileBehavior": {}
+    }
+    ,
+    {
+      "name": "Account",
+      "item": [
+        {
+          "name": "Account Patch",
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "{{token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"enableCaptureReAuth\":\"{{enableCaptureReAuth}}\",\"enableOverCapture\":\"{{enableOverCapture}}\",\"capturePattern\":\"{{capturePattern}}\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{rootUrl}}/{{service}}\/merchant\/accountgroups\/{{accountGroupId}}\/accounts\/{{accountId}}",
+              "host": [
+                "{{rootUrl}}"
+              ],
+              "path": [
+                "{{service}}"
+                ,
+                "merchant"
+                ,
+                "accountgroups"
+                ,
+                "{{accountGroupId}}"
+                ,
+                "accounts"
+                ,
+                "{{accountId}}"
+                
+              ]
+            }
+          },
+          "response": []
+        }
+        
+      ],
+      "protocolProfileBehavior": {}
+    }
+    ,
+    {
+      "name": "AccountGroup",
+      "item": [
+        {
+          "name": "Account Group Patch",
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "{{token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"authorizationTimeoutDays\":{{authorizationTimeoutDays}}}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{rootUrl}}/{{service}}\/merchant\/accountgroups\/{{accountGroupId}}",
+              "host": [
+                "{{rootUrl}}"
+              ],
+              "path": [
+                "{{service}}"
+                ,
+                "merchant"
+                ,
+                "accountgroups"
+                ,
+                "{{accountGroupId}}"
+                
+              ]
+            }
+          },
+          "response": []
+        }
+        
+      ],
+      "protocolProfileBehavior": {}
+    }
+    ,
+    {
+      "name": "Authentications",
+      "item": [
+        {
+          "name": "Hmac_outbound_signature_calculation",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "e19bb02f-444b-4c47-b6da-0e5b094ca2c8",
+                "exec": [
+                  "tests[\"Status code is 201\"] = responseCode.code === 201;    \npm.test(\"Location is present\", function () {\n    pm.response.to.have.header(\"Location\");\n    var location=pm.response.headers.get(\"Location\");\n    pm.environment.set(\"authentication_outbound_hmac_outbound_signature_calculation_1024\", location.substring(location.lastIndexOf(\"\/\")+1,location.length));\n});"
+                  
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "{{token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"charset\":\"UTF-8\",\"secretBaseEncoding\":\"NONE\",\"baseEncoding\":\"BASE64\",\"method\":\"HMAC_OUTBOUND_SIGNATURE_CALCULATION\",\"secretType\":\"SCRIPT\",\"name\":\"Paymetric HMAC Auth_export\",\"secret\":\"${vars.sharedKey}\",\"source\":\"<?xml version=\\\"1.0\\\" encoding=\\\"UTF-8\\\"?><merchantHtmlPacketModel xmlns=\\\"Paymetric:XiIntercept:MerchantHtmlPacketModel\\\"><iFramePacket><hostUri>${input.browserInfo.originUrl}\/<\\\/hostUri><cssUri>https:\/\/githubusercontent.com\/SAP-samples\/open-payment-framework-integration\/main\/postman\/paymetric\/Hosted_Fields\/cssFile\/IFrameStyleSheet.css<\\\/cssUri><\\\/iFramePacket><merchantHtml><htmlSection class=\\\"merchant_paycontent checkout-modal\\\">\\t\\t<xiProperties error-class=\\\"xiInputError\\\">\\t\\t<errorTooltip class=\\\"errorTooltip\\\" hide-duration=\\\"5000\\\" hide-effect=\\\"fadeOut\\\" show-duration=\\\"5000\\\" show-effect=\\\"fadeIn\\\"\/>\\t<\\\/xiProperties>\\t<cardDropdownSection class=\\\"content-container\\\">\\t\\t<tag class=\\\"margin-bottom\\\" name=\\\"div\\\">\\t\\t\\t<label for=\\\"cardholderName\\\" text=\\\"Name on card\\\"\/>\\t\\t\\t<tboxCardHolderName class=\\\"input-width\\\" html-required=\\\"true\\\" pattern=\\\"^[a-zA-Z ]+$\\\" pattern-msg=\\\"Please use only letters in the Name field\\\" placeholder=\\\"name on card\\\" tokenize=\\\"false\\\"\/>\\t\\t\\t<validationMsg class=\\\"valmsg error\\\" for=\\\"cardholderName\\\"\/>\\t\\t<\\\/tag>\\t\\t\\t\\t<tag class=\\\"margin-bottom\\\" name=\\\"div\\\">\\t\\t\\t<label for=\\\"cardNumber\\\" text=\\\"Card number\\\"\/>\\t\\t\\t<tboxCardNumber class=\\\"input-width\\\" is-numeric=\\\"true\\\" mask-number=\\\"true\\\" placeholder=\\\"card number\\\" tokenize=\\\"true\\\"\/>\\t\\t\\t<validationMsg class=\\\"valmsg error\\\" for=\\\"cardNumber\\\"\/>\\t\\t<\\\/tag>\\t\\t\\t\\t\\t\\t\\t<tag class=\\\"margin-bottom\\\" name=\\\"div\\\">\\t\\t\\t<label for=\\\"expMonth\\\" text=\\\"Expiration date\\\"\/>\\t\\t\\t<ddlExpMonth class=\\\"merchant_combos calender-date\\\" default-text=\\\"month\\\" required=\\\"false\\\"\/>\\t\\t\\t<ddlExpYear class=\\\"merchant_combos calender-year\\\" default-text=\\\"year\\\" exp-date=\\\"true\\\" required=\\\"false\\\" years-to-display=\\\"10\\\"\/>\\t\\t\\t<validationMsg class=\\\"valmsg error\\\" for=\\\"expYear\\\"\/>\\t\\t<\\\/tag>\\t\\t\\t\\t<tag class=\\\"margin-bottom\\\" name=\\\"div\\\">\\t\\t\\t<label for=\\\"cardType\\\" text=\\\" Card type\\\"\/>\\t\\t\\t<ddlCardType class=\\\"input-width\\\" id=\\\"cd\\\">\\t\\t\\t\\t<items> \\t\\t\\t\\t\\t<item for=\\\"visa\\\"\/>\\t\\t\\t\\t\\t<item for=\\\"american express\\\"\/>\\t\\t\\t\\t\\t<item for=\\\"mastercard\\\"\/>\\t\\t\\t\\t\\t<item for=\\\"discover\\\"\/>\\t\\t\\t\\t<\\\/items>\\t\\t\\t<\\\/ddlCardType> \\t\\t<\\\/tag> \\t\\t\\t\\t<tag class=\\\"margin-bottom\\\" name=\\\"div\\\">\\t\\t\\t<label for=\\\"cvv\\\" text=\\\"CVV\\\"\/>\\t\\t\\t<tboxCvv class=\\\"xi-short-text input-width\\\" digits-only=\\\"true\\\" digits-only-msg=\\\"Please enter only numbers in the CVV field\\\" maxlength=\\\"4\\\" maxlength-msg=\\\"Please enter a 3 or 4 digit number in the CVV field\\\" minlength=\\\"3\\\" minlength-msg=\\\"enter a 3 or 4 digit number in the CVV field\\\" tokenize=\\\"true\\\"\/>\\t\\t\\t<validationMsg class=\\\"valmsg error\\\" for=\\\"cvv\\\"\/>\\t\\t\\t<htmlCvvHelp name=\\\"div\\\" raise-click=\\\"1\\\"\/>\\t\\t<\\\/tag>\\t<\\\/cardDropdownSection><\\\/htmlSection><\\\/merchantHtml><\\\/merchantHtmlPacketModel>\",\"id\":1024,\"isHmacSignature\":true,\"hmacFields\":{},\"algorithm\":\"HmacSHA256\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{rootUrl}}/{{service}}\/merchant\/authentications",
+              "host": [
+                "{{rootUrl}}"
+              ],
+              "path": [
+                "{{service}}"
+                ,
+                "merchant"
+                ,
+                "authentications"
+                
+              ]
+            }
+          },
+          "response": []
+        }
+        
+      ],
+      "protocolProfileBehavior": {}
+    }
+    ,
+    {
+      "name": "Authorization",
+      "item": [
+        {
+          "name": "Authorization",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "{{token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"id\":7675,\"pattern\":\"HOSTED_FIELDS\",\"requestType\":\"AUTHORIZATION\",\"outboundMappings\":[{\"url\":\"https:\/\/${vars.baseXieCommEndpoint}\/diecomm\/ResponsePacket?MerchantGUID=${input.merchantId}&Signature=${functions.encodeURL(input.additionalData.signedToken)}&AccessToken=${input.additionalData.accessToken}\",\"authenticationIds\":[],\"method\":\"GET\",\"requestContentType\":\"text\/plain\",\"requestExample\":\"{}\",\"responseExample\":\"<?xml version=\\\"1.0\\\" encoding=\\\"utf-8\\\"?>\\n<PaymetricResponse xmlns:xsd=\\\"http:\/\/www.w3.org\/2001\/XMLSchema\\\" xmlns:xsi=\\\"http:\/\/www.w3.org\/2001\/XMLSchema-instance\\\">\\n    <Fields>\\n        <FormField>\\n            <Name>Expiration Month<\/Name>\\n            <Value>3<\/Value>\\n            <IsToTokenize>false<\/IsToTokenize>\\n        <\/FormField>\\n        <FormField>\\n            <Name>Expiration Year<\/Name>\\n            <Value>2030<\/Value>\\n            <IsToTokenize>false<\/IsToTokenize>\\n        <\/FormField>\\n        <FormField>\\n            <Name>Card Type<\/Name>\\n            <Value>vi<\/Value>\\n            <IsToTokenize>false<\/IsToTokenize>\\n        <\/FormField>\\n        <FormField>\\n            <Name>Card Holder Name<\/Name>\\n            <Value>-E803-Chen-4HZ85Z7K4VSM70<\/Value>\\n            <IsToTokenize>true<\/IsToTokenize>\\n        <\/FormField>\\n        <FormField>\\n            <Name>Card Number<\/Name>\\n            <Value>-E803-1111-QY5CG98F5KP23N<\/Value>\\n            <IsToTokenize>true<\/IsToTokenize>\\n        <\/FormField>\\n        <FormField>\\n            <Name>Card Security Code<\/Name>\\n            <Value>-E803-    -DHREH45TR9TW0E<\/Value>\\n            <IsToTokenize>true<\/IsToTokenize>\\n        <\/FormField>\\n    <\/Fields>\\n<\/PaymetricResponse>\",\"requestMappingFields\":{\"mappings\":[]},\"responseHeaders\":null,\"responseMappingFields\":{\"mappings\":[{\"from\":\"<#list pspResponse.PaymetricResponse.Fields.FormField as item>\\n  <#if item.Name[\\\"#text\\\"] == \\\"Expiration Month\\\">\\n<#assign eMonth = item.Value[\\\"#text\\\"]?trim>\\n  <\/#if>\\n<\/#list>\\n${eMonth}\",\"to\":\"cardExpMonth\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":null,\"fixed\":false,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":true},{\"from\":\"<#list pspResponse.PaymetricResponse.Fields.FormField as item>\\n  <#if item.Name[\\\"#text\\\"] == \\\"Expiration Year\\\">\\n<#assign eYear = item.Value[\\\"#text\\\"]?trim>\\n  <\/#if>\\n<\/#list>\\n${eYear}\",\"to\":\"cardExpYear\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":null,\"fixed\":false,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":true},{\"from\":\"<#list pspResponse.PaymetricResponse.Fields.FormField as item>\\n  <#if item.Name[\\\"#text\\\"] == \\\"Card Holder Name\\\">\\n<#assign cardHName = item.Value[\\\"#text\\\"]?trim>\\n  <\/#if>\\n<\/#list>\\n${cardHName}\",\"to\":\"cardHolderName\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":null,\"fixed\":false,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":true},{\"from\":\"<#list pspResponse.PaymetricResponse.Fields.FormField as item>\\n  <#if item.Name[\\\"#text\\\"] == \\\"Card Type\\\">\\n<#assign cardType = item.Value[\\\"#text\\\"]?trim>\\n  <\/#if>\\n<\/#list>\\n${cardType}\",\"to\":\"cardType\",\"map\":{\"VISA\":\"VISA\",\"MASTERCARD\":\"MASTERCARD\",\"AMEX\":\"AMEX\",\"DISCOVER\":\"MAESTRO\"},\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":null,\"fixed\":false,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":true},{\"from\":\"<#list pspResponse.PaymetricResponse.Fields.FormField as item>\\n  <#if item.Name[\\\"#text\\\"] == \\\"Card Number\\\">\\n    ${item.Value[\\\"#text\\\"]}\\n  <\/#if>\\n<\/#list>\",\"to\":\"token\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":false,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":true},{\"from\":\"httpStatusCode\",\"to\":\"transactionStatus\",\"map\":{\"200\":\"ACCEPTED\"},\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"STATUS\",\"fixed\":false,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"<#list pspResponse.PaymetricResponse.Fields.FormField as item>\\n  <#if item.Name[\\\"#text\\\"] == \\\"Expiration Month\\\">\\n<#assign eMonth = item.Value[\\\"#text\\\"]?trim>\\n  <\/#if>\\n<\/#list>\\n${eMonth}\",\"to\":\"expirationMonth\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":false,\"isCustom\":true,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":true},{\"from\":\"<#list pspResponse.PaymetricResponse.Fields.FormField as item>\\n  <#if item.Name[\\\"#text\\\"] == \\\"Expiration Year\\\">\\n<#assign eYear = item.Value[\\\"#text\\\"]?trim>\\n  <\/#if>\\n<\/#list>\\n${eYear}\",\"to\":\"expirationYear\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":false,\"isCustom\":true,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":true},{\"from\":\"<#list pspResponse.PaymetricResponse.Fields.FormField as item>\\n  <#if item.Name[\\\"#text\\\"] == \\\"Card Number\\\">\\n<#assign cardNumber = item.Value[\\\"#text\\\"]?trim>\\n  <\/#if>\\n<\/#list>\\n${cardNumber}\",\"to\":\"cardToken\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":false,\"isCustom\":true,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":true},{\"from\":\"<#list pspResponse.PaymetricResponse.Fields.FormField as item>\\n  <#if item.Name[\\\"#text\\\"] == \\\"Card Type\\\">\\n<#assign cardType = item.Value[\\\"#text\\\"]?trim>\\n  <\/#if>\\n<\/#list>\\n${cardType}\",\"to\":\"cardType\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":false,\"isCustom\":true,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":true},{\"from\":\"<#list pspResponse.PaymetricResponse.Fields.FormField as item>\\n  <#if item.Name[\\\"#text\\\"] == \\\"Card Holder Name\\\">\\n<#assign cardHName = item.Value[\\\"#text\\\"]?trim>\\n  <\/#if>\\n<\/#list>\\n${cardHName}\",\"to\":\"cardHolderName\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":false,\"isCustom\":true,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":true},{\"from\":\"PaymetricResponse.Fields.#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"PaymetricResponse.Fields.FormField[*].Value.#text\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"PaymetricResponse.Fields.FormField[*].#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"PaymetricResponse.Fields.FormField[*].IsToTokenize.#text\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"PaymetricResponse.Fields.FormField[*].Name.#text\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"PaymetricResponse.Fields.FormField\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"PaymetricResponse.#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isArrayElement\":false,\"isScript\":false}]},\"responseContentType\":\"application\/xml\",\"headers\":{\"Content-Type\":\"text\/plain\"},\"formArrayIndicator\":null},{\"url\":\"https:\/\/${vars.baseXiPayEndpoint}\/PMXIGGE\/XiPay30WS.asmx\",\"authenticationIds\":[],\"method\":\"POST\",\"requestContentType\":\"text\/xml\",\"requestExample\":\"<?xml version=\\\"1.0\\\" encoding=\\\"UTF-8\\\" standalone=\\\"no\\\"?>\\n<SOAP-ENV:Envelope xmlns:SOAP-ENV=\\\"http:\/\/schemas.xmlsoap.org\/soap\/envelope\/\\\" xmlns:ns1=\\\"http:\/\/Paymetric\/XiPaySoap30\/message\/\\\">\\n    <SOAP-ENV:Header>\\n        <wsse:Security xmlns:wsse=\\\"http:\/\/docs.oasis-open.org\/wss\/2004\/01\/oasis-200401-wss-wssecurity-secext-1.0.xsd\\\">\\n            <wsse:UsernameToken>\\n                <wsse:Username>WSASAPOPFDV<\/wsse:Username>\\n                <wsse:Password>******<\/wsse:Password>\\n            <\/wsse:UsernameToken>\\n        <\/wsse:Security>\\n    <\/SOAP-ENV:Header>\\n    <SOAP-ENV:Body>\\n        <ns1:SoapOp>\\n            <ns1:pPacketsIn>\\n                <ns1:count>1<\/ns1:count>\\n                <ns1:xipayvbresult>true<\/ns1:xipayvbresult>\\n                <ns1:packets>\\n                    <ns1:ITransactionHeader>\\n                        <ns1:Amount>557.99<\/ns1:Amount>\\n                        <ns1:CardDataSource>E<\/ns1:CardDataSource>\\n                        <ns1:CardExpirationDate>3\/2030<\/ns1:CardExpirationDate>\\n                        <ns1:CardHolderAddress1>test abc 123<\/ns1:CardHolderAddress1>\\n                        <ns1:CardHolderAddress2><\/ns1:CardHolderAddress2>\\n                        <ns1:CardHolderCity>Berlin<\/ns1:CardHolderCity>\\n                        <ns1:CardHolderCountry>DE<\/ns1:CardHolderCountry>\\n                        <ns1:CardHolderName>Lee Ma<\/ns1:CardHolderName>\\n                        <ns1:CardHolderState><\/ns1:CardHolderState>\\n                        <ns1:CardHolderZip>10115<\/ns1:CardHolderZip>\\n                        <ns1:CardNumber>-E803-1111-QY5CG98F5KP23N<\/ns1:CardNumber>\\n                        <ns1:CardPresent>0<\/ns1:CardPresent>\\n                        <ns1:CardType>vi<\/ns1:CardType>\\n                        <ns1:CurrencyKey>EUR<\/ns1:CurrencyKey>\\n                        <ns1:MerchantID>9735bc5b-4e20-454c-a68d-54354ee41749<\/ns1:MerchantID>\\n                        <ns1:OrderID>000000X0000003AF<\/ns1:OrderID>\\n                        <ns1:PacketOperation>1<\/ns1:PacketOperation>\\n                        <ns1:InfoItems>\\n                            <ns1:InfoItem>\\n                                <ns1:Key>Partner_ID<\/ns1:Key>\\n                                <ns1:Value>123456<\/ns1:Value>\\n                            <\/ns1:InfoItem>\\n                        <\/ns1:InfoItems>\\n                    <\/ns1:ITransactionHeader>\\n                <\/ns1:packets>\\n            <\/ns1:pPacketsIn>\\n        <\/ns1:SoapOp>\\n    <\/SOAP-ENV:Body>\\n<\/SOAP-ENV:Envelope>\",\"responseExample\":\"<s:Envelope xmlns:s=\\\"http:\/\/schemas.xmlsoap.org\/soap\/envelope\/\\\" xmlns:u=\\\"http:\/\/docs.oasis-open.org\/wss\/2004\/01\/oasis-200401-wss-wssecurity-utility-1.0.xsd\\\">\\n    <s:Header>\\n        <o:Security s:mustUnderstand=\\\"1\\\" xmlns:o=\\\"http:\/\/docs.oasis-open.org\/wss\/2004\/01\/oasis-200401-wss-wssecurity-secext-1.0.xsd\\\">\\n            <u:Timestamp u:Id=\\\"_0\\\">\\n                <u:Created>2026-04-14T08:01:58.129Z<\/u:Created>\\n                <u:Expires>2026-04-14T08:06:58.129Z<\/u:Expires>\\n            <\/u:Timestamp>\\n        <\/o:Security>\\n    <\/s:Header>\\n    <s:Body xmlns:xsi=\\\"http:\/\/www.w3.org\/2001\/XMLSchema-instance\\\" xmlns:xsd=\\\"http:\/\/www.w3.org\/2001\/XMLSchema\\\">\\n        <SoapOpResponse xmlns=\\\"http:\/\/Paymetric\/XiPaySoap30\/message\/\\\">\\n            <SoapOpResult>\\n                <count>1<\/count>\\n                <xipayvbresult>true<\/xipayvbresult>\\n                <packets>\\n                    <ITransactionHeader>\\n                        <AVSAddress\/>\\n                        <AVSCode>X<\/AVSCode>\\n                        <AVSZipCode\/>\\n                        <AccountingDocNumber\/>\\n                        <ActionCode\/>\\n                        <AdditionalInfo\/>\\n                        <Amount>100.0000<\/Amount>\\n                        <AuthorizationCode>XI00<\/AuthorizationCode>\\n                        <AuthorizationDate>2026-04-14T03:01:58<\/AuthorizationDate>\\n                        <AuthorizationReferenceCode>260414030158115<\/AuthorizationReferenceCode>\\n                        <AuthorizationTime>03:01:0058<\/AuthorizationTime>\\n                        <AuthorizedThroughCartridge>XiPayCartridge.XiPayCartridge.1<\/AuthorizedThroughCartridge>\\n                        <BankBatchID\/>\\n                        <BankSubBatchID\/>\\n                        <BankTransactionID>0<\/BankTransactionID>\\n                        <BatchID\/>\\n                        <BillingDate>1899-12-30T00:00:00<\/BillingDate>\\n                        <BillingPlanItem\/>\\n                        <CaptureDate>1899-12-30T00:00:00<\/CaptureDate>\\n                        <CaptureReferenceCode\/>\\n                        <CardCVV2\/>\\n                        <CardDataSource>E<\/CardDataSource>\\n                        <CardExpirationDate>07\/2026<\/CardExpirationDate>\\n                        <CardFollowOnNumber\/>\\n                        <CardHolderAddress1>71 S WACKER DR,<\/CardHolderAddress1>\\n                        <CardHolderAddress2>SUITE 3550<\/CardHolderAddress2>\\n                        <CardHolderCity>Chicago<\/CardHolderCity>\\n                        <CardHolderCountry>US<\/CardHolderCountry>\\n                        <CardHolderDistrict\/>\\n                        <CardHolderName1\/>\\n                        <CardHolderName2\/>\\n                        <CardHolderName>test<\/CardHolderName>\\n                        <CardHolderState>OR<\/CardHolderState>\\n                        <CardHolderZip>66666<\/CardHolderZip>\\n                        <CardNumber>-E803-2400-ND99M19D8FQ81Q<\/CardNumber>\\n                        <CardPresent>0<\/CardPresent>\\n                        <CardType>vi<\/CardType>\\n                        <CardValidFrom\/>\\n                        <ChargeAmount>0.0000<\/ChargeAmount>\\n                        <Client\/>\\n                        <CompanyCode\/>\\n                        <CreationDate>2026-04-14T03:01:58<\/CreationDate>\\n                        <CurrencyKey>USD<\/CurrencyKey>\\n                        <CustTXN>0<\/CustTXN>\\n                        <CustomerNumber\/>\\n                        <FiscalYear\/>\\n                        <GLAccount\/>\\n                        <LastModificationDate>2026-04-14T03:01:58<\/LastModificationDate>\\n                        <LocationID\/>\\n                        <MerchantID>720000356437<\/MerchantID>\\n                        <MerchantTXN\/>\\n                        <MerchantTransactionID\/>\\n                        <Message>[XiPay Null] Approved<\/Message>\\n                        <ModifiedStatus>1<\/ModifiedStatus>\\n                        <OrderDate>1899-12-30T00:00:00<\/OrderDate>\\n                        <OrderID>36000001173<\/OrderID>\\n                        <Origin>XiPay<\/Origin>\\n                        <PONumber\/>\\n                        <PacketOperation>1<\/PacketOperation>\\n                        <Preauthorized\/>\\n                        <ReferenceCode\/>\\n                        <ReferenceLineItem\/>\\n                        <ResponseCode\/>\\n                        <SalesDocNumber\/>\\n                        <SettlementAmount>100.0000<\/SettlementAmount>\\n                        <SettlementDate>1899-12-30T00:00:00<\/SettlementDate>\\n                        <SettlementReferenceCode\/>\\n                        <ShippingCaptureDate>1899-12-30T00:00:00<\/ShippingCaptureDate>\\n                        <ShippingLocationID\/>\\n                        <ShippingMethod\/>\\n                        <StatusCode>100<\/StatusCode>\\n                        <StatusTXN>Authorized<\/StatusTXN>\\n                        <TaxLevel1>0.0000<\/TaxLevel1>\\n                        <TaxLevel2>0.0000<\/TaxLevel2>\\n                        <TaxLevel3>0.0000<\/TaxLevel3>\\n                        <TaxLevel4>0.0000<\/TaxLevel4>\\n                        <TerminalID\/>\\n                        <TransactionID>437088438<\/TransactionID>\\n                        <TransactionType>Authorization<\/TransactionType>\\n                        <VATNumberCustomer\/>\\n                        <VATNumberMerchant\/>\\n                        <XIID>46683<\/XIID>\\n                        <InfoItems>\\n                            <InfoItem>\\n                                <Key>HOST_AUTH<\/Key>\\n                                <Value>bNXtpAR7NMKhq\/a4+HY7L83F3yg=<\/Value>\\n                            <\/InfoItem>\\n                        <\/InfoItems>\\n                    <\/ITransactionHeader>\\n                <\/packets>\\n            <\/SoapOpResult>\\n        <\/SoapOpResponse>\\n    <\/s:Body>\\n<\/s:Envelope>\",\"requestMappingFields\":{\"mappings\":[{\"from\":\"\/Envelope\/Header\/Security\/UsernameToken\/Username\",\"to\":\"${vars.XiPayUsername}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":null,\"fixed\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"\/Envelope\/Header\/Security\/UsernameToken\/Password\",\"to\":\"${vars.XiPayPassword}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":null,\"fixed\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"\/Envelope\/Body\/SoapOp\/pPacketsIn\/count\",\"to\":\"1\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":null,\"fixed\":true,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"\/Envelope\/Body\/SoapOp\/pPacketsIn\/xipayvbresult\",\"to\":\"true\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":null,\"fixed\":true,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"\/Envelope\/Body\/SoapOp\/pPacketsIn\/packets\/ITransactionHeader\/Amount\",\"to\":\"${input.amount}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":null,\"fixed\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"\/Envelope\/Body\/SoapOp\/pPacketsIn\/packets\/ITransactionHeader\/CardDataSource\",\"to\":\"E\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":null,\"fixed\":true,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"\/Envelope\/Body\/SoapOp\/pPacketsIn\/packets\/ITransactionHeader\/CardExpirationDate\",\"to\":\"${input.customFields.expirationMonth}\/${input.customFields.expirationYear}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":null,\"fixed\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":true},{\"from\":\"\/Envelope\/Body\/SoapOp\/pPacketsIn\/packets\/ITransactionHeader\/CardHolderAddress1\",\"to\":\"${input.billingAddress.addressLine1}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":null,\"fixed\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"\/Envelope\/Body\/SoapOp\/pPacketsIn\/packets\/ITransactionHeader\/CardHolderAddress2\",\"to\":\"${input.billingAddress.addressLine2}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":null,\"fixed\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"\/Envelope\/Body\/SoapOp\/pPacketsIn\/packets\/ITransactionHeader\/CardHolderCity\",\"to\":\"${input.billingAddress.city}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":null,\"fixed\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"\/Envelope\/Body\/SoapOp\/pPacketsIn\/packets\/ITransactionHeader\/CardHolderCountry\",\"to\":\"${input.billingAddress.country}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":null,\"fixed\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"\/Envelope\/Body\/SoapOp\/pPacketsIn\/packets\/ITransactionHeader\/CardHolderName\",\"to\":\"${input.customFields.cardHolderName}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":null,\"fixed\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"\/Envelope\/Body\/SoapOp\/pPacketsIn\/packets\/ITransactionHeader\/CardHolderState\",\"to\":\"${input.billingAddress.state}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":null,\"fixed\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"\/Envelope\/Body\/SoapOp\/pPacketsIn\/packets\/ITransactionHeader\/CardHolderZip\",\"to\":\"${input.billingAddress.postalCode}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":null,\"fixed\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"\/Envelope\/Body\/SoapOp\/pPacketsIn\/packets\/ITransactionHeader\/CardNumber\",\"to\":\"${input.customFields.cardToken}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":null,\"fixed\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"\/Envelope\/Body\/SoapOp\/pPacketsIn\/packets\/ITransactionHeader\/CardPresent\",\"to\":\"0\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":null,\"fixed\":true,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"\/Envelope\/Body\/SoapOp\/pPacketsIn\/packets\/ITransactionHeader\/CardType\",\"to\":\"${input.customFields.cardType}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":null,\"fixed\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"\/Envelope\/Body\/SoapOp\/pPacketsIn\/packets\/ITransactionHeader\/CurrencyKey\",\"to\":\"${input.currency}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":null,\"fixed\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"\/Envelope\/Body\/SoapOp\/pPacketsIn\/packets\/ITransactionHeader\/MerchantID\",\"to\":\"${input.merchantId}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":null,\"fixed\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"\/Envelope\/Body\/SoapOp\/pPacketsIn\/packets\/ITransactionHeader\/OrderID\",\"to\":\"${input.orderId}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":null,\"fixed\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"\/Envelope\/Body\/SoapOp\/pPacketsIn\/packets\/ITransactionHeader\/PacketOperation\",\"to\":\"1\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":null,\"fixed\":true,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"\/Envelope\/Body\/SoapOp\/pPacketsIn\/packets\/ITransactionHeader\/InfoItems\/InfoItem\/Key\",\"to\":\"Partner_ID\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":null,\"fixed\":true,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"\/Envelope\/Body\/SoapOp\/pPacketsIn\/packets\/ITransactionHeader\/InfoItems\/InfoItem\/Value\",\"to\":\"SAP OPF\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":null,\"fixed\":true,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false}]},\"responseHeaders\":null,\"responseMappingFields\":{\"mappings\":[{\"from\":\"Envelope.Body.SoapOpResponse.SoapOpResult.packets.ITransactionHeader.Amount.#text\",\"to\":\"authorizationAmount\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":false,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"Envelope.Body.SoapOpResponse.SoapOpResult.packets.ITransactionHeader.CardExpirationDate.#text\",\"to\":\"cardExpiryDate\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":false,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"Envelope.Body.SoapOpResponse.SoapOpResult.packets.ITransactionHeader.CardHolderName.#text\",\"to\":\"cardHolderName\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":false,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"Envelope.Body.SoapOpResponse.SoapOpResult.packets.ITransactionHeader.CardType.#text\",\"to\":\"cardType\",\"map\":{\"vi\":\"VISA\",\"mc\":\"MASTERCARD\",\"ax\":\"AMEX\",\"di\":\"DISCOVER\",\"sw\":\"MAESTRO\",\"dc\":\"DINERS\",\"jc\":\"JCB\"},\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":false,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"Envelope.Body.SoapOpResponse.SoapOpResult.packets.ITransactionHeader.CardNumber.#text\",\"to\":\"token\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":false,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"Envelope.Body.SoapOpResponse.SoapOpResult.packets.ITransactionHeader.TransactionID.#text\",\"to\":\"pspReference\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":false,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"Envelope.Body.SoapOpResponse.SoapOpResult.packets.ITransactionHeader.CardType.#text\",\"to\":\"paymentMethod\",\"map\":{\"vi\":\"CREDIT_CARD\",\"mc\":\"GOOGLE_PAY\",\"ax\":\"CREDIT_CARD\",\"di\":\"CREDIT_CARD\",\"sw\":\"CREDIT_CARD\",\"dc\":\"CREDIT_CARD\",\"jc\":\"CREDIT_CARD\"},\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":false,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"Envelope.Body.SoapOpResponse.SoapOpResult.packets.ITransactionHeader.TransactionID.#text\",\"to\":\"transactionId\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":false,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"Envelope.Body.SoapOpResponse.SoapOpResult.packets.ITransactionHeader.StatusTXN.#text\",\"to\":\"transactionStatus\",\"map\":{\"Authorized\":\"ACCEPTED\"},\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":false,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"Envelope.Body.SoapOpResponse.SoapOpResult.packets.ITransactionHeader.AuthorizationCode.#text\",\"to\":\"authCode\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":false,\"isCustom\":true,\"persistCustomField\":true,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"Envelope.Body.SoapOpResponse.SoapOpResult.packets.ITransactionHeader.AuthorizationDate.#text\",\"to\":\"authDate\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":false,\"isCustom\":true,\"persistCustomField\":true,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"Envelope.Header.#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"Envelope.Header.Security.mustUnderstand\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"Envelope.Header.Security.#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"Envelope.Header.Security.Timestamp.#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"Envelope.Header.Security.Timestamp.Id\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"Envelope.Header.Security.Timestamp.Expires.#text\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"Envelope.Header.Security.Timestamp.Created.#text\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"Envelope.#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"Envelope.Body.#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"Envelope.Body.SoapOpResponse.#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"Envelope.Body.SoapOpResponse.SoapOpResult.count.#text\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"Envelope.Body.SoapOpResponse.SoapOpResult.#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"Envelope.Body.SoapOpResponse.SoapOpResult.xipayvbresult.#text\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"Envelope.Body.SoapOpResponse.SoapOpResult.packets.ITransactionHeader.Origin.#text\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"Envelope.Body.SoapOpResponse.SoapOpResult.packets.ITransactionHeader.CreationDate.#text\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"Envelope.Body.SoapOpResponse.SoapOpResult.packets.ITransactionHeader.CustTXN.#text\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"Envelope.Body.SoapOpResponse.SoapOpResult.packets.ITransactionHeader.CardHolderZip.#text\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"Envelope.Body.SoapOpResponse.SoapOpResult.packets.ITransactionHeader.PacketOperation.#text\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"Envelope.Body.SoapOpResponse.SoapOpResult.packets.ITransactionHeader.OrderID.#text\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"Envelope.Body.SoapOpResponse.SoapOpResult.packets.ITransactionHeader.CardHolderAddress2.#text\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"Envelope.Body.SoapOpResponse.SoapOpResult.packets.ITransactionHeader.ChargeAmount.#text\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"Envelope.Body.SoapOpResponse.SoapOpResult.packets.ITransactionHeader.StatusCode.#text\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"Envelope.Body.SoapOpResponse.SoapOpResult.packets.ITransactionHeader.CardHolderAddress1.#text\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"Envelope.Body.SoapOpResponse.SoapOpResult.packets.ITransactionHeader.CurrencyKey.#text\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"Envelope.Body.SoapOpResponse.SoapOpResult.packets.ITransactionHeader.BankTransactionID.#text\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"Envelope.Body.SoapOpResponse.SoapOpResult.packets.ITransactionHeader.CardHolderCity.#text\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"Envelope.Body.SoapOpResponse.SoapOpResult.packets.ITransactionHeader.AVSCode.#text\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"Envelope.Body.SoapOpResponse.SoapOpResult.packets.ITransactionHeader.CardHolderState.#text\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"Envelope.Body.SoapOpResponse.SoapOpResult.packets.ITransactionHeader.AuthorizationReferenceCode.#text\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"Envelope.Body.SoapOpResponse.SoapOpResult.packets.ITransactionHeader.TaxLevel1.#text\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"Envelope.Body.SoapOpResponse.SoapOpResult.packets.ITransactionHeader.TaxLevel2.#text\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"Envelope.Body.SoapOpResponse.SoapOpResult.packets.ITransactionHeader.TaxLevel3.#text\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"Envelope.Body.SoapOpResponse.SoapOpResult.packets.ITransactionHeader.TaxLevel4.#text\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"Envelope.Body.SoapOpResponse.SoapOpResult.packets.ITransactionHeader.SettlementDate.#text\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"Envelope.Body.SoapOpResponse.SoapOpResult.packets.ITransactionHeader.ShippingCaptureDate.#text\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"Envelope.Body.SoapOpResponse.SoapOpResult.packets.ITransactionHeader.CardPresent.#text\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"Envelope.Body.SoapOpResponse.SoapOpResult.packets.ITransactionHeader.InfoItems.InfoItem.Value.#text\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"Envelope.Body.SoapOpResponse.SoapOpResult.packets.ITransactionHeader.InfoItems.InfoItem.#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"Envelope.Body.SoapOpResponse.SoapOpResult.packets.ITransactionHeader.InfoItems.InfoItem.Key.#text\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"Envelope.Body.SoapOpResponse.SoapOpResult.packets.ITransactionHeader.InfoItems.#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"Envelope.Body.SoapOpResponse.SoapOpResult.packets.ITransactionHeader.LastModificationDate.#text\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"Envelope.Body.SoapOpResponse.SoapOpResult.packets.ITransactionHeader.ModifiedStatus.#text\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"Envelope.Body.SoapOpResponse.SoapOpResult.packets.ITransactionHeader.TransactionType.#text\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"Envelope.Body.SoapOpResponse.SoapOpResult.packets.ITransactionHeader.Message.#text\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"Envelope.Body.SoapOpResponse.SoapOpResult.packets.ITransactionHeader.AuthorizationTime.#text\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"Envelope.Body.SoapOpResponse.SoapOpResult.packets.ITransactionHeader.BillingDate.#text\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"Envelope.Body.SoapOpResponse.SoapOpResult.packets.ITransactionHeader.CardHolderCountry.#text\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"Envelope.Body.SoapOpResponse.SoapOpResult.packets.ITransactionHeader.#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"Envelope.Body.SoapOpResponse.SoapOpResult.packets.ITransactionHeader.AuthorizedThroughCartridge.#text\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"Envelope.Body.SoapOpResponse.SoapOpResult.packets.ITransactionHeader.SettlementAmount.#text\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"Envelope.Body.SoapOpResponse.SoapOpResult.packets.ITransactionHeader.XIID.#text\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"Envelope.Body.SoapOpResponse.SoapOpResult.packets.ITransactionHeader.MerchantID.#text\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"Envelope.Body.SoapOpResponse.SoapOpResult.packets.ITransactionHeader.CaptureDate.#text\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"Envelope.Body.SoapOpResponse.SoapOpResult.packets.ITransactionHeader.OrderDate.#text\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"Envelope.Body.SoapOpResponse.SoapOpResult.packets.ITransactionHeader.CardDataSource.#text\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"Envelope.Body.SoapOpResponse.SoapOpResult.packets.#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isArrayElement\":false,\"isScript\":false}]},\"responseContentType\":\"application\/xml\",\"headers\":{\"soapAction\":\"Paymetric\/XiPaySoap30\/action\/XiGGE.SoapOp\",\"Content-Type\":\"text\/xml\"},\"formArrayIndicator\":null}],\"enabled\":null,\"configurationId\":null,\"googlePayGateway\":null,\"createdAt\":\"2026-05-16T08:55:35.406Z\",\"updatedAt\":\"2026-05-16T08:55:35.406Z\",\"dynamicScript\":{\"html\":\"<p>the iFrame solution<\/p> \\n<div id=\\\"iframewrapper\\\">\\n   <iframe id=\\\"IFrame\\\" src=\\\"https:\/\/${vars.baseXieCommEndpoint}\/diecomm\/view\/iframe\/${input.merchantId}\/${input.customFields.accessToken}\/true\\\"  style=\\\"height:400px; width:100%\\\" name=\\\"dieCommFrame\\\" onload=\\\"IFrame_OnLoad();return false;\\\">\\n   <\/iframe>\\n   <div>\\n     <button onclick=\\\"submitform();return false;\\\" class=\\\"IFrameButton\\\">submit payment<\/button>\\n   <\/div>\\n<\/div>\\n\",\"jsContent\":\"function makePayment(accessToken,signedToken) {\\n  var additionalData = [{ 'key': 'accessToken', 'value': accessToken },\\n                        { 'key': 'signedToken', 'value': signedToken }];\\n  var submitBody = {\\n    'additionalData': additionalData,\\n    'submitSuccess': function (response) {\\n      console.log('submitSuccess');\\n    },\\n    'submitPending': function (response) {\\n      console.log('submitPending');      \\n    },\\n    'submitFailure': function (response) {\\n      console.log('submitFailure');\\n    },\\n    'submitCancel': function (response) {\\n      window.location.href = '\/checkout\/opf-payment-and-review';\\n    }\\n  };\\n  window.Opf.payments.checkout.submit(submitBody);\\n}\\n\\n\\nfunction submitform() {\\n    var iframe = document.getElementsByName('dieCommFrame');\\n\\n    if (iframe) {\\n        $XIFrame.submit({\\n            iFrameId: 'dieCommFrame',\\n            targetUrl: iframe[0].getAttribute(\\\"src\\\"),\\n            onSuccess: function (msg) {\\n                var message = JSON.parse(msg);\\n                if (message && message.data.HasPassed) {\\n                    var accessToken = OpfContext.customFields.accessToken;\\n                    var signedToken = OpfContext.customFields.signature;\\n                    console.log(\\\"token and signature: \\\",accessToken + \\\"&s=\\\" + signedToken);\\n                    console.log(\\\"message: \\\",message);\\n                    \/\/window.location = \\\"${secureresponse}?id=\\\" + accessToken.value + \\\"&s=\\\" + signedToken.value;\\n                  makePayment(accessToken,signedToken);\\n                } else {\\n                    console.log(message.data.Message);\\n                }\\n            },\\n            onError: function (msg) {\\n                console.log(msg);\\n                alert(msg);\\n            }\\n        });\\n    }\\n}\\n\\nfunction IFrame_OnLoad() {\\n\\n    var iframe = document.getElementsByName('dieCommFrame');\\n    if (iframe) {\\n        $XIFrame.onload({\\n            iFrameId: 'dieCommFrame',\\n            targetUrl: iframe[0].getAttribute(\\\"src\\\"),\\n            autosizeheight: false,\\n            autosizewidth: false,\\n            onLoadSuccess: function (msg) {\\n                console.log('A form for the merchant guid and access token combination is loading in the iFrame successfully.');\\n\\n            },\\n            onError: function (msg) {\\n                console.log('A form for the merchant guid and access token combination has FAILED to load.');\\n            }\\n        });\\n    }\\n}\",\"jsHash\":\"sha384-tuk9vyQINk3kquo4d2BcGqqYoUqPK8eZ\/99jHIys8tCX1oNJ07L1MJq7A4qWrB09\",\"jsContextFields\":[{\"path\":\"${input.customFields.accessToken}\"},{\"path\":\"${input.customFields.signature}\"}],\"htmlContentMode\":\"SEPARATE\",\"afterRedirectHtml\":null,\"afterRedirectHtmlContentMode\":\"SEPARATE\",\"jsUrls\":[{\"url\":\"https:\/\/cert-xiecomm.worldpay.com\/diecomm\/Scripts\/XIFrame\/XIFrame-1.2.0.js\",\"sri\":\"\",\"attributes\":[{\"key\":\"opf-load-once\",\"value\":\"true\"}]}]},\"remoteApiOutboundMappings\":[{\"url\":\"https:\/\/${vars.baseXieCommEndpoint}\/diecomm\/AccessToken\",\"authenticationIds\":[\"{{authentication_outbound_hmac_outbound_signature_calculation_1024}}\"],\"method\":\"POST\",\"requestContentType\":\"application\/x-www-form-urlencoded\",\"requestExample\":\"MerchantGuid={Your-GUID}&SessionRequestType={Int-Type-Code}\\n&Signature={Signature}&MerchantDevelopmentEnvironment={code language e.g.\\nasp.net}&Packet={PACKET_XML}\",\"responseExample\":\"<?xml version=\\\"1.0\\\"?>\\n<AccessTokenResponsePacket xmlns:xsd=\\\"http:\/\/www.w3.org\/2001\/XMLSchema\\\" xmlns:xsi=\\\"http:\/\/www.w3.org\/2001\/XMLSchema-instance\\\">\\n  <ResponsePacket>\\n    <MerchantGuid>9735bc5b-4e20-454c-a68d-54354ee41749<\/MerchantGuid>\\n    <AccessToken>fcd5e5bf-c041-446e-8722-78e7365ff62d<\/AccessToken>\\n    <Signature>4LFSAl+mQd19ByThuLeSTaUa2pN8b9oynAe1U1g6KWw=<\/Signature>\\n  <\/ResponsePacket>\\n<\/AccessTokenResponsePacket>\",\"requestMappingFields\":{\"mappings\":[{\"from\":\"$.MerchantDevelopmentEnvironment\",\"to\":\"1\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":null,\"fixed\":true,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"$.MerchantGuid\",\"to\":\"${input.merchantId}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":null,\"fixed\":true,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"$.SessionRequestType\",\"to\":\"1\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":null,\"fixed\":true,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"$.Packet\",\"to\":\"${auth.hmac.signatureSource?url}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":null,\"fixed\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":true},{\"from\":\"$.Signature\",\"to\":\"${auth.hmac.signature?url}\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":null,\"fixed\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":true}]},\"responseHeaders\":null,\"responseMappingFields\":{\"mappings\":[{\"from\":\"AccessTokenResponsePacket.ResponsePacket.MerchantGuid.#text\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"AccessTokenResponsePacket.ResponsePacket.#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"AccessTokenResponsePacket.#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"#object\",\"to\":null,\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":true,\"isCustom\":false,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":true,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"AccessTokenResponsePacket.ResponsePacket.AccessToken.#text\",\"to\":\"accessToken\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":false,\"isCustom\":true,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false},{\"from\":\"AccessTokenResponsePacket.ResponsePacket.Signature.#text\",\"to\":\"signature\",\"map\":null,\"arrayPath\":null,\"arrayMapping\":false,\"lineItemGroup\":null,\"mappingFieldType\":\"BODY\",\"fixed\":false,\"isCustom\":true,\"persistCustomField\":false,\"isSensitive\":false,\"isObject\":false,\"isArrayElement\":false,\"isScript\":false}]},\"responseContentType\":\"application\/xml\",\"headers\":{\"Content-Type\":\"application\/x-www-form-urlencoded\"},\"formArrayIndicator\":\"[\"}]}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{rootUrl}}/{{service}}\/merchant\/accountgroups\/{{accountGroupId}}\/accounts\/{{accountId}}\/authorization",
+              "host": [
+                "{{rootUrl}}"
+              ],
+              "path": [
+                "{{service}}"
+                ,
+                "merchant"
+                ,
+                "accountgroups"
+                ,
+                "{{accountGroupId}}"
+                ,
+                "accounts"
+                ,
+                "{{accountId}}"
+                ,
+                "authorization"
+                
+              ]
+            }
+          },
+          "response": []
+        }
+        
+      ],
+      "protocolProfileBehavior": {}
+    }
+    
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "exec": [
+          "let url = pm.request.url.toString();\nif(pm.environment.get(\"service\")==null || pm.environment.get(\"service\")===\"\"){\n    let updateUrl = url.replace(\"\/{{service}}\",\"\")\n    pm.request.url = updateUrl;\n}"
+        ]
+      }
+    }
+  ]
+  ,
+  "protocolProfileBehavior": {}
+}
