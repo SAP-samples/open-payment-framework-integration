@@ -6,6 +6,7 @@ The integration supports:
 * Authorization that supports saving payment for the Cards component.
 * Deferred Capture support
 * Refunds
+* Reversal
 
 **In summary**: to import the [Adyen Hosted Fields Postman Collection](https://github.com/SAP-samples/open-payment-framework-integration) this page will guide you through the following steps: 
 

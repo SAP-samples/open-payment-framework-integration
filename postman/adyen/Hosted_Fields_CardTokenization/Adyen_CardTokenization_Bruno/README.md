@@ -1,12 +1,12 @@
 ## Introduction
 
-The Bruno Collection enables the integration of the Adyen Component for payment processing through Open Payment Framework (OPF).
+The Bruno Collection enables the integration of the Adyen  for payment processing through Open Payment Framework (OPF).
 Please ensure you are using Bruno version 3.1.4 or above.
 
 The integration supports:
 
-* Authorization
-* Capture
+* Authorization that supports saving payment for the Cards component.
+* Deferred Capture support
 * Refunds
 * Reversal
 
