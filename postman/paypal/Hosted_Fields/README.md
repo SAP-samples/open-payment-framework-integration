@@ -33,12 +33,16 @@ Create a PayPal payment integration in the OPF workbench. For reference, see [Cr
 For Step 6, you can define the Merchant ID freely, as there are no restrictions on this field for PayPal integration with OPF.
 
 ### Get the credentials for your PayPal integration ###
-Once you have created your business test account, follow these steps to obtain your PayPal API credentials:
+Once you have created your ``business test account``, follow these steps to obtain your PayPal API credentials:
 
 a) Select Log in to [Dashboard](https://developer.paypal.com/dashboard/) and log in or sign up.
+
 b) Select Apps & Credentials.
+
 c) New accounts come with a Default Application in the REST API apps section. To create a new project, select Create App.
+
 d) Copy the client ID and client secret for your OPF.
+
 ![](images/PayPal_credentials.png)
 
 ### Webhook configuration ###
@@ -47,7 +51,9 @@ After creating your app under Apps & Credentials, click on the app and scroll do
 Next, you need to:
 
 a) Fetch your webhook URL from the OPF Workbench
+
 b) Select the event types for your integration (recommended event types:  events under ``checkout``and ``Payments & payouts``)
+
 c) Copy the Webhook ID to your OPF configuration after creating the webhook.
 
 ![](./images/PayPaL_webhook_01.png)
