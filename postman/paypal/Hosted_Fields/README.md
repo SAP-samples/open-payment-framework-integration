@@ -35,7 +35,7 @@ For Step 6, you can define the Merchant ID freely, as there are no restrictions 
 ### Get the credentials for your PayPal integration ###
 Once you have created your ``business test account``, follow these steps to obtain your PayPal API credentials:
 
-a) Select Log in to [Dashboard](https://developer.paypal.com/dashboard/) and log in or sign up.
+a) Log in to [Dashboard](https://developer.paypal.com/dashboard/) 
 
 b) Select Apps & Credentials.
 
