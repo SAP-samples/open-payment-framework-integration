@@ -108,9 +108,9 @@ Retrieve your POS ID from your [Merchant Panel](https://merch-prod.snd.payu.com/
 
 ![](images/payu_posId.png)
 
-**7.webhookSecretKey**
+**7. webhookSecretKey**
 
-Retrieve your webhookSecretKey  from your [Merchant Panel](https://merch-prod.snd.payu.com/user/login).
+Retrieve your ``webhookSecretKey`` from your [Merchant Panel](https://merch-prod.snd.payu.com/user/login).
 
 ![](images/payu_webhook_key.png)
 
@@ -179,3 +179,6 @@ You should have configured the following variables:
 - ``authentication_outbound_oauth2_client_id_export_1053``
 - ``authentication_outbound_oauth2_client_secret_export_1053``
 - ``posId``
+- ``capturePattern``
+- ``webhookSecretKey``
+- ``refundType``

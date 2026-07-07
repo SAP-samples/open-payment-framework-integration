@@ -1,5 +1,5 @@
 {
-  "id": "462227b1-dd2c-4895-848f-ece052cff5ea",
+  "id": "26d40ea2-d44e-45f7-b548-d73c4735d4f4",
   "name": "PayU_Europe_Secure_Form",
   "values": [
     {
@@ -104,7 +104,36 @@
       "value": "f********************************003",
       "enabled": true
     }
-
+    ,
+    {
+      "key": "webhookSecretKey",
+      "value": "b********************************96d",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "threeDsRejectionHandling",
+      "value": "PERFORM_AUTHENTICATION",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "threeDsExeptionValue",
+      "value": "LOW_RISK",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "threeDsChallengeRequested",
+      "value": "YES",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "enableChallengeRequested",
+      "value": "YES",
+      "enabled": true
+    }
     
   ],
   "_postman_variable_scope": "environment",
