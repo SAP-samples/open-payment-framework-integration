@@ -104,12 +104,41 @@ Retrieve your POS ID from your [Merchant Panel](https://merch-prod.snd.payu.com/
 
 ![](images/payu_posId.png)
 
-**7.refundType**
+**7. refundType**
 
 The following refund types are available:
 
 * ``REFUND_PAYMENT_STANDARD`` – Standard refund procedure
 * ``FAST`` – Expedited refund process with potentially higher fees. Available only to merchants operating through PayU GPO Romania
+
+**8. 3DS Configuration**
+
+* ``enableChallengeRequested``
+
+  Determines whether ``challengeRequested`` or ``exemption`` is enabled on the merchant side.
+
+  - ``YES``: ``challengeRequested`` is used. Set the ``threeDsChallengeRequested`` variable accordingly.
+  - ``NO``: ``exemption`` is used. Set the ``threeDsRejectionHandling`` and ``threeDsExemptionValue`` variables accordingly.
+
+* ``challengeRequested``
+
+  Enum: ``YES``, ``NO``, ``MANDATE``
+
+  Merchant's preference regarding 3DS 2 challenge. Exclusive with exemption. May be overridden by PayU.
+
+* ``threeDsRejectionHandling``
+
+  Enum: ``PERFORM_AUTHENTICATION``, ``DECLINE``
+
+  - ``PERFORM_AUTHENTICATION``: PayU returns a response with ``WARNING_CONTINUE_3DS`` and a redirection URL if the exemption cannot be applied.
+  - ``DECLINE``: PayU declines the payment if the exemption cannot be applied. An error message is returned synchronously in the ``OrderCreateResponse``.
+
+* ``threeDsExemptionValue``
+
+  Enum: ``LOW_RISK``, ``LOW_VALUE``
+
+  - ``LOW_RISK``: Transaction risk analysis (TRA) compliant with SCA requirements has been performed by the merchant.
+  - ``LOW_VALUE``: Low value payment, up to 30 EUR or equivalent in another currency.
 
 
 ### Allowlist
@@ -118,7 +147,6 @@ Add the following domains to the domain allowlist in OPF workbench. For instruct
 
 * ``secure.payu.com`` for Production
 * ``secure.snd.payu.com`` for Sandbox
-
 
 
 ### Switch Configuration to Immediate Capture
@@ -147,3 +175,9 @@ You should have configured the following variables:
 - ``authentication_outbound_oauth2_client_id_export_1072``
 - ``authentication_outbound_oauth2_client_secret_export_1072``
 - ``posId``
+- ``capturePattern``
+- ``refundType``
+- ``enableChallengeRequested``
+- ``challengeRequested``
+- ``threeDsRejectionHandling``
+- ``threeDsExemptionValue``
