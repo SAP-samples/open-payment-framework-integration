@@ -8,10 +8,10 @@ The integration supports:
 * Settlements
 * Refunds
 * Authorization Reversal
+* Passing tracking info at Capture (order updated with shipment/tracking details when tracking is provided)
 
 Roadmap:
 * Reauthorization
-* Passing tracking info at Capture
 
 
 ## Setup Instructions
