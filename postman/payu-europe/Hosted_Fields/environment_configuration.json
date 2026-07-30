@@ -1,5 +1,5 @@
 {
-  "id": "26d40ea2-d44e-45f7-b548-d73c4735d4f4",
+  "id": "0f3faf32-4868-4a93-acc5-2733152bceb3",
   "name": "PayU_Europe_Secure_Form",
   "values": [
     {
@@ -131,7 +131,7 @@
     ,
     {
       "key": "enableChallengeRequested",
-      "value": "YES",
+      "value": "NO",
       "enabled": true
     }
     
