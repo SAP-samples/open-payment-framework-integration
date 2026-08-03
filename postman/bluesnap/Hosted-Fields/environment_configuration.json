@@ -1,5 +1,5 @@
 {
-  "id": "c8e0c5a6-7097-4a35-9d57-2b8719f01cb5",
+  "id": "30793691-3c8d-4bbe-93e8-29b1cd8c7c8c",
   "name": "BlueSnap HostedFields",
   "values": [
     {
@@ -46,13 +46,13 @@
     }
     ,
     {
-      "key": "supportOverCapture",
+      "key": "enableOverCapture",
       "value": "false",
       "enabled": true
     }
     ,
     {
-      "key": "enableOverCapture",
+      "key": "enableCaptureReAuth",
       "value": "false",
       "enabled": true
     }
