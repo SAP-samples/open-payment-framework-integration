@@ -1,0 +1,100 @@
+{
+  "id": "f5dc566b-3822-41a3-ba73-8176a54863df",
+  "name": "opf-iss-d0",
+  "values": [
+    {
+      "key": "token",
+      "value": "",
+      "enabled": true
+    },
+    {
+      "key": "rootUrl",
+      "value": "https:\/\/opf-iss-d0.opf.commerce.stage.context.cloud.sap",
+      "enabled": true
+    },
+    {
+      "key": "service",
+      "value": "opf",
+      "enabled": true
+    },
+    {
+      "key": "accountGroupId",
+      "value": "5585",
+      "enabled": true
+    },
+    {
+      "key": "accountId",
+      "value": "4487",
+      "enabled": true
+    },
+    {
+      "key": "authentication_outbound_oauth2_token_url_export_1093",
+      "value": "https:\/\/api.smartcollect.ing.com\/authorization\/oauth\/token",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "authentication_outbound_oauth2_client_id_export_1093",
+      "value": "wero-ing-oauth_clientId",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "authentication_outbound_oauth2_client_secret_export_1093",
+      "value": "wero-ing-oauth_clientSecret",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "authentication_outbound_oauth2_use_basic_auth_export_1093",
+      "value": "false",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "capturePattern",
+      "value": "AUTO_CAPTURE",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "enableOverCapture",
+      "value": "false",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "enableCaptureReAuth",
+      "value": "false",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "authorizationTimeoutDays",
+      "value": "7",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "ingApiHost",
+      "value": "api.smartcollect.ing.com",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "ingApiBasePath",
+      "value": "api\/v2",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "hmacKey",
+      "value": "b********************************1b9",
+      "enabled": true
+    }
+    
+  ],
+  "_postman_variable_scope": "environment",
+  "_postman_exported_at": "",
+  "_postman_exported_using": "Postman\/7.35.0"
+}
