@@ -1,5 +1,5 @@
 {
-  "id": "1698218e-c722-4353-9833-bf3afcbaf47a",
+  "id": "261dca0a-c1c2-4c37-90b8-d7e3e69aa04c",
   "name": "Adyen Card Tokenization",
   "values": [
     {
@@ -47,7 +47,7 @@
     ,
     {
       "key": "capturePattern",
-      "value": "PARTIAL_CAPTURE",
+      "value": "CAPTURE_PER_SHIPMENT",
       "enabled": true
     }
     ,
