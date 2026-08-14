@@ -1,5 +1,5 @@
 {
-  "id": "157a4a84-d8e1-4d9d-b9cc-4b1228107e14",
+  "id": "0232413b-fd23-44c1-8575-a2ecb16b1632",
   "name": "Adyen Payment Page",
   "values": [
     {
@@ -47,7 +47,7 @@
     ,
     {
       "key": "capturePattern",
-      "value": "PARTIAL_CAPTURE",
+      "value": "CAPTURE_PER_SHIPMENT",
       "enabled": true
     }
     ,
@@ -59,7 +59,7 @@
     ,
     {
       "key": "enableCaptureReAuth",
-      "value": "false",
+      "value": "true",
       "enabled": true
     }
     ,
