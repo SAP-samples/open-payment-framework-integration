@@ -1,6 +1,6 @@
 {
-  "id": "eb49f241-3b03-4c87-bc4a-09f048f0d3d0",
-  "name": "paymetric_3ds",
+  "id": "1e3b6ef1-7f9f-463e-88e2-4e771135d2e2",
+  "name": "paymetric_3ds_with_savedCard",
   "values": [
     {
       "key": "token",
@@ -19,12 +19,12 @@
     },
     {
       "key": "accountGroupId",
-      "value": "6280",
+      "value": "6618",
       "enabled": true
     },
     {
       "key": "accountId",
-      "value": "5092",
+      "value": "5395",
       "enabled": true
     },
     {
@@ -53,25 +53,13 @@
     ,
     {
       "key": "sharedKey",
-      "value": "c********************************92b",
-      "enabled": true
-    }
-    ,
-    {
-      "key": "baseXiPayEndpoint",
-      "value": "cert-xipayapi.worldpay.com",
-      "enabled": true
-    }
-    ,
-    {
-      "key": "XiPayUsername",
-      "value": "WSASAPOPFDV",
+      "value": "d********************************601",
       "enabled": true
     }
     ,
     {
       "key": "XiPayPassword",
-      "value": "7********************************d6c",
+      "value": "5********************************a5d",
       "enabled": true
     }
     ,
@@ -82,8 +70,20 @@
     }
     ,
     {
+      "key": "baseXiPayEndpoint",
+      "value": "cert-xipayapi.worldpay.com\/diecomm",
+      "enabled": true
+    }
+    ,
+    {
       "key": "baseXieCommEndpoint",
       "value": "cert-xiecomm.worldpay.com\/diecomm",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "XiPayUsername",
+      "value": "WSAAviallQA",
       "enabled": true
     }
     

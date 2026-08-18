@@ -5,7 +5,7 @@ This Postman Collection aids in integrating the ``Intercept_eCommerce_with_XiSec
 The integration supports:
 
 * Paymetric token via XiIntercept for eCommerce
-* Authorization via XiPay
+* Authorization via XiPay (both new raw card and Saved Paymetric token)
 
 
 ### In Summary
@@ -113,7 +113,10 @@ Copy the ``User`` and ``Password`` provided by the Paymetric support team. These
 
 To render the card input fields with your own styling, you need to provide a CSS server URL in the Packet XML.
 
-A [valid_packet_xml](resource/valid_packet_xml_for_3ds.txt) is provided by the Paymetric support team. Update it and copy the contents to the OPF workbench:
+A [valid_packet_xml](resource/valid_packet_xml_for_3ds.txt) is provided by the Paymetric support team.
+A separte 
+
+Update it and copy the contents to the OPF workbench:
 
 Navigate to **Configuration Details** > **Authorization** > **Session Initialization Request** area, then click the **Edit** button for the Authentication Method:
 
