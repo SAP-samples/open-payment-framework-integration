@@ -34,7 +34,7 @@
     }
     ,
     {
-      "key": "supportOverCapture",
+      "key": "enableCaptureReAuth",
       "value": "false",
       "enabled": true
     }
