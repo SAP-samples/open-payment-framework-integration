@@ -121,18 +121,6 @@ Add the following to the domain allowlist in OPF workbench. For instructions, se
 ``sandbox.cardpay.com`` (sandbox) or ``cardpay.com`` (production)
 
 
-## Implementation notes
-
-Behaviours worth knowing, all confirmed against the Unlimit sandbox:
-
-* **Payment Page mode returns only `redirect_url`** — there is no `payment_data.id` on the create response. The verify call therefore looks the payment up by merchant order id:
-  `GET /api/payments?merchant_order_id={referenceId}&request_id={...}`, reading from `data[0]`.
-* **`request.id` must be unique per API call**, not per order — reusing it returns `409 DUPLICATE_REQUEST`. The collection maps it from `${input.merchantReference}`.
-* **Refund amounts belong in `refund_data`, not `payment_data`.** `payment_data` carries only the payment `id`. If `refund_data.amount` is omitted, Unlimit refunds the **entire remaining amount** — a partial refund request with the amount in the wrong place silently becomes a full refund.
-* **Reversal uses `${input.authorizationPspReference}`** — `${input.pspReference}` does not exist in the reversal context and renders empty.
-* **Pre-authorisations expire into a capture.** With `preauth: true`, Unlimit auto-captures after 4 days (Visa) or 6 days (Mastercard) unless `hold_period` and `postauth_status` are set. Align `authorizationTimeoutDays` with that window, or set those fields explicitly, so OPF does not consider an authorization open after Unlimit has settled it.
-
-
 ## Summary
 
 In summary you should have edited the following variables:
