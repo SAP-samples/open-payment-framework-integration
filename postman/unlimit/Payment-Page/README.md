@@ -11,7 +11,7 @@ The integration supports:
 * Notifications (webhooks), signature-verified and IP-restricted
 
 Roadmap:
-* Native OPF OAuth2 authentication — requires OPF support for the `password` grant type with Unlimit's `terminal_code` / `password` field names
+* Native OPF OAuth2 authentication — requires OPF support for configurable token-request parameters. Unlimit's token endpoint expects `grant_type=password` with a `terminal_code` field rather than the standard `username`, so neither OPF's `client_credentials` grant nor a spec-conformant password grant can authenticate against it.
 * Incremental authorization (Unlimit supports an `INCREMENT` operation)
 * Tokenization / recurring payments (Unlimit `/api/recurrings`)
 
