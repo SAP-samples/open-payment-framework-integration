@@ -11,6 +11,7 @@ The integration supports:
 * Notifications (webhooks), signature-verified and IP-restricted
 
 Roadmap:
+* Native OPF OAuth2 authentication — requires OPF support for the `password` grant type with Unlimit's `terminal_code` / `password` field names
 * Incremental authorization (Unlimit supports an `INCREMENT` operation)
 * Tokenization / recurring payments (Unlimit `/api/recurrings`)
 
@@ -80,18 +81,6 @@ Create a new payment integration in the OPF workbench and set the Merchant ID to
 | `capturePattern` | `CAPTURE_PER_SHIPMENT` | Deferred capture. Unlimit's capture takes no amount, so it is **full capture only** — do not use `PARTIAL_CAPTURE` |
 | `enableOverCapture` | `false` | Not supported |
 | `enableCaptureReAuth` | `false` | Not supported |
-
-
-### Authentication
-
-Unlimit's token endpoint uses `grant_type=password` with `terminal_code` / `password` field names, which OPF's `OAUTH2` authentication cannot produce (it only sends `client_credentials` with `client_id` / `client_secret`). The collection therefore **chains the token call inside each mapping** rather than using an OPF authentication:
-
-```
-[0] POST /api/auth/token   ->  access_token captured into a custom field
-[1] the real call          ->  Authorization: Bearer ${input.customFields.unlimitToken}
-```
-
-The token is stored with `persistCustomField: false`, so it flows between the two calls within a transaction but is never written to the OPF transaction record. Unlimit access tokens are short-lived (300 seconds), so a fresh one is obtained per operation.
 
 
 ### Notifications
