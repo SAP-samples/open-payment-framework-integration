@@ -1,6 +1,6 @@
 {
-  "id": "ee4b3981-895d-493d-8a70-69766ecc7df2",
-  "name": "paymetric",
+  "id": "ba110582-e107-4b49-8247-37f47a247e9e",
+  "name": "paymetric-direct",
   "values": [
     {
       "key": "token",
@@ -78,6 +78,60 @@
     {
       "key": "XiPayPassword",
       "value": "8********************************1f4",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "mid_DEU_EUR",
+      "value": "3005_EUR_VMA",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "mid_DEU_USD",
+      "value": "3005_USD_VMA",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "mid_CAN_CAD",
+      "value": "1500_USD_VMA",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "mid_NED_USD",
+      "value": "3002_USD_VMA",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "mid_HKG_USD",
+      "value": "4002_USD_VMA",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "mid_CAN_USD",
+      "value": "1500_CAD_VMA",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "mid_USA_USD",
+      "value": "USD_VMAD_SALEM",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "mid_NED_EUR",
+      "value": "3002_EUR_VMA",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "mid_AUS_USD",
+      "value": "4001_USD_VMA",
       "enabled": true
     }
     
