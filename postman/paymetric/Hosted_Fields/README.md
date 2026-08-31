@@ -22,6 +22,8 @@ d) Prepare the [Postman Environment](environment_configuration.json) file so the
 
 e) Apply your own Cascading Style Sheet (CSS) to your iFrame.
 
+f) Manage Paymetric Merchant IDs based on country and currency.
+
 
 ### Signing Up for a Paymetric Developer Account
 
@@ -124,6 +126,16 @@ Replace the entire content of the Signing String field:
 ![](images/paymetric_css_file_upated_02.png)
 
 **Note**: Ensure the `cssUri` parameter has a valid value, otherwise the CSS will not be applied to your iFrame.
+
+
+### Paymetric Merchant ID Management Based on Country and Currency 
+By default, the merchant ID table is provided as variables using the following naming format: mid_<3-digit country code>_<3-digit currency code>.
+
+![](images/paymetric_mid_vars_table.png)
+
+After importing the Postman collection, you can get your merchant Ids from Paymetric support team and manage these variables (add or remove entries) in your configuration:
+
+![](images/paymetric_mid_manage.png)
 
 
 ### Allowlist
