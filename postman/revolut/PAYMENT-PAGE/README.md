@@ -9,6 +9,7 @@ The integration supports:
 * Refunds
 * Authorization Reversal
 * Passing tracking info at Capture (order updated with shipment/tracking details when tracking is provided)
+* [Incremental Authorization](https://developer.revolut.com/docs/guides/merchant/operations/capture-and-settlement/advanced-authorisation/incremental-authorisation) (raising the authorized amount held on an order before capture)
 
 Roadmap:
 * Reauthorization
@@ -122,6 +123,9 @@ In summary, you should have edited the following variables:
 - ``rootUrl``
 - ``accountGroupId``
 - ``accountId``
+
+> **Upgrading:** ``supportOverCapture`` has been replaced by ``enableCaptureReAuth``. Re-import the
+> environment file, or rename the variable in your existing environment.
 
 #### Revolut Specific
 - ``secretKey``
