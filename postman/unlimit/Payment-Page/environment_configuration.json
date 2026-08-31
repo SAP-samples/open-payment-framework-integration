@@ -1,0 +1,74 @@
+{
+  "id": "f87eebf3-4497-4371-b3d7-27c96d94e658",
+  "name": "opf-iss-d0",
+  "values": [
+    {
+      "key": "token",
+      "value": "",
+      "enabled": true
+    },
+    {
+      "key": "rootUrl",
+      "value": "https://opf-iss-d0.opf.commerce.stage.context.cloud.sap",
+      "enabled": true
+    },
+    {
+      "key": "service",
+      "value": "opf",
+      "enabled": true
+    },
+    {
+      "key": "accountGroupId",
+      "value": "",
+      "enabled": true
+    },
+    {
+      "key": "accountId",
+      "value": "",
+      "enabled": true
+    },
+    {
+      "key": "capturePattern",
+      "value": "CAPTURE_PER_SHIPMENT",
+      "enabled": true
+    },
+    {
+      "key": "enableOverCapture",
+      "value": "false",
+      "enabled": true
+    },
+    {
+      "key": "enableCaptureReAuth",
+      "value": "false",
+      "enabled": true
+    },
+    {
+      "key": "authorizationTimeoutDays",
+      "value": "7",
+      "enabled": true
+    },
+    {
+      "key": "unlimitApiHost",
+      "value": "sandbox.cardpay.com",
+      "enabled": true
+    },
+    {
+      "key": "unlimitTerminalCode",
+      "value": "",
+      "enabled": true
+    },
+    {
+      "key": "unlimitPassword",
+      "value": "8********************************b95",
+      "enabled": true
+    },
+    {
+      "key": "unlimitCallbackSecret",
+      "value": "3********************************4f7",
+      "enabled": true
+    }
+  ],
+  "_postman_variable_scope": "environment",
+  "_postman_exported_at": "",
+  "_postman_exported_using": "Postman/7.35.0"
+}
