@@ -112,18 +112,39 @@ The write-back runs during authorization verification:
 3. ``POST {{rootUrl}}/{{service}}/merchant/transactions`` — records the loyalty portion as an
    ``AUTHORIZATION`` against this account group with ``paymentMethodCode: LOY``.
 4. ``POST {{rootUrl}}/{{service}}/merchant/transactions-tags-batch`` — tags the new transaction with
-   ``CART_REF`` and ``ORDER_REF`` so it is linked to the same cart and order as the card payment.
+   ``CART_REF``.
 
-**Two identifiers, and they must not be confused:**
+Tags cannot be set on the create call — a ``tags`` array or matching ``customFields`` are both
+accepted and silently ignored. The batch endpoint is the only way, and it returns ``207`` with
+per-item statuses, so check those rather than the outer response code. ``ORDER_REF`` is not set
+here: Commerce writes it when the order is placed, which happens after authorization verification
+runs.
+
+**Both legs share the same ``orderPaymentId``.** OPF holds two authorizations against it — the card
+leg and the loyalty leg — each with its own transaction ID and its own ``pspReference``. Capture and
+refund each leg individually by passing its ``authorizationId``.
 
 | Field | Meaning | Mapped from |
 | --- | --- | --- |
-| ``orderPaymentId`` | OPF's payment order id for the loyalty leg | the card leg's payment order id prefixed with ``LOY-`` |
+| ``orderPaymentId`` | the order's payment ID, shared by both legs | ``input.orderId`` |
 | ``pspReference`` | the **BTePOS order id** for the loyalty order | ``input.customFields.loyaltyOrderId`` |
 
-``pspReference`` is what capture and refund send to BTePOS as ``orderId`` (``deposit.do`` maps
-``$.orderId <- ${input.pspReference}``), so it must be the identifier BTePOS issued. Setting it to
-the OPF-side ``LOY-`` value makes capture fail with ``errorCode 6, "No such order"``.
+``pspReference`` is what capture and refund send to BTePOS as ``orderId`` (``deposit.do`` and
+``refund.do`` both map ``$.orderId <- ${input.pspReference}``), so it must be the identifier BTePOS
+issued for that leg — not an OPF-side value.
+
+**The card authorization must be recorded at the amount BTePOS approved, not the order total.** When
+part of the basket is paid with loyalty points, BTePOS pre-authorizes only the remainder on the card.
+The card verify response therefore maps:
+
+```
+paymentAmountInfo.approvedAmount  ->  authorizationAmountInExponent
+```
+
+Without this the card authorization keeps the full order total, the loyalty amount is counted twice,
+and capture fails with ``errorCode 8, "deposited amount is greater then registered amount"``. The
+value is in minor units, so it maps to ``authorizationAmountInExponent`` rather than
+``authorizationAmount``.
 
 Tags cannot be set on the create call — a ``tags`` array or matching ``customFields`` are both
 accepted and silently ignored. The separate batch endpoint is the only way, and it returns ``207``
