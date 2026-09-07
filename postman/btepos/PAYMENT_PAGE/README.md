@@ -111,6 +111,23 @@ The write-back runs during authorization verification:
 2. ``getOrderStatusExtended.do`` for the loyalty order — runs only when the order carries one.
 3. ``POST {{rootUrl}}/{{service}}/merchant/transactions`` — records the loyalty portion as an
    ``AUTHORIZATION`` against this account group with ``paymentMethodCode: LOY``.
+4. ``POST {{rootUrl}}/{{service}}/merchant/transactions-tags-batch`` — tags the new transaction with
+   ``CART_REF`` and ``ORDER_REF`` so it is linked to the same cart and order as the card payment.
+
+**Two identifiers, and they must not be confused:**
+
+| Field | Meaning | Mapped from |
+| --- | --- | --- |
+| ``orderPaymentId`` | OPF's payment order id for the loyalty leg | the card leg's payment order id prefixed with ``LOY-`` |
+| ``pspReference`` | the **BTePOS order id** for the loyalty order | ``input.customFields.loyaltyOrderId`` |
+
+``pspReference`` is what capture and refund send to BTePOS as ``orderId`` (``deposit.do`` maps
+``$.orderId <- ${input.pspReference}``), so it must be the identifier BTePOS issued. Setting it to
+the OPF-side ``LOY-`` value makes capture fail with ``errorCode 6, "No such order"``.
+
+Tags cannot be set on the create call — a ``tags`` array or matching ``customFields`` are both
+accepted and silently ignored. The separate batch endpoint is the only way, and it returns ``207``
+with per-item statuses.
 
 Steps 2 and 3 are gated by the **``hasLoyalties``** mapping condition:
 
