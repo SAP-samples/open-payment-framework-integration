@@ -109,10 +109,12 @@ recording alongside, so the collection works on any tenant without further edits
 The write-back runs during authorization verification:
 
 1. ``getOrderStatusExtended.do`` for the card payment (always runs).
-2. ``getOrderStatusExtended.do`` for the loyalty order — runs only when the order carries one.
-3. ``POST {{rootUrl}}/{{service}}/merchant/transactions`` — records the loyalty portion as an
-   ``AUTHORIZATION`` against this account group with ``paymentMethodCode: LOY``.
-4. ``POST {{rootUrl}}/{{service}}/merchant/transactions-tags-batch`` — tags the new transaction with
+2. ``getOrderStatusExtended.do`` for the loyalty order.
+3. ``GET {{rootUrl}}/{{service}}/merchant/transactions?…&expand=accountGroup`` — reads the account
+   group from the card authorization, so no account group ID needs configuring.
+4. ``POST {{rootUrl}}/{{service}}/merchant/transactions`` — records the loyalty portion as an
+   ``AUTHORIZATION`` against that account group with ``paymentMethodCode: LOY``.
+5. ``POST {{rootUrl}}/{{service}}/merchant/transactions-tags-batch`` — tags the new transaction with
    ``CART_REF``.
 
 Tags cannot be set on the create call — a ``tags`` array or matching ``customFields`` are both
@@ -147,17 +149,13 @@ and capture fails with ``errorCode 8, "deposited amount is greater then register
 value is in minor units, so it maps to ``authorizationAmountInExponent`` rather than
 ``authorizationAmount``.
 
-Tags cannot be set on the create call — a ``tags`` array or matching ``customFields`` are both
-accepted and silently ignored. The separate batch endpoint is the only way, and it returns ``207``
-with per-item statuses.
-
-Steps 2 and 3 are gated by the **``hasLoyalties``** mapping condition:
+Steps 2 to 5 are gated by the **``hasLoyalties``** mapping condition:
 
 ```
 (input.customFields.loyaltyOrderId)!''?has_content
 ```
 
-so an order with no loyalty component behaves exactly as before — the two extra calls are skipped.
+so an order with no loyalty component behaves exactly as before — the four extra calls are skipped.
 The amount comes from ``input.customFields.loyaltyAmount`` (minor units, divided by 100), and the
 currency follows the order rather than being fixed.
 
