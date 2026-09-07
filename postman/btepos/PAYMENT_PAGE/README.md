@@ -176,6 +176,7 @@ https://<your-ias-host>/oauth2/token?resource=urn:sap:identity:application:provi
 
 | Variable | Description |
 | --- | --- |
+| `opfHost` | Base URL of your OPF tenant, e.g. `https://<tenant>.opf.commerce.stage.context.cloud.sap`. The write-back calls OPF's own API, and this is stored as an OPF variable so the mapping stays portable across tenants |
 | `authentication_outbound_oauth2_token_url_export_1184` | IAS token endpoint **including** the `?resource=…opf-txn-mgt` query parameter |
 | `authentication_outbound_oauth2_client_id_export_1184` | Client ID of your `opf-txn-mgt` OAuth client |
 | `authentication_outbound_oauth2_client_secret_export_1184` | Client secret for that client |
@@ -210,6 +211,7 @@ API Key Configuration
 - ``authentication_outbound_oauth2_token_url_export_1184``
 - ``authentication_outbound_oauth2_client_id_export_1184``
 - ``authentication_outbound_oauth2_client_secret_export_1184``
+- ``opfHost``
 - ``loyaltyPaymentMethodCode``
 
 
