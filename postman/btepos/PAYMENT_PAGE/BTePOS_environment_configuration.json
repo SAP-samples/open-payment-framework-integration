@@ -68,6 +68,42 @@
       "value": "ecclients-sandbox.btrl.ro",
       "enabled": true
     }
+    ,
+    {
+      "key": "authentication_outbound_oauth2_token_url_export_1184",
+      "value": "https:\/\/<your-ias-host>\/oauth2\/token?resource=urn:sap:identity:application:provider:name:opf-txn-mgt",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "authentication_outbound_oauth2_client_id_export_1184",
+      "value": "",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "authentication_outbound_oauth2_client_secret_export_1184",
+      "value": "",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "authentication_outbound_oauth2_use_basic_auth_export_1184",
+      "value": "false",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "loyaltyAccountGroupId",
+      "value": "",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "loyaltyPaymentMethodCode",
+      "value": "LOY",
+      "enabled": true
+    }
     
   ],
   "_postman_variable_scope": "environment",
