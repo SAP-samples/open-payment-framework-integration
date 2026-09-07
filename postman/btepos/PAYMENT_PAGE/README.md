@@ -85,8 +85,23 @@ Create the APM in the OPF workbench under **Payment Methods** before running the
 | Supports Refund | ``true`` |
 | Supports Recurring | ``false`` |
 
-Then set ``loyaltyPaymentMethodCode`` to the APM code (``LOY``) and ``loyaltyAccountGroupId`` to this
-integration's own account group ID in the environment file.
+Then **associate the APM with this payment integration**, either in the workbench or via the API:
+
+```
+PATCH {{rootUrl}}/{{service}}/merchant/apms-accountgroups-batch
+{"value": [{"groupId": <your account group id>, "apmId": "<your LOY APM id>"}]}
+```
+
+This endpoint returns ``207`` with a per-item status, so check the inner status rather than the
+outer response code, then confirm with a ``GET`` of the account group — ``apmConfigurations`` should
+list the APM.
+
+The association matters: without it OPF echoes the raw code back as the payment method, and with it
+the transaction resolves the APM's display name (``Loyalty Points``), which is what the storefront
+and back office show.
+
+Finally set ``loyaltyPaymentMethodCode`` to the APM code (``LOY``) and ``loyaltyAccountGroupId`` to
+this integration's own account group ID in the environment file.
 
 ### Loyalty Write-Back
 
