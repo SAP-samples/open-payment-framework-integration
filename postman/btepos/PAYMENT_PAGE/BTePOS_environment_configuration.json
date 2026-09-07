@@ -94,12 +94,6 @@
     }
     ,
     {
-      "key": "loyaltyAccountGroupId",
-      "value": "",
-      "enabled": true
-    }
-    ,
-    {
       "key": "loyaltyPaymentMethodCode",
       "value": "LOY",
       "enabled": true

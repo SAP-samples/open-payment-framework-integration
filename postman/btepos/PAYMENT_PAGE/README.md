@@ -100,8 +100,9 @@ The association matters: without it OPF echoes the raw code back as the payment 
 the transaction resolves the APM's display name (``Loyalty Points``), which is what the storefront
 and back office show.
 
-Finally set ``loyaltyPaymentMethodCode`` to the APM code (``LOY``) and ``loyaltyAccountGroupId`` to
-this integration's own account group ID in the environment file.
+Finally set ``loyaltyPaymentMethodCode`` to the APM code (``LOY``) in the environment file. The
+account group ID is not configured: the write-back reads it from the card authorization it is
+recording alongside, so the collection works on any tenant without further edits.
 
 ### Loyalty Write-Back
 
@@ -180,7 +181,6 @@ https://<your-ias-host>/oauth2/token?resource=urn:sap:identity:application:provi
 | `authentication_outbound_oauth2_token_url_export_1184` | IAS token endpoint **including** the `?resource=…opf-txn-mgt` query parameter |
 | `authentication_outbound_oauth2_client_id_export_1184` | Client ID of your `opf-txn-mgt` OAuth client |
 | `authentication_outbound_oauth2_client_secret_export_1184` | Client secret for that client |
-| `loyaltyAccountGroupId` | This integration's account group ID |
 | `loyaltyPaymentMethodCode` | The LOY APM code |
 
 
@@ -212,7 +212,6 @@ API Key Configuration
 - ``authentication_outbound_oauth2_token_url_export_1184``
 - ``authentication_outbound_oauth2_client_id_export_1184``
 - ``authentication_outbound_oauth2_client_secret_export_1184``
-- ``loyaltyAccountGroupId``
 - ``loyaltyPaymentMethodCode``
 
 
