@@ -110,22 +110,16 @@ The write-back runs during authorization verification:
 
 1. ``getOrderStatusExtended.do`` for the card payment (always runs).
 2. ``getOrderStatusExtended.do`` for the loyalty order.
-3. ``GET {{rootUrl}}/{{service}}/merchant/transactions?…&expand=accountGroup`` — reads the account
+3. ``GET ${vars.opfHost}/opf/merchant/transactions?…&expand=accountGroup`` — reads the account
    group from the card authorization, so no account group ID needs configuring.
-4. ``POST {{rootUrl}}/{{service}}/merchant/transactions`` — records the loyalty portion as an
+4. ``POST ${vars.opfHost}/opf/merchant/transactions`` — records the loyalty portion as an
    ``AUTHORIZATION`` against that account group with ``paymentMethodCode: LOY``.
-5. ``POST {{rootUrl}}/{{service}}/merchant/transactions-tags-batch`` — tags the new transaction with
-   ``CART_REF``.
-
-Tags cannot be set on the create call — a ``tags`` array or matching ``customFields`` are both
-accepted and silently ignored. The batch endpoint is the only way, and it returns ``207`` with
-per-item statuses, so check those rather than the outer response code. ``ORDER_REF`` is not set
-here: Commerce writes it when the order is placed, which happens after authorization verification
-runs.
 
 **Both legs share the same ``orderPaymentId``.** OPF holds two authorizations against it — the card
 leg and the loyalty leg — each with its own transaction ID and its own ``pspReference``. Capture and
-refund each leg individually by passing its ``authorizationId``.
+refund each leg individually by passing its ``authorizationId``. Sharing the payment ID also means
+the loyalty transaction carries the same ``CART_REF`` and ``ORDER_REF`` tags as the card payment,
+with no tagging call needed.
 
 | Field | Meaning | Mapped from |
 | --- | --- | --- |
@@ -149,13 +143,13 @@ and capture fails with ``errorCode 8, "deposited amount is greater then register
 value is in minor units, so it maps to ``authorizationAmountInExponent`` rather than
 ``authorizationAmount``.
 
-Steps 2 to 5 are gated by the **``hasLoyalties``** mapping condition:
+Steps 2 to 4 are gated by the **``hasLoyalties``** mapping condition:
 
 ```
 (input.customFields.loyaltyOrderId)!''?has_content
 ```
 
-so an order with no loyalty component behaves exactly as before — the four extra calls are skipped.
+so an order with no loyalty component behaves exactly as before — the three extra calls are skipped.
 The amount comes from ``input.customFields.loyaltyAmount`` (minor units, divided by 100), and the
 currency follows the order rather than being fixed.
 
