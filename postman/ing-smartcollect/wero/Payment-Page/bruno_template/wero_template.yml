@@ -1,0 +1,1586 @@
+opencollection: 1.0.0
+info:
+  name: wero_template_
+config:
+  proxy:
+    inherit: true
+    config:
+      protocol: http
+      hostname: ''
+      port: ''
+      auth:
+        username: ''
+        password: ''
+      bypassProxy: ''
+  environments:
+    - name: opf-iss-d0
+      variables:
+        - name: token
+          value: Bearer 
+        - name: rootUrl
+          value: https://opf-iss-d0.opf.commerce.stage.context.cloud.sap
+        - name: service
+          value: opf
+        - name: accountGroupId
+          value: '7141'
+        - name: accountId
+          value: '5860'
+        - name: authentication_outbound_oauth2_token_url_export_1197
+          value: https://api.smartcollect.ing.com/authorization/oauth/token
+        - name: authentication_outbound_oauth2_client_id_export_1197
+          value: ''
+        - name: authentication_outbound_oauth2_client_secret_export_1197
+          value: ''
+        - name: authentication_outbound_oauth2_use_basic_auth_export_1197
+          value: 'false'
+        - name: capturePattern
+          value: AUTO_CAPTURE
+        - name: enableOverCapture
+          value: 'false'
+        - name: enableCaptureReAuth
+          value: 'false'
+        - name: authorizationTimeoutDays
+          value: '7'
+        - name: ingApiHost
+          value: api.smartcollect.ing.com
+        - name: ingApiBasePath
+          value: api/v2
+        - name: hmacKey
+          value: ''
+        - name: paymentMethodType
+          value: WERO
+        - name: integrationType
+          value: HOSTED
+items:
+  - info:
+      name: Account
+      type: folder
+      seq: 2
+    request:
+      auth: inherit
+    items:
+      - info:
+          name: Account Patch
+          type: http
+          seq: 1
+        http:
+          method: PATCH
+          url: '{{rootUrl}}/{{service}}/merchant/accountgroups/{{accountGroupId}}/accounts/{{accountId}}'
+          headers:
+            - name: Authorization
+              value: '{{token}}'
+          body:
+            type: json
+            data: '{"enableCaptureReAuth":"{{enableCaptureReAuth}}","enableOverCapture":"{{enableOverCapture}}","capturePattern":"{{capturePattern}}"}'
+          auth: inherit
+        settings:
+          encodeUrl: true
+          timeout: 0
+          followRedirects: true
+          maxRedirects: 5
+          forwardAuthorizationHeader: false
+  - info:
+      name: AccountGroup
+      type: folder
+      seq: 3
+    request:
+      auth: inherit
+    items:
+      - info:
+          name: Account Group Patch
+          type: http
+          seq: 1
+        http:
+          method: PATCH
+          url: '{{rootUrl}}/{{service}}/merchant/accountgroups/{{accountGroupId}}'
+          headers:
+            - name: Authorization
+              value: '{{token}}'
+          body:
+            type: json
+            data: '{"authorizationTimeoutDays":{{authorizationTimeoutDays}}}'
+          auth: inherit
+        settings:
+          encodeUrl: true
+          timeout: 0
+          followRedirects: true
+          maxRedirects: 5
+          forwardAuthorizationHeader: false
+  - info:
+      name: Authorization_reversal
+      type: folder
+      seq: 8
+    request:
+      auth: inherit
+    items:
+      - info:
+          name: Authorization_reversal
+          type: http
+          seq: 1
+        http:
+          method: PUT
+          url: '{{rootUrl}}/{{service}}/merchant/accountgroups/{{accountGroupId}}/accounts/{{accountId}}/authorization_reversal'
+          headers:
+            - name: Authorization
+              value: '{{token}}'
+          body:
+            type: json
+            data: '{"id":8340,"requestType":"AUTHORIZATION_REVERSAL","outboundMappings":[{"url":"https://${vars.ingApiHost}/api/v2/payments/${input.pspReference}/reversals","authenticationIds":["{{authentication_outbound_oauth2_1197}}"],"method":"POST","requestContentType":"application/json","requestExample":"{\n  \"transId\": \"6B29FC40-1067-B31D-00DD010662DA\",\n  \"amount\": {\n    \"value\": 10000,\n    \"currency\": \"EUR\"\n  },\n  \"refNr\": \"24235345432\"\n}","responseExample":"{\n  \"merchantId\": \"MerchantIdTest\",\n  \"payId\": \"6c7c66e5352241c19d82c175a01f713a\",\n  \"xId\": \"93c4093c6d3644fcb6c60484f7a831fd\",\n  \"transId\": \"98582271-63d2-4b90-9422-5fb597a4c41d\",\n  \"status\": \"OK\",\n  \"responseCode\": \"00000000\",\n  \"responseDescription\": \"success\"\n}","requestMappingFields":{"mappings":[{"from":"$.amount.currency","to":"${input.currency}","map":null,"arrayPath":null,"arrayMapping":false,"lineItemGroup":null,"mappingFieldType":null,"fixed":false,"isSensitive":false,"isObject":false,"isArrayElement":false,"isScript":false},{"from":"$.amount.value","to":"${input.amountInExponent}","map":null,"arrayPath":null,"arrayMapping":false,"lineItemGroup":null,"mappingFieldType":null,"fixed":false,"isSensitive":false,"isObject":false,"isArrayElement":false,"isScript":false},{"from":"$.refNr","to":"${input.referenceId}","map":null,"arrayPath":null,"arrayMapping":false,"lineItemGroup":null,"mappingFieldType":null,"fixed":false,"isSensitive":false,"isObject":false,"isArrayElement":false,"isScript":false},{"from":"$.transId","to":"${input.transactionId}","map":null,"arrayPath":null,"arrayMapping":false,"lineItemGroup":null,"mappingFieldType":null,"fixed":false,"isSensitive":false,"isObject":false,"isArrayElement":false,"isScript":false}]},"responseHeaders":null,"responseMappingFields":{"mappings":[{"from":"xId","to":null,"map":null,"arrayPath":null,"arrayMapping":false,"lineItemGroup":null,"mappingFieldType":"BODY","fixed":true,"isCustom":false,"persistCustomField":false,"isSensitive":false,"isObject":false,"isArrayElement":false,"isScript":false},{"from":"merchantId","to":null,"map":null,"arrayPath":null,"arrayMapping":false,"lineItemGroup":null,"mappingFieldType":"BODY","fixed":true,"isCustom":false,"persistCustomField":false,"isSensitive":false,"isObject":false,"isArrayElement":false,"isScript":false},{"from":"responseDescription","to":null,"map":null,"arrayPath":null,"arrayMapping":false,"lineItemGroup":null,"mappingFieldType":"BODY","fixed":true,"isCustom":false,"persistCustomField":false,"isSensitive":false,"isObject":false,"isArrayElement":false,"isScript":false},{"from":"transId","to":null,"map":null,"arrayPath":null,"arrayMapping":false,"lineItemGroup":null,"mappingFieldType":"BODY","fixed":true,"isCustom":false,"persistCustomField":false,"isSensitive":false,"isObject":false,"isArrayElement":false,"isScript":false},{"from":"responseCode","to":null,"map":null,"arrayPath":null,"arrayMapping":false,"lineItemGroup":null,"mappingFieldType":"BODY","fixed":true,"isCustom":false,"persistCustomField":false,"isSensitive":false,"isObject":false,"isArrayElement":false,"isScript":false},{"from":"payId","to":"pspReference","map":null,"arrayPath":null,"arrayMapping":false,"lineItemGroup":null,"mappingFieldType":"BODY","fixed":false,"isCustom":false,"persistCustomField":false,"isSensitive":false,"isObject":false,"isArrayElement":false,"isScript":false},{"from":"status","to":"transactionStatus","map":null,"arrayPath":null,"arrayMapping":false,"lineItemGroup":null,"mappingFieldType":"BODY","fixed":false,"isCustom":false,"persistCustomField":false,"isSensitive":false,"isObject":false,"isArrayElement":false,"isScript":false},{"from":"#object","to":null,"map":null,"arrayPath":null,"arrayMapping":false,"lineItemGroup":null,"mappingFieldType":"BODY","fixed":true,"isCustom":false,"persistCustomField":false,"isSensitive":false,"isObject":true,"isArrayElement":false,"isScript":false}]},"responseContentType":"application/json","headers":{"Idempotency-Key":"${input.idempotencyKey}"},"formArrayIndicator":null}],"enabled":null,"configurationId":null,"googlePayGateway":null,"createdAt":"2026-06-09T09:32:57.026Z","updatedAt":"2026-06-09T09:32:57.026Z"}'
+          auth: inherit
+        settings:
+          encodeUrl: true
+          timeout: 0
+          followRedirects: true
+          maxRedirects: 5
+          forwardAuthorizationHeader: false
+  - info:
+      name: Authentications
+      type: folder
+      seq: 4
+    request:
+      auth: inherit
+    items:
+      - info:
+          name: Hmac_signature_calculation
+          type: http
+          seq: 1
+        http:
+          method: POST
+          url: '{{rootUrl}}/{{service}}/merchant/authentications'
+          headers:
+            - name: Authorization
+              value: '{{token}}'
+          body:
+            type: json
+            data: '{"charset":"UTF-8","secretBaseEncoding":"NONE","baseEncoding":"BASE16","method":"HMAC_SIGNATURE_CALCULATION","secretType":"SCRIPT","name":"ing-hmac-inbound_export_export","secret":"${vars.hmacKey}","source":"${input.headers[''x-paygate-timestamp'']}.${input.body}","id":1196,"isHmacSignature":true,"algorithm":"HmacSHA256","target":"${input.headers[''x-paygate-signature'']?replace(\"v1=\",\"\")?split(\",\")[0]}"}'
+          auth: inherit
+        runtime:
+          scripts:
+            - type: after-response
+              code: |-
+                test("Status code is 201", function() {
+                    expect(Boolean(res.status === 201)).to.be.true;
+                });    
+                test("Location is present", function () {
+                    expect(res.getHeaders()).to.have.property("Location".toLowerCase());
+                    var location=res.getHeader("location");
+                    bru.setEnvVar("authentication_inbound_hmac_signature_calculation_1196", location.substring(location.lastIndexOf("/")+1,location.length));
+                });
+        settings:
+          encodeUrl: true
+          timeout: 0
+          followRedirects: true
+          maxRedirects: 5
+          forwardAuthorizationHeader: false
+      - info:
+          name: Oauth2
+          type: http
+          seq: 2
+        http:
+          method: POST
+          url: '{{rootUrl}}/{{service}}/merchant/authentications'
+          headers:
+            - name: Authorization
+              value: '{{token}}'
+          body:
+            type: json
+            data: '{"method":"OAUTH2","name":"wero-ing-oauth_export_export","id":1197,"oauth2":{"audience":"","tokenUrl":"{{authentication_outbound_oauth2_token_url_export_1197}}","clientId":"{{authentication_outbound_oauth2_client_id_export_1197}}","useBasicAuth":"{{authentication_outbound_oauth2_use_basic_auth_export_1197}}","scope":null,"clientSecret":"{{authentication_outbound_oauth2_client_secret_export_1197}}"}}'
+          auth: inherit
+        runtime:
+          scripts:
+            - type: after-response
+              code: |-
+                test("Status code is 201", function() {
+                    expect(Boolean(res.status === 201)).to.be.true;
+                });    
+                test("Location is present", function () {
+                    expect(res.getHeaders()).to.have.property("Location".toLowerCase());
+                    var location=res.getHeader("location");
+                    bru.setEnvVar("authentication_outbound_oauth2_1197", location.substring(location.lastIndexOf("/")+1,location.length));
+                });
+        settings:
+          encodeUrl: true
+          timeout: 0
+          followRedirects: true
+          maxRedirects: 5
+          forwardAuthorizationHeader: false
+  - info:
+      name: Notification
+      type: folder
+      seq: 5
+    request:
+      auth: inherit
+    items:
+      - info:
+          name: Notification
+          type: http
+          seq: 1
+        http:
+          method: PUT
+          url: '{{rootUrl}}/{{service}}/merchant/accountgroups/{{accountGroupId}}/accounts/{{accountId}}/notification'
+          headers:
+            - name: Authorization
+              value: '{{token}}'
+          body:
+            type: json
+            data: '{"id":8147,"requestType":"NOTIFICATION","enabled":null,"configurationId":null,"googlePayGateway":null,"createdAt":"2026-06-02T09:57:30.399Z","updatedAt":"2026-06-02T09:57:30.399Z","inboundMapping":{"preprocessingMethodId":null,"authenticationIds":["{{authentication_inbound_hmac_signature_calculation_1196}}"],"contentType":"application/json","requestMapping":{"authorization":{"requestExample":"{\"merchantId\": \"ingwb_36028776T\",\"payId\": \"e2f3223925c94a9687b9d676cd055594\",\"transId\": \"7476339670294204416\",\"xid\": \"b87cebd155884365a205b7202e2496fb\",\"refNr\": \"000000X00000069N_7476339670294\",\"status\": \"FAILED\",\"responseCode\": \"23470808\",\"responseDescription\": \"Access denied\",\"amount\": {\"value\": 1499,\"currency\": \"EUR\"},\"paymentMethods\": {\"type\": \"WERO\"},\"creationDate\": \"2026-06-26T18:40:11Z\",\"channel\": \"null\"}","requestMappingFields":{"mappings":[{"from":"xid","to":null,"map":null,"arrayPath":null,"arrayMapping":false,"lineItemGroup":null,"mappingFieldType":"BODY","fixed":true,"isCustom":false,"persistCustomField":false,"isSensitive":false,"isObject":false,"isArrayElement":false,"isScript":false},{"from":"amount.currency","to":null,"map":null,"arrayPath":null,"arrayMapping":false,"lineItemGroup":null,"mappingFieldType":"BODY","fixed":true,"isCustom":false,"persistCustomField":false,"isSensitive":false,"isObject":false,"isArrayElement":false,"isScript":false},{"from":"merchantId","to":null,"map":null,"arrayPath":null,"arrayMapping":false,"lineItemGroup":null,"mappingFieldType":"BODY","fixed":true,"isCustom":false,"persistCustomField":false,"isSensitive":false,"isObject":false,"isArrayElement":false,"isScript":false},{"from":"responseDescription","to":null,"map":null,"arrayPath":null,"arrayMapping":false,"lineItemGroup":null,"mappingFieldType":"BODY","fixed":true,"isCustom":false,"persistCustomField":false,"isSensitive":false,"isObject":false,"isArrayElement":false,"isScript":false},{"from":"channel","to":null,"map":null,"arrayPath":null,"arrayMapping":false,"lineItemGroup":null,"mappingFieldType":"BODY","fixed":true,"isCustom":false,"persistCustomField":false,"isSensitive":false,"isObject":false,"isArrayElement":false,"isScript":false},{"from":"payId","to":null,"map":null,"arrayPath":null,"arrayMapping":false,"lineItemGroup":null,"mappingFieldType":"BODY","fixed":true,"isCustom":false,"persistCustomField":false,"isSensitive":false,"isObject":false,"isArrayElement":false,"isScript":false},{"from":"creationDate","to":null,"map":null,"arrayPath":null,"arrayMapping":false,"lineItemGroup":null,"mappingFieldType":"BODY","fixed":true,"isCustom":false,"persistCustomField":false,"isSensitive":false,"isObject":false,"isArrayElement":false,"isScript":false},{"from":"responseCode","to":null,"map":null,"arrayPath":null,"arrayMapping":false,"lineItemGroup":null,"mappingFieldType":"BODY","fixed":true,"isCustom":false,"persistCustomField":false,"isSensitive":false,"isObject":false,"isArrayElement":false,"isScript":false},{"from":"amount.value","to":"authorizationAmountInExponent","map":null,"arrayPath":null,"arrayMapping":false,"lineItemGroup":null,"mappingFieldType":"BODY","fixed":false,"isCustom":false,"persistCustomField":false,"isSensitive":false,"isObject":false,"isArrayElement":false,"isScript":false},{"from":"refNr","to":"merchantReference","map":null,"arrayPath":null,"arrayMapping":false,"lineItemGroup":null,"mappingFieldType":"BODY","fixed":false,"isCustom":false,"persistCustomField":false,"isSensitive":false,"isObject":false,"isArrayElement":false,"isScript":false},{"from":"paymentMethods.type","to":"paymentMethod","map":{"WERO":"wero","":"CREDIT_CARD"},"arrayPath":null,"arrayMapping":false,"lineItemGroup":null,"mappingFieldType":"BODY","fixed":false,"isCustom":false,"persistCustomField":false,"isSensitive":false,"isObject":false,"isArrayElement":false,"isScript":false},{"from":"transId","to":"transactionId","map":null,"arrayPath":null,"arrayMapping":false,"lineItemGroup":null,"mappingFieldType":"BODY","fixed":false,"isCustom":false,"persistCustomField":false,"isSensitive":false,"isObject":false,"isArrayElement":false,"isScript":false},{"from":"status","to":"transactionStatus","map":{"OK":"ACCEPTED","":"TIMEOUT","FAILED":"REJECTED"},"arrayPath":null,"arrayMapping":false,"lineItemGroup":null,"mappingFieldType":"BODY","fixed":false,"isCustom":false,"persistCustomField":false,"isSensitive":false,"isObject":false,"isArrayElement":false,"isScript":false},{"from":"amount.#object","to":null,"map":null,"arrayPath":null,"arrayMapping":false,"lineItemGroup":null,"mappingFieldType":"BODY","fixed":true,"isCustom":false,"persistCustomField":false,"isSensitive":false,"isObject":true,"isArrayElement":false,"isScript":false},{"from":"paymentMethods.#object","to":null,"map":null,"arrayPath":null,"arrayMapping":false,"lineItemGroup":null,"mappingFieldType":"BODY","fixed":true,"isCustom":false,"persistCustomField":false,"isSensitive":false,"isObject":true,"isArrayElement":false,"isScript":false},{"from":"#object","to":null,"map":null,"arrayPath":null,"arrayMapping":false,"lineItemGroup":null,"mappingFieldType":"BODY","fixed":true,"isCustom":false,"persistCustomField":false,"isSensitive":false,"isObject":true,"isArrayElement":false,"isScript":false},{"from":"AUTHORIZATION","to":"requestType","map":{"AUTHORIZATION":"AUTHORIZATION"},"arrayPath":null,"arrayMapping":false,"lineItemGroup":null,"mappingFieldType":null,"fixed":true,"isCustom":false,"persistCustomField":false,"isSensitive":false,"isObject":false,"isArrayElement":false,"isScript":false}]}}},"responseMapping":{"content":"OK"}}}'
+          auth: inherit
+        settings:
+          encodeUrl: true
+          timeout: 0
+          followRedirects: true
+          maxRedirects: 5
+          forwardAuthorizationHeader: false
+  - info:
+      name: Authorization
+      type: folder
+      seq: 9
+    request:
+      auth: inherit
+    items:
+      - info:
+          name: Authorization
+          type: http
+          seq: 1
+        http:
+          method: PUT
+          url: '{{rootUrl}}/{{service}}/merchant/accountgroups/{{accountGroupId}}/accounts/{{accountId}}/authorization'
+          headers:
+            - name: Authorization
+              value: '{{token}}'
+          body:
+            type: json
+            data: |-
+              {
+                "id": 8252,
+                "pattern": "FULL_PAGE",
+                "requestType": "AUTHORIZATION",
+                "destination": {
+                  "url": "${input.redirectUrl}",
+                  "method": "GET",
+                  "contentType": "application/x-www-form-urlencoded",
+                  "body": null,
+                  "authenticationIds": [],
+                  "form": []
+                },
+                "enabled": null,
+                "configurationId": null,
+                "googlePayGateway": null,
+                "createdAt": "2026-06-05T06:16:35.145Z",
+                "updatedAt": "2026-07-09T02:38:16.209Z",
+                "remoteApiOutboundMappings": [
+                  {
+                    "url": "https://${vars.ingApiHost}/api/v2/payments",
+                    "authenticationIds": [
+                      "{{authentication_outbound_oauth2_1197}}"
+                    ],
+                    "method": "POST",
+                    "requestContentType": "application/json",
+                    "requestExample": "{\n  \"transId\": \"6B29FC40-1067-B31D-00DD010662DA\",\n  \"refNr\": \"24235345432\",\n   \"amount\": {\n    \"currency\": \"EUR\",\n    \"value\": 89485,\n     \"taxTotal\":43,\n   \"grossShippingAmount\": 0,\n  \"grossDiscount\": 0\n   },\n   \"urls\": {\n    \"return\": \"https://my.callback.url.com/success\",\n    \"cancel\": \"https://my.callback.url.com/cancel\",\n    \"webhook\": \"https://my.callback.url.com/notify\"\n  },\n  \"billingAddress\": {\n \n    \"addressLine2\": \"Siechenstr. 61\",\n    \"city\": \"Bamberg\",\n    \"country\": \"DEU\",\n    \"postalCode\": \"96050\",\n    \"state\": \"BY\"\n  },\n  \"customerInfo\": {\n    \"merchantCustomerId\": \"cus_1234567890abcdef\",\n \n    \"email\": \"customer@example.com\",\n \n  },\n   \"shipping\": {\n    \"address\": {\n \n      \"addressLine2\": \"Feldkirchenstr. 21\",\n      \"city\": \"Bamberg\",\n      \"country\": \"DEU\",\n      \"postalCode\": \"96050\",\n      \"state\": \"BY\"\n    },\n    \"type\": \"CLICK_AND_COLLECT\"\n  },\n      \"order\": {\n        \"invoiceId\":\"invo-2334\",\n     \"items\": [\n      {\n        \"id\": \"PROD-1001\",\n        \"name\": \"Apple iPhone 15 128GB Black\",\n         \"quantity\": 1,\n         \"taxRate\": 1800,\n        \"netPrice\": 70000,\n        \"grossPrice\": 82600,\n        \"discountAmount\": 2000,\n        \"taxAmount\": 12600,\n        \"description\": \"Apple iPhone 15 with 128GB storage in Black\",\n        \"productInfo\": {\n          \"brand\": \"Apple\",\n          \"imageUrl\": \"https://example.com/images/iphone15-black.jpg\",\n          \"productUrl\": \"https://example.com/products/iphone15-black-128\"\n        }\n      }\n    ]\n  },\n  \"paymentMethods\": {\n    \"integrationType\": \"HOSTED\",\n    \"type\": \"WERO\"\n  }\n}",
+                    "responseExample": "{\"_links\":{\"redirect\":{\"href\":\"https://demo.api.ing-checkout.com?token=abc123\",\"type\":\"text/html\"}}}",
+                    "requestMappingFields": {
+                      "mappings": [
+                        {
+                          "from": "$.refNr",
+                          "to": "${input.merchantReference}",
+                          "map": null,
+                          "arrayPath": null,
+                          "arrayMapping": false,
+                          "lineItemGroup": null,
+                          "mappingFieldType": null,
+                          "fixed": false,
+                          "isSensitive": false,
+                          "isObject": false,
+                          "isArrayElement": false,
+                          "isScript": false
+                        },
+                        {
+                          "from": "$.amount.currency",
+                          "to": "${input.currency}",
+                          "map": null,
+                          "arrayPath": null,
+                          "arrayMapping": false,
+                          "lineItemGroup": null,
+                          "mappingFieldType": null,
+                          "fixed": false,
+                          "isSensitive": false,
+                          "isObject": false,
+                          "isArrayElement": false,
+                          "isScript": false
+                        },
+                        {
+                          "from": "$.urls.cancel",
+                          "to": "${input.cancelURL}",
+                          "map": null,
+                          "arrayPath": null,
+                          "arrayMapping": false,
+                          "lineItemGroup": null,
+                          "mappingFieldType": null,
+                          "fixed": false,
+                          "isSensitive": false,
+                          "isObject": false,
+                          "isArrayElement": false,
+                          "isScript": false
+                        },
+                        {
+                          "from": "$.urls.webhook",
+                          "to": "${input.notificationURL}",
+                          "map": null,
+                          "arrayPath": null,
+                          "arrayMapping": false,
+                          "lineItemGroup": null,
+                          "mappingFieldType": null,
+                          "fixed": false,
+                          "isSensitive": false,
+                          "isObject": false,
+                          "isArrayElement": false,
+                          "isScript": false
+                        },
+                        {
+                          "from": "$.urls.return",
+                          "to": "${input.resultURL}",
+                          "map": null,
+                          "arrayPath": null,
+                          "arrayMapping": false,
+                          "lineItemGroup": null,
+                          "mappingFieldType": null,
+                          "fixed": false,
+                          "isSensitive": false,
+                          "isObject": false,
+                          "isArrayElement": false,
+                          "isScript": false
+                        },
+                        {
+                          "from": "$.shipping.address.country",
+                          "to": "${input.shippingAddress.countryAlpha3}",
+                          "map": null,
+                          "arrayPath": null,
+                          "arrayMapping": false,
+                          "lineItemGroup": null,
+                          "mappingFieldType": null,
+                          "fixed": false,
+                          "isSensitive": false,
+                          "isObject": false,
+                          "isArrayElement": false,
+                          "isScript": false
+                        },
+                        {
+                          "from": "$.shipping.address.city",
+                          "to": "${input.shippingAddress.city}",
+                          "map": null,
+                          "arrayPath": null,
+                          "arrayMapping": false,
+                          "lineItemGroup": null,
+                          "mappingFieldType": null,
+                          "fixed": false,
+                          "isSensitive": false,
+                          "isObject": false,
+                          "isArrayElement": false,
+                          "isScript": false
+                        },
+                        {
+                          "from": "$.shipping.address.postalCode",
+                          "to": "${input.shippingAddress.postalCode}",
+                          "map": null,
+                          "arrayPath": null,
+                          "arrayMapping": false,
+                          "lineItemGroup": null,
+                          "mappingFieldType": null,
+                          "fixed": false,
+                          "isSensitive": false,
+                          "isObject": false,
+                          "isArrayElement": false,
+                          "isScript": false
+                        },
+                        {
+                          "from": "$.shipping.address.addressLine2",
+                          "to": "${input.shippingAddress.addressLine3}",
+                          "map": null,
+                          "arrayPath": null,
+                          "arrayMapping": false,
+                          "lineItemGroup": null,
+                          "mappingFieldType": null,
+                          "fixed": false,
+                          "isSensitive": false,
+                          "isObject": false,
+                          "isArrayElement": false,
+                          "isScript": false
+                        },
+                        {
+                          "from": "$.shipping.address.state",
+                          "to": "${input.shippingAddress.state}",
+                          "map": null,
+                          "arrayPath": null,
+                          "arrayMapping": false,
+                          "lineItemGroup": null,
+                          "mappingFieldType": null,
+                          "fixed": false,
+                          "isSensitive": false,
+                          "isObject": false,
+                          "isArrayElement": false,
+                          "isScript": false
+                        },
+                        {
+                          "from": "$.shipping.type",
+                          "to": "${input.shippingOption.name}",
+                          "map": null,
+                          "arrayPath": null,
+                          "arrayMapping": false,
+                          "lineItemGroup": null,
+                          "mappingFieldType": null,
+                          "fixed": false,
+                          "isSensitive": false,
+                          "isObject": false,
+                          "isArrayElement": false,
+                          "isScript": false
+                        },
+                        {
+                          "from": "$.transId",
+                          "to": "${input.transactionId}",
+                          "map": null,
+                          "arrayPath": null,
+                          "arrayMapping": false,
+                          "lineItemGroup": null,
+                          "mappingFieldType": null,
+                          "fixed": false,
+                          "isSensitive": false,
+                          "isObject": false,
+                          "isArrayElement": false,
+                          "isScript": false
+                        },
+                        {
+                          "from": "$.customerInfo.merchantCustomerId",
+                          "to": "${input.customerId}",
+                          "map": null,
+                          "arrayPath": null,
+                          "arrayMapping": false,
+                          "lineItemGroup": null,
+                          "mappingFieldType": null,
+                          "fixed": false,
+                          "isSensitive": false,
+                          "isObject": false,
+                          "isArrayElement": false,
+                          "isScript": false
+                        },
+                        {
+                          "from": "$.customerInfo.email",
+                          "to": "${input.emailAddress}",
+                          "map": null,
+                          "arrayPath": null,
+                          "arrayMapping": false,
+                          "lineItemGroup": null,
+                          "mappingFieldType": null,
+                          "fixed": false,
+                          "isSensitive": false,
+                          "isObject": false,
+                          "isArrayElement": false,
+                          "isScript": false
+                        },
+                        {
+                          "from": "$.billingAddress.country",
+                          "to": "${input.billingAddress.countryAlpha3}",
+                          "map": null,
+                          "arrayPath": null,
+                          "arrayMapping": false,
+                          "lineItemGroup": null,
+                          "mappingFieldType": null,
+                          "fixed": false,
+                          "isSensitive": false,
+                          "isObject": false,
+                          "isArrayElement": false,
+                          "isScript": false
+                        },
+                        {
+                          "from": "$.billingAddress.city",
+                          "to": "${input.billingAddress.city}",
+                          "map": null,
+                          "arrayPath": null,
+                          "arrayMapping": false,
+                          "lineItemGroup": null,
+                          "mappingFieldType": null,
+                          "fixed": false,
+                          "isSensitive": false,
+                          "isObject": false,
+                          "isArrayElement": false,
+                          "isScript": false
+                        },
+                        {
+                          "from": "$.billingAddress.postalCode",
+                          "to": "${input.billingAddress.postalCode}",
+                          "map": null,
+                          "arrayPath": null,
+                          "arrayMapping": false,
+                          "lineItemGroup": null,
+                          "mappingFieldType": null,
+                          "fixed": false,
+                          "isSensitive": false,
+                          "isObject": false,
+                          "isArrayElement": false,
+                          "isScript": false
+                        },
+                        {
+                          "from": "$.billingAddress.addressLine2",
+                          "to": "${input.billingAddress.addressLine3}",
+                          "map": null,
+                          "arrayPath": null,
+                          "arrayMapping": false,
+                          "lineItemGroup": null,
+                          "mappingFieldType": null,
+                          "fixed": false,
+                          "isSensitive": false,
+                          "isObject": false,
+                          "isArrayElement": false,
+                          "isScript": false
+                        },
+                        {
+                          "from": "$.billingAddress.state",
+                          "to": "${input.billingAddress.state}",
+                          "map": null,
+                          "arrayPath": null,
+                          "arrayMapping": false,
+                          "lineItemGroup": null,
+                          "mappingFieldType": null,
+                          "fixed": false,
+                          "isSensitive": false,
+                          "isObject": false,
+                          "isArrayElement": false,
+                          "isScript": false
+                        },
+                        {
+                          "from": "$.order.invoiceId",
+                          "to": "${input.orderId}",
+                          "map": null,
+                          "arrayPath": null,
+                          "arrayMapping": false,
+                          "lineItemGroup": null,
+                          "mappingFieldType": null,
+                          "fixed": false,
+                          "isSensitive": false,
+                          "isObject": false,
+                          "isArrayElement": false,
+                          "isScript": false
+                        },
+                        {
+                          "from": "$.amount.grossShippingAmount",
+                          "to": "${input.shippingOption.shFeeWithTaxInExponent}",
+                          "map": null,
+                          "arrayPath": null,
+                          "arrayMapping": false,
+                          "lineItemGroup": null,
+                          "mappingFieldType": null,
+                          "fixed": false,
+                          "isSensitive": false,
+                          "isObject": false,
+                          "isArrayElement": false,
+                          "isScript": false
+                        },
+                        {
+                          "from": "$.amount.value",
+                          "to": "${input.amountInExponent}",
+                          "map": null,
+                          "arrayPath": null,
+                          "arrayMapping": false,
+                          "lineItemGroup": null,
+                          "mappingFieldType": null,
+                          "fixed": false,
+                          "isSensitive": false,
+                          "isObject": false,
+                          "isArrayElement": false,
+                          "isScript": false
+                        },
+                        {
+                          "from": "$.amount.grossDiscount",
+                          "to": "${input.totalDiscountInExponent}",
+                          "map": null,
+                          "arrayPath": null,
+                          "arrayMapping": false,
+                          "lineItemGroup": null,
+                          "mappingFieldType": null,
+                          "fixed": false,
+                          "isSensitive": false,
+                          "isObject": false,
+                          "isArrayElement": false,
+                          "isScript": false
+                        },
+                        {
+                          "from": "$.amount.taxTotal",
+                          "to": "${input.totalProductTaxInExponent?number + input.shippingOption.shFeeTaxInExponent?number}",
+                          "map": null,
+                          "arrayPath": null,
+                          "arrayMapping": false,
+                          "lineItemGroup": null,
+                          "mappingFieldType": null,
+                          "fixed": false,
+                          "isSensitive": false,
+                          "isObject": false,
+                          "isArrayElement": false,
+                          "isScript": true
+                        },
+                        {
+                          "from": "$.paymentMethods.integrationType",
+                          "to": "${vars.integrationType}",
+                          "map": null,
+                          "arrayPath": null,
+                          "arrayMapping": false,
+                          "lineItemGroup": null,
+                          "mappingFieldType": null,
+                          "fixed": false,
+                          "isSensitive": false,
+                          "isObject": false,
+                          "isArrayElement": false,
+                          "isScript": true
+                        },
+                        {
+                          "from": "$.paymentMethods.type",
+                          "to": "${vars.paymentMethodType}",
+                          "map": null,
+                          "arrayPath": null,
+                          "arrayMapping": false,
+                          "lineItemGroup": null,
+                          "mappingFieldType": null,
+                          "fixed": false,
+                          "isSensitive": false,
+                          "isObject": false,
+                          "isArrayElement": false,
+                          "isScript": true
+                        },
+                        {
+                          "from": "$.order.items[0].taxRate",
+                          "to": "${input.lineItems[*].productTaxPercent}",
+                          "map": null,
+                          "arrayPath": "$.order.items",
+                          "arrayMapping": true,
+                          "lineItemGroup": null,
+                          "mappingFieldType": null,
+                          "fixed": false,
+                          "isSensitive": false,
+                          "isObject": false,
+                          "isArrayElement": false,
+                          "isScript": false
+                        },
+                        {
+                          "from": "$.order.items[0].quantity",
+                          "to": "${input.lineItems[*].quantity}",
+                          "map": null,
+                          "arrayPath": "$.order.items",
+                          "arrayMapping": true,
+                          "lineItemGroup": null,
+                          "mappingFieldType": null,
+                          "fixed": false,
+                          "isSensitive": false,
+                          "isObject": false,
+                          "isArrayElement": false,
+                          "isScript": false
+                        },
+                        {
+                          "from": "$.order.items[0].name",
+                          "to": "${input.lineItems[*].productName}",
+                          "map": null,
+                          "arrayPath": "$.order.items",
+                          "arrayMapping": true,
+                          "lineItemGroup": null,
+                          "mappingFieldType": null,
+                          "fixed": false,
+                          "isSensitive": false,
+                          "isObject": false,
+                          "isArrayElement": false,
+                          "isScript": false
+                        },
+                        {
+                          "from": "$.order.items[0].netPrice",
+                          "to": "${input.lineItems[*].unitPriceInExponent}",
+                          "map": null,
+                          "arrayPath": "$.order.items",
+                          "arrayMapping": true,
+                          "lineItemGroup": null,
+                          "mappingFieldType": null,
+                          "fixed": false,
+                          "isSensitive": false,
+                          "isObject": false,
+                          "isArrayElement": false,
+                          "isScript": false
+                        },
+                        {
+                          "from": "$.order.items[0].discountAmount",
+                          "to": "${input.lineItems[*].lineDiscountInExponent}",
+                          "map": null,
+                          "arrayPath": "$.order.items",
+                          "arrayMapping": true,
+                          "lineItemGroup": null,
+                          "mappingFieldType": null,
+                          "fixed": false,
+                          "isSensitive": false,
+                          "isObject": false,
+                          "isArrayElement": false,
+                          "isScript": false
+                        },
+                        {
+                          "from": "$.order.items[0].description",
+                          "to": "${input.lineItems[*].description?truncate(128)}",
+                          "map": null,
+                          "arrayPath": "$.order.items",
+                          "arrayMapping": true,
+                          "lineItemGroup": null,
+                          "mappingFieldType": null,
+                          "fixed": false,
+                          "isSensitive": false,
+                          "isObject": false,
+                          "isArrayElement": false,
+                          "isScript": true
+                        },
+                        {
+                          "from": "$.order.items[0].grossPrice",
+                          "to": "${input.lineItems[*].unitPriceWithTaxInExponent}",
+                          "map": null,
+                          "arrayPath": "$.order.items",
+                          "arrayMapping": true,
+                          "lineItemGroup": null,
+                          "mappingFieldType": null,
+                          "fixed": false,
+                          "isSensitive": false,
+                          "isObject": false,
+                          "isArrayElement": false,
+                          "isScript": false
+                        },
+                        {
+                          "from": "$.order.items[0].id",
+                          "to": "${input.lineItems[*].productId}",
+                          "map": null,
+                          "arrayPath": "$.order.items",
+                          "arrayMapping": true,
+                          "lineItemGroup": null,
+                          "mappingFieldType": null,
+                          "fixed": false,
+                          "isSensitive": false,
+                          "isObject": false,
+                          "isArrayElement": false,
+                          "isScript": false
+                        },
+                        {
+                          "from": "$.order.items[0].taxAmount",
+                          "to": "${input.lineItems[*].productTaxInExponent}",
+                          "map": null,
+                          "arrayPath": "$.order.items",
+                          "arrayMapping": true,
+                          "lineItemGroup": null,
+                          "mappingFieldType": null,
+                          "fixed": false,
+                          "isSensitive": false,
+                          "isObject": false,
+                          "isArrayElement": false,
+                          "isScript": false
+                        },
+                        {
+                          "from": "$.order.items[0].productInfo.imageUrl",
+                          "to": "${input.lineItems[*].defaultImageUrl}",
+                          "map": null,
+                          "arrayPath": "$.order.items",
+                          "arrayMapping": true,
+                          "lineItemGroup": null,
+                          "mappingFieldType": null,
+                          "fixed": false,
+                          "isSensitive": false,
+                          "isObject": false,
+                          "isArrayElement": false,
+                          "isScript": false
+                        },
+                        {
+                          "from": "$.order.items[0].productInfo.productUrl",
+                          "to": "${input.lineItems[*].productUrl}",
+                          "map": null,
+                          "arrayPath": "$.order.items",
+                          "arrayMapping": true,
+                          "lineItemGroup": null,
+                          "mappingFieldType": null,
+                          "fixed": false,
+                          "isSensitive": false,
+                          "isObject": false,
+                          "isArrayElement": false,
+                          "isScript": false
+                        },
+                        {
+                          "from": "$.order.items[0].productInfo.brand",
+                          "to": "${input.lineItems[*].productIdentifiers.brand}",
+                          "map": null,
+                          "arrayPath": "$.order.items",
+                          "arrayMapping": true,
+                          "lineItemGroup": null,
+                          "mappingFieldType": null,
+                          "fixed": false,
+                          "isSensitive": false,
+                          "isObject": false,
+                          "isArrayElement": false,
+                          "isScript": false
+                        }
+                      ]
+                    },
+                    "responseHeaders": null,
+                    "responseMappingFields": {
+                      "mappings": [
+                        {
+                          "from": "_links.redirect.type",
+                          "to": null,
+                          "map": null,
+                          "arrayPath": null,
+                          "arrayMapping": false,
+                          "lineItemGroup": null,
+                          "mappingFieldType": "BODY",
+                          "fixed": true,
+                          "isCustom": false,
+                          "persistCustomField": false,
+                          "isSensitive": false,
+                          "isObject": false,
+                          "isArrayElement": false,
+                          "isScript": false
+                        },
+                        {
+                          "from": "_links.#object",
+                          "to": null,
+                          "map": null,
+                          "arrayPath": null,
+                          "arrayMapping": false,
+                          "lineItemGroup": null,
+                          "mappingFieldType": "BODY",
+                          "fixed": true,
+                          "isCustom": false,
+                          "persistCustomField": false,
+                          "isSensitive": false,
+                          "isObject": true,
+                          "isArrayElement": false,
+                          "isScript": false
+                        },
+                        {
+                          "from": "_links.redirect.#object",
+                          "to": null,
+                          "map": null,
+                          "arrayPath": null,
+                          "arrayMapping": false,
+                          "lineItemGroup": null,
+                          "mappingFieldType": "BODY",
+                          "fixed": true,
+                          "isCustom": false,
+                          "persistCustomField": false,
+                          "isSensitive": false,
+                          "isObject": true,
+                          "isArrayElement": false,
+                          "isScript": false
+                        },
+                        {
+                          "from": "#object",
+                          "to": null,
+                          "map": null,
+                          "arrayPath": null,
+                          "arrayMapping": false,
+                          "lineItemGroup": null,
+                          "mappingFieldType": "BODY",
+                          "fixed": true,
+                          "isCustom": false,
+                          "persistCustomField": false,
+                          "isSensitive": false,
+                          "isObject": true,
+                          "isArrayElement": false,
+                          "isScript": false
+                        },
+                        {
+                          "from": "_links.redirect.href",
+                          "to": "redirectUrl",
+                          "map": null,
+                          "arrayPath": null,
+                          "arrayMapping": false,
+                          "lineItemGroup": null,
+                          "mappingFieldType": "BODY",
+                          "fixed": false,
+                          "isCustom": false,
+                          "persistCustomField": false,
+                          "isSensitive": false,
+                          "isObject": false,
+                          "isArrayElement": false,
+                          "isScript": false
+                        }
+                      ]
+                    },
+                    "responseContentType": "application/json",
+                    "headers": {
+                      "Content-Type": "application/json",
+                      "Idempotency-Key": "${input.idempotencyKey}"
+                    },
+                    "formArrayIndicator": null
+                  }
+                ],
+                "verify": {
+                  "localVerifyMapping": null,
+                  "localVerifyAuthenticationId": null,
+                  "remoteVerifyAuthorizationMappings": [
+                    {
+                      "url": "https://${vars.ingApiHost}/api/v2/payments/getByPayId/${input.verificationParams.PayID}",
+                      "authenticationIds": [
+                        "{{authentication_outbound_oauth2_1197}}"
+                      ],
+                      "method": "GET",
+                      "requestContentType": "application/json",
+                      "requestExample": null,
+                      "responseExample": "{\"amount\":{\"value\":1045,\"currency\":\"EUR\",\"capturedValue\":0,\"refundedValue\":0},\"billingAddress\":{},\"shipping\":{\"address\":{}},\"payId\":\"f991751d74df456898f08c015b4b4d09\",\"merchantId\":\"ingwb_36028776T\",\"transId\":\"7471552682290581504\",\"xId\":\"536336fe904d4369b9104bb2266e3d40\",\"refNr\":\"000000X0000001QL_7471552682290\",\"status\":\"CAPTURE_REQUEST\",\"responseCode\":\"00000000\",\"responseDescription\":\"REQUEST\",\"metadata\":{},\"paymentMethods\":{\"type\":\"WERO\",\"wero\":{\"walletId\":\"90748182-c590-49dd-8ead-da5328ceb346\",\"payplan\":\"SingleImmediate\",\"consentId\":\"019ec126-55c9-734d-82b1-216273973eb5\",\"paymentId\":\"019ec126-bdcd-772e-a36f-2cebe81937a8\",\"captureId\":\"019ec126-c00f-7397-96ea-b3f7dd0c10e8\"}}}",
+                      "requestMappingFields": {
+                        "mappings": []
+                      },
+                      "responseHeaders": null,
+                      "responseMappingFields": {
+                        "mappings": [
+                          {
+                            "from": "amount.capturedValue",
+                            "to": null,
+                            "map": null,
+                            "arrayPath": null,
+                            "arrayMapping": false,
+                            "lineItemGroup": null,
+                            "mappingFieldType": "BODY",
+                            "fixed": true,
+                            "isCustom": false,
+                            "persistCustomField": false,
+                            "isSensitive": false,
+                            "isObject": false,
+                            "isArrayElement": false,
+                            "isScript": false
+                          },
+                          {
+                            "from": "amount.refundedValue",
+                            "to": null,
+                            "map": null,
+                            "arrayPath": null,
+                            "arrayMapping": false,
+                            "lineItemGroup": null,
+                            "mappingFieldType": "BODY",
+                            "fixed": true,
+                            "isCustom": false,
+                            "persistCustomField": false,
+                            "isSensitive": false,
+                            "isObject": false,
+                            "isArrayElement": false,
+                            "isScript": false
+                          },
+                          {
+                            "from": "amount.currency",
+                            "to": null,
+                            "map": null,
+                            "arrayPath": null,
+                            "arrayMapping": false,
+                            "lineItemGroup": null,
+                            "mappingFieldType": "BODY",
+                            "fixed": true,
+                            "isCustom": false,
+                            "persistCustomField": false,
+                            "isSensitive": false,
+                            "isObject": false,
+                            "isArrayElement": false,
+                            "isScript": false
+                          },
+                          {
+                            "from": "refNr",
+                            "to": null,
+                            "map": null,
+                            "arrayPath": null,
+                            "arrayMapping": false,
+                            "lineItemGroup": null,
+                            "mappingFieldType": "BODY",
+                            "fixed": true,
+                            "isCustom": false,
+                            "persistCustomField": false,
+                            "isSensitive": false,
+                            "isObject": false,
+                            "isArrayElement": false,
+                            "isScript": false
+                          },
+                          {
+                            "from": "responseCode",
+                            "to": null,
+                            "map": null,
+                            "arrayPath": null,
+                            "arrayMapping": false,
+                            "lineItemGroup": null,
+                            "mappingFieldType": "BODY",
+                            "fixed": true,
+                            "isCustom": false,
+                            "persistCustomField": false,
+                            "isSensitive": false,
+                            "isObject": false,
+                            "isArrayElement": false,
+                            "isScript": false
+                          },
+                          {
+                            "from": "xId",
+                            "to": null,
+                            "map": null,
+                            "arrayPath": null,
+                            "arrayMapping": false,
+                            "lineItemGroup": null,
+                            "mappingFieldType": "BODY",
+                            "fixed": true,
+                            "isCustom": false,
+                            "persistCustomField": false,
+                            "isSensitive": false,
+                            "isObject": false,
+                            "isArrayElement": false,
+                            "isScript": false
+                          },
+                          {
+                            "from": "merchantId",
+                            "to": null,
+                            "map": null,
+                            "arrayPath": null,
+                            "arrayMapping": false,
+                            "lineItemGroup": null,
+                            "mappingFieldType": "BODY",
+                            "fixed": true,
+                            "isCustom": false,
+                            "persistCustomField": false,
+                            "isSensitive": false,
+                            "isObject": false,
+                            "isArrayElement": false,
+                            "isScript": false
+                          },
+                          {
+                            "from": "responseDescription",
+                            "to": null,
+                            "map": null,
+                            "arrayPath": null,
+                            "arrayMapping": false,
+                            "lineItemGroup": null,
+                            "mappingFieldType": "BODY",
+                            "fixed": true,
+                            "isCustom": false,
+                            "persistCustomField": false,
+                            "isSensitive": false,
+                            "isObject": false,
+                            "isArrayElement": false,
+                            "isScript": false
+                          },
+                          {
+                            "from": "paymentMethods.wero.walletId",
+                            "to": null,
+                            "map": null,
+                            "arrayPath": null,
+                            "arrayMapping": false,
+                            "lineItemGroup": null,
+                            "mappingFieldType": "BODY",
+                            "fixed": true,
+                            "isCustom": false,
+                            "persistCustomField": false,
+                            "isSensitive": false,
+                            "isObject": false,
+                            "isArrayElement": false,
+                            "isScript": false
+                          },
+                          {
+                            "from": "paymentMethods.wero.consentId",
+                            "to": null,
+                            "map": null,
+                            "arrayPath": null,
+                            "arrayMapping": false,
+                            "lineItemGroup": null,
+                            "mappingFieldType": "BODY",
+                            "fixed": true,
+                            "isCustom": false,
+                            "persistCustomField": false,
+                            "isSensitive": false,
+                            "isObject": false,
+                            "isArrayElement": false,
+                            "isScript": false
+                          },
+                          {
+                            "from": "paymentMethods.wero.paymentId",
+                            "to": null,
+                            "map": null,
+                            "arrayPath": null,
+                            "arrayMapping": false,
+                            "lineItemGroup": null,
+                            "mappingFieldType": "BODY",
+                            "fixed": true,
+                            "isCustom": false,
+                            "persistCustomField": false,
+                            "isSensitive": false,
+                            "isObject": false,
+                            "isArrayElement": false,
+                            "isScript": false
+                          },
+                          {
+                            "from": "paymentMethods.wero.captureId",
+                            "to": null,
+                            "map": null,
+                            "arrayPath": null,
+                            "arrayMapping": false,
+                            "lineItemGroup": null,
+                            "mappingFieldType": "BODY",
+                            "fixed": true,
+                            "isCustom": false,
+                            "persistCustomField": false,
+                            "isSensitive": false,
+                            "isObject": false,
+                            "isArrayElement": false,
+                            "isScript": false
+                          },
+                          {
+                            "from": "paymentMethods.wero.payplan",
+                            "to": null,
+                            "map": null,
+                            "arrayPath": null,
+                            "arrayMapping": false,
+                            "lineItemGroup": null,
+                            "mappingFieldType": "BODY",
+                            "fixed": true,
+                            "isCustom": false,
+                            "persistCustomField": false,
+                            "isSensitive": false,
+                            "isObject": false,
+                            "isArrayElement": false,
+                            "isScript": false
+                          },
+                          {
+                            "from": "amount.#object",
+                            "to": null,
+                            "map": null,
+                            "arrayPath": null,
+                            "arrayMapping": false,
+                            "lineItemGroup": null,
+                            "mappingFieldType": "BODY",
+                            "fixed": true,
+                            "isCustom": false,
+                            "persistCustomField": false,
+                            "isSensitive": false,
+                            "isObject": true,
+                            "isArrayElement": false,
+                            "isScript": false
+                          },
+                          {
+                            "from": "metadata.#object",
+                            "to": null,
+                            "map": null,
+                            "arrayPath": null,
+                            "arrayMapping": false,
+                            "lineItemGroup": null,
+                            "mappingFieldType": "BODY",
+                            "fixed": true,
+                            "isCustom": false,
+                            "persistCustomField": false,
+                            "isSensitive": false,
+                            "isObject": true,
+                            "isArrayElement": false,
+                            "isScript": false
+                          },
+                          {
+                            "from": "shipping.#object",
+                            "to": null,
+                            "map": null,
+                            "arrayPath": null,
+                            "arrayMapping": false,
+                            "lineItemGroup": null,
+                            "mappingFieldType": "BODY",
+                            "fixed": true,
+                            "isCustom": false,
+                            "persistCustomField": false,
+                            "isSensitive": false,
+                            "isObject": true,
+                            "isArrayElement": false,
+                            "isScript": false
+                          },
+                          {
+                            "from": "shipping.address.#object",
+                            "to": null,
+                            "map": null,
+                            "arrayPath": null,
+                            "arrayMapping": false,
+                            "lineItemGroup": null,
+                            "mappingFieldType": "BODY",
+                            "fixed": true,
+                            "isCustom": false,
+                            "persistCustomField": false,
+                            "isSensitive": false,
+                            "isObject": true,
+                            "isArrayElement": false,
+                            "isScript": false
+                          },
+                          {
+                            "from": "paymentMethods.#object",
+                            "to": null,
+                            "map": null,
+                            "arrayPath": null,
+                            "arrayMapping": false,
+                            "lineItemGroup": null,
+                            "mappingFieldType": "BODY",
+                            "fixed": true,
+                            "isCustom": false,
+                            "persistCustomField": false,
+                            "isSensitive": false,
+                            "isObject": true,
+                            "isArrayElement": false,
+                            "isScript": false
+                          },
+                          {
+                            "from": "paymentMethods.wero.#object",
+                            "to": null,
+                            "map": null,
+                            "arrayPath": null,
+                            "arrayMapping": false,
+                            "lineItemGroup": null,
+                            "mappingFieldType": "BODY",
+                            "fixed": true,
+                            "isCustom": false,
+                            "persistCustomField": false,
+                            "isSensitive": false,
+                            "isObject": true,
+                            "isArrayElement": false,
+                            "isScript": false
+                          },
+                          {
+                            "from": "billingAddress.#object",
+                            "to": null,
+                            "map": null,
+                            "arrayPath": null,
+                            "arrayMapping": false,
+                            "lineItemGroup": null,
+                            "mappingFieldType": "BODY",
+                            "fixed": true,
+                            "isCustom": false,
+                            "persistCustomField": false,
+                            "isSensitive": false,
+                            "isObject": true,
+                            "isArrayElement": false,
+                            "isScript": false
+                          },
+                          {
+                            "from": "#object",
+                            "to": null,
+                            "map": null,
+                            "arrayPath": null,
+                            "arrayMapping": false,
+                            "lineItemGroup": null,
+                            "mappingFieldType": "BODY",
+                            "fixed": true,
+                            "isCustom": false,
+                            "persistCustomField": false,
+                            "isSensitive": false,
+                            "isObject": true,
+                            "isArrayElement": false,
+                            "isScript": false
+                          },
+                          {
+                            "from": "amount.value",
+                            "to": "authorizationAmountInExponent",
+                            "map": null,
+                            "arrayPath": null,
+                            "arrayMapping": false,
+                            "lineItemGroup": null,
+                            "mappingFieldType": "BODY",
+                            "fixed": false,
+                            "isCustom": false,
+                            "persistCustomField": false,
+                            "isSensitive": false,
+                            "isObject": false,
+                            "isArrayElement": false,
+                            "isScript": false
+                          },
+                          {
+                            "from": "payId",
+                            "to": "pspReference",
+                            "map": null,
+                            "arrayPath": null,
+                            "arrayMapping": false,
+                            "lineItemGroup": null,
+                            "mappingFieldType": "BODY",
+                            "fixed": false,
+                            "isCustom": false,
+                            "persistCustomField": false,
+                            "isSensitive": false,
+                            "isObject": false,
+                            "isArrayElement": false,
+                            "isScript": false
+                          },
+                          {
+                            "from": "paymentMethods.type",
+                            "to": "paymentMethod",
+                            "map": {
+                              "WERO": "wero"
+                            },
+                            "arrayPath": null,
+                            "arrayMapping": false,
+                            "lineItemGroup": null,
+                            "mappingFieldType": "BODY",
+                            "fixed": false,
+                            "isCustom": false,
+                            "persistCustomField": false,
+                            "isSensitive": false,
+                            "isObject": false,
+                            "isArrayElement": false,
+                            "isScript": false
+                          },
+                          {
+                            "from": "transId",
+                            "to": "transactionId",
+                            "map": null,
+                            "arrayPath": null,
+                            "arrayMapping": false,
+                            "lineItemGroup": null,
+                            "mappingFieldType": "BODY",
+                            "fixed": false,
+                            "isCustom": false,
+                            "persistCustomField": false,
+                            "isSensitive": false,
+                            "isObject": false,
+                            "isArrayElement": false,
+                            "isScript": false
+                          },
+                          {
+                            "from": "status",
+                            "to": "transactionStatus",
+                            "map": {
+                              "OK": "ACCEPTED",
+                              "FAILED": "REJECTED"
+                            },
+                            "arrayPath": null,
+                            "arrayMapping": false,
+                            "lineItemGroup": null,
+                            "mappingFieldType": "BODY",
+                            "fixed": false,
+                            "isCustom": false,
+                            "persistCustomField": false,
+                            "isSensitive": false,
+                            "isObject": false,
+                            "isArrayElement": false,
+                            "isScript": false
+                          },
+                          {
+                            "from": "status",
+                            "to": "result",
+                            "map": {
+                              "OK": "AUTHORIZED",
+                              "FAILED": "UNAUTHORIZED",
+                              "CANCELLED": "CANCELLED",
+                              "CAPTURE_REQUEST": "AUTHORIZED"
+                            },
+                            "arrayPath": null,
+                            "arrayMapping": false,
+                            "lineItemGroup": null,
+                            "mappingFieldType": "BODY",
+                            "fixed": false,
+                            "isCustom": false,
+                            "persistCustomField": false,
+                            "isSensitive": false,
+                            "isObject": false,
+                            "isArrayElement": false,
+                            "isScript": false
+                          },
+                          {
+                            "from": "${(pspResponse.responseCode != \"00000000\" && pspResponse.status != \"OK\")?then(pspResponse.responseCode, \"\")}",
+                            "to": "errorCode",
+                            "map": null,
+                            "arrayPath": null,
+                            "arrayMapping": false,
+                            "lineItemGroup": null,
+                            "mappingFieldType": "BODY",
+                            "fixed": false,
+                            "isCustom": false,
+                            "persistCustomField": false,
+                            "isSensitive": false,
+                            "isObject": false,
+                            "isArrayElement": false,
+                            "isScript": true
+                          }
+                        ]
+                      },
+                      "responseContentType": "application/json",
+                      "headers": null,
+                      "formArrayIndicator": null
+                    }
+                  ]
+                },
+                "redirectFilteringParamDto": {
+                  "redirectParamFilterPolicy": "ALLOWLIST",
+                  "filteringParams": [
+                    "PayID"
+                  ]
+                }
+              }
+          auth: inherit
+        settings:
+          encodeUrl: true
+          timeout: 0
+          followRedirects: true
+          maxRedirects: 5
+          forwardAuthorizationHeader: false
+  - info:
+      name: Refund
+      type: folder
+      seq: 7
+    request:
+      auth: inherit
+    items:
+      - info:
+          name: Refund
+          type: http
+          seq: 1
+        http:
+          method: PUT
+          url: '{{rootUrl}}/{{service}}/merchant/accountgroups/{{accountGroupId}}/accounts/{{accountId}}/refund'
+          headers:
+            - name: Authorization
+              value: '{{token}}'
+          body:
+            type: json
+            data: '{"id":8339,"requestType":"REFUND","outboundMappings":[{"url":"https://${vars.ingApiHost}/api/v2/payments/${input.authPspReference}/refunds","authenticationIds":["{{authentication_outbound_oauth2_1197}}"],"method":"POST","requestContentType":"application/json","requestExample":"{\n  \"transId\": \"6B29FC40-1067-B31D-00DD010662DA\",\n  \"amount\": {\n    \"value\": 10000,\n    \"currency\": \"EUR\"\n  },\n    \"refNr\": \"24235345432\",\n}","responseExample":"{\n  \"merchantId\": \"MerchantIdTest\",\n  \"payId\": \"6c7c66e5352241c19d82c175a01f713a\",\n  \"xId\": \"93c4093c6d3644fcb6c60484f7a831fd\",\n  \"transId\": \"98582271-63d2-4b90-9422-5fb597a4c41d\",\n  \"status\": \"OK\",\n  \"responseCode\": \"00000000\",\n  \"responseDescription\": \"success\"\n}","requestMappingFields":{"mappings":[{"from":"$.amount.currency","to":"${input.currency}","map":null,"arrayPath":null,"arrayMapping":false,"lineItemGroup":null,"mappingFieldType":null,"fixed":false,"isSensitive":false,"isObject":false,"isArrayElement":false,"isScript":false},{"from":"$.amount.value","to":"${input.amountInExponent}","map":null,"arrayPath":null,"arrayMapping":false,"lineItemGroup":null,"mappingFieldType":null,"fixed":false,"isSensitive":false,"isObject":false,"isArrayElement":false,"isScript":false},{"from":"$.refNr","to":"${input.merchantReference}","map":null,"arrayPath":null,"arrayMapping":false,"lineItemGroup":null,"mappingFieldType":null,"fixed":false,"isSensitive":false,"isObject":false,"isArrayElement":false,"isScript":false},{"from":"$.transId","to":"${input.id}","map":null,"arrayPath":null,"arrayMapping":false,"lineItemGroup":null,"mappingFieldType":null,"fixed":false,"isSensitive":false,"isObject":false,"isArrayElement":false,"isScript":false}]},"responseHeaders":null,"responseMappingFields":{"mappings":[{"from":"xId","to":null,"map":null,"arrayPath":null,"arrayMapping":false,"lineItemGroup":null,"mappingFieldType":"BODY","fixed":true,"isCustom":false,"persistCustomField":false,"isSensitive":false,"isObject":false,"isArrayElement":false,"isScript":false},{"from":"merchantId","to":null,"map":null,"arrayPath":null,"arrayMapping":false,"lineItemGroup":null,"mappingFieldType":"BODY","fixed":true,"isCustom":false,"persistCustomField":false,"isSensitive":false,"isObject":false,"isArrayElement":false,"isScript":false},{"from":"responseDescription","to":null,"map":null,"arrayPath":null,"arrayMapping":false,"lineItemGroup":null,"mappingFieldType":"BODY","fixed":true,"isCustom":false,"persistCustomField":false,"isSensitive":false,"isObject":false,"isArrayElement":false,"isScript":false},{"from":"transId","to":null,"map":null,"arrayPath":null,"arrayMapping":false,"lineItemGroup":null,"mappingFieldType":"BODY","fixed":true,"isCustom":false,"persistCustomField":false,"isSensitive":false,"isObject":false,"isArrayElement":false,"isScript":false},{"from":"responseCode","to":null,"map":null,"arrayPath":null,"arrayMapping":false,"lineItemGroup":null,"mappingFieldType":"BODY","fixed":true,"isCustom":false,"persistCustomField":false,"isSensitive":false,"isObject":false,"isArrayElement":false,"isScript":false},{"from":"payId","to":"pspReference","map":null,"arrayPath":null,"arrayMapping":false,"lineItemGroup":null,"mappingFieldType":"BODY","fixed":false,"isCustom":false,"persistCustomField":false,"isSensitive":false,"isObject":false,"isArrayElement":false,"isScript":false},{"from":"status","to":"transactionStatus","map":{"OK":"ACCEPTED","FAILED":"REJECTED"},"arrayPath":null,"arrayMapping":false,"lineItemGroup":null,"mappingFieldType":"BODY","fixed":false,"isCustom":false,"persistCustomField":false,"isSensitive":false,"isObject":false,"isArrayElement":false,"isScript":false},{"from":"#object","to":null,"map":null,"arrayPath":null,"arrayMapping":false,"lineItemGroup":null,"mappingFieldType":"BODY","fixed":true,"isCustom":false,"persistCustomField":false,"isSensitive":false,"isObject":true,"isArrayElement":false,"isScript":false},{"from":"${(pspResponse.responseCode != \"00000000\" && pspResponse.status != \"OK\")?then(pspResponse.responseCode, \"\")}","to":"errorCode","map":null,"arrayPath":null,"arrayMapping":false,"lineItemGroup":null,"mappingFieldType":null,"fixed":false,"isCustom":false,"persistCustomField":false,"isSensitive":false,"isObject":false,"isArrayElement":false,"isScript":true}]},"responseContentType":"application/json","headers":{"Idempotency-Key":"${input.idempotencyKey}"},"formArrayIndicator":null}],"enabled":null,"configurationId":null,"googlePayGateway":null,"createdAt":"2026-06-09T09:18:38.298Z","updatedAt":"2026-06-09T09:18:38.298Z"}'
+          auth: inherit
+        settings:
+          encodeUrl: true
+          timeout: 0
+          followRedirects: true
+          maxRedirects: 5
+          forwardAuthorizationHeader: false
+  - info:
+      name: Settlement
+      type: folder
+      seq: 6
+    request:
+      auth: inherit
+    items:
+      - info:
+          name: Settlement
+          type: http
+          seq: 1
+        http:
+          method: PUT
+          url: '{{rootUrl}}/{{service}}/merchant/accountgroups/{{accountGroupId}}/accounts/{{accountId}}/settlement'
+          headers:
+            - name: Authorization
+              value: '{{token}}'
+          body:
+            type: json
+            data: '{"id":8338,"requestType":"SETTLEMENT","outboundMappings":[{"url":"https://${vars.ingApiHost}/api/v2/payments/${input.pspReference}/captures","authenticationIds":["{{authentication_outbound_oauth2_1197}}"],"method":"POST","requestContentType":"application/json","requestExample":"{\n  \"transId\": \"6B29FC40-1067-B31D-00DD010662DA\",\n  \"amount\": {\n    \"value\": 10000,\n    \"currency\": \"EUR\"\n  },\n  \"refNr\": \"24235345432\",\n  \"statementDescriptor\": \"gadgets shop\",\n \n}","responseExample":"{\n  \"merchantId\": \"MerchantIdTest\",\n  \"payId\": \"6c7c66e5352241c19d82c175a01f713a\",\n  \"xId\": \"93c4093c6d3644fcb6c60484f7a831fd\",\n  \"transId\": \"98582271-63d2-4b90-9422-5fb597a4c41d\",\n  \"status\": \"OK\",\n  \"responseCode\": \"00000000\",\n  \"responseDescription\": \"success\"\n}","requestMappingFields":{"mappings":[{"from":"$.amount.currency","to":"${input.currency}","map":null,"arrayPath":null,"arrayMapping":false,"lineItemGroup":null,"mappingFieldType":null,"fixed":false,"isSensitive":false,"isObject":false,"isArrayElement":false,"isScript":false},{"from":"$.amount.value","to":"${input.amountInExponent}","map":null,"arrayPath":null,"arrayMapping":false,"lineItemGroup":null,"mappingFieldType":null,"fixed":false,"isSensitive":false,"isObject":false,"isArrayElement":false,"isScript":false},{"from":"$.refNr","to":"${input.referenceId}","map":null,"arrayPath":null,"arrayMapping":false,"lineItemGroup":null,"mappingFieldType":null,"fixed":false,"isSensitive":false,"isObject":false,"isArrayElement":false,"isScript":false},{"from":"$.transId","to":"${input.id}","map":null,"arrayPath":null,"arrayMapping":false,"lineItemGroup":null,"mappingFieldType":null,"fixed":false,"isSensitive":false,"isObject":false,"isArrayElement":false,"isScript":false},{"from":"$.statementDescriptor","to":"gadgets shop","map":null,"arrayPath":null,"arrayMapping":false,"lineItemGroup":null,"mappingFieldType":null,"fixed":true,"isSensitive":false,"isObject":false,"isArrayElement":false,"isScript":false}]},"responseHeaders":null,"responseMappingFields":{"mappings":[{"from":"xId","to":null,"map":null,"arrayPath":null,"arrayMapping":false,"lineItemGroup":null,"mappingFieldType":"BODY","fixed":true,"isCustom":false,"persistCustomField":false,"isSensitive":false,"isObject":false,"isArrayElement":false,"isScript":false},{"from":"merchantId","to":null,"map":null,"arrayPath":null,"arrayMapping":false,"lineItemGroup":null,"mappingFieldType":"BODY","fixed":true,"isCustom":false,"persistCustomField":false,"isSensitive":false,"isObject":false,"isArrayElement":false,"isScript":false},{"from":"responseDescription","to":null,"map":null,"arrayPath":null,"arrayMapping":false,"lineItemGroup":null,"mappingFieldType":"BODY","fixed":true,"isCustom":false,"persistCustomField":false,"isSensitive":false,"isObject":false,"isArrayElement":false,"isScript":false},{"from":"transId","to":null,"map":null,"arrayPath":null,"arrayMapping":false,"lineItemGroup":null,"mappingFieldType":"BODY","fixed":true,"isCustom":false,"persistCustomField":false,"isSensitive":false,"isObject":false,"isArrayElement":false,"isScript":false},{"from":"responseCode","to":null,"map":null,"arrayPath":null,"arrayMapping":false,"lineItemGroup":null,"mappingFieldType":"BODY","fixed":true,"isCustom":false,"persistCustomField":false,"isSensitive":false,"isObject":false,"isArrayElement":false,"isScript":false},{"from":"payId","to":"pspReference","map":null,"arrayPath":null,"arrayMapping":false,"lineItemGroup":null,"mappingFieldType":"BODY","fixed":false,"isCustom":false,"persistCustomField":false,"isSensitive":false,"isObject":false,"isArrayElement":false,"isScript":false},{"from":"status","to":"transactionStatus","map":null,"arrayPath":null,"arrayMapping":false,"lineItemGroup":null,"mappingFieldType":"BODY","fixed":false,"isCustom":false,"persistCustomField":false,"isSensitive":false,"isObject":false,"isArrayElement":false,"isScript":false},{"from":"#object","to":null,"map":null,"arrayPath":null,"arrayMapping":false,"lineItemGroup":null,"mappingFieldType":"BODY","fixed":true,"isCustom":false,"persistCustomField":false,"isSensitive":false,"isObject":true,"isArrayElement":false,"isScript":false}]},"responseContentType":"application/json","headers":{"Idempotency-Key":"${input.idempotencyKey}"},"formArrayIndicator":null}],"enabled":null,"configurationId":null,"googlePayGateway":null,"createdAt":"2026-06-09T09:10:05.076Z","updatedAt":"2026-06-09T09:10:05.076Z"}'
+          auth: inherit
+        settings:
+          encodeUrl: true
+          timeout: 0
+          followRedirects: true
+          maxRedirects: 5
+          forwardAuthorizationHeader: false
+  - info:
+      name: Variable
+      type: folder
+      seq: 1
+    request:
+      auth: inherit
+    items:
+      - info:
+          name: Variable_hmacKey
+          type: http
+          seq: 3
+        http:
+          method: POST
+          url: '{{rootUrl}}/{{service}}/merchant/accountgroups/{{accountGroupId}}/accounts/{{accountId}}/variables'
+          headers:
+            - name: Authorization
+              value: '{{token}}'
+          body:
+            type: json
+            data: '{"id":"7493495438155976704","sensitive":true,"value":"{{hmacKey}}","key":"hmacKey"}'
+          auth: inherit
+        settings:
+          encodeUrl: true
+          timeout: 0
+          followRedirects: true
+          maxRedirects: 5
+          forwardAuthorizationHeader: false
+      - info:
+          name: Variable_ingApiBasePath
+          type: http
+          seq: 2
+        http:
+          method: POST
+          url: '{{rootUrl}}/{{service}}/merchant/accountgroups/{{accountGroupId}}/accounts/{{accountId}}/variables'
+          headers:
+            - name: Authorization
+              value: '{{token}}'
+          body:
+            type: json
+            data: '{"id":"7493495432015515648","sensitive":false,"value":"{{ingApiBasePath}}","key":"ingApiBasePath"}'
+          auth: inherit
+        settings:
+          encodeUrl: true
+          timeout: 0
+          followRedirects: true
+          maxRedirects: 5
+          forwardAuthorizationHeader: false
+      - info:
+          name: Variable_ingApiHost
+          type: http
+          seq: 1
+        http:
+          method: POST
+          url: '{{rootUrl}}/{{service}}/merchant/accountgroups/{{accountGroupId}}/accounts/{{accountId}}/variables'
+          headers:
+            - name: Authorization
+              value: '{{token}}'
+          body:
+            type: json
+            data: '{"id":"7493495427074621440","sensitive":false,"value":"{{ingApiHost}}","key":"ingApiHost"}'
+          auth: inherit
+        settings:
+          encodeUrl: true
+          timeout: 0
+          followRedirects: true
+          maxRedirects: 5
+          forwardAuthorizationHeader: false
+      - info:
+          name: Variable_integrationType
+          type: http
+          seq: 5
+        http:
+          method: POST
+          url: '{{rootUrl}}/{{service}}/merchant/accountgroups/{{accountGroupId}}/accounts/{{accountId}}/variables'
+          headers:
+            - name: Authorization
+              value: '{{token}}'
+          body:
+            type: json
+            data: '{"id":"7496731686488244224","sensitive":false,"value":"{{integrationType}}","key":"integrationType"}'
+          auth: inherit
+        settings:
+          encodeUrl: true
+          timeout: 0
+          followRedirects: true
+          maxRedirects: 5
+          forwardAuthorizationHeader: false
+      - info:
+          name: Variable_paymentMethodType
+          type: http
+          seq: 4
+        http:
+          method: POST
+          url: '{{rootUrl}}/{{service}}/merchant/accountgroups/{{accountGroupId}}/accounts/{{accountId}}/variables'
+          headers:
+            - name: Authorization
+              value: '{{token}}'
+          body:
+            type: json
+            data: '{"id":"7496731686991564800","sensitive":false,"value":"{{paymentMethodType}}","key":"paymentMethodType"}'
+          auth: inherit
+        settings:
+          encodeUrl: true
+          timeout: 0
+          followRedirects: true
+          maxRedirects: 5
+          forwardAuthorizationHeader: false
+request:
+  scripts:
+    - type: before-request
+      code: |-
+        let url = req.getUrl().toString();
+        if(bru.getEnvVar("service")==null || bru.getEnvVar("service")===""){
+            let updateUrl = url.replace("/{{service}}","")
+            req.url = updateUrl;
+        }
+bundled: true
+extensions:
+  bruno:
+    ignore:
+      - node_modules
+      - .git
+    exportedAt: '2026-09-03T05:29:43.228Z'
+    exportedUsing: Bruno
