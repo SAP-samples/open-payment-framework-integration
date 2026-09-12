@@ -1,0 +1,196 @@
+{
+  "id": "ca653b8d-f26a-4f4c-af9f-e492809f3ff1",
+  "name": "paymetric_3ds_with_savedCard",
+  "values": [
+    {
+      "key": "token",
+      "value": "",
+      "enabled": true
+    },
+    {
+      "key": "rootUrl",
+      "value": "https:\/\/opf-iss-d0.opf.commerce.stage.context.cloud.sap",
+      "enabled": true
+    },
+    {
+      "key": "service",
+      "value": "opf",
+      "enabled": true
+    },
+    {
+      "key": "accountGroupId",
+      "value": "6618",
+      "enabled": true
+    },
+    {
+      "key": "accountId",
+      "value": "5395",
+      "enabled": true
+    },
+    {
+      "key": "capturePattern",
+      "value": "PARTIAL_CAPTURE",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "enableOverCapture",
+      "value": "false",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "enableCaptureReAuth",
+      "value": "false",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "authorizationTimeoutDays",
+      "value": "7",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "sharedKey",
+      "value": "d********************************601",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "XiPayPassword",
+      "value": "5********************************a5d",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "threeDSVersion",
+      "value": "2.2.0",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "baseXiPayEndpoint",
+      "value": "cert-xipayapi.worldpay.com\/diecomm",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "baseXieCommEndpoint",
+      "value": "cert-xiecomm.worldpay.com\/diecomm",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "XiPayUsername",
+      "value": "WSAAviallQA",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "mid_CAN_USD",
+      "value": "1500_CAD_VMA",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "mid_DEU_EUR",
+      "value": "3005_EUR_VMA",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "mid_DEU_USD",
+      "value": "3005_USD_VMA",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "mid_NED_USD",
+      "value": "3002_USD_VMA",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "mid_HKG_USD",
+      "value": "4002_USD_VMA",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "mid_CAN_CAD",
+      "value": "1500_USD_VMA",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "mid_NED_EUR",
+      "value": "3002_EUR_VMA",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "mid_AUS_USD",
+      "value": "4001_USD_VMA",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "mid_UAE_USD",
+      "value": "3001_USD_VMA",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "mid_NZL_USD",
+      "value": "4007_USD_VMA",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "mid_GBR_GBP",
+      "value": "3003_GBP_VMA",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "mid_SGP_USD",
+      "value": "4004_USD_VMA",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "mid_NZL_NZD",
+      "value": "4007_NZD_VMA",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "mid_GBR_USD",
+      "value": "3003_USD_VMA",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "mid_USA_USD",
+      "value": "USD_VMAD_SALEM",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "midAUSAUD",
+      "value": "4001_AUD_VMA",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "baseXiSecureEndpoint",
+      "value": "cert-xipayapi.paymetric.com",
+      "enabled": true
+    }
+    
+  ],
+  "_postman_variable_scope": "environment",
+  "_postman_exported_at": "",
+  "_postman_exported_using": "Postman\/7.35.0"
+}
