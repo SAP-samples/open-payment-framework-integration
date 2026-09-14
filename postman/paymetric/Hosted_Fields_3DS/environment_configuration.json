@@ -1,5 +1,5 @@
 {
-  "id": "ca653b8d-f26a-4f4c-af9f-e492809f3ff1",
+  "id": "4b5b30eb-588c-41b5-96d3-aae1ac1adc90",
   "name": "paymetric_3ds_with_savedCard",
   "values": [
     {
@@ -66,12 +66,6 @@
     {
       "key": "threeDSVersion",
       "value": "2.2.0",
-      "enabled": true
-    }
-    ,
-    {
-      "key": "baseXiPayEndpoint",
-      "value": "cert-xipayapi.worldpay.com\/diecomm",
       "enabled": true
     }
     ,
@@ -178,14 +172,20 @@
     }
     ,
     {
-      "key": "midAUSAUD",
-      "value": "4001_AUD_VMA",
+      "key": "baseXiSecureEndpoint",
+      "value": "cert-xipayapi.paymetric.com",
       "enabled": true
     }
     ,
     {
-      "key": "baseXiSecureEndpoint",
-      "value": "cert-xipayapi.paymetric.com",
+      "key": "baseXiPayEndpoint",
+      "value": "cert-xipayapi.worldpay.com",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "mid_AUS_AUD",
+      "value": "4001_AUD_VMA",
       "enabled": true
     }
     
