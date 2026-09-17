@@ -129,9 +129,6 @@ client that consumes **``opf-txn-mgt``**
 https://<your-ias-host>/oauth2/token?resource=urn:sap:identity:application:provider:name:opf-txn-mgt
 ```
 
-### Capture and Refund
-
-
 | Variable | Description |
 | --- | --- |
 | `opfHost` | Base URL of your OPF tenant, e.g. `https://<tenant>.opf.commerce.stage.context.cloud.sap`. The write-back calls OPF's own API, and this is stored as an OPF variable so the mapping stays portable across tenants |
@@ -140,6 +137,40 @@ https://<your-ias-host>/oauth2/token?resource=urn:sap:identity:application:provi
 | `authentication_outbound_oauth2_client_secret_export_1184` | Client secret for that client |
 | `loyaltyPaymentMethodCode` | The LOY APM code |
 
+### Capture and Refund
+
+The card leg and the loyalty leg are captured and refunded separately, each by its own OPF
+**authorization ID**. Use the card authorization ID for the card leg and the LOY authorization ID for
+the loyalty leg. Both calls need an ``opf-txn-mgt`` token.
+
+**1. Find the two authorization IDs.** Both legs share the order's ``orderPaymentId``, so one query
+returns both authorizations. The loyalty leg is the one with payment method ``LOY``.
+
+```
+GET https://<your-opf-host>/opf/merchant/transactions?orderPaymentId=<orderPaymentId>
+```
+
+**2. Capture a leg.**
+
+```
+POST https://<your-opf-host>/opf/gateway/payment/capture
+{"authorizationId": "<card or LOY authorization id>", "amount": 522.99}
+```
+
+**3. Refund a leg.** Pass the authorization ID here too, not the capture ID. OPF finds the capture to
+refund against.
+
+```
+POST https://<your-opf-host>/opf/gateway/payment/refund
+{"authorizationId": "<card or LOY authorization id>", "amount": 522.99}
+```
+
+Both calls return ``202``. OPF sends each one to BTePOS with that leg's ``pspReference``, so the
+card capture settles the card order and the LOY capture settles the loyalty order.
+
+Keep each amount within its own leg. The card leg is limited to the amount BTePOS approved on the
+card, and the loyalty leg to the loyalty amount. BTePOS rejects a capture above the approved amount
+with ``errorCode 8``.
 
 ### Allowlist
 Add the following domains to the domain allowlist in OPF workbench. For instructions, see [Adding Tenant-specific Domain to Allowlist
