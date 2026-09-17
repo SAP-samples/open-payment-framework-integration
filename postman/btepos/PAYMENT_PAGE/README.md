@@ -69,11 +69,11 @@ The API requires a username and password to be provided by BTePOS technical supp
 
 ### Creating the Loyalty Payment Method (LOY)
 
-**Do this before importing the collection.** When an order is paid partly with BT StarBT loyalty
-points, the points portion settles outside the card rails and would otherwise be invisible to OPF.
+When an order is paid partly with BT StarBT loyalty points, the points portion settles outside the card rails.
 The collection records it as a second OPF transaction against an alternative payment method, so the
 loyalty amount appears alongside the card payment.
 
+**Do this before importing the collection.**
 Create the APM in the OPF workbench under **Payment Methods** before running the collection:
 
 | Field | Value |
@@ -91,7 +91,6 @@ Then **associate the APM with this payment integration**, either in the workbenc
 PATCH {{rootUrl}}/{{service}}/merchant/apms-accountgroups-batch
 {"value": [{"groupId": <your account group id>, "apmId": "<your LOY APM id>"}]}
 ```
-
 
 Finally set ``loyaltyPaymentMethodCode`` to the APM code (``LOY``) in the environment file. 
 
@@ -129,6 +128,9 @@ client that consumes **``opf-txn-mgt``**
 ```
 https://<your-ias-host>/oauth2/token?resource=urn:sap:identity:application:provider:name:opf-txn-mgt
 ```
+
+### Capture and Refund
+
 
 | Variable | Description |
 | --- | --- |
