@@ -309,7 +309,7 @@
               },
               {
                 "key": "Authorization",
-                "value": "Bearer {{token}}"
+                "value": "{{token}}"
               }
             ],
             "body": {
@@ -360,7 +360,7 @@
               },
               {
                 "key": "Authorization",
-                "value": "Bearer {{token}}"
+                "value": "{{token}}"
               }
             ],
             "body": {
