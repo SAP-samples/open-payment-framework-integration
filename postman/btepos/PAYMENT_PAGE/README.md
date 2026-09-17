@@ -8,7 +8,7 @@ The integration supports:
 * Deferred Capture (Single Capture per Order)
 * Refunds
 * Reversal
-* Loyalty write-back — records the BT StarBT loyalty portion of a split payment as its own OPF transaction
+* Split payments with loyalty points
 
 Roadmap Items
 * Native support in OPF for ISO 3166-1 Numeric country codes.
@@ -94,9 +94,9 @@ PATCH {{rootUrl}}/{{service}}/merchant/apms-accountgroups-batch
 
 Finally set ``loyaltyPaymentMethodCode`` to the APM code (``LOY``) in the environment file. 
 
-### Loyalty Write-Back
+### Split Payments with Loyalty Points
 
-The write-back runs during authorization verification:
+The loyalty leg is recorded during authorization verification:
 
 1. ``getOrderStatusExtended.do`` for the card payment (always runs).
 2. ``getOrderStatusExtended.do`` for the loyalty order.
@@ -122,7 +122,7 @@ issued for that leg — not an OPF-side value.
 **The card authorization is recorded at the amount BTePOS approved, not the order total.** When
 part of the basket is paid with loyalty points, BTePOS pre-authorizes only the remainder on the card.
 
-**OAuth2 for the write-back.** OPF calls the OPF API, so it needs an OPF-scoped token from a
+**OAuth2 for split payments.** OPF calls the OPF API, so it needs an OPF-scoped token from a
 client that consumes **``opf-txn-mgt``** 
 
 ```
@@ -131,7 +131,7 @@ https://<your-ias-host>/oauth2/token?resource=urn:sap:identity:application:provi
 
 | Variable | Description |
 | --- | --- |
-| `opfHost` | Base URL of your OPF tenant, e.g. `https://<tenant>.opf.commerce.stage.context.cloud.sap`. The write-back calls OPF's own API, and this is stored as an OPF variable so the mapping stays portable across tenants |
+| `opfHost` | Base URL of your OPF tenant, e.g. `https://<tenant>.opf.commerce.stage.context.cloud.sap`. The loyalty leg is recorded through OPF's own API, and this is stored as an OPF variable so the mapping stays portable across tenants |
 | `authentication_outbound_oauth2_token_url_export_1184` | IAS token endpoint **including** the `?resource=…opf-txn-mgt` query parameter |
 | `authentication_outbound_oauth2_client_id_export_1184` | Client ID of your `opf-txn-mgt` OAuth client |
 | `authentication_outbound_oauth2_client_secret_export_1184` | Client secret for that client |
@@ -204,7 +204,7 @@ API Key Configuration
 - ``authentication_outbound_basic_auth_username_export_792``
 - ``authentication_outbound_basic_auth_password_export_792``
 
-#### Loyalty write-back (only if StarBT loyalty is in scope)
+#### Split payments with loyalty points (only if StarBT loyalty is in scope)
 - ``authentication_outbound_oauth2_token_url_export_1184``
 - ``authentication_outbound_oauth2_client_id_export_1184``
 - ``authentication_outbound_oauth2_client_secret_export_1184``
