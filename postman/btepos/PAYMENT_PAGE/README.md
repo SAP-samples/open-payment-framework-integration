@@ -8,9 +8,7 @@ The integration supports:
 * Deferred Capture (Single Capture per Order)
 * Refunds
 * Reversal
-
-Roadmap Items
-* Native support in OPF for ISO 3166-1 Numeric country codes.
+* Split payments with loyalty points
 
 
 ## Setup Instructions
@@ -66,6 +64,119 @@ The API requires a username and password to be provided by BTePOS technical supp
 * Set the ipay_bt_password **value** for environment variable ``authentication_outbound_basic_auth_password_export_792``
 
 
+### Creating the Loyalty Payment Method (LOY)
+
+When an order is paid partly with BT StarBT loyalty points, the points portion settles outside the card rails.
+The collection records it as a second OPF transaction against an alternative payment method, so the
+loyalty amount appears alongside the card payment.
+
+**Do this before importing the collection.**
+Create the APM in the OPF workbench under **Payment Methods** before running the collection:
+
+| Field | Value |
+| --- | --- |
+| APM Code | ``LOY`` |
+| APM Name | Loyalty Points |
+| Type | ``REDIRECT`` |
+| Capture Pattern | ``PARTIAL_CAPTURE`` |
+| Supports Refund | ``true`` |
+| Supports Recurring | ``false`` |
+
+Then **associate the APM with this payment integration**, either in the workbench or via the API:
+
+```
+PATCH {{rootUrl}}/{{service}}/merchant/apms-accountgroups-batch
+{"value": [{"groupId": <your account group id>, "apmId": "<your LOY APM id>"}]}
+```
+
+Finally set ``loyaltyPaymentMethodCode`` to the APM code (``LOY``) in the environment file. 
+
+### Split Payments with Loyalty Points
+
+The loyalty leg is recorded during authorization verification:
+
+1. ``getOrderStatusExtended.do`` for the card payment (always runs).
+2. ``getOrderStatusExtended.do`` for the loyalty order.
+3. ``GET ${vars.opfHost}/opf/merchant/transactions?…&expand=accountGroup`` — reads the account
+   group from the card authorization, so no account group ID needs configuring.
+4. ``POST ${vars.opfHost}/opf/merchant/transactions`` — records the loyalty portion as an
+   ``AUTHORIZATION`` against that account group with ``paymentMethodCode: LOY``.
+
+**Both legs share the same ``orderPaymentId``.** OPF holds two authorizations against it — the card
+leg and the loyalty leg — each with its own transaction ID and its own ``pspReference``. Capture and
+refund each leg individually by passing its ``authorizationId``. Sharing the payment ID also means
+the loyalty transaction carries the same ``CART_REF`` and ``ORDER_REF`` tags as the card payment.
+
+| Field | Meaning | Mapped from |
+| --- | --- | --- |
+| ``orderPaymentId`` | the order's payment ID, shared by both legs | ``input.orderId`` |
+| ``pspReference`` | the **BTePOS order id** for the loyalty order | ``input.customFields.loyaltyOrderId`` |
+
+``pspReference`` is what capture and refund send to BTePOS as ``orderId`` (``deposit.do`` and
+``refund.do`` both map ``$.orderId <- ${input.pspReference}``), so it must be the identifier BTePOS
+issued for that leg — not an OPF-side value.
+
+**The card authorization is recorded at the amount BTePOS approved, not the order total.** When
+part of the basket is paid with loyalty points, BTePOS pre-authorizes only the remainder on the card.
+
+**OAuth2 for split payments.** OPF calls the OPF API, so it needs an OPF-scoped token from a
+client that consumes **``opf-txn-mgt``** 
+
+```
+https://<your-ias-host>/oauth2/token?resource=urn:sap:identity:application:provider:name:opf-txn-mgt
+```
+
+| Variable | Description |
+| --- | --- |
+| `opfHost` | Base URL of your OPF tenant, e.g. `https://<tenant>.opf.commerce.stage.context.cloud.sap`. The loyalty leg is recorded through OPF's own API, and this is stored as an OPF variable so the mapping stays portable across tenants |
+| `authentication_outbound_oauth2_token_url_export_1184` | IAS token endpoint **including** the `?resource=…opf-txn-mgt` query parameter |
+| `authentication_outbound_oauth2_client_id_export_1184` | Client ID of your `opf-txn-mgt` OAuth client |
+| `authentication_outbound_oauth2_client_secret_export_1184` | Client secret for that client |
+| `loyaltyPaymentMethodCode` | The LOY APM code |
+
+### Capture, Refund and Reversal
+
+The card leg and the loyalty leg are captured, refunded and reversed separately, each by its own OPF
+**authorization ID**. Use the card authorization ID for the card leg and the LOY authorization ID for
+the loyalty leg. All three calls need an ``opf-txn-mgt`` token.
+
+**1. Find the two authorization IDs.** Both legs share the order's ``orderPaymentId``, so one query
+returns both authorizations. The loyalty leg is the one with payment method ``LOY``.
+
+```
+GET https://<your-opf-host>/opf/merchant/transactions?orderPaymentId=<orderPaymentId>
+```
+
+**2. Capture a leg.**
+
+```
+POST https://<your-opf-host>/opf/gateway/payment/capture
+{"authorizationId": "<card or LOY authorization id>", "amount": 522.99}
+```
+
+**3. Refund a leg.** Pass the authorization ID here too, not the capture ID. OPF finds the capture to
+refund against.
+
+```
+POST https://<your-opf-host>/opf/gateway/payment/refund
+{"authorizationId": "<card or LOY authorization id>", "amount": 522.99}
+```
+
+**4. Reverse a leg.** To release an authorization that has not been captured, cancel it by its
+authorization ID. No amount is needed.
+
+```
+POST https://<your-opf-host>/opf/gateway/payment/cancel
+{"authorizationId": "<card or LOY authorization id>"}
+```
+
+All three calls return ``202``. OPF sends each one to BTePOS with that leg's ``pspReference``, so a
+call on the card leg acts on the card order and a call on the LOY leg acts on the loyalty order.
+
+Keep each amount within its own leg. The card leg is limited to the amount BTePOS approved on the
+card, and the loyalty leg to the loyalty amount. BTePOS rejects a capture above the approved amount
+with ``errorCode 8``.
+
 ### Allowlist
 Add the following domains to the domain allowlist in OPF workbench. For instructions, see [Adding Tenant-specific Domain to Allowlist
 ](https://help.sap.com/docs/OPEN_PAYMENT_FRAMEWORK/3580ff1b17144b8780c055bbb7c2bed3/a6836485b4494cfaad4033b4ee7a9c64.html).
@@ -89,6 +200,13 @@ In summary, you should have edited the following variables:
 API Key Configuration
 - ``authentication_outbound_basic_auth_username_export_792``
 - ``authentication_outbound_basic_auth_password_export_792``
+
+#### Split payments with loyalty points (only if StarBT loyalty is in scope)
+- ``authentication_outbound_oauth2_token_url_export_1184``
+- ``authentication_outbound_oauth2_client_id_export_1184``
+- ``authentication_outbound_oauth2_client_secret_export_1184``
+- ``opfHost``
+- ``loyaltyPaymentMethodCode``
 
 
 For test environment, all other values can be left as defaults.  
