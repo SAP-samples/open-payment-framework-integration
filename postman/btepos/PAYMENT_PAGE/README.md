@@ -10,9 +10,6 @@ The integration supports:
 * Reversal
 * Split payments with loyalty points
 
-Roadmap Items
-* Native support in OPF for ISO 3166-1 Numeric country codes.
-
 
 ## Setup Instructions
 
