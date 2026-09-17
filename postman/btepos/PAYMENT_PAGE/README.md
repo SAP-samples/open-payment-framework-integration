@@ -92,17 +92,8 @@ PATCH {{rootUrl}}/{{service}}/merchant/apms-accountgroups-batch
 {"value": [{"groupId": <your account group id>, "apmId": "<your LOY APM id>"}]}
 ```
 
-This endpoint returns ``207`` with a per-item status, so check the inner status rather than the
-outer response code, then confirm with a ``GET`` of the account group — ``apmConfigurations`` should
-list the APM.
 
-The association matters: without it OPF echoes the raw code back as the payment method, and with it
-the transaction resolves the APM's display name (``Loyalty Points``), which is what the storefront
-and back office show.
-
-Finally set ``loyaltyPaymentMethodCode`` to the APM code (``LOY``) in the environment file. The
-account group ID is not configured: the write-back reads it from the card authorization it is
-recording alongside, so the collection works on any tenant without further edits.
+Finally set ``loyaltyPaymentMethodCode`` to the APM code (``LOY``) in the environment file. 
 
 ### Loyalty Write-Back
 
@@ -118,8 +109,7 @@ The write-back runs during authorization verification:
 **Both legs share the same ``orderPaymentId``.** OPF holds two authorizations against it — the card
 leg and the loyalty leg — each with its own transaction ID and its own ``pspReference``. Capture and
 refund each leg individually by passing its ``authorizationId``. Sharing the payment ID also means
-the loyalty transaction carries the same ``CART_REF`` and ``ORDER_REF`` tags as the card payment,
-with no tagging call needed.
+the loyalty transaction carries the same ``CART_REF`` and ``ORDER_REF`` tags as the card payment.
 
 | Field | Meaning | Mapped from |
 | --- | --- | --- |
@@ -130,39 +120,11 @@ with no tagging call needed.
 ``refund.do`` both map ``$.orderId <- ${input.pspReference}``), so it must be the identifier BTePOS
 issued for that leg — not an OPF-side value.
 
-**The card authorization must be recorded at the amount BTePOS approved, not the order total.** When
+**The card authorization is recorded at the amount BTePOS approved, not the order total.** When
 part of the basket is paid with loyalty points, BTePOS pre-authorizes only the remainder on the card.
-The card verify response therefore maps:
 
-```
-paymentAmountInfo.approvedAmount  ->  authorizationAmountInExponent
-```
-
-Without this the card authorization keeps the full order total, the loyalty amount is counted twice,
-and capture fails with ``errorCode 8, "deposited amount is greater then registered amount"``. The
-value is in minor units, so it maps to ``authorizationAmountInExponent`` rather than
-``authorizationAmount``.
-
-Steps 2 to 4 are gated by the **``hasLoyalties``** mapping condition:
-
-```
-(input.customFields.loyaltyOrderId)!''?has_content
-```
-
-so an order with no loyalty component behaves exactly as before — the three extra calls are skipped.
-The amount comes from ``input.customFields.loyaltyAmount`` (minor units, divided by 100), and the
-currency follows the order rather than being fixed.
-
-> **Import order matters:** the **Authentications** and **Mapping condition expressions** folders must
-> run *before* **Authorization**. They create the OAuth2 authentication and the condition and store
-> their generated IDs in the environment, which the authorization mapping references. The collection
-> is ordered correctly — keep it that way if you re-order anything.
-
-**OAuth2 for the write-back.** Step 3 calls the OPF API, so it needs an OPF-scoped token from a
-client that consumes **``opf-txn-mgt``** (an ``opf-int-mgt`` provisioning client returns ``403`` on
-this endpoint). SAP IAS only issues a scoped token when the request carries a ``resource`` parameter,
-and OPF's OAuth2 authentication has no field for it — ``resource`` is silently dropped from the
-stored configuration. Append it to the **token URL** as a query parameter instead:
+**OAuth2 for the write-back.** OPF calls the OPF API, so it needs an OPF-scoped token from a
+client that consumes **``opf-txn-mgt``** 
 
 ```
 https://<your-ias-host>/oauth2/token?resource=urn:sap:identity:application:provider:name:opf-txn-mgt
