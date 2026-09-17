@@ -287,7 +287,7 @@
         }
         ,
         {
-          "name": "Oauth2_loyalty_writeback",
+          "name": "Oauth2_split_payment_loyalty",
           "event": [
             {
               "listen": "test",
@@ -314,7 +314,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\"method\":\"OAUTH2\",\"name\":\"OPF Txn-Mgt loyalty writeback_export\",\"id\":1184,\"oauth2\":{\"tokenUrl\":\"{{authentication_outbound_oauth2_token_url_export_1184}}\",\"clientId\":\"{{authentication_outbound_oauth2_client_id_export_1184}}\",\"clientSecret\":\"{{authentication_outbound_oauth2_client_secret_export_1184}}\",\"useBasicAuth\":\"{{authentication_outbound_oauth2_use_basic_auth_export_1184}}\"}}"
+              "raw": "{\"method\":\"OAUTH2\",\"name\":\"OPF Txn-Mgt split payment loyalty_export\",\"id\":1184,\"oauth2\":{\"tokenUrl\":\"{{authentication_outbound_oauth2_token_url_export_1184}}\",\"clientId\":\"{{authentication_outbound_oauth2_client_id_export_1184}}\",\"clientSecret\":\"{{authentication_outbound_oauth2_client_secret_export_1184}}\",\"useBasicAuth\":\"{{authentication_outbound_oauth2_use_basic_auth_export_1184}}\"}}"
             },
             "url": {
               "raw": "{{rootUrl}}/{{service}}/merchant/authentications",
