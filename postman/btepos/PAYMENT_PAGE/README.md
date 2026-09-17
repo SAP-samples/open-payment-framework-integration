@@ -137,11 +137,11 @@ https://<your-ias-host>/oauth2/token?resource=urn:sap:identity:application:provi
 | `authentication_outbound_oauth2_client_secret_export_1184` | Client secret for that client |
 | `loyaltyPaymentMethodCode` | The LOY APM code |
 
-### Capture and Refund
+### Capture, Refund and Reversal
 
-The card leg and the loyalty leg are captured and refunded separately, each by its own OPF
+The card leg and the loyalty leg are captured, refunded and reversed separately, each by its own OPF
 **authorization ID**. Use the card authorization ID for the card leg and the LOY authorization ID for
-the loyalty leg. Both calls need an ``opf-txn-mgt`` token.
+the loyalty leg. All three calls need an ``opf-txn-mgt`` token.
 
 **1. Find the two authorization IDs.** Both legs share the order's ``orderPaymentId``, so one query
 returns both authorizations. The loyalty leg is the one with payment method ``LOY``.
@@ -165,8 +165,16 @@ POST https://<your-opf-host>/opf/gateway/payment/refund
 {"authorizationId": "<card or LOY authorization id>", "amount": 522.99}
 ```
 
-Both calls return ``202``. OPF sends each one to BTePOS with that leg's ``pspReference``, so the
-card capture settles the card order and the LOY capture settles the loyalty order.
+**4. Reverse a leg.** To release an authorization that has not been captured, cancel it by its
+authorization ID. No amount is needed.
+
+```
+POST https://<your-opf-host>/opf/gateway/payment/cancel
+{"authorizationId": "<card or LOY authorization id>"}
+```
+
+All three calls return ``202``. OPF sends each one to BTePOS with that leg's ``pspReference``, so a
+call on the card leg acts on the card order and a call on the LOY leg acts on the loyalty order.
 
 Keep each amount within its own leg. The card leg is limited to the amount BTePOS approved on the
 card, and the loyalty leg to the loyalty amount. BTePOS rejects a capture above the approved amount
