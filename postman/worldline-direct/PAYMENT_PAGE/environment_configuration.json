@@ -1,5 +1,5 @@
 {
-  "id": "df8f35c4-718c-4e2b-bfef-aed93dacfce6",
+  "id": "7b348b27-7cd8-42c4-a212-8fde62b1a959",
   "name": "Worldline direct",
   "values": [
     {
@@ -34,13 +34,13 @@
     }
     ,
     {
-      "key": "supportOverCapture",
+      "key": "enableOverCapture",
       "value": "false",
       "enabled": true
     }
     ,
     {
-      "key": "enableOverCapture",
+      "key": "enableCaptureReAuth",
       "value": "false",
       "enabled": true
     }
