@@ -17,8 +17,9 @@ b) Create an Klarna payment integration in OPF workbench.
 
 c) Preparing  Bruno Environment Variables  so the collection can be imported with all your OPF tenant and Klarna test account unique values. 
 
-d) Validate the configuration in OPF workbench.
+d) Create an APM for the Klarna configuration.
 
+e) Validate the configuration in the OPF workbench.
 
 ## Creating an Klarna Account ##
 
@@ -94,21 +95,45 @@ Intent for the session. The field is designed to let partners inform Klarna of t
 
 Promo codes - The array could be used to define which of the configured payment options within a payment category (pay_later, pay_over_time, etc.) should be shown for this purchase.
 
+## Create APM for Klarna Configuration
+
+You need to create 3 APMs (Pay Now, Pay Later, Pay Over Time) in your OPF workbench by following the [Help Portal](https://help.sap.com/docs/OPEN_PAYMENT_FRAMEWORK/8ccca5bb539a49258e924b467ee4e1c2/45767bd743cc45d79f2840a549bd490c.html), then assign them to your Klarna configuration.
+
+Please note:
+
+![](../images/Klarna_apm.png)
+
+1. The APM Code of your APM configuration must be:
+    * `paynow` for Pay Now
+    * `paylater` for Pay Later
+    * `payovertime` for Pay Over Time
+
+   Otherwise, those payment methods will be missing from your Klarna Authorization configuration, and you will need to configure them manually based on the [Klarna documentation](https://docs.klarna.com/acquirer/klarna/web-payments/additional-resources/payment-method-grouping/).
+
+2. Make sure you have assigned your payment integration. Only after this step will you be able to find the payment method mapping in your Authorization configuration. (Navigate to the Response Mapping of **Direct Payment Request** or **Payment Submit Complete Call**.)
+
+![](../images/klarna_auth_paymentMehtod.png)
 
 ## Allowlist
 
 Depending on your environment, add the following domains to the domain allowlist in OPF workbench. For instructions, see [Adding Tenant-specific Domain to Allowlist
 ](https://help.sap.com/docs/OPEN_PAYMENT_FRAMEWORK/3580ff1b17144b8780c055bbb7c2bed3/a6836485b4494cfaad4033b4ee7a9c64.html).
 
-Testing(playground)
-``api.playground.klarna.com`` for Europe
-``api-na.playground.klaran.com`` for North America
-``api-oc.playground.klaran.com`` for Oceania
+**Testing (Playground)**
 
-Live(production)
-``api.klarna.com`` for Europe
-``api-na.klaran.com`` for North America
-``api-oc.klaran.com`` for Oceania
+| Domain | Region |
+|---|---|
+| `api.playground.klarna.com` | Europe |
+| `api-na.playground.klarna.com` | North America |
+| `api-oc.playground.klarna.com` | Oceania |
+
+**Live (Production)**
+
+| Domain | Region |
+|---|---|
+| `api.klarna.com` | Europe |
+| `api-na.klarna.com` | North America |
+| `api-oc.klarna.com` | Oceania |
 
 
 ## Summary
