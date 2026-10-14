@@ -1,16 +1,16 @@
 ## Introduction
 
-This Postman Collection aids in integrating the `Intercept_eCommerce_with_XiSecure_Integration` solution of Paymetric with 3DS into the Open Payment Framework (OPF).
+This Postman collection aids in integrating the `Intercept_eCommerce_with_XiSecure_Integration` solution of Paymetric with 3DS into the Open Payment Framework (OPF).
 
 The integration supports:
 
-* Paymetric token via XiIntercept for eCommerce
+* Paymetric tokenization via XiIntercept for eCommerce
 * Authorization via XiPay (both new raw card and saved Paymetric token)
 
 
 ### In Summary
 
-To import the [Postman Collection](mapping_configuration.json), this page will guide you through the following steps:
+To import the [Postman Collection](mapping_configuration.json), this guide walks you through the following steps:
 
 a) Sign up for a Paymetric developer account.
 
@@ -20,9 +20,11 @@ c) Obtain the credentials for your Paymetric integration.
 
 d) Prepare the [Postman Environment](environment_configuration.json) file so the collection can be imported with all your OPF tenant and Paymetric test account values.
 
-e) Apply your own Cascading Style Sheet (CSS) to your iFrame.
+e) Apply your own CSS to your iFrame.
 
-f) Manage Paymetric Merchant IDs based on country and currency (template solution) — *to be updated*.
+f) Manage Paymetric Merchant IDs based on card currency and sales area.
+
+g) Use Intelligent Routing Rules to filter card types by sales area.
 
 
 ### Signing Up for a Paymetric Developer Account
@@ -49,7 +51,7 @@ Then copy the Merchant GUID to your OPF workbench:
 
 Once you have created your test account, contact the Paymetric support team to obtain the following two groups of API credentials:
 
-a) API credentials for Paymetric token:
+a) API credentials for Paymetric tokenization:
 - `Merchant GUID`
 - `Shared Key`
 
@@ -64,15 +66,15 @@ b) API credentials for Authorization (XiPay) — Dev cartridge simulator (max au
 
 Get your access token by [creating an external app](https://help.sap.com/docs/OPEN_PAYMENT_FRAMEWORK/8ccca5bb539a49258e924b467ee4e1c2/d927d21974fe4b368e063f72733bf0fe.html) and [making authorized API calls](https://help.sap.com/docs/OPEN_PAYMENT_FRAMEWORK/8ccca5bb539a49258e924b467ee4e1c2/40c792e66e2942209dc853a43533d78d.html).
 
-Copy the value of the `access_token` field (it's a JWT) and set it as the `token` value in the environment file.
+Copy the value of the `access_token` field (it is a JWT) and set it as the `token` value in the environment file.
 
-**IMPORTANT**: Ensure the value is prefixed with **Bearer**. e.g. `Bearer {{token}}`.
+**IMPORTANT**: Ensure the value is prefixed with **Bearer**, e.g. `Bearer {{token}}`.
 
 **2. Root URL**
 
-The `rootUrl` is the **base URL** of your OPF tenant.
+The `rootUrl` is the base URL of your OPF tenant.
 
-For example, if your workbench/OPF cockpit URL is:
+For example, if your workbench URL is:
 
 <https://opf-iss-d0.uis.commerce.stage.context.cloud.sap/opf-workbench>
 
@@ -83,41 +85,41 @@ https://opf-iss-d0.uis.commerce.stage.context.cloud.sap
 
 **3. Integration ID and Configuration ID**
 
-The `integrationId` and `configurationId` values identify the payment integration and payment configuration, which can be found in the top left of your **Configuration Details** page in the OPF workbench.
+The `integrationId` and `configurationId` values identify your payment integration and configuration. They can be found in the top-left of the **Configuration Details** page in the OPF workbench.
 
 * `integrationId` maps to `accountGroupId` in Postman
 * `configurationId` maps to `accountId` in Postman
 
 **4. sharedKey**
 
-Copy the `Shared Key` provided by the Paymetric support team. It is used for Paymetric token-related API calls.
+Copy the `Shared Key` provided by the Paymetric support team. It is used for Paymetric tokenization API calls.
 
 **5. baseXieCommEndpoint**
 
-Copy the XiIntercept eCommerce endpoint value for your environment:
+Copy the XiIntercept eCommerce endpoint for your environment:
 
 * Cert: https://cert-xiecomm.worldpay.com
 * Prod: https://xiecomm.worldpay.com
 
 **6. baseXiPayEndpoint**
 
-Copy the XiPay Web Service endpoint value for your environment:
+Copy the XiPay Web Service endpoint for your environment:
 
 * Cert: https://cert-xipayapi.worldpay.com
 * Prod: https://xipayapi.worldpay.com
 
 **7. XiPayUsername and XiPayPassword**
 
-Copy the `User` and `Password` provided by the Paymetric support team. These are used for the Authorization API calls.
+Copy the `User` and `Password` provided by the Paymetric support team. These are used for Authorization API calls.
 
 
 ### Applying Your Own CSS to Your iFrame
 
-To render the card input fields with your own styling, you need to provide a CSS server URL in the Packet XML.
+To render the card input fields with your own styling, provide a CSS server URL in the Packet XML.
 
 A [valid packet XML](resource/valid_packet_xml_for_3ds.txt) is provided by the Paymetric support team. Update it and copy the contents to the OPF workbench:
 
-Navigate to **Configuration Details** > **Authorization** > **Session Initialization Request**, then click the **Edit** button for the Authentication Method.
+Navigate to **Configuration Details** > **Authorization** > **Session Initialization Request**, then click **Edit** for the Authentication Method.
 
 Replace the entire content of the Signing String field:
 
@@ -125,7 +127,7 @@ Replace the entire content of the Signing String field:
 
 ![](images/paymetric_css_file_upated_02.png)
 
-**Note**: Ensure the `cssUri` parameter has a valid value, otherwise the CSS will not be applied to your iFrame.
+**Note**: Ensure the `cssUri` parameter has a valid value; otherwise, the CSS will not be applied to your iFrame.
 
 For the saved card flow, a valid example packet XML is also provided by the Paymetric support team. Update it and copy the contents to the OPF workbench:
 
@@ -134,7 +136,7 @@ Navigate to **Configuration Details** > **Authorization** > **Direct Payment Req
 ![](images/paymetric_css_file_upated_savedCard.png)
 
 
-### Paymetric Merchant ID Management Based on Country and Currency (Template Solution)
+### Paymetric Merchant ID Management Based on Card Currency and Sales Area
 
 By default, the merchant ID table is provided as variables using the following naming format: `mid_<3-digit country code>_<3-digit currency code>`.
 
@@ -143,6 +145,23 @@ By default, the merchant ID table is provided as variables using the following n
 After importing the Postman collection, you can manage these variables (add or remove entries) in your configuration:
 
 ![](images/paymetric_mid_manage.png)
+
+You can then apply these variables in the XiPay Auth Request mapping under **Direct Payment Request** and **Payment Submit Complete Call**:
+
+![](images/paymetric_mid_request_mapping.png)
+
+
+### How to Use Intelligent Routing Rules to Filter Card Types by Sales Area
+
+By default, no rules are created in your workbench. You need to create rules and apply them to your site:
+
+Navigate to the **Rules** tab under **Routing** in the workbench left panel, then click **Create**:
+
+![](images/IPR_rule_1.png)
+
+Fill in all the fields: **Rule Name**, choose `Card Type` as the target type, select `Activate` as the routing action, and define the conditions for your rule (note: conditions use AND logic). Select the card type under **Targets** and add the division value (note: after adding a division value, press **Enter** to confirm).
+
+![](images/IPR_rule_2.png)
 
 
 ### Allowlist

@@ -1,5 +1,5 @@
 {
-  "id": "2d8cf5f0-f884-48f7-8c70-f55a9e3bf849",
+  "id": "3d5f9727-a9af-415c-acce-3d2431dcd30d",
   "name": "paymetric_3ds_with_savedCard",
   "values": [
     {
@@ -53,13 +53,13 @@
     ,
     {
       "key": "sharedKey",
-      "value": "d********************************601",
+      "value": "M****************************Wa5",
       "enabled": true
     }
     ,
     {
       "key": "XiPayPassword",
-      "value": "5********************************a5d",
+      "value": "B*****24%",
       "enabled": true
     }
     ,
@@ -82,96 +82,6 @@
     }
     ,
     {
-      "key": "mid_CAN_USD",
-      "value": "1500_CAD_VMA",
-      "enabled": true
-    }
-    ,
-    {
-      "key": "mid_DEU_EUR",
-      "value": "3005_EUR_VMA",
-      "enabled": true
-    }
-    ,
-    {
-      "key": "mid_DEU_USD",
-      "value": "3005_USD_VMA",
-      "enabled": true
-    }
-    ,
-    {
-      "key": "mid_NED_USD",
-      "value": "3002_USD_VMA",
-      "enabled": true
-    }
-    ,
-    {
-      "key": "mid_HKG_USD",
-      "value": "4002_USD_VMA",
-      "enabled": true
-    }
-    ,
-    {
-      "key": "mid_CAN_CAD",
-      "value": "1500_USD_VMA",
-      "enabled": true
-    }
-    ,
-    {
-      "key": "mid_NED_EUR",
-      "value": "3002_EUR_VMA",
-      "enabled": true
-    }
-    ,
-    {
-      "key": "mid_AUS_USD",
-      "value": "4001_USD_VMA",
-      "enabled": true
-    }
-    ,
-    {
-      "key": "mid_UAE_USD",
-      "value": "3001_USD_VMA",
-      "enabled": true
-    }
-    ,
-    {
-      "key": "mid_NZL_USD",
-      "value": "4007_USD_VMA",
-      "enabled": true
-    }
-    ,
-    {
-      "key": "mid_GBR_GBP",
-      "value": "3003_GBP_VMA",
-      "enabled": true
-    }
-    ,
-    {
-      "key": "mid_SGP_USD",
-      "value": "4004_USD_VMA",
-      "enabled": true
-    }
-    ,
-    {
-      "key": "mid_NZL_NZD",
-      "value": "4007_NZD_VMA",
-      "enabled": true
-    }
-    ,
-    {
-      "key": "mid_GBR_USD",
-      "value": "3003_USD_VMA",
-      "enabled": true
-    }
-    ,
-    {
-      "key": "mid_USA_USD",
-      "value": "USD_VMAD_SALEM",
-      "enabled": true
-    }
-    ,
-    {
       "key": "baseXiSecureEndpoint",
       "value": "cert-xipayapi.paymetric.com",
       "enabled": true
@@ -184,8 +94,116 @@
     }
     ,
     {
-      "key": "mid_AUS_AUD",
+      "key": "mid_USD_4007",
+      "value": "4007_USD_VMA",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "mid_AUD_4001",
       "value": "4001_AUD_VMA",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "mid_EUR_3005",
+      "value": "3005_EUR_VMA",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "mid_USD_4001",
+      "value": "4001_USD_VMA",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "mid_USD_3001",
+      "value": "3001_USD_VMA",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "mid_EUR_3002",
+      "value": "3002_EUR_VMA",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "mid_USD_3005",
+      "value": "3005_USD_VMA",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "mid_USD_3002",
+      "value": "3002_USD_VMA",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "mid_GBP_3003",
+      "value": "3003_GBP_VMA",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "mid_USD_4002",
+      "value": "4002_USD_VMA",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "mid_CAD_1500",
+      "value": "1500_CAD_VMA",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "mid_USD_1002",
+      "value": "USD_VMAD_SALEM",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "mid_NZD_4007",
+      "value": "4007_NZD_VMA",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "mid_USD_4004",
+      "value": "4004_USD_VMA",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "mid_USD_3003",
+      "value": "3003_USD_VMA",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "mid_USD_1003",
+      "value": "USD_VMAD_SALEM",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "mid_USD_",
+      "value": "USD_VMAD_SALEM",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "mid_CAD_",
+      "value": "1500_CAD_VMA",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "mid_USD_1500",
+      "value": "1500_USD_VMA",
       "enabled": true
     }
     
