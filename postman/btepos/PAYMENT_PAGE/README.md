@@ -178,6 +178,33 @@ Keep each amount within its own leg. The card leg is limited to the amount BTePO
 card, and the loyalty leg to the loyalty amount. BTePOS rejects a capture above the approved amount
 with ``errorCode 8``.
 
+### Customer and address data
+
+BTePOS validates the ``orderBundle`` it receives with ``registerPreAuth.do``. The ``orderBundle``
+mapping cleans the shopper's data before it is sent, so an ordinary Romanian address does not fail
+the payment with ``errorCode 8`` ("[orderBundle…] wrong") or an HTML error page.
+
+| What BTePOS does | What the mapping does |
+| --- | --- |
+| ``"``, ``\`` or a line break breaks the JSON (``[orderBundle] is invalid``) | replaces ``"`` with ``'``, ``\`` with ``/`` and line breaks with a space |
+| ``city`` and ``postAddress`` accept at most 50 characters, ``postalCode`` 16 | truncates to those lengths; a street longer than 50 characters continues in ``postAddress2`` (100 characters in total, the rest is dropped) |
+| ``phone`` must be digits only | keeps digits only |
+| ``&`` or ``%`` in a value returns an HTML page instead of JSON | percent-encodes every value (OPF does not encode this field itself) |
+| the iPay documentation asks for no diacritics | transliterates ``ă â î ș ş ț ţ`` and their capitals (``Brașov`` is sent as ``Brasov``) |
+
+Romanian diacritics (both the comma-below ``ș ț`` and the cedilla ``ş ţ`` forms), the Romanian quotes
+``„ ”``, apostrophes, ``#``, ``/``, ``+`` and ``;`` were accepted by BTePOS in testing, so the mapping only
+transliterates the Romanian letters and leaves other characters alone.
+
+Things to know when editing the ``orderBundle`` expression in the workbench:
+
+- A mapping expression is limited to 2048 characters.
+- Do not define a ``<#function>``: the whole template then fails to render ("Error while rendering
+  templates"). ``<#assign>`` and ``<#list>`` work, so repeated logic is written as one cleaning pass
+  over all values joined together.
+- Commerce limits ``postalCode`` to 10 characters, before the request reaches OPF.
+- A split of a street at 50 characters can fall inside a word.
+
 ### Allowlist
 Add the following domains to the domain allowlist in OPF workbench. For instructions, see [Adding Tenant-specific Domain to Allowlist
 ](https://help.sap.com/docs/OPEN_PAYMENT_FRAMEWORK/3580ff1b17144b8780c055bbb7c2bed3/a6836485b4494cfaad4033b4ee7a9c64.html).
