@@ -1,5 +1,5 @@
 {
-  "id": "261dca0a-c1c2-4c37-90b8-d7e3e69aa04c",
+  "id": "e890c7cb-bb24-426c-979e-c3a8f8c753ef",
   "name": "Adyen Card Tokenization",
   "values": [
     {
@@ -113,7 +113,7 @@
     ,
     {
       "key": "notificationHmacKey",
-      "value": "7********************************7b1",
+      "value": "E************************************************************DB6",
       "enabled": true
     }
     ,
