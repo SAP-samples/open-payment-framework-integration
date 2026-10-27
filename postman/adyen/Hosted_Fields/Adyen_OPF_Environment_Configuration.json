@@ -1,5 +1,5 @@
 {
-  "id": "48a1c92a-4755-4943-9cef-4d76625aea07",
+  "id": "5b628128-d996-4ef7-b3e4-7e76f0776c97",
   "name": "Adyen Hosted Field",
   "values": [
     {
@@ -29,13 +29,13 @@
     },
     {
       "key": "authentication_inbound_basic_auth_username_export_217",
-      "value": "(Notification Basic Auth)Adyen Hosted Field_username",
+      "value": "A2_username",
       "enabled": true
     }
     ,
     {
       "key": "authentication_inbound_basic_auth_password_export_217",
-      "value": "(Notification Basic Auth)Adyen Hosted Field_password",
+      "value": "A2_password",
       "enabled": true
     }
     ,
@@ -113,7 +113,7 @@
     ,
     {
       "key": "notificationHmacKey",
-      "value": "d********************************b04",
+      "value": "C************************************************************616",
       "enabled": true
     }
     ,
