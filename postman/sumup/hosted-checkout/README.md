@@ -137,13 +137,7 @@ Retries back off 1 min / 5 min / 20 min / 2 h, and a notification can arrive aft
 
 ## Things worth knowing ##
 
-**Refund amounts are in minor units.** ``POST /v1.0/merchants/{mc}/payments/{txn_id}/refunds`` takes the amount in **minor** units, despite the API reference describing a decimal amount. Sending ``264.99`` refunds £2.64. The mapping uses ``${input.amountInExponent}`` accordingly. Verified against the sandbox.
-
 **A failed card attempt sets the whole checkout to ``FAILED``.** The status is not terminal — it returns to ``PAID`` when the shopper retries successfully. The notification mapping therefore maps ``FAILED`` to ``DELAYED`` rather than ``REJECTED``: a terminal rejection on the first failed attempt cannot be lifted by the later success. (``authorization_inbound_request`` has no ``PENDING``, which is why ``DELAYED`` is the non-terminal sink.)
-
-**``transactions[]`` ordering is not stable.** The successful element has been observed at index 0, 1 and 2 of the same array. Always take the checkout's top-level ``transaction_id``; never ``transactions[0].id``.
-
-**Currency must match the merchant's country.** SumUp rejects a checkout whose currency differs from the merchant account's country currency with *"Given currency differs from merchant's country currency"*. The mapping sends ``${input.currency}`` from the order, so a mismatch fails fast at authorization — configure the storefront currency to match the SumUp merchant, or use a SumUp account in the storefront's currency.
 
 
 ## What SumUp does not support ##
