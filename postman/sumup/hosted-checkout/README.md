@@ -151,7 +151,6 @@ Retries back off 1 min / 5 min / 20 min / 2 h, and a notification can arrive aft
 
 * **Refunds remain in ``REQUESTED``.** SumUp's refund endpoint returns ``201`` with an empty body, so there is nothing to drive ``transactionStatus`` or ``pspReference`` from. A fixed value is not an acceptable substitute for an outcome field. The refund itself succeeds and is visible in the SumUp dashboard.
 * **``cardLast4`` does not populate** even though ``card.last_4_digits`` is present in the same ``/v2.1/transactions`` response that successfully populates ``cardType``. Under investigation.
-* **Apple Pay and Google Pay cannot be distinguished from card.** SumUp reports ``payment_type: ECOM`` for all online payments including wallets, so ``paymentMethod`` maps to ``CREDIT_CARD`` throughout.
 
 
 ### Summary
