@@ -128,6 +128,13 @@ Two chained calls:
 
 The second call is needed because the checkout object's embedded ``transactions[]`` carries no card details at all.
 
+### Refund ###
+
+SumUp's refund endpoint returns ``201`` with an **empty body**, so the outcome cannot come from the response content. ``transactionStatus`` is mapped from the HTTP status instead, using ``mappingFieldType: "STATUS"`` with ``from: httpStatusCode`` — ``201`` to ``ACCEPTED``, the error codes to ``REJECTED``. ``pspReference`` is left unmapped for the same reason; the refund is identified by the authorization it was taken against.
+
+Amounts are sent as ``${input.amountInExponent}``.
+
+
 ### Notifications ###
 
 SumUp posts to the ``return_url`` when a checkout's status changes, but the documented payload is only ``{event_type, id}``. The notification mapping therefore uses an **API preprocessor** (``sumup-fetch-checkout``): the inbound body's ``id`` is parsed into a custom field, the preprocessor calls ``GET /v0.1/checkouts/{id}``, and the full checkout replaces the payload so the outcome fields can be value-mapped from real content rather than fixed.
@@ -149,7 +156,6 @@ Retries back off 1 min / 5 min / 20 min / 2 h, and a notification can arrive aft
 
 ## Known limitations ##
 
-* **Refunds remain in ``REQUESTED``.** SumUp's refund endpoint returns ``201`` with an empty body, so there is nothing to drive ``transactionStatus`` or ``pspReference`` from. A fixed value is not an acceptable substitute for an outcome field. The refund itself succeeds and is visible in the SumUp dashboard.
 * **``cardLast4`` does not populate** even though ``card.last_4_digits`` is present in the same ``/v2.1/transactions`` response that successfully populates ``cardType``. Under investigation.
 
 
