@@ -1,5 +1,5 @@
 {
-  "id": "6462203f-e669-450c-9ce4-195684010b87",
+  "id": "9719ab91-8281-4424-8fb4-cf11473acd38",
   "name": "paymetric-direct",
   "values": [
     {
@@ -53,7 +53,7 @@
     ,
     {
       "key": "sharedKey",
-      "value": "0********************************b24",
+      "value": "M****************************Wa5",
       "enabled": true
     }
     ,
@@ -70,14 +70,8 @@
     }
     ,
     {
-      "key": "XiPayUsername",
-      "value": "WSASAPOPFDV",
-      "enabled": true
-    }
-    ,
-    {
       "key": "XiPayPassword",
-      "value": "8********************************1f4",
+      "value": "B*****24%",
       "enabled": true
     }
     ,
@@ -132,6 +126,12 @@
     {
       "key": "mid_AUS_USD",
       "value": "4001_USD_VMA",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "XiPayUsername",
+      "value": "W*****QA",
       "enabled": true
     }
     

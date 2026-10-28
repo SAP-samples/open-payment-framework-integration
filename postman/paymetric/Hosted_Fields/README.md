@@ -138,6 +138,18 @@ After importing the Postman collection, you can get your merchant Ids from Payme
 ![](images/paymetric_mid_manage.png)
 
 
+Run postman collection :
+
+Click the 3-dot menu on the root folder and select "Run Collection"
+
+![](images/runcolleciton1.png)
+
+Make sure all items are selected, then click the "Start run" button
+
+![](images/run_collection.png)
+
+
+
 ### Allowlist
 
 Add the following domains to the domain allowlist in OPF workbench. For instructions, see [Adding Tenant-specific Domain to Allowlist](https://help.sap.com/docs/OPEN_PAYMENT_FRAMEWORK/3580ff1b17144b8780c055bbb7c2bed3/a6836485b4494cfaad4033b4ee7a9c64.html).
