@@ -81,7 +81,7 @@ In the left navigation panel of Cybersource dashboard, choose **Payment Configur
 Click the created profile name to view the profile details.
 ![](images/cybersource-get-profile-id.png)
 
-**7.apiKeyId** and **apiKeyValue**
+**7.RestapiKeyId** and **RestapiKeyValue**
 
 In the left navigation panel, choose **Payment Configuration** -> **Key Management**.
 
