@@ -10,9 +10,13 @@ The integration supports:
 * Reversal
 * Recurrent Authorization
 * Paypal [Enterprise Checkout](https://developer.paypal.com/docs/checkout/#link-enterprisecheckout) support
+* PayPal Pay Later, off by default
+
+The payment form is built with the [Braintree JavaScript SDK v3](https://developer.paypal.com/braintree/docs/guides/hosted-fields/overview/javascript/v3) (`client`, `hosted-fields` and `paypal-checkout`). It no longer uses the Drop-in UI, which PayPal [deprecates on 1 October 2026](https://developer.paypal.com/braintree/docs/guides/drop-in/overview/javascript/v3/) and leaves unsupported from 1 October 2027.
 
 ## Known Issues
 * Card refunds will fail if initiated before they are sent to Settlement.
+* Pay Later only renders where PayPal offers it: the buyer's country, the transaction currency and the linked PayPal account's country must all match one of PayPal's Pay Later markets. Where they do not, the button is correctly suppressed.
 * Workaround manual process of refunding in Braintree based on failed transactions in OPF, then manual update of stuck OPF transaction.
 
 ## Planned Backlog Items
@@ -115,6 +119,7 @@ API Key Configuration
 - ``authentication_outbound_basic_auth_password_export_51``
 
 - ``merchantAccountIdPrefix`` (optional)
+- ``enablePayLater`` (optional) — set to ``true`` to render a PayPal Pay Later button beside the PayPal one. Defaults to ``false``.
 
 For sandbox testing, all other values can be left as defaults.  
 

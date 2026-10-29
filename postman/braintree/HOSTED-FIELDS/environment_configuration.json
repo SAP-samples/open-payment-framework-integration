@@ -85,6 +85,11 @@
       "key": "merchantAccountIdPrefix",
       "value": "sap-",
       "enabled": true
+    },
+    {
+      "key": "enablePayLater",
+      "value": "false",
+      "enabled": true
     }
     
   ],
