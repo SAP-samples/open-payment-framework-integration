@@ -1,6 +1,6 @@
 {
-  "id": "feb60dd8-d672-4d89-8e28-9ef9e7cdc96d",
-  "name": "opf-iss-d0",
+  "id": "6430d1a2-1b58-4f9a-989a-9b45d0f714e7",
+  "name": "CyberSource_iFrame",
   "values": [
     {
       "key": "token",
@@ -9,7 +9,7 @@
     },
     {
       "key": "rootUrl",
-      "value": "https:\/\/opf-iss-d0.api.commerce.stage.context.cloud.sap",
+      "value": "https:\/\/opf-iss-d0.opf.commerce.stage.context.cloud.sap",
       "enabled": true
     },
     {
@@ -18,24 +18,18 @@
       "enabled": true
     },
     {
-      "key": "integrationId",
-      "value": "83",
+      "key": "accountGroupId",
+      "value": "8149",
       "enabled": true
     },
     {
-      "key": "configurationId",
-      "value": "51",
+      "key": "accountId",
+      "value": "6752",
       "enabled": true
     },
     {
       "key": "capturePattern",
       "value": "CAPTURE_PER_SHIPMENT",
-      "enabled": true
-    }
-    ,
-    {
-      "key": "supportOverCapture",
-      "value": "false",
       "enabled": true
     }
     ,
@@ -46,14 +40,14 @@
     }
     ,
     {
-      "key": "authorizationTimeoutDays",
-      "value": "7",
+      "key": "enableCaptureReAuth",
+      "value": "false",
       "enabled": true
     }
     ,
     {
-      "key": "googlePayGateway",
-      "value": "cybersource",
+      "key": "authorizationTimeoutDays",
+      "value": "7",
       "enabled": true
     }
     ,
@@ -70,38 +64,38 @@
     }
     ,
     {
-      "key": "merchantId",
-      "value": "caastest",
+      "key": "secretKey",
+      "value": "8************************************************************************************************************************************************************************************************************************************************************f22",
       "enabled": true
     }
     ,
     {
-      "key": "apiKeyId",
-      "value": "8004b4c4-7d4d-4b62-b95e-fa7fbff2b7b2",
+      "key": "RestApiKeyId",
+      "value": "e8a15a27-d5db-4856-8674-4024d1fd0cb6",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "RestApiKeyValue",
+      "value": "c****************************************Fk=",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "merchantId",
+      "value": "sapopf_1721978025",
       "enabled": true
     }
     ,
     {
       "key": "profileId",
-      "value": "1F763633-21C9-4134-8905-EF9AAF3BDD58",
+      "value": "DF532412-6758-4F7F-A6D0-5C256409871A",
       "enabled": true
     }
     ,
     {
       "key": "accessKey",
-      "value": "",
-      "enabled": true
-    }
-    ,
-    {
-      "key": "apiKeyValue",
-      "value": "",
-      "enabled": true
-    }
-    ,
-    {
-      "key": "secretKey",
-      "value": "",
+      "value": "626ddc91410c33b9b53731e7dea6cb35",
       "enabled": true
     }
     
