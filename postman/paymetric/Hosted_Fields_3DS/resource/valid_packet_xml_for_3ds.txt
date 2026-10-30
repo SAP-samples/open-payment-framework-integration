@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<merchantHtmlPacketModel xmlns="Paymetric:XiIntercept:MerchantHtmlPacketModel">
+    <iFramePacket>
+        <hostUri>${input.browserInfo.originUrl}/</hostUri>
+        <cssUri>https://xiecomm.worldpay.com/diecomm/Content/IFrameStyleSheet.css</cssUri>
+        <cardinal3DSecure amount="${input.amount}" currencyCode="${input.currencyAsNumeric}" orderNumber="${input.orderId}" redirectUri="${input.resultURL}" threeDSVersion="${vars.threeDSVersion}">
+            <additionalFields/>
+        </cardinal3DSecure>
+    </iFramePacket>
+    <merchantHtml>
+        <htmlSection class="merchant_paycontent">
+            <cardDropdownSection>
+                <tag class="PaymentDetailHeader" name="div">Credit Card Payment</tag>
+                <tag name="div">
+                    <label for="cardType" text="card type"/>
+                    <ddlCardType default-text="select a card type" id="cd">
+                        <items>
+                            <item for="mastercard" text="Master-Card">
+                                <validateFor>
+                                    <validate for="cvv" maxlength="3" maxlength-msg="Master Card cvv must be 3 digits" minlength="3" minlength-msg="Master Card cvv must be 3 digits"/>
+                                </validateFor>
+                            </item>
+                            <item for="american express" text="American Express">
+                                <validateFor>
+                                    <validate for="cvv" minlength="4" maxlength="4" maxlength-msg="Amex cvv must be 4 digits" minlength-msg="Amex cvv must be 4 digits"/>
+                                </validateFor>
+                            </item>
+                            <item for="visa" text="Visa">
+                                <validateFor>
+                                    <validate for="cvv" maxlength="3" maxlength-msg="Visa cvv must be 3 digits" minlength="3" minlength-msg="Visa cvv must be 3 digits"/>
+                                </validateFor>
+                            </item>
+                        </items>
+                    </ddlCardType>
+                </tag>
+                <tag name="div">
+                    <label for="cardNumber" text="card number"/>
+                    <tboxCardNumber is-numeric="false" mask-number="true" tokenize="true"/>
+                    <validationMsg class="valmsg" for="cardNumber"/>
+                </tag>
+                <tag name="div">
+                    <label for="cardholderName" text="name on card"/>
+                    <tboxCardHolderName/>
+                    <validationMsg class="valmsg" for="cardholderName"/>
+                </tag>
+                <tag name="div">
+                    <label for="expDate" text="Exp date"/>
+                    <ddlExpMonth class="merchant_combos" default-text="month" required="false"/>
+                    <ddlExpYear class="merchant_combos" default-text="year" exp-date="true" required="false" years-to-display="10"/>
+                    <validationMsg class="valmsg" for="expYear"/>
+                </tag>
+                <tag name="div">
+                    <label for="cvv" text="card cvv"/>
+                    <tboxCvv digits-only="true" digits-only-msg="Only digits are allowed in CVV field." required="false" required-msg="Please Enter CVV."/>
+                    <validationMsg class="valmsg" for="cvv"/>
+                </tag>
+            </cardDropdownSection>
+            <additionalHtmlSection>
+            </additionalHtmlSection>
+        </htmlSection>
+    </merchantHtml>
+</merchantHtmlPacketModel>
