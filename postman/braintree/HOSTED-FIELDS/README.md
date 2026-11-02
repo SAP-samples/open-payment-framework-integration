@@ -24,8 +24,6 @@ OPF evaluates the division's routing rules when the payment form is initiated an
 
 A `DEACTIVATE` rule wins over an `ACTIVATE` rule, and an empty supported list means routing expressed no opinion rather than "nothing is allowed".
 
-These four values are declared in `jsContextFields`. Without that they reach the script empty, and the form would silently offer options the merchant has switched off.
-
 ## Known Issues
 * Card refunds will fail if initiated before they are sent to Settlement.
 * Pay Later only renders where PayPal offers it: the buyer's country, the transaction currency and the linked PayPal account's country must all match one of PayPal's Pay Later markets. Where they do not, the button is correctly suppressed.
