@@ -11,8 +11,20 @@ The integration supports:
 * Recurrent Authorization
 * Paypal [Enterprise Checkout](https://developer.paypal.com/docs/checkout/#link-enterprisecheckout) support
 * PayPal Pay Later, off by default
+* Intelligent Payment Routing — the form observes routing rules that deactivate the PayPal APM or exclude card types
 
 The payment form is built with the [Braintree JavaScript SDK v3](https://developer.paypal.com/braintree/docs/guides/hosted-fields/overview/javascript/v3) (`client`, `hosted-fields` and `paypal-checkout`). It no longer uses the Drop-in UI, which PayPal [deprecates on 1 October 2026](https://developer.paypal.com/braintree/docs/guides/drop-in/overview/javascript/v3/) and leaves unsupported from 1 October 2027.
+
+## Intelligent Payment Routing
+
+OPF evaluates the division's routing rules when the payment form is initiated and reports the outcome in `supportedAPMs`, `deactivatedAPMs`, `allowedCardTypes` and `excludedCardTypes`. Because this collection renders cards and PayPal together, the form observes them:
+
+* The PayPal and Pay Later buttons are not built when the PayPal APM is deactivated.
+* A card type that routing excludes is rejected as the shopper types it, and again before tokenization.
+
+A `DEACTIVATE` rule wins over an `ACTIVATE` rule, and an empty supported list means routing expressed no opinion rather than "nothing is allowed".
+
+These four values are declared in `jsContextFields`. Without that they reach the script empty, and the form would silently offer options the merchant has switched off.
 
 ## Known Issues
 * Card refunds will fail if initiated before they are sent to Settlement.
