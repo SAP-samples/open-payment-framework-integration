@@ -91,6 +91,24 @@
       "value": "false",
       "enabled": true
     }
+    ,
+    {
+      "key": "enableGooglePay",
+      "value": "true",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "enableApplePay",
+      "value": "true",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "walletMerchantName",
+      "value": "SAP OPF Store",
+      "enabled": true
+    }
     
   ],
   "_postman_variable_scope": "environment",
