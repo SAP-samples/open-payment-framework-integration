@@ -11,17 +11,15 @@ The integration supports:
 * Recurrent Authorization
 * Paypal [Enterprise Checkout](https://developer.paypal.com/docs/checkout/#link-enterprisecheckout) support
 * PayPal Pay Later, off by default
+* Google Pay and Apple Pay, recorded as the card type used rather than as separate payment methods
+* Intelligent Payment Routing for card types and PayPal
 
-The payment form is built with the [Braintree JavaScript SDK v3](https://developer.paypal.com/braintree/docs/guides/hosted-fields/overview/javascript/v3) (`client`, `hosted-fields` and `paypal-checkout`). It no longer uses the Drop-in UI, which PayPal [deprecates on 1 October 2026](https://developer.paypal.com/braintree/docs/guides/drop-in/overview/javascript/v3/) and leaves unsupported from 1 October 2027.
+The payment form is built with the [Braintree JavaScript SDK v3](https://developer.paypal.com/braintree/docs/guides/hosted-fields/overview/javascript/v3) (`client`, `hosted-fields`, `paypal-checkout`, `google-payment` and `apple-pay`). It no longer uses the Drop-in UI, which PayPal [deprecates on 1 October 2026](https://developer.paypal.com/braintree/docs/guides/drop-in/overview/javascript/v3/) and leaves unsupported from 1 October 2027.
 
 ## Known Issues
 * Card refunds will fail if initiated before they are sent to Settlement.
 * Pay Later only renders where PayPal offers it: the buyer's country, the transaction currency and the linked PayPal account's country must all match one of PayPal's Pay Later markets. Where they do not, the button is correctly suppressed.
 * Workaround manual process of refunding in Braintree based on failed transactions in OPF, then manual update of stuck OPF transaction.
-
-## Planned Backlog Items
-* Applepay / Googlepay Support
-
 
 ## Setup Instructions
 
@@ -120,6 +118,9 @@ API Key Configuration
 
 - ``merchantAccountIdPrefix`` (optional)
 - ``enablePayLater`` (optional) — set to ``true`` to render a PayPal Pay Later button beside the PayPal one. Defaults to ``false``.
+- ``enableGooglePay`` (optional) — set to ``false`` to suppress the Google Pay button. Defaults to ``true``.
+- ``enableApplePay`` (optional) — set to ``false`` to suppress the Apple Pay button. Defaults to ``true``.
+- ``walletMerchantName`` (optional) — the name shown in the Apple Pay sheet.
 
 For sandbox testing, all other values can be left as defaults.  
 
@@ -175,3 +176,28 @@ You can use [Sandbox Accounts](https://developer.paypal.com/dashboard/accounts) 
 
 
 
+
+## Setup Google Pay and Apple Pay
+
+Both wallets return a network-tokenized card, so no APM is needed. The transaction records
+``CREDIT_CARD`` and the card type the shopper paid with, exactly as a keyed-in card does.
+Each button is suppressed automatically where the gateway, the browser or a routing rule
+does not allow it.
+
+### Google Pay
+Enable Google Pay under Settings -> Processing in the Braintree Control Panel.
+
+A Google Pay merchant ID is only required in production; the sandbox does not need one. The
+sandbox sheet shows an "Unrecognized app" warning, which does not appear in production.
+
+### Apple Pay
+Enable Apple Pay under Settings -> Processing in the Braintree Control Panel. Braintree
+processes Apple Pay on the web with its own certificate, so there is no Payment Processing
+Certificate to generate and no Apple Developer merchant ID to register.
+
+Register the storefront domain under Apple Pay -> Options -> Web Domains (Safari). Do not
+register the domain through the Apple Developer Portal. In production you must also host
+Braintree's domain association file at ``/.well-known/apple-developer-merchantid-domain-association``
+over HTTPS, served as ``application/octet-stream`` with no redirect.
+
+Testing requires Safari, and an iTunes Connect sandbox tester account signed in to iCloud.
