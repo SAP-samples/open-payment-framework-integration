@@ -1,5 +1,5 @@
 {
-  "id": "30793691-3c8d-4bbe-93e8-29b1cd8c7c8c",
+  "id": "5ba30b1d-6cca-411a-baa1-8202568f6fcc",
   "name": "BlueSnap HostedFields",
   "values": [
     {
@@ -107,7 +107,7 @@
     ,
     {
       "key": "webhookSecretKey",
-      "value": "c********************************bfe",
+      "value": "p******mlj",
       "enabled": true
     }
     ,
