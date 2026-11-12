@@ -1,0 +1,130 @@
+{
+  "id": "b22df2c1-a55a-4a0a-8e6d-a85fa30b372b",
+  "name": "paymetric_3ds_with_savedCard",
+  "values": [
+    {
+      "key": "token",
+      "value": "",
+      "enabled": true
+    },
+    {
+      "key": "rootUrl",
+      "value": "https:\/\/opf-iss-d0.opf.commerce.stage.context.cloud.sap",
+      "enabled": true
+    },
+    {
+      "key": "service",
+      "value": "opf",
+      "enabled": true
+    },
+    {
+      "key": "accountGroupId",
+      "value": "8360",
+      "enabled": true
+    },
+    {
+      "key": "accountId",
+      "value": "6940",
+      "enabled": true
+    },
+    {
+      "key": "capturePattern",
+      "value": "PARTIAL_CAPTURE",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "enableOverCapture",
+      "value": "false",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "enableCaptureReAuth",
+      "value": "false",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "authorizationTimeoutDays",
+      "value": "7",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "sharedKey",
+      "value": "M****************************Wa5",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "XiPayPassword",
+      "value": "B*****24%",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "threeDSVersion",
+      "value": "2.2.0",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "baseXieCommEndpoint",
+      "value": "cert-xiecomm.worldpay.com\/diecomm",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "XiPayUsername",
+      "value": "WS****A",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "baseXiSecureEndpoint",
+      "value": "cert-xipayapi.paymetric.com",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "baseXiPayEndpoint",
+      "value": "cert-xipayapi.worldpay.com",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "mid_EUR_3002",
+      "value": "3002_EUR_VMA",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "mid_USD_3002",
+      "value": "3002_USD_VMA",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "mid_USD_",
+      "value": "USD_VMAD_SALEM",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "mid_CAD_",
+      "value": "1500_CAD_VMA",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "staticCssUri",
+      "value": "https:\/\/wordpay.com\/paymetric\/XiIntercept3\/creditIFrameStyleSheet.css",
+      "enabled": true
+    }
+    
+  ],
+  "_postman_variable_scope": "environment",
+  "_postman_exported_at": "",
+  "_postman_exported_using": "Postman\/7.35.0"
+}
