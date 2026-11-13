@@ -97,10 +97,11 @@ The loyalty leg is recorded during authorization verification:
 
 1. ``getOrderStatusExtended.do`` for the card payment (always runs).
 2. ``getOrderStatusExtended.do`` for the loyalty order.
-3. ``GET ${vars.opfHost}/opf/merchant/transactions?…&expand=accountGroup`` — reads the account
-   group from the card authorization, so no account group ID needs configuring.
-4. ``POST ${vars.opfHost}/opf/merchant/transactions`` — records the loyalty portion as an
-   ``AUTHORIZATION`` against that account group with ``paymentMethodCode: LOY``.
+3. ``POST ${vars.opfHost}/opf/merchant/transactions`` — records the loyalty portion as an
+   ``AUTHORIZATION`` against the payment integration (account group) with
+   ``paymentMethodCode: LOY``. ``accountGroupId`` is mapped from the **Payment Integration ID**
+   smart field (``${input.paymentIntegrationId}``), so no account group ID needs configuring and
+   OPF does not have to look it up through its API.
 
 **Both legs share the same ``orderPaymentId``.** OPF holds two authorizations against it — the card
 leg and the loyalty leg — each with its own transaction ID and its own ``pspReference``. Capture and
