@@ -1,0 +1,69 @@
+{
+    "id": "fbd802d6-5095-4aef-bb87-930651307368",
+    "name": "SumUp Hosted Checkout",
+    "values": [
+        {
+            "key": "token",
+            "value": "",
+            "enabled": true
+        },
+        {
+            "key": "rootUrl",
+            "value": "https://opf-iss-d0.opf.commerce.stage.context.cloud.sap",
+            "enabled": true
+        },
+        {
+            "key": "service",
+            "value": "opf",
+            "enabled": true
+        },
+        {
+            "key": "accountGroupId",
+            "value": "8023",
+            "enabled": true
+        },
+        {
+            "key": "accountId",
+            "value": "6641",
+            "enabled": true
+        },
+        {
+            "key": "authentication_outbound_api_key_value_export_1367",
+            "value": "sumup-api-key",
+            "enabled": true
+        },
+        {
+            "key": "capturePattern",
+            "value": "AUTO_CAPTURE",
+            "enabled": true
+        },
+        {
+            "key": "enableOverCapture",
+            "value": "false",
+            "enabled": true
+        },
+        {
+            "key": "enableCaptureReAuth",
+            "value": "false",
+            "enabled": true
+        },
+        {
+            "key": "authorizationTimeoutDays",
+            "value": "7",
+            "enabled": true
+        },
+        {
+            "key": "host",
+            "value": "https://api.sumup.com",
+            "enabled": true
+        },
+        {
+            "key": "merchantCode",
+            "value": "MXXXXXXX",
+            "enabled": true
+        }
+    ],
+    "_postman_variable_scope": "environment",
+    "_postman_exported_at": "",
+    "_postman_exported_using": "Postman/7.35.0"
+}
