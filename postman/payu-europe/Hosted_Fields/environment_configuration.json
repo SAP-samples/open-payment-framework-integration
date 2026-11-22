@@ -1,5 +1,5 @@
 {
-  "id": "3ec5ab4f-4f19-425b-b988-00a45ad8f909",
+  "id": "edafc093-33c9-46f1-83d3-4a13758bb65d",
   "name": "PayU_Europe_Secure_Form",
   "values": [
     {
@@ -88,12 +88,6 @@
     }
     ,
     {
-      "key": "posId",
-      "value": "511868",
-      "enabled": true
-    }
-    ,
-    {
       "key": "refundType",
       "value": "REFUND_PAYMENT_STANDARD",
       "enabled": true
@@ -101,13 +95,13 @@
     ,
     {
       "key": "clientSecret",
-      "value": "f********************************003",
+      "value": "4****************************e78",
       "enabled": true
     }
     ,
     {
       "key": "webhookSecretKey",
-      "value": "b********************************96d",
+      "value": "b****************************1dc",
       "enabled": true
     }
     ,
@@ -124,13 +118,19 @@
     }
     ,
     {
-      "key": "threeDsChallengeRequested",
-      "value": "YES",
+      "key": "enableChallengeRequested",
+      "value": "NO",
       "enabled": true
     }
     ,
     {
-      "key": "enableChallengeRequested",
+      "key": "posId",
+      "value": "520017",
+      "enabled": true
+    }
+    ,
+    {
+      "key": "threeDsChallengeRequested",
       "value": "NO",
       "enabled": true
     }

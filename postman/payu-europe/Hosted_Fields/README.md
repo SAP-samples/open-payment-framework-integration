@@ -120,7 +120,7 @@ The following refund types are available:
   - ``YES``: ``challengeRequested`` is used. Set the ``threeDsChallengeRequested`` variable accordingly.
   - ``NO``: ``exemption`` is used. Set the ``threeDsRejectionHandling`` and ``threeDsExemptionValue`` variables accordingly.
 
-* ``challengeRequested``
+* ``threeDsChallengeRequested``
 
   Enum: ``YES``, ``NO``, ``MANDATE``
 
